@@ -5,18 +5,10 @@ function NavTabs() {
     const location = useLocation();
     return (
         <ul className="navbar">
-            <li className="nav-item">
-                <Link
-                    to="/"
-                    className={location.pathname === "/" ? "nav-link active" : "nav-link"}
-                    >
-                        Logo
-                    </Link>
-            </li>
 
             <li className="nav-item">
                 <Link
-                    to="/"
+                    to="/home"
                     className={location.pathname === "/" ? "nav-link active" : "nav-link"}
                     >
                         About
