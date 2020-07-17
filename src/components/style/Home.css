@@ -1,0 +1,48 @@
+.im-jay {
+    width: calc(120px + 21vmax);
+    transition: all 0.8s ease-in-out;
+    margin-bottom: calc(-10px + 0.1vmin)
+}
+
+.jay-art {
+    padding-bottom: calc(300px + 16vmax);
+    background-repeat: no-repeat;
+    background-size: calc(200px + 24vmax);
+    background-position: center calc(200px + 9vmax);
+}
+
+/* --------------------------------------------------------- */
+
+
+/* NEXT SECTION */
+.irl-pic {
+    margin: 60px 0px 20px 0px;
+    width: calc(120px + 8vmax);
+    border-radius: 100%;
+    background-image: linear-gradient(rgb(255, 158, 115), rgb(251, 105, 42));
+    -webkit-filter: drop-shadow(0px 5px 5px #666666);
+        filter: drop-shadow(0px 5px 5px #3f3f3f);
+}
+
+.hi {
+    color: rgb(214, 123, 12);
+    font-size: calc(30px + 1.1vmax);
+}
+
+.mini-bio {
+    font-size: calc(14px + 0.5vmax);
+    padding: 0px 25px;
+}
+
+/* --------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+
+.more {
+    height: 45px;
+    width: auto;
+    opacity: 30%;
+    margin: 50px 0px
+}
+
+/* --------------------------------------------------------- */

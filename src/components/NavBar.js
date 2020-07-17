@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import Logo from "./assets/logo.png"
 
-
 import "./style/NavBar.css";
 
 function NavTabs() {
