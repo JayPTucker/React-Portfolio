@@ -1,0 +1,41 @@
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: black !important;
+    margin-top: calc(22px + 2vmin) !important;
+    padding-left: calc(6px + 1vmax);
+    font-size: calc(12px + 1vmax);
+    margin-left: calc(-10px + 1vmax);
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    font-size: calc(14px + 1.15vmax);
+    transition: 0.4s;
+    color: orange !important;
+}
+
+/* MY NEW LOGO */
+.logo {
+    height: calc(34px + 4.3vmax);
+    width: auto;
+    transition: all 0.4s ease-in-out;
+}
+
+/* WHEN YOU HOVER OVER THE LOGO*/
+.logo:hover {
+    transform: scale(1.15);
+    transition: 0.4s;
+}
