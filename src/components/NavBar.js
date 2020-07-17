@@ -8,7 +8,7 @@ function NavTabs() {
 
             <li className="nav-item">
                 <Link
-                    to="/home"
+                    to="/"
                     className={location.pathname === "/" ? "nav-link active" : "nav-link"}
                     >
                         About
