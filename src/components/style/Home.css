@@ -1,11 +1,12 @@
 .im-jay {
+    margin-top: 50px;
     width: calc(120px + 21vmax);
     transition: all 0.8s ease-in-out;
     margin-bottom: calc(-10px + 0.1vmin)
 }
 
 .jay-art {
-    padding-bottom: calc(300px + 16vmax);
+    padding-bottom: calc(300px + 24vmax);
     background-repeat: no-repeat;
     background-size: calc(200px + 24vmax);
     background-position: center calc(200px + 9vmax);
@@ -85,3 +86,29 @@
     -webkit-filter: drop-shadow(0px 5px 5px #666666);
         filter: drop-shadow(0px 5px 5px #3f3f3f);
 }
+
+/* --------------------------------------------------------- */
+
+
+/* NEXT SECTION */
+.message-me {
+    background-image: linear-gradient(rgb(255, 158, 115), rgb(251, 105, 42)) !important;
+    padding: calc(2px + 1vmax);
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    box-shadow: 1px 0px 5px black;
+}
+
+.message-me:hover {
+    transform: scale(1.2);
+    background-image: linear-gradient(rgb(214, 87, 33), rgb(238, 137, 94)) !important;
+    box-shadow: 1px 0px 11px black;
+}
+
+.message-me:focus {
+    outline: none;
+}
+/* --------------------------------------------------------- */

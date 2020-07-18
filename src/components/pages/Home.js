@@ -77,6 +77,27 @@ function Home() {
                     </p>
                 </Col>
             </Row>
+
+            {/* ------------------------------------------ */}
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <img className="more" src={more} alt="Three Dots to indicate more on the page"></img>
+                </Col>
+            </Row>
+
+            {/* ------------------------------------------ */}
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <p class="bolder-title">I can help!</p>
+                    <p class="text-title">I'm open to any job offers.</p>
+                    <p class="text">If my Site and Work has peaked your interest and you'd like to know more about me and what I can do, please
+                        contact me below, or if you wanna just say hey - go for it!
+                    </p>
+                    <button target="_blank" onclick="location.href='mailto:jayptuckerimportant@gmail.com'" class="message-me">MESSAGE ME</button>
+                </Col>
+            </Row>
             
 
         </Container>
