@@ -16,6 +16,7 @@ function Home() {
             <Row className="jay-art justify-content-center text-center" style={{ backgroundImage: `url(${BarryArt})` }}>
                 <Col>
                     <img className="im-jay" src={ImJay} alt="art of me"></img>
+                    <p class="sub-title">A Web Developer</p>
                 </Col>
             </Row>
 

@@ -1,10 +1,15 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+
+import Portfoliopng from "../assets/portfolio.png";
 
 function Portfolio() {
     return(
-        <div>
-            <p>Portfolio Page</p>
-        </div>
+        <Row className="justify-content-center text-center">
+            <Col>
+                <img src={Portfoliopng} alt="My Portfolio"></img>
+            </Col>
+        </Row>
     )
 }
 

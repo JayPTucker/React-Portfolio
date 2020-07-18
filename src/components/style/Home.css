@@ -5,6 +5,12 @@
     margin-bottom: calc(-10px + 0.1vmin)
 }
 
+/* SUB TITLE BELOW THAT */
+.sub-title {
+    font-size: calc(12px + 1vmax);
+    transition: all 0.8s ease-in-out;
+}
+
 .jay-art {
     padding-bottom: calc(300px + 24vmax);
     background-repeat: no-repeat;
