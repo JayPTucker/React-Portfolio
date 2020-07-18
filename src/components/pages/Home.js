@@ -1,8 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
 import ImJay from "../assets/im-jay.png";
 import BarryArt from "../assets/jay-png-full.png";
 import meIRL from "../assets/me-irl.png";
+import more from "../assets/more.png";
+import pencil from "../assets/pencil.png";
+import laptop from "../assets/laptop.png";
 
 import "../style/Home.css";
 
@@ -27,6 +31,54 @@ function Home() {
                     </p>
                 </Col>
             </Row>
+
+            {/* ------------------------------------------ */}
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <img className="more" src={more} alt="Three Dots to indicate more on the page"></img>
+                </Col>
+            </Row>
+
+            {/* ------------------------------------------ */}
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <p className="bolder-title">What I can do.</p>
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <img className="pencil" src={pencil} alt="Picture of a Pencil"></img>
+                    <p className="text-title">Design what you want.</p>
+                    <p className="text">I have a lot of experience when it comes to Web Design.  You can see that by judging this Website's design and also what's 
+                        on my Work page as well.  My skills range from Basic-Advanced HTML/CSS all the way to Bootstrap, Materialize, etc.
+                    </p>
+                </Col>
+            </Row>
+
+            {/* ------------------------------------------ */}
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <img class="laptop" src={laptop} alt="Picture of a Laptop"></img>
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center text-center">
+                <Col>
+                    <p className="text-title">Code what you need.</p>
+                    <p className="text">My Skills in Coding are advancing everyday. Learning new Languages all the time, so I can create the Website you need with all of
+                        the latest technologies applied into it.<br/><br/>
+                        <u>My Main Language Skill-Set:</u>
+                        <br/><br/>
+                        | HTML | CSS | JavaScript | jQuery | Git | Bootstrap | MySQL | Sequelize | Heroku | Express | API | Handlebars | NodeJS | & More
+                    </p>
+                </Col>
+            </Row>
+            
+
         </Container>
     )
 }
