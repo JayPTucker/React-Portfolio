@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-      <Router basename="/">
+      <Router basename="/React-Portfolio">
         <Container fluid>
           <NavBar />
           <Route exact path="/home" component={Home} />
