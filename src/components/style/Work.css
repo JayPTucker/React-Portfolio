@@ -1,0 +1,200 @@
+.work {
+    padding: 0px !important;
+    text-shadow: 1px 1px 1px black;
+    color: white !important;
+}
+
+.work-desc {
+    font-size: calc(8px + 1.2vmax);
+    margin: 0px calc(2px + 1.2vmax);
+}
+
+.work-btn {
+    color: white;
+    font-size: 20px;
+    padding: calc(2px + 0.9vmax);
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 4px black;
+    margin: 25px 10px 0px 10px;
+}
+
+.work-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 15px black;
+}
+
+/* ================================================================== */
+
+.work-1 {
+    background-color: rgb(255, 158, 115);
+}
+
+.work-1-img {
+    width: calc(175px + 25vmax);
+    margin: 0px 0px 0px calc(-58px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(241, 116, 62));
+        filter: drop-shadow(0px 5px 10px rgb(165, 61, 16));
+}
+
+.work-1-title {
+    font-size: calc(20px + 4vmax);
+}
+
+.work-1-tech-used {
+    font-size: 20px;
+}
+
+.work-1-btn {
+    background-color: rgb(241, 116, 62);
+}
+
+.work-1-btn:hover {
+    background-color: rgb(204, 88, 39);
+}
+
+/* =========================================================== */
+
+.work-2 {
+    background-color: rgb(77, 139, 190);
+}
+
+.work-2-img {
+    width: calc(150px + 25vmax);
+    margin: 0px 0px 0px calc(-38px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(77, 139, 190));
+        filter: drop-shadow(0px 5px 10px rgb(11, 49, 80));
+}
+
+.work-2-title {
+    font-size: calc(15px + 3vmax);
+}
+
+.work-2-tech-used {
+    font-size: 20px;
+}
+
+.work-2-btn {
+    background-color: rgb(25, 102, 165);
+}
+
+.work-2-btn:hover {
+    background-color: rgb(17, 74, 121)
+}
+
+/* ========================================================================= */
+
+.work-3 {
+    background-color: rgb(224, 96, 96)
+}
+
+.work-3-img {
+    width: calc(140px + 25vmax);
+    margin: 0px 0px 0px calc(-33px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(224, 96, 96));
+        filter: drop-shadow(0px 5px 10px rgb(139, 24, 24));
+}
+
+.work-3-title {
+    font-size: calc(15px + 3vmax);
+}
+
+.work-3-tech-used {
+    font-size: 20px;
+}
+
+.work-3-btn {
+    background-color: rgb(172, 46, 46);
+}
+
+.work-3-btn:hover {
+    background-color: rgb(129, 20, 20);
+}
+
+/* ============================================================= */
+
+.work-4 {
+    background-color: rgb(224, 194, 96)
+}
+
+.work-4-img {
+    width: calc(140px + 25vmax);
+    margin: 0px 0px 0px calc(-33px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(224, 194, 96));
+        filter: drop-shadow(0px 5px 10px rgb(139, 111, 19));
+}
+
+.work-4-title {
+    font-size: calc(15px + 3vmax);
+}
+
+.work-4-tech-used {
+    font-size: 20px;
+}
+
+.work-4-btn {
+    background-color: rgb(192, 152, 21);
+}
+
+.work-4-btn:hover {
+    background-color: rgb(163, 128, 14);
+}
+
+/* ============================================================== */
+
+.work-5 {
+    background-color: rgb(153, 77, 184)
+}
+
+.work-5-img {
+    width: calc(140px + 25vmax);
+    margin: 0px 0px 0px calc(-33px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(153, 77, 184));
+        filter: drop-shadow(0px 5px 10px rgb(53, 10, 70));
+}
+
+.work-5-title {
+    font-size: calc(15px + 3vmax);
+}
+
+.work-5-tech-used {
+    font-size: 20px;
+}
+
+.work-5-btn {
+    background-color: rgb(100, 19, 133);
+}
+
+.work-5-btn:hover {
+    background-color: rgb(53, 6, 71);
+}
+
+/* ========================================================================= */
+
+.work-6 {
+    background-color: rgb(97, 182, 97)
+}
+
+.work-6-img {
+    width: calc(140px + 25vmax);
+    margin: 0px 0px 0px calc(-33px + 2vmax);
+    -webkit-filter: drop-shadow(0px 5px 10px rgb(97, 182, 97));
+        filter: drop-shadow(0px 5px 10px rgb(13, 82, 13));
+}
+
+.work-6-title {
+    font-size: calc(15px + 3vmax);
+}
+
+.work-6-tech-used {
+    font-size: 20px;
+}
+
+.work-6-btn {
+    background-color: rgb(31, 112, 31);
+}
+
+.work-6-btn:hover {
+    background-color: rgb(13, 68, 13);
+}
