@@ -1,4 +1,4 @@
-# JayPTucker: 
+# React-Portfolio: 
 ![License](https://img.shields.io/badge/License-CCL-brightgreen) 
 
 **Live Link: [Click me!](https://jayptucker.github.io/)** 
