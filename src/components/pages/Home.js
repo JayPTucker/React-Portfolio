@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 import ImJay from "../assets/im-jay.png";
-import BarryArt from "../assets/jay-png-full.png";
+import BarryArt from "../assets/jay-png-full.gif";
 import meIRL from "../assets/me-irl.png";
 import more from "../assets/more.png";
 import pencil from "../assets/pencil.png";
@@ -22,7 +22,7 @@ function Home() {
 
             <Row className="justify-content-center text-center">
                 <Col md={10}>
-                    <img className="irl-pic" src={meIRL}></img>
+                    <img className="irl-pic" src={meIRL} alt="meIRL"></img>
 
                     <h1 className="hi">Hi.</h1>
                     <p className="mini-bio">I'm a Web Designer, Developer, Video Editor, and Computer Enthusiest/Tech Guru around the Dyersburg, Tennessee area.  
@@ -51,7 +51,7 @@ function Home() {
 
             <Row className="justify-content-center text-center">
                 <Col>
-                    <img className="pencil" src={pencil} alt="Picture of a Pencil"></img>
+                    <img className="pencil" src={pencil} alt="Pic of Pencil"></img>
                     <p className="text-title">Design what you want.</p>
                     <p className="text">I have a lot of experience when it comes to Web Design.  You can see that by judging this Website's design and also what's 
                         on my Work page as well.  My skills range from Basic-Advanced HTML/CSS all the way to Bootstrap, Materialize, etc.
@@ -63,7 +63,7 @@ function Home() {
 
             <Row className="justify-content-center text-center">
                 <Col>
-                    <img class="laptop" src={laptop} alt="Picture of a Laptop"></img>
+                    <img class="laptop" src={laptop} alt="Pic of Laptop"></img>
                 </Col>
             </Row>
 
