@@ -1,0 +1,82 @@
+.navbar-row {
+    box-shadow: 0px 0px 2px black;
+    padding-top: 15px;
+}
+
+.shortcut-col {
+    padding: 0px !important;
+}
+
+
+/* ------------------------------------------ */
+
+
+.navbar-link {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.1s all ease-in-out;
+    text-shadow: 0px 1px 3px black;
+
+}
+
+.navbar-link:hover {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ------------------------------------------ */
+
+
+.shortcut-icon {
+    font-size: 30px;
+    color: rgb(54, 54, 54);
+    transition: 0.1s all ease-in-out;
+    margin-bottom: 20px;
+}
+
+.shortcut-icon:hover {
+    text-shadow: 1px 1px 10px black;
+    animation: shake 1.1s;
+    animation-iteration-count: infinite;
+}
+
+.mail-icon:hover {
+    color: rgb(180, 12, 12);
+}
+
+.discord-icon:hover {
+    color: rgb(95, 95, 192);
+}
+
+.github-icon:hover {
+    color: black;
+}
+
+.linkedin-icon:hover {
+    color: rgb(40, 123, 200);
+}
+
+.youtube-icon:hover {
+    color: red;
+}
+
+.youtube-icon:active {
+    color: rgb(98, 0, 0);
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
