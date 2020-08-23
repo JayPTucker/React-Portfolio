@@ -8,13 +8,24 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import "./Navbar.css"
 
 function Navbar() {
+
     return (
         <Row className="navbar-row justify-content-center text-center">
             <Col md={2}>
                 {/* FILLER */}
             </Col>
             <Col md={8}>
-                <a className="navbar-link" href="/">Home</a>
+                <Row>
+                    <Col className="navbar-link-col">
+                        <a className="navbar-link" href="/">Home</a>
+                    </Col>
+                    <Col className="navbar-link-col">
+                        <a className="navbar-link" href="/">Work</a>
+                    </Col>
+                    <Col className="navbar-link-col">
+                        <a className="navbar-link" href="/">Portfolio</a>
+                    </Col>
+                </Row>
             </Col>
             <Col md={2}>
                 <Row>
