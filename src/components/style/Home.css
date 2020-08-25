@@ -1,16 +1,54 @@
-.fillertext {
-    margin-bottom: 600px;
-}
-
-.picOfMe {
-    width: 300px;
-}
-
 .bodycolor {
-    background-color: white;
-    transition: 1s all ease-in-out;
+    transition: all ease-in-out 1s;
+    background-image: url('background-1.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    
 }
 
 .bodycolor.active {
-    background-color: rgba(255, 0, 0, 0.356);
+    transform: 3s;
+    background-image: none;
+    background-color: rgb(64, 98, 161);
+}
+
+/* ------------------- */
+
+.frontpage-row {
+    padding-top: 100px;
+}
+
+/* -------------------------- */
+
+.picOfMe {
+    width: 400px;
+    margin-bottom: 1000px
+}
+
+.fp-skill-row {
+    margin-top: 20px;
+}
+
+.fp-title {
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 3px 3px 1px rgb(255, 255, 255);
+}
+
+.fp-bio {
+    font-size: 23px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.fp-skill {
+    font-size: 23px;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 0px 0px 10px rgb(27, 88, 149);
+    transition: all ease-in-out 0.2s
+}
+
+.fp-skill:hover {
+    font-size: 27px;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
 }
