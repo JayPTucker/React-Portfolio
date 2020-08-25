@@ -28,7 +28,7 @@
 }
 
 .navbar-link:hover {
-    font-size: 30px;
+    font-size: calc(10px + 1.2vmax);
     text-decoration: none;
     color: rgb(79, 140, 211);
 }

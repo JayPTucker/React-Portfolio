@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
@@ -12,7 +13,7 @@ function App() {
     <Router>
     <Container fluid>
       <Navbar />
-      
+
       <HomePage />
 
     </Container>

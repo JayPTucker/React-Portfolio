@@ -5,3 +5,12 @@
 .picOfMe {
     width: 300px;
 }
+
+.bodycolor {
+    background-color: white;
+    transition: 1s all ease-in-out;
+}
+
+.bodycolor.active {
+    background-color: rgba(255, 0, 0, 0.356);
+}

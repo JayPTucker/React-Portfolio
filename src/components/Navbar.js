@@ -10,7 +10,7 @@ import "./Navbar.css"
 function Navbar() {
 
     return (
-        <Row className="navbar-row justify-content-center text-center">
+        <Row className="navbar navbar-row justify-content-center text-center">
             <Col md={2}>
                 {/* FILLER */}
             </Col>
