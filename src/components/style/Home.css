@@ -1,28 +1,35 @@
-.bodycolor {
+.bodybackground {
     transition: all ease-in-out 1s;
-    background-image: url('background-1.png');
+    background-image: url('../assets/background-1.png');
     background-repeat: no-repeat;
     background-position: top;
     
 }
 
-.bodycolor.active {
+.bodybackground.active {
     transform: 3s;
-    background-image: none;
+    background-image: url('../assets/background-2.png');
     background-color: rgb(64, 98, 161);
 }
 
-/* ------------------- */
+/* --------------------------------------- */
 
 .frontpage-row {
-    padding-top: 100px;
+    padding: calc(30px + 3vmax) 0px;
 }
 
-/* -------------------------- */
+/* --------------------------------------- */
 
 .picOfMe {
-    width: 400px;
-    margin-bottom: 1000px
+    width: calc(250px + 6vmax);
+    transition: 0.2s all ease-in-out;
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+        filter: drop-shadow(2px 2px 10px #000000);
+    
+}
+
+.picOfMe:hover {
+    width: calc(250px + 7vmax);
 }
 
 .fp-skill-row {
@@ -31,24 +38,39 @@
 
 .fp-title {
     font-weight: bold;
-    font-size: 60px;
-    text-shadow: 3px 3px 1px rgb(255, 255, 255);
+    font-size: 70px;
 }
 
 .fp-bio {
-    font-size: 23px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    margin-top: 30px;
+    font-size: 30px;
 }
 
 .fp-skill {
-    font-size: 23px;
-    color: rgb(255, 255, 255) !important;
-    text-shadow: 0px 0px 10px rgb(27, 88, 149);
-    transition: all ease-in-out 0.2s
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
 }
 
 .fp-skill:hover {
-    font-size: 27px;
-    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 30px;
+}
 
+.contact-me-btn {
+    margin-top: 20px;
+    background-color: rgb(26, 97, 190);
+    color: white;
+    font-size: 25px;
+    outline: none;
+    border: 2px solid black;
+    transition: all 0.2s ease-in-out;
+    width: 180px;
+    height: 60px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.contact-me-btn:hover {
+    background-color: rgb(19, 70, 138);
+    border: 2px solid rgb(255, 255, 255);
+    width: 200px;
 }

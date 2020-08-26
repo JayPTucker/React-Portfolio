@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faDiscord, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+import favicon from "../components/assets/favicon.png"
 import "./Navbar.css"
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
     return (
         <Row className="navbar navbar-row justify-content-center text-center">
             <Col md={2}>
-                {/* FILLER */}
+                <img className="logo" alt="logo" src={favicon}></img>
             </Col>
             <Col md={8}>
                 <Row>
