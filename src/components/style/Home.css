@@ -54,6 +54,7 @@
 
 .fp-skill:hover {
     font-size: 30px;
+    text-decoration: underline !important;
 }
 
 .contact-me-btn {
