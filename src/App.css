@@ -4,22 +4,28 @@ body {
     background-color: var(--color1); 
 }
 
+/* SCROLL BAR: */
+
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 12px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #727272; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #1f76ac; 
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out !important;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #125783; 
+    border: 2px solid white;
   }
