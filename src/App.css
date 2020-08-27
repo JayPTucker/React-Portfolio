@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Pacifico&display=swap');
+
 body {
     background-color: var(--color1); 
 }
@@ -21,5 +23,3 @@ body {
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
-
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Pacifico&display=swap')
