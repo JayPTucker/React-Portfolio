@@ -1,14 +1,12 @@
 .navbar-row {
-    background-color: rgb(104, 104, 104);
-    border: 2px solid black;
-    box-shadow: inset 0px 0px 4px black;
+    background-color: #17618f;
     padding-top: 15px;
     height: calc(90px + 2%);
     transition: all 0.3s ease-in-out;
 }
 
 .navbar-row:hover {
-    background-color: rgb(87, 87, 87);
+    background-color: #18689b;
 }
 
 .shortcut-col {
