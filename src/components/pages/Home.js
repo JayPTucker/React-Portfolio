@@ -47,7 +47,6 @@ function HomePage() {
                     zIndex: "-1"
                 }}>
                     <source src={stars} type="video/mp4" id="myVideo" />
-                    <p>HELLO</p>
                 </video>
                 <Col md={6} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
@@ -55,7 +54,7 @@ function HomePage() {
                 <Col md={6} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
                     <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UI/UX Designer, <br></br>
-                    IT Specialist, <a href="/">& more</a>.  Located in West Tennessee region.</p>
+                    IT Specialist, <a href="/">& more</a>.  Located in the Western Tennessee area.</p>
 
                     <Row className="fp-skill-row">
                         <Col md={4}>
@@ -76,24 +75,24 @@ function HomePage() {
             <Row className="info-row text-center">
                 <Col md={12}>
                     <Row className="justify-content-center">
-                        <Col md={3} className="skill-section">
-                            <img className="skill-pencil" src={pencil} alt="Pencil"></img>
-                            <p className="skill-title">Design what you want</p>
-                            <p className="skill-bio">
-                                Based on my 8+ Mon. I've done Dev Work for Gaming Communities such as TRP to Create in-game Menus that have a consistent Design as well as Develop Websites in the Past that have caught people's eyes. I've done all of this with React, HTML, CSS, etc.
+                        <Col md={3} className="info-section">
+                            <img className="info-pencil" src={pencil} alt="Pencil"></img>
+                            <p className="info-title">Design what you want</p>
+                            <p className="info-bio">
+                                Filler Text
                             </p>
                         </Col>
-                        <Col md={3} className="skill-section">
-                            <img className="skill-computer" src={computer} alt="computer"></img>
-                            <p className="skill-title">Code what you need</p>
-                            <p className="skill-bio">
-                            My Skills in Coding are advancing everyday. Learning new Languages all the time, so I can create the Website you need with all of the latest technologies applied into it.
+                        <Col md={3} className="info-section">
+                            <img className="info-computer" src={computer} alt="computer"></img>
+                            <p className="info-title">Code what you need</p>
+                            <p className="info-bio">
+                                Filler Text
                             </p>
                         </Col>
-                        <Col md={3} className="skill-section">
-                            <img className="skill-internet" src={internet} alt="internet"></img>
-                            <p className="skill-title">Tech Skills related</p>
-                            <p className="skill-bio">
+                        <Col md={3} className="info-section">
+                            <img className="info-internet" src={internet} alt="internet"></img>
+                            <p className="info-title">Tech Skills/Experience</p>
+                            <p className="info-bio">
                                 Filler Text
                             </p>
                         </Col>
@@ -101,9 +100,18 @@ function HomePage() {
                 </Col>
             </Row>
 
-            <Row className="">
+
+            <Row className="skills-row text-center">
                 <Col md={12}>
-                    <p>test</p>
+                    <p>My Skills</p>
+                </Col>
+            </Row>
+            <Row className="skills-row text-center justify-content-center">
+                <Col md={6}>
+                    <p>filler 1</p>
+                </Col>
+                <Col md={6}>
+                    <p>filler 1</p>
                 </Col>
             </Row>
 

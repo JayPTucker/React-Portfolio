@@ -1,8 +1,8 @@
-.bodybackground {
+/* .bodybackground {
     transition: all ease-in-out 1s;
     background-color: rgb(238, 238, 238);
 
-}
+} */
 
 /* .bodybackground.active {
     background-color: rgb(148, 148, 148);
@@ -11,10 +11,17 @@
 /* --------------------------------------- */
 
 .frontpage-row {
-    background-color: rgba(238, 238, 238, 0.815);
+    background-color: rgba(238, 238, 238, 0.63);
+
     padding: calc(30px + 4vmax) 0px 150px 0px;
     /* box-shadow: inset 0px 0px calc(10px + 2vmax) black; */
     border: 1px solid black;
+    transition: 0.4s all ease-in-out;
+}
+
+.frontpage-row:hover {
+    background-color: rgba(238, 238, 238, 0.739);
+    border: 1px solid white;
 }
 
 /* --------------------------------------- */
@@ -80,61 +87,67 @@
 
 .info-row {
     background-color: rgb(104, 104, 104);
-    border: 2px solid black;
+    border: 1px solid black;
     padding-bottom: 20px;
     transition: all 0.3s ease-in-out;
 }
 
 .info-row:hover {
     background-color: rgb(87, 87, 87);
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
 
 }
 
-.skill-section {
+.info-section {
     background-color: #1f76ac;
     margin: -80px 5px 0px 5px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     font-family: 'Alata', sans-serif;
     color: rgb(255, 255, 255);
-    box-shadow: 0px -2px 4px black;
+    box-shadow: 0px 5px 10px black;
     text-shadow: 1px 1px 0px black;
     height: 550px;
 }
 
-.skill-section:hover {
+.info-section:hover {
     background-color: #125783;
     margin-top: -88px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     box-shadow: 0px -2px 15px black;
 }
 
-.skill-title {
+.info-title {
     font-size: 37px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-.skill-bio {
+.info-bio {
     font-size: 23px;
 }
 
-.skill-pencil {
+.info-pencil {
     margin: 20px 0px;
     width: 130px;
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
 }
 
-.skill-computer {
+.info-computer {
     width: 175px;
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
 }
 
-.skill-internet {
+.info-internet {
     width: 180px;
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
+}
+
+/* --------------------------------------------------------- */
+
+.skills-row {
+    background-color: rgb(200, 200, 200);
 }

@@ -9,6 +9,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 12px;
+    transition: all 0.3s ease-in-out !important;
   }
   
   /* Track */
@@ -21,7 +22,6 @@ body {
     background: #1f76ac; 
     border-radius: 20px;
     border: 2px solid rgb(255, 255, 255);
-    transition: all 0.3s ease-in-out !important;
   }
   
   /* Handle on hover */
