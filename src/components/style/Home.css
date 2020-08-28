@@ -26,6 +26,9 @@
 .background-vid {
     z-index: -1;
     position: absolute;
+    width: 99.9%;
+    height: 120%;
+    object-fit: cover;
     margin-top: -200px;
 }
 
