@@ -156,12 +156,16 @@
 }
 
 .skill-img {
-    width: 350px;
-    margin-bottom: 30px;
+    width: calc(300px + 4vmax);
+    margin-bottom: calc(6px + 1vmax);
     transition: 0.3s all ease-in-out;
+    -webkit-filter: drop-shadow(2px 2px 3px #000000);
+        filter: drop-shadow(1px 2px 0px #000000);
 }
 
 .skill-img:hover {
+    -webkit-filter: drop-shadow(2px 2px 3px #000000);
+        filter: drop-shadow(1px 2px 5px #000000);
     transform: scale(1.1)
 }
 
