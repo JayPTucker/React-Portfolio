@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faDiscord, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faDiscord, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import favicon from "../components/assets/favicon.png"
@@ -54,7 +54,7 @@ function Navbar() {
                         <a href="/"><FontAwesomeIcon className="shortcut-icon linkedin-icon" icon={faLinkedin} /></a>
                     </Col>
                     <Col className="shortcut-col">
-                        <a href="https://www.youtube.com/channel/UCGtcNXMyBFkXJUcZpyrizIg?view_as=subscriber"><FontAwesomeIcon className="shortcut-icon youtube-icon" icon={faYoutube} /></a>
+                        <a href="/"><FontAwesomeIcon className="shortcut-icon instagram-icon" icon={faInstagram} /></a>
                     </Col>
                 </Row>
             </Col>

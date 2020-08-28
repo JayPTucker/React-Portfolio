@@ -151,3 +151,18 @@
 .skills-row {
     background-color: rgb(200, 200, 200);
 }
+
+.skills-row-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+
+.skill-img {
+    width: 350px;
+    margin-bottom: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.skill-img:hover {
+    transform: scale(1.1)
+}
