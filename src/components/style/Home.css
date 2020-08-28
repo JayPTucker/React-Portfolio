@@ -66,7 +66,7 @@
     margin-top: 20px;
     background-color: #1f76ac;
     color: white;
-    font-size: 25px;
+    font-size: calc(15px + 0.5vmax);
     outline: none;
     border: 2px solid black;
     transition: all 0.2s ease-in-out;
@@ -110,7 +110,7 @@
 
 .info-section:hover {
     background-color: #125783;
-    margin-top: -88px;
+    margin-top: calc(-10px - 2vmax);
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 0px -2px 15px black;
 }
