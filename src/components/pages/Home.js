@@ -51,17 +51,8 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row'>
-                <video src={stars} autoPlay loop muted
-                style={{
-                    position: "absolute",
-                    width: "1920",
-                    left: "50%",
-                    height: "1080",
-                    objectFit: "cover",
-                    transform: "translate(-50%, -50%)",
-                    zIndex: "-1"
-                }}>
-                </video>
+                <video className="background-vid" src={stars} autoPlay loop muted></video>
+
                 <Col md={6} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
                 </Col>

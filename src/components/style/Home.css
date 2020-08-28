@@ -23,6 +23,12 @@
     border: 1px solid white;
 }
 
+.background-vid {
+    z-index: -1;
+    position: absolute;
+    margin-top: -200px;
+}
+
 /* --------------------------------------- */
 
 .picOfMe {
