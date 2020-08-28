@@ -51,7 +51,7 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row'>
-                <video autoplay playsinline loop muted
+                <video src={stars} autoPlay playsinline loop muted
                 style={{
                     position: "absolute",
                     width: "100%",
@@ -62,7 +62,6 @@ function HomePage() {
                     transform: "translate(-50%, -50%)",
                     zIndex: "-1"
                 }}>
-                    <source src={stars} type="video/mp4" id="myVideo" />
                 </video>
                 <Col md={6} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
