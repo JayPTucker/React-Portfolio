@@ -12,7 +12,7 @@
 
 .frontpage-row {
     background-color: rgba(238, 238, 238, 0.63);
-    padding: calc(5px + 4vmax) 0px 150px 0px;
+    padding: calc(5px + 4vmax) 0px calc(1px + 3vmax) 0px;
     /* box-shadow: inset 0px 0px calc(10px + 2vmax) black; */
     border: 1px solid black;
     transition: 0.4s all ease-in-out;
@@ -58,7 +58,7 @@
 }
 
 .fp-skill:hover {
-    font-size: 30px;
+    font-size: calc(6px + 1.3vmax);
     text-decoration: underline !important;
 }
 
@@ -98,14 +98,14 @@
 
 .info-section {
     background-color: #1f76ac;
-    margin: -80px 5px 0px 5px;
+    margin: calc(-20px + 2px) 5px 40px 5px;
     border: 1px solid rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     font-family: 'Alata', sans-serif;
     color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px black;
     text-shadow: 1px 1px 0px black;
-    height: 550px;
+    height: calc(400px + 6vmax);
 }
 
 .info-section:hover {
@@ -116,30 +116,30 @@
 }
 
 .info-title {
-    font-size: 37px;
+    font-size: calc(10px + 1vmax);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .info-bio {
-    font-size: 23px;
+    font-size: calc(8px + 1.5vmax);
 }
 
 .info-pencil {
     margin: 20px 0px;
-    width: 130px;
+    width: calc(50px + 4vmax);
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
 }
 
 .info-computer {
-    width: 175px;
+    width: calc(50px + 6vmax);
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
 }
 
 .info-internet {
-    width: 180px;
+    width: calc(50px + 6vmax);
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
 }
