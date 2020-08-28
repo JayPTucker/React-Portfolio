@@ -6,11 +6,13 @@ import { Row, Col } from "react-bootstrap";
 
 import "../style/Home.css";
 
-import picOfMe from "../assets/me.png"
+import picOfMe from "../assets/me.png";
 
-import pencil from "../assets/pencil.png"
-import computer from "../assets/computer.png"
-import internet from "../assets/internet.png"
+import pencil from "../assets/pencil.png";
+import computer from "../assets/computer.png";
+import internet from "../assets/internet.png";
+
+import stars from "../assets/stars.mp4";
 
 function HomePage() {
 //     // Sets our State to False
@@ -33,6 +35,20 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row'>
+                <video autoPlay loop muted
+                style={{
+                    position: "absolute",
+                    width: "100%",
+                    left: "50%",
+                    top: "50%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transform: "translate(-50%, -50%)",
+                    zIndex: "-1"
+                }}>
+                    <source src={stars} type="video/mp4" id="myVideo" />
+                    <p>HELLO</p>
+                </video>
                 <Col md={6} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
                 </Col>

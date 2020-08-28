@@ -1,21 +1,19 @@
 .navbar-row {
-    background-color: rgb(104, 104, 104);
-    padding-top: 15px;
-    height: calc(90px + 2%);
+    background-color: rgba(104, 104, 104, 0.904);
+    height: 70px;
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0px 5px 10px;
+    padding: 0px !important;
+    border: 2px solid rgb(39, 39, 39);
 }
 
 .navbar-row:hover {
-    background-color: rgb(88, 88, 88)
-}
-
-.shortcut-col {
-    padding: 0px !important;
+    background-color: rgba(88, 88, 88, 0.959);
+    border: 2px solid rgb(255, 255, 255);
 }
 
 .logo {
-    width: 80px;
+    width: 40px;
     -webkit-filter: drop-shadow(0px 1px 1px #000000);
         filter: drop-shadow(0px 2px 5px #000000);
 }
@@ -47,26 +45,23 @@
 
 /* ------------------------------------------ */
 
-
+.shortcut-col {
+    padding: 0px !important;
+}
 
 .shortcut-icon {
     font-size: 30px;
     color: rgb(255, 255, 255);
     transition: 0.2s all ease-in-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
     -webkit-filter: drop-shadow(0px 1px 1px #000000);
         filter: drop-shadow(0px 2px 0px #000000);
-    
 }
 
 .shortcut-icon:hover {
-    font-size: 35px;
+    font-size: 32px;
     -webkit-filter: drop-shadow(0px 1px 5px #000000);
     filter: drop-shadow(0px 3px 2px #000000);
-
 }
-
 
 .mail-icon:hover {
     color: rgb(224, 79, 79);
@@ -86,10 +81,6 @@
 
 .youtube-icon:hover {
     color: rgb(228, 0, 0);
-}
-
-.youtube-icon:focus, .youtube-icon:active {
-    color: rgb(98, 0, 0);
 }
 
 @keyframes shake {

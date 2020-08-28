@@ -9,9 +9,20 @@ import favicon from "../components/assets/favicon.png"
 import "./Navbar.css"
 
 function Navbar() {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0px";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+
+        prevScrollpos = currentScrollPos;
+    }
 
     return (
-        <Row className="navbar navbar-row justify-content-center text-center">
+        <Row className="navbar navbar-row justify-content-center text-center sticky-top fixed-top" id="navbar">
             <Col md={2}>
                 <img className="logo" alt="logo" src={favicon}></img>
             </Col>

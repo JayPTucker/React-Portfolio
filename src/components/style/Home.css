@@ -1,22 +1,20 @@
 .bodybackground {
     transition: all ease-in-out 1s;
     background-color: rgb(238, 238, 238);
-    /* background-image: url('../assets/animated.gif');
-    background-repeat: no-repeat;
-    background-size: 1920px 1080px; */
+
 }
 
-.bodybackground.active {
+/* .bodybackground.active {
     background-color: rgb(148, 148, 148);
-}
+} */
 
 /* --------------------------------------- */
 
 .frontpage-row {
-    background-color: rgb(238, 238, 238);
-    padding: calc(30px + 6vmax) 0px 150px 0px;
+    background-color: rgba(238, 238, 238, 0.815);
+    padding: calc(30px + 4vmax) 0px 150px 0px;
     /* box-shadow: inset 0px 0px calc(10px + 2vmax) black; */
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 /* --------------------------------------- */
@@ -84,6 +82,13 @@
     background-color: rgb(104, 104, 104);
     border: 2px solid black;
     padding-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-row:hover {
+    background-color: rgb(87, 87, 87);
+    border: 2px solid rgb(255, 255, 255);
+
 }
 
 .skill-section {
