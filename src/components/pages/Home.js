@@ -51,7 +51,7 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row'>
-                <video src={stars} autoPlay playsinline loop muted
+                <video src={stars} preload="auto" autoPlay playsInline loop muted 
                 style={{
                     position: "absolute",
                     width: "100%",
