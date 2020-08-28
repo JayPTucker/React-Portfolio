@@ -69,7 +69,7 @@ function HomePage() {
                 </Col>
                 <Col md={6} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UI/UX Designer, <br></br>
+                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UI/UX Designer,
                     IT Specialist, <a href="/">& more</a>.  Located in the Western Tennessee area.</p>
 
                     <Row className="fp-skill-row">
