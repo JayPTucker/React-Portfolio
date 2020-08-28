@@ -51,7 +51,7 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row'>
-                <video autoPlay playsinline loop muted
+                <video autoplay playsinline loop muted
                 style={{
                     position: "absolute",
                     width: "100%",
