@@ -1,6 +1,10 @@
 import React  from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -68,7 +72,7 @@ function HomePage() {
                             <p className="fp-skill">& more</p>
                         </Col>
                         <Col md={4} className="text-center">
-                            <button className="contact-me-btn">CONTACT ME</button>
+                            <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} /> CONTACT ME</button></a>
                         </Col>
                     </Row>
                 </Col>

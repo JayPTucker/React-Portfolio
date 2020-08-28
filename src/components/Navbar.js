@@ -42,19 +42,19 @@ function Navbar() {
             <Col md={2}>
                 <Row>
                     <Col className="shortcut-col">
-                        <a href="/"><FontAwesomeIcon className="shortcut-icon mail-icon" icon={faEnvelope} /></a>
+                        <a href="mailto:jayptuckerimportant@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon mail-icon" icon={faEnvelope} /></a>
                     </Col>
                     <Col className="shortcut-col">
-                        <a href="/"><FontAwesomeIcon className="shortcut-icon discord-icon" icon={faDiscord} /></a>
+                        <a href="https://discord.gg/MUPe9vf" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon discord-icon" icon={faDiscord} /></a>
                     </Col>
                     <Col className="shortcut-col">
-                        <a href="/"><FontAwesomeIcon className="shortcut-icon github-icon" icon={faGithub} /></a>
+                        <a href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon github-icon" icon={faGithub} /></a>
                     </Col>
                     <Col className="shortcut-col">
-                        <a href="/"><FontAwesomeIcon className="shortcut-icon linkedin-icon" icon={faLinkedin} /></a>
+                        <a href="https://www.linkedin.com/in/jayptucker/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon linkedin-icon" icon={faLinkedin} /></a>
                     </Col>
                     <Col className="shortcut-col">
-                        <a href="/"><FontAwesomeIcon className="shortcut-icon instagram-icon" icon={faInstagram} /></a>
+                        <a href="https://www.instagram.com/jayptucker/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon instagram-icon" icon={faInstagram} /></a>
                     </Col>
                 </Row>
             </Col>
