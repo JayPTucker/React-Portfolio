@@ -88,7 +88,7 @@
 
 .skill-section {
     background-color: #1f76ac;
-    margin: -20px 5px 0px 5px;
+    margin: -80px 5px 0px 5px;
     border: 2px solid rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     font-family: 'Alata', sans-serif;
@@ -100,7 +100,7 @@
 
 .skill-section:hover {
     background-color: #125783;
-    margin-top: -30px;
+    margin-top: -88px;
     border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px -2px 15px black;
 }
