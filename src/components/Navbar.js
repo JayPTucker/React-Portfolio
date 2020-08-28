@@ -35,6 +35,9 @@ function Navbar() {
                         <a className="navbar-link" href="/">Work</a>
                     </Col>
                     <Col className="navbar-link-col">
+                        <a className="navbar-link" href="/">Skills</a>
+                    </Col>
+                    <Col className="navbar-link-col">
                         <a className="navbar-link" href="/">Portfolio</a>
                     </Col>
                 </Row>
