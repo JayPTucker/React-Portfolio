@@ -29,7 +29,7 @@
     width: 99.9%;
     height: 140%;
     object-fit: cover;
-    margin-top: -200px;
+    margin-top: -300px;
 }
 
 /* --------------------------------------- */
@@ -67,7 +67,7 @@
 }
 
 .fp-skill:hover {
-    font-size: calc(6px + 1.3vmax);
+    font-size: calc(6px + 1.15vmax);
     text-decoration: underline !important;
 }
 
@@ -103,7 +103,6 @@
 .info-row:hover {
     background-color: rgb(87, 87, 87);
     border: 1px solid rgb(255, 255, 255);
-
 }
 
 .info-section {
@@ -155,9 +154,93 @@
 }
 
 /* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+.work-row {
+    background-color: rgb(204, 204, 204);
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+}
+
+.work-row:hover {
+    background-color: rgb(185, 185, 185);
+    border: 1px solid white;
+}
+
+.work-row-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100%;
+    width: 93.5%;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    background-color: #0000009f;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.work-bio {
+    font-size: 16px;
+}
+
+.live-link-btn, .github-link-btn {
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 2px solid #1f76ac;
+    color: white;
+    font-weight: 20px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
+    width: 130px;
+}
+
+.live-link-btn:hover, .github-link-btn:hover {
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 2px solid white;
+}
+
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
 
 .skills-row {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(255, 255, 255);
 }
 
 .skills-row-title {
@@ -168,7 +251,7 @@
 .skill-img {
     width: calc(300px + 4vmax);
     margin-bottom: calc(6px + 1vmax);
-    transition: 0.3s all ease-in-out;
+    transition: 0.15s all ease-in-out;
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(1px 2px 0px #000000);
 }

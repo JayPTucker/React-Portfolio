@@ -1,5 +1,5 @@
 import React  from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +16,10 @@ import picOfMe from "../assets/me.png";
 import pencil from "../assets/pencil.png";
 import computer from "../assets/computer.png";
 import internet from "../assets/internet.png";
+
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+
 
 import one from "../assets/skills/1.png"
 import two from "../assets/skills/2.png"
@@ -35,22 +39,6 @@ import fourteen from "../assets/skills/14.png"
 
 
 function HomePage() {
-//     // Sets our State to False
-//         const [bodybackground, setBodybackground] = useState(false);
-
-//     // Function that will determine when to change background
-//     const changeBackground = () => {
-//         // Console Logs where you are every time you scroll
-//         console.log(window.scrollY)
-//         if(window.scrollY >= 200) {
-//             setBodybackground(true)
-//         } else {
-//             setBodybackground(false) 
-//         }
-//     }
-
-//     // Event Listener waiting for you to Scroll
-//     window.addEventListener('scroll', changeBackground)
 
     return(
         <div>
@@ -77,8 +65,6 @@ function HomePage() {
                     </Row>
                 </Col>
             </Row>
-
-
             
 
             <Row className="info-row text-center">
@@ -109,6 +95,67 @@ function HomePage() {
                 </Col>
             </Row>
 
+            <Row className="work-row text-center justify-content-center">
+                <Col md={12}>
+                    <p className="work-row-title">My Recent Work</p>
+                    <p>Here are a few Projects I've worked on Recently</p>
+                    
+                    <Row className="justify-content-center">
+                        <Col md={3}>
+                            <div className="container">
+                                <img className="image" src={project1} alt="Witter"></img>
+                                <div className="overlay">
+                                    <div className="text">
+                                        <p className="work-bio">
+                                            Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
+                                        </p>
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="container">
+                                <img className="image" src={project2} alt="Employee Tracker"></img>
+                                <div className="overlay">
+                                    <div className="text">
+                                        <p className="work-bio">
+                                            A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                        </p>
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <p>Project 3</p>
+                        </Col>
+                    </Row>
+
+                    <Row className="justify-content-center">
+                        <Col md={3}>
+                            <p>Project 4</p>
+                        </Col>
+                        <Col md={3}>
+                            <p>Project 5</p>
+                        </Col>
+                        <Col md={3}>
+                            <p>Project 6</p>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+
             
 
             <Row className="skills-row text-center">
@@ -119,27 +166,27 @@ function HomePage() {
             </Row>
             <Row className="skills-row text-center justify-content-center">
                 <Col md={4} className="skill-col">
-                    <img src={one} className="skill-img"></img>
-                    <img src={three} className="skill-img"></img>
-                    <img src={five} className="skill-img"></img>
-                    <img src={seven} className="skill-img"></img>
+                    <img src={one} className="skill-img" alt="skill"></img>
+                    <img src={three} className="skill-img" alt="skill"></img>
+                    <img src={five} className="skill-img" alt="skill"></img>
+                    <img src={seven} className="skill-img" alt="skill"></img>
 
 
                 </Col>
                 <Col md={4} className="skill-col">
-                    <img src={two} className="skill-img"></img>
-                    <img src={four} className="skill-img"></img>
-                    <img src={six} className="skill-img"></img>
-                    <img src={eight} className="skill-img"></img>
-                    <img src={ten} className="skill-img"></img>
+                    <img src={two} className="skill-img" alt="skill"></img>
+                    <img src={four} className="skill-img" alt="skill"></img>
+                    <img src={six} className="skill-img" alt="skill"></img>
+                    <img src={eight} className="skill-img" alt="skill"></img>
+                    <img src={ten} className="skill-img" alt="skill"></img>
 
                 </Col>
                 <Col md={4} className="skill-col">
-                    <img src={twelve} className="skill-img"></img>
-                    <img src={fourteen} className="skill-img"></img>
-                    <img src={eleven} className="skill-img"></img>
-                    <img src={thirteen} className="skill-img"></img>
-                    <img src={nine} className="skill-img"></img>
+                    <img src={twelve} className="skill-img" alt="skill"></img>
+                    <img src={fourteen} className="skill-img" alt="skill"></img>
+                    <img src={eleven} className="skill-img" alt="skill"></img>
+                    <img src={thirteen} className="skill-img" alt="skill"></img>
+                    <img src={nine} className="skill-img" alt="skill"></img>
                 </Col>
             </Row>
 
