@@ -204,6 +204,14 @@
     opacity: 1;
 }
 
+.container:focus .overlay {
+    opacity: 1;
+}
+
+.container:active .overlay {
+    opacity: 1;
+}
+
 .text {
     color: white;
     font-size: 20px;
@@ -221,7 +229,7 @@
 }
 
 .live-link-btn, .github-link-btn {
-    background-color: rgba(0, 0, 0, 0.274);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #1f76ac;
     color: white;
     font-weight: 20px;
