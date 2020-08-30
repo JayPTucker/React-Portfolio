@@ -175,8 +175,6 @@
 .container {
     position: relative;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
     padding-bottom: 30px;
 }
   
@@ -201,14 +199,10 @@
     background-color: #000000af;
     border: 3px solid white;
     box-shadow: 0px 4px 20px black;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
 }
 
-.container:hover .overlay {
-    opacity: 1 !important;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
+.overlay:hover, .overlay:active, .overlay:focus {
+    opacity: 1;
 }
 
 .text {
