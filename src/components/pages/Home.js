@@ -101,8 +101,8 @@ function HomePage() {
                     <p>Here are a few Projects I've worked on Recently</p>
                     
                     <Row className="justify-content-center">
-                        <Col md={4}>
-                            <div className="container" onclick="">
+                        <Col md={4} className="container" onclick="">
+                            <div>
                                 <img className="image" src={project1} alt="Witter"></img>
                                 <div className="overlay" onclick="">
                                     <div className="text">
@@ -126,8 +126,8 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={4}>
-                            <div className="container" onclick="">
+                        <Col md={4} className="container" onclick="">
+                            <div>
                                 <img className="image" src={project2} alt="Employee Tracker"></img>
                                 <div className="overlay" onclick="">
                                     <div className="text">
@@ -144,8 +144,8 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={4}>
-                        <div className="container" onclick="">
+                        <Col md={4} className="container" onclick="">
+                        <div>
                                 <img className="image" src={project3} alt="Employee Tracker"></img>
                                 <div className="overlay" onclick="">
                                     <div className="text">
