@@ -40,6 +40,8 @@ import fourteen from "../assets/skills/14.png"
 
 function HomePage() {
 
+    document.addEventListener("touchstart", function() {},false);
+
     return(
         <div>
             <Row className='frontpage-row'>
@@ -88,7 +90,7 @@ function HomePage() {
                             <img className="info-internet" src={internet} alt="internet"></img>
                             <p className="info-title">Tech Skills/Experience</p>
                             <p className="info-bio">
-                                Filler Text
+                                test
                             </p>
                         </Col>
                     </Row>
