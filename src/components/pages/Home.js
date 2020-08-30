@@ -109,12 +109,19 @@ function HomePage() {
                                         <p className="work-bio">
                                             Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
                                         </p>
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
+
+                                        <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
+                                            <button className="live-link-btn">
+                                                Live Link
+                                            </button>
+                                        </a>
+                        
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/NaKiNoJay">
+                                            <button className="github-link-btn">
+                                                Github Link
+                                            </button>
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>
@@ -127,12 +134,12 @@ function HomePage() {
                                         <p className="work-bio">
                                             A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
                                         </p>
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
+                        
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
+                                            <button className="github-link-btn">
+                                                Github Link
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -145,12 +152,18 @@ function HomePage() {
                                         <p className="work-bio">
                                             A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
                                         </p>
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
+                                        
+                                        <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
+                                            <button className="live-link-btn">
+                                                Live Link
+                                            </button>
+                                        </a>
+                        
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
+                                            <button className="github-link-btn">
+                                                Github Link
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
