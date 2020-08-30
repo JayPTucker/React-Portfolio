@@ -206,7 +206,7 @@
 
 .text {
     color: white;
-    font-size: 20px;
+    font-size: calc(6px + 0.7vmax);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -217,7 +217,7 @@
 }
 
 .work-bio {
-    font-size: 16px;
+    font-size: calc(7px + 0.9vmax);
 }
 
 .live-link-btn, .github-link-btn {
@@ -225,7 +225,7 @@
     border: 2px solid #1f76ac;
     color: white;
     font-weight: 20px;
-    margin: 5px 5px;
+    margin: calc(1px + 0.2vmax) 5px;
     transition: all 0.2s ease-in-out;
     width: 130px;
 }
