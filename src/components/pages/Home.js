@@ -101,7 +101,7 @@ function HomePage() {
                     <p>Here are a few Projects I've worked on Recently</p>
                     
                     <Row className="justify-content-center">
-                        <Col md={3}>
+                        <Col md={4}>
                             <div className="container">
                                 <img className="image" src={project1} alt="Witter"></img>
                                 <div className="overlay">
@@ -119,7 +119,7 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <div className="container">
                                 <img className="image" src={project2} alt="Employee Tracker"></img>
                                 <div className="overlay">
@@ -137,19 +137,19 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <p>Project 3</p>
                         </Col>
                     </Row>
 
                     <Row className="justify-content-center">
-                        <Col md={3}>
+                        <Col md={4}>
                             <p>Project 4</p>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <p>Project 5</p>
                         </Col>
-                        <Col md={3}>
+                        <Col md={4}>
                             <p>Project 6</p>
                         </Col>
                     </Row>

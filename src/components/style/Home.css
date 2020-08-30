@@ -183,6 +183,7 @@
     height: auto;
     border-radius: 20px;
     border: 2px solid black;
+    box-shadow: 0px 2px 10px black;
 }
   
 .overlay {
@@ -195,20 +196,13 @@
     width: 93.5%;
     opacity: 0;
     transition: .3s ease-in-out;
-    background-color: #0000009f;
+    background-color: #000000af;
     border-radius: 20px;
     border: 3px solid white;
+    box-shadow: 0px 4px 20px black;
 }
 
-.container:hover .overlay {
-    opacity: 1;
-}
-
-.container:focus .overlay {
-    opacity: 1;
-}
-
-.container:active .overlay {
+.container:active .overlay, .container:hover .overlay {
     opacity: 1;
 }
 
