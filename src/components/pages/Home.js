@@ -96,11 +96,11 @@ function HomePage() {
             </Row>
 
             <Row className="work-row text-center justify-content-center">
-                {/* <Col md={12}>
+                <Col md={12}>
                     <p className="work-row-title">My Recent Work</p>
                     <p>Here are a few Projects I've worked on Recently</p>
                     
-                    <Row className="justify-content-center"> */}
+                    <Row className="justify-content-center">
                         <Col md={4}>
                             <div className="container">
                                 <img className="image" src={project1} alt="Witter"></img>
@@ -168,8 +168,8 @@ function HomePage() {
                                 </div>
                             </div>
                         </Col>
-                    {/* </Row>
-                </Col> */}
+                    </Row>
+                </Col>
             </Row>
 
             
