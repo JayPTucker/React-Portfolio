@@ -160,11 +160,11 @@
     background-color: rgb(204, 204, 204);
     transition: all 0.2s ease-in-out;
     border: 1px solid black;
+    padding-bottom: 60px;
 }
 
 .work-row:hover {
     background-color: rgb(185, 185, 185);
-    border: 1px solid white;
 }
 
 .work-row-title {
@@ -181,9 +181,8 @@
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 0px 2px 10px black;
+    border: 3px solid black;
+    box-shadow: 0px 2px 5px black;
 }
   
 .overlay {
@@ -193,11 +192,10 @@
     left: 15px;
     right: 0;
     height: 100%;
-    width: 93.5%;
+    width: 95%;
     opacity: 0;
     transition: .3s ease-in-out;
     background-color: #000000af;
-    border-radius: 20px;
     border: 3px solid white;
     box-shadow: 0px 4px 20px black;
 }
@@ -223,11 +221,11 @@
 }
 
 .live-link-btn, .github-link-btn {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.24);
     border: 2px solid #1f76ac;
     color: white;
     font-weight: 20px;
-    margin-bottom: 5px;
+    margin: 5px 5px;
     transition: all 0.2s ease-in-out;
     width: 130px;
 }

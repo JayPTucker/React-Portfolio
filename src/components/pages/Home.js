@@ -19,7 +19,7 @@ import internet from "../assets/internet.png";
 
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
-
+import project3 from "../assets/projects/project-3.png";
 
 import one from "../assets/skills/1.png"
 import two from "../assets/skills/2.png"
@@ -138,19 +138,22 @@ function HomePage() {
                             </div>
                         </Col>
                         <Col md={4}>
-                            <p>Project 3</p>
-                        </Col>
-                    </Row>
-
-                    <Row className="justify-content-center">
-                        <Col md={4}>
-                            <p>Project 4</p>
-                        </Col>
-                        <Col md={4}>
-                            <p>Project 5</p>
-                        </Col>
-                        <Col md={4}>
-                            <p>Project 6</p>
+                        <div className="container">
+                                <img className="image" src={project3} alt="Employee Tracker"></img>
+                                <div className="overlay">
+                                    <div className="text">
+                                        <p className="work-bio">
+                                            A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                        </p>
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Col>
