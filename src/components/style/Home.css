@@ -189,10 +189,10 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(1px + 3vmax);
+    left: calc(1px + 2.8vmax);
     right: 0;
     width: calc(180px + 18vmax);
-    height: calc(94px + 11vmax);
+    height: calc(100px + 10.4vmax);
     opacity: 0;
     transition: .3s ease-in-out;
     background-color: #000000af;
