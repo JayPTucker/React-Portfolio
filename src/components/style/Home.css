@@ -200,7 +200,7 @@
     box-shadow: 0px 4px 20px black;
 }
 
-.container:active .overlay, .container:hover .overlay {
+.container:active .overlay, .container:hover .overlay, .container:focus .overlay {
     opacity: 1;
 }
 
