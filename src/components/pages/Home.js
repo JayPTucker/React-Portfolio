@@ -90,7 +90,7 @@ function HomePage() {
                             <img className="info-internet" src={internet} alt="internet"></img>
                             <p className="info-title">Tech Skills/Experience</p>
                             <p className="info-bio">
-                                test
+                                Filler Text
                             </p>
                         </Col>
                     </Row>
@@ -102,71 +102,67 @@ function HomePage() {
                     <p className="work-row-title">My Recent Work</p>
                     <p>Here are a few Projects I've worked on Recently</p>
                     
-                    <Row className="justify-content-center">
-                        <Col md={4} className="container" onclick="">
-                            <div>
-                                <img className="image" src={project1} alt="Witter"></img>
-                                <div className="overlay" onclick="">
-                                    <div className="text">
-                                        <p className="work-bio">
-                                            Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
-                                        </p>
+                    <Row className="justify-content-center text-center">
+                        <Col md={4} className="container">
+                            <img className="image" src={project1} alt="Witter"></img>
+                            <div className="overlay">
+                                <div className="text">
+                                    <p className="work-bio">
+                                        Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
+                                    </p>
 
-                                        <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
-                                            <button className="live-link-btn">
-                                                Live Link
-                                            </button>
-                                        </a>
-                        
-                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/NaKiNoJay">
-                                            <button className="github-link-btn">
-                                                Github Link
-                                            </button>
-                                        </a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                    </a>
+                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/NaKiNoJay">
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </a>
 
-                                    </div>
                                 </div>
                             </div>
                         </Col>
-                        <Col md={4} className="container" onclick="">
-                            <div>
-                                <img className="image" src={project2} alt="Employee Tracker"></img>
-                                <div className="overlay" onclick="">
-                                    <div className="text">
-                                        <p className="work-bio">
-                                            A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
-                                        </p>
-                        
-                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
-                                            <button className="github-link-btn">
-                                                Github Link
-                                            </button>
-                                        </a>
-                                    </div>
+
+                        <Col md={4} className="container">
+                            <img className="image" src={project2} alt="Employee Tracker"></img>
+                            <div className="overlay">
+                                <div className="text">
+                                    <p className="work-bio">
+                                        A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                    </p>
+                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
-                        <Col md={4} className="container" onclick="">
-                        <div>
-                                <img className="image" src={project3} alt="Employee Tracker"></img>
-                                <div className="overlay" onclick="">
-                                    <div className="text">
-                                        <p className="work-bio">
-                                            A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
-                                        </p>
-                                        
-                                        <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
-                                            <button className="live-link-btn">
-                                                Live Link
-                                            </button>
-                                        </a>
                         
-                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
-                                            <button className="github-link-btn">
-                                                Github Link
-                                            </button>
-                                        </a>
-                                    </div>
+                        <Col md={4} className="container">
+                            <img className="image" src={project3} alt="Employee Tracker"></img>
+                            <div className="overlay">
+                                <div className="text">
+                                    <p className="work-bio">
+                                        A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                    </p>
+                                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                    </a>
+                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </Col>
