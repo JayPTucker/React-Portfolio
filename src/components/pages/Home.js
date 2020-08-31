@@ -106,7 +106,7 @@ function HomePage() {
                         <Col md={4} className="container">
                             <img className="image" src={project1} alt="Witter"></img>
                             <div className="overlay">
-                                <div className="text">
+                                <Col md={8} className="text">
                                     <p className="work-bio">
                                         Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
                                     </p>
@@ -123,14 +123,14 @@ function HomePage() {
                                         </button>
                                     </a>
 
-                                </div>
+                                </Col>
                             </div>
                         </Col>
 
                         <Col md={4} className="container">
                             <img className="image" src={project2} alt="Employee Tracker"></img>
                             <div className="overlay">
-                                <div className="text">
+                                <Col md={8} className="text">
                                     <p className="work-bio">
                                         A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
                                     </p>
@@ -140,14 +140,14 @@ function HomePage() {
                                             Github Link
                                         </button>
                                     </a>
-                                </div>
+                                </Col>
                             </div>
                         </Col>
-                        
+
                         <Col md={4} className="container">
                             <img className="image" src={project3} alt="Employee Tracker"></img>
                             <div className="overlay">
-                                <div className="text">
+                                <Col md={8} className="text">
                                     <p className="work-bio">
                                         A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
                                     </p>
@@ -163,7 +163,7 @@ function HomePage() {
                                             Github Link
                                         </button>
                                     </a>
-                                </div>
+                                </Col>
                             </div>
                         </Col>
                     </Row>

@@ -228,6 +228,7 @@
     margin: calc(1px + 0.2vmax) 5px;
     transition: all 0.2s ease-in-out;
     width: 130px;
+    height: calc(10px + 2vmax);
 }
 
 .live-link-btn:hover, .github-link-btn:hover {
