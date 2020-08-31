@@ -29,7 +29,7 @@
     width: 99.9%;
     height: 140%;
     object-fit: cover;
-    margin-top: -150px;
+    margin-top: calc(-120px - 4vmax);
 }
 
 
