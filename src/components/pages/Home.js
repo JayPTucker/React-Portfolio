@@ -41,7 +41,7 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row' id="front-page">
-                <video className="background-vid" autoplay='true' loop='true' muted='true'>
+                <video className="background-vid" autoPlay loop muted>
                     <source src={stars} type='video/mp4'></source>
                 </video>
 
