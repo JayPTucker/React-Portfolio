@@ -44,7 +44,7 @@ function HomePage() {
 
     return(
         <div>
-            <Row className='frontpage-row'>
+            <Row className='frontpage-row' id="front-page">
                 <video className="background-vid" src={stars} autoPlay loop muted></video>
 
                 <Col md={6} className="text-center">
@@ -53,13 +53,13 @@ function HomePage() {
                 <Col md={6} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
                     <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UI/UX Designer,
-                    IT Specialist, <a href="/">& more</a>.  Located in the Western Tennessee area.</p>
+                    IT Specialist, <a href="#info-row" className="fp-hyperlink">& more</a>.  Located in the Western Tennessee area.</p>
 
                     <Row className="fp-skill-row">
                         <Col md={4}>
                             <p className="fp-skill">UX/UI Design</p>
                             <p className="fp-skill">Database Design</p>
-                            <p className="fp-skill">& more</p>
+                            <a href="#skills-row" className="fp-skill fp-hyperlink">& more</a>
                         </Col>
                         <Col md={4} className="text-center">
                             <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} /> CONTACT ME</button></a>
@@ -69,7 +69,7 @@ function HomePage() {
             </Row>
             
 
-            <Row className="info-row text-center">
+            <Row className="info-row text-center" id="info-row">
                 <Col md={12}>
                     <Row className="justify-content-center">
                         <Col md={3} className="info-section">
@@ -97,7 +97,7 @@ function HomePage() {
                 </Col>
             </Row>
 
-            <Row className="work-row text-center justify-content-center">
+            <Row className="work-row text-center justify-content-center" id="work-row">
                 <Col md={12}>
                     <p className="work-row-title">My Recent Work</p>
                     <p>Here are a few Projects I've worked on Recently</p>
@@ -172,7 +172,7 @@ function HomePage() {
 
             
 
-            <Row className="skills-row text-center justify-content-center">
+            <Row className="skills-row text-center justify-content-center" id="skills-row">
                 <Col md={12}>
                 <Row>
                     <Col md={12} className="skill-col">

@@ -32,6 +32,15 @@
     margin-top: -300px;
 }
 
+.fp-hyperlink {
+    color: #1f76ac !important;
+    text-shadow: 1px 1px 1px black;
+}
+
+.fp-hyperlink:hover {
+    color: #125783 !important;
+}
+
 /* --------------------------------------- */
 
 .picOfMe {

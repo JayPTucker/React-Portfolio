@@ -29,16 +29,16 @@ function Navbar() {
             <Col md={8}>
                 <Row>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="/">Home</a>
+                        <a className="navbar-link" href="https://jayptucker.com">Home</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="/">Work</a>
+                        <a className="navbar-link" href="#work-row">Work</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="/">Skills</a>
+                        <a className="navbar-link" href="#skills-row">Skills</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="/">Portfolio</a>
+                        <a className="navbar-link" href="https://drive.google.com/file/d/1rMdNZ0VDhsdKGV4yD5mAYJ5ybuRbyzwZ/view?usp=sharing">Portfolio</a>
                     </Col>
                 </Row>
             </Col>
