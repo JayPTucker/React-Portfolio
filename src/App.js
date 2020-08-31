@@ -6,6 +6,7 @@ import "./App.css";
 
 import Navbar from "./components/Navbar";
 import HomePage from "./components/pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Navbar />
 
       <HomePage />
+
+      <Footer />
 
     </Container>
   </Router>

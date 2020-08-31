@@ -6,7 +6,7 @@ import { faInstagram, faDiscord, faLinkedin, faGithub } from '@fortawesome/free-
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import favicon from "../components/assets/favicon.png"
-import "./Navbar.css"
+import "./style/Navbar.css"
 
 function Navbar() {
     var prevScrollpos = window.pageYOffset;

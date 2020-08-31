@@ -172,35 +172,36 @@ function HomePage() {
 
             
 
-            <Row className="skills-row text-center">
-                <Col md={12} className="skill-col">
-                    <p className="skills-row-title">My Skills</p>
-                    <p>Below are a list of Languages/Apps that I have rated myself on from a scale of one to five; meaning how good I think I am at it.</p>
-                </Col>
-            </Row>
             <Row className="skills-row text-center justify-content-center">
-                <Col md={4} className="skill-col">
-                    <img src={one} className="skill-img" alt="skill"></img>
-                    <img src={three} className="skill-img" alt="skill"></img>
-                    <img src={five} className="skill-img" alt="skill"></img>
-                    <img src={seven} className="skill-img" alt="skill"></img>
-
-
-                </Col>
-                <Col md={4} className="skill-col">
-                    <img src={two} className="skill-img" alt="skill"></img>
-                    <img src={four} className="skill-img" alt="skill"></img>
-                    <img src={six} className="skill-img" alt="skill"></img>
-                    <img src={eight} className="skill-img" alt="skill"></img>
-                    <img src={ten} className="skill-img" alt="skill"></img>
-
-                </Col>
-                <Col md={4} className="skill-col">
-                    <img src={twelve} className="skill-img" alt="skill"></img>
-                    <img src={fourteen} className="skill-img" alt="skill"></img>
-                    <img src={eleven} className="skill-img" alt="skill"></img>
-                    <img src={thirteen} className="skill-img" alt="skill"></img>
-                    <img src={nine} className="skill-img" alt="skill"></img>
+                <Col md={12}>
+                <Row>
+                    <Col md={12} className="skill-col">
+                        <p className="skills-row-title">My Skills</p>
+                        <p>Below are a list of Languages/Apps that I have rated myself on from a scale of one to five; meaning how good I think I am at it.</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={4} className="skill-col">
+                        <img src={one} className="skill-img" alt="skill"></img>
+                        <img src={three} className="skill-img" alt="skill"></img>
+                        <img src={five} className="skill-img" alt="skill"></img>
+                        <img src={seven} className="skill-img" alt="skill"></img>
+                    </Col>
+                    <Col md={4} className="skill-col">
+                        <img src={two} className="skill-img" alt="skill"></img>
+                        <img src={four} className="skill-img" alt="skill"></img>
+                        <img src={six} className="skill-img" alt="skill"></img>
+                        <img src={eight} className="skill-img" alt="skill"></img>
+                        <img src={ten} className="skill-img" alt="skill"></img>
+                    </Col>
+                    <Col md={4} className="skill-col">
+                        <img src={twelve} className="skill-img" alt="skill"></img>
+                        <img src={fourteen} className="skill-img" alt="skill"></img>
+                        <img src={eleven} className="skill-img" alt="skill"></img>
+                        <img src={thirteen} className="skill-img" alt="skill"></img>
+                        <img src={nine} className="skill-img" alt="skill"></img>
+                    </Col>
+                </Row>
                 </Col>
             </Row>
 

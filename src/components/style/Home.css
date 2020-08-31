@@ -241,7 +241,16 @@
 /* --------------------------------------------------------- */
 
 .skills-row {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(104, 104, 104);
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.skills-row:hover {
+    border: 1px solid white;
+    background-color: rgb(87, 87, 87)
 }
 
 .skills-row-title {
@@ -268,3 +277,7 @@
         text-align: center;
     }
 }
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
