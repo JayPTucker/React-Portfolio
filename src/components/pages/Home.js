@@ -4,10 +4,6 @@ import { Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-
 import "../style/Home.css";
 
 import stars from "../assets/stars.mp4";
@@ -45,7 +41,9 @@ function HomePage() {
     return(
         <div>
             <Row className='frontpage-row' id="front-page">
-                <video className="background-vid" src={stars} autoPlay loop muted></video>
+                <video className="background-vid" autoplay='true' loop='true' muted='true'>
+                    <source src={stars} type='video/mp4'></source>
+                </video>
 
                 <Col md={6} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>

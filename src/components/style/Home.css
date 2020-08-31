@@ -29,17 +29,9 @@
     width: 99.9%;
     height: 140%;
     object-fit: cover;
-    margin-top: -300px;
+    margin-top: -150px;
 }
 
-.fp-hyperlink {
-    color: #1f76ac !important;
-    text-shadow: 1px 1px 1px black;
-}
-
-.fp-hyperlink:hover {
-    color: #125783 !important;
-}
 
 /* --------------------------------------- */
 
@@ -57,6 +49,12 @@
 
 .fp-skill-row {
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .fp-skill-row {
+        text-align: center;
+    }
 }
 
 .fp-title {
@@ -78,6 +76,16 @@
 .fp-skill:hover {
     font-size: calc(6px + 1.15vmax);
     text-decoration: underline !important;
+}
+
+
+.fp-hyperlink {
+    color: #1f76ac !important;
+    text-shadow: 1px 1px 0px black;
+}
+
+.fp-hyperlink:hover {
+    color: #125783 !important;
 }
 
 .contact-me-btn {
