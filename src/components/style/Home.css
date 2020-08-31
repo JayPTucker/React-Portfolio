@@ -123,7 +123,7 @@
     color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px black;
     text-shadow: 1px 1px 0px black;
-    height: calc(200px + 19.4vmax);
+    height: calc(160px + 24vmax);
 }
 
 .info-section:hover {
@@ -134,13 +134,13 @@
 }
 
 .info-title {
-    font-size: calc(17px + 1vmax);
+    font-size: calc(16px + 1vmax);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .info-bio {
-    font-size: calc(8px + 1vmax);
+    font-size: calc(10px + 0.7vmax);
 }
 
 .info-pencil {
@@ -160,6 +160,18 @@
     width: calc(50px + 6vmax);
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
         filter: drop-shadow(2px 2px 0px #000000);
+}
+
+@media only screen and (max-width: 1277px) {
+    .info-section {
+        height: calc(230px + 33vmax);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .info-section {
+        height: calc(160px + 24vmax);
+    }
 }
 
 /* --------------------------------------------------------- */

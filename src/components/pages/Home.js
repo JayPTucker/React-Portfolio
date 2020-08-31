@@ -106,7 +106,7 @@ function HomePage() {
                         <Col md={4} className="container">
                             <img className="image" src={project1} alt="Witter"></img>
                             <div className="overlay">
-                                <Col md={8} className="text">
+                                <Col md={12} className="text">
                                     <p className="work-bio">
                                         Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
                                     </p>
@@ -130,7 +130,7 @@ function HomePage() {
                         <Col md={4} className="container">
                             <img className="image" src={project2} alt="Employee Tracker"></img>
                             <div className="overlay">
-                                <Col md={8} className="text">
+                                <Col md={12} className="text">
                                     <p className="work-bio">
                                         My Old Portfolio Website that was Coded in HTML/CSS for a seamless and responsive design.
                                     </p>
@@ -147,7 +147,7 @@ function HomePage() {
                         <Col md={4} className="container">
                             <img className="image" src={project3} alt="Employee Tracker"></img>
                             <div className="overlay">
-                                <Col md={8} className="text">
+                                <Col md={12} className="text">
                                     <p className="work-bio">
                                         A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
                                     </p>
