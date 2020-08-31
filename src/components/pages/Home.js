@@ -76,21 +76,21 @@ function HomePage() {
                             <img className="info-pencil" src={pencil} alt="Pencil"></img>
                             <p className="info-title">Design what you want</p>
                             <p className="info-bio">
-                                Filler Text
+                                I have 2+ years of Experience with Graphic Design as well as 8+ Months of Experience in HTML, CSS, React, and other Languages relating to design.  I'll make what you want and take the critiquing where it is needed.
                             </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-computer" src={computer} alt="computer"></img>
                             <p className="info-title">Code what you need</p>
                             <p className="info-bio">
-                                Filler Text
+                                My Skills in Coding are advancing everyday.  Whether that's learning Database creation and management, creating full-stack applications, & more.  I'm a fast learner and capable of adapting to new skills and technologies that are released with time.
                             </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-internet" src={internet} alt="internet"></img>
                             <p className="info-title">Tech Skills/Experience</p>
                             <p className="info-bio">
-                                Filler Text
+                                I have always kept up with the latest Technologies.  Ranging from Computers all the way to Tech in general.  I've had 4+ Years of Experience in IT Support, Building Computers, General Computer and Internet Support.  (I can basically fix your WiFi).
                             </p>
                         </Col>
                     </Row>
@@ -132,7 +132,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={8} className="text">
                                     <p className="work-bio">
-                                        A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                        My Old Portfolio Website that was Coded in HTML/CSS for a seamless and responsive design.
                                     </p>
                     
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">

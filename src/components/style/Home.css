@@ -114,7 +114,7 @@
     color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px black;
     text-shadow: 1px 1px 0px black;
-    height: calc(400px + 6vmax);
+    height: calc(200px + 19.4vmax);
 }
 
 .info-section:hover {
@@ -125,13 +125,13 @@
 }
 
 .info-title {
-    font-size: calc(10px + 1vmax);
+    font-size: calc(17px + 1vmax);
     font-weight: bold;
     text-decoration: underline;
 }
 
 .info-bio {
-    font-size: calc(8px + 1.5vmax);
+    font-size: calc(8px + 1vmax);
 }
 
 .info-pencil {
@@ -169,7 +169,7 @@
 
 .work-row-title {
     font-family: 'Pacifico', cursive;
-    font-size: 70px;
+    font-size: calc(32px + 1.4vmax);
 }
 
 .container {
