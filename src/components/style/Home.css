@@ -218,7 +218,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(2px + 2.3vmax);
+    left: calc(20% - 3.9vmax);
     right: 0;
     width: calc(180px + 18vmax);
     height: calc(100px + 10.4vmax);
@@ -227,11 +227,16 @@
     background-color: #000000af;
     border: 3px solid white;
     box-shadow: 0px 4px 20px black;
-    margin: 0px 10px;
 }
 
 .overlay:hover, .overlay:active, .overlay:focus {
     opacity: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+    .overlay {
+        left: calc(20% - 5.3vmax);
+    }
 }
 
 @media only screen and (max-width: 767px) {
