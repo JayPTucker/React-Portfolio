@@ -218,7 +218,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(1px + 2.8vmax);
+    left: calc(2px + 1.8vmax);
     right: 0;
     width: calc(180px + 18vmax);
     height: calc(100px + 10.4vmax);
@@ -227,11 +227,26 @@
     background-color: #000000af;
     border: 3px solid white;
     box-shadow: 0px 4px 20px black;
+    margin: 0px 10px;
 }
 
 .overlay:hover, .overlay:active, .overlay:focus {
     opacity: 1;
 }
+
+@media only screen and (max-width: 767px) {
+    .overlay {
+        left: calc(120px - 4vmax);
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    .overlay {
+        left: calc(1px + 1.5vmax)
+    }
+}
+
+/* calc(1px + 2.8vmax) */
 
 .text {
     color: white;
