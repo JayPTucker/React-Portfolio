@@ -233,9 +233,9 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1540px) {
     .overlay {
-        left: calc(20% - 5.3vmax);
+        left: calc(10px + 1vmax);
     }
 }
 
