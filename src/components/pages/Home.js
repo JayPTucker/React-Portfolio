@@ -106,7 +106,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun user experience.
+                                        Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun social media experience.
                                     </p>
 
                                     <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
@@ -130,7 +130,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        My Old Portfolio Website that was Coded in HTML/CSS for a seamless and responsive design.
+                                        A Highly Configured MySQL, jQuery, NodeJS-Based App that allows Companies to organize their employees.
                                     </p>
                     
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
@@ -147,7 +147,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        A Highly Configured MySQL/NodeJS Based App that allows Companies to organize their employees.
+                                        My Old Portfolio Website that was Coded in HTML/CSS that gave it a seamless and responsive design.
                                     </p>
                                     
                                     <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
