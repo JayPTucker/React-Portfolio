@@ -38,7 +38,7 @@ function Navbar() {
                         <a className="navbar-link" href="#skills-row">Skills</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="https://drive.google.com/file/d/1rMdNZ0VDhsdKGV4yD5mAYJ5ybuRbyzwZ/view?usp=sharing">Portfolio</a>
+                        <a className="navbar-link" href="https://drive.google.com/file/d/17DKbmfP-wDjIYwkyChEP402YOLKvX_OT/view?usp=sharing">Portfolio</a>
                     </Col>
                 </Row>
             </Col>
