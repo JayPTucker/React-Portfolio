@@ -16,6 +16,9 @@ import internet from "../assets/internet.png";
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+
 
 import one from "../assets/skills/1.png"
 import two from "../assets/skills/2.png"
@@ -106,7 +109,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        Witter is a Site based off of Twitter.  It uses Databases, Password Encryption, etc, to offer a fun social media experience.
+                                        Witter is a Site I created with a group that was based off of Twitter.  It uses MySQL, Password Encryption, etc, to offer a fun, simple social media experience.
                                     </p>
 
                                     <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
@@ -130,7 +133,7 @@ function HomePage() {
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        A Highly Configured MySQL, jQuery, NodeJS-Based App that allows Companies to organize their employees.
+                                        A Highly Configured MySQL, jQuery, NodeJS-Based Application that allows Companies to thoroughly organize their employees through a Database.
                                     </p>
                     
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
@@ -167,28 +170,45 @@ function HomePage() {
                     </Row>
 
                     <Row>
-                    {/* <Col md={4} className="container">
+                        <Col md={4} className="container">
                             <img className="image" src={project4} alt="Employee Tracker"></img>
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        My Old Portfolio Website that was Coded in HTML/CSS that gave it a seamless and responsive design.
+                                        TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
                                     </p>
                                     
-                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://twitchrp.com">
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                    </a>
+                                </Col>
+                            </div>
+                        </Col>
+
+                        <Col md={4} className="container">
+                            <img className="image" src={project5} alt="Employee Tracker"></img>
+                            <div className="overlay">
+                                <Col md={12} className="text">
+                                    <p className="work-bio">
+                                        Weather Center is a Website that uses WeatherAPI in order to assist you in getting the Weather from anywhere you want.
+                                    </p>
+                                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/weather-center/">
                                         <button className="live-link-btn">
                                             Live Link
                                         </button>
                                     </a>
                     
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/weather-center">
                                         <button className="github-link-btn">
                                             Github Link
                                         </button>
                                     </a>
                                 </Col>
                             </div>
-                        </Col> */}
+                        </Col>
                     </Row>
                 </Col>
             </Row>
