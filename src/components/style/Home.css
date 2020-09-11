@@ -223,7 +223,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(20% - 3.9vmax);
+    left: calc(20% - 3.7vmax);
     right: 0;
     width: calc(180px + 18vmax);
     height: calc(100px + 10.4vmax);
@@ -252,7 +252,7 @@
 
 @media only screen and (max-width: 378px) {
     .overlay {
-        left: calc(1px + 1.5vmax)
+        left: calc(1px + 2.8vmax)
     }
 }
 
