@@ -101,7 +101,7 @@ function HomePage() {
             <Row className="work-row text-center justify-content-center" id="work-row">
                 <Col md={12}>
                     <p className="work-row-title">My Recent Work</p>
-                    <p>Here are a few Projects I've worked on Recently</p>
+                    <p className="sub-title">Below are a few Projects I would like to Display that I have worked very hard on over the past year.</p>
                     
                     <Row className="justify-content-center text-center">
                         <Col md={4} className="container">
@@ -220,7 +220,7 @@ function HomePage() {
                 <Row>
                     <Col md={12} className="skill-col">
                         <p className="skills-row-title">My Skills</p>
-                        <p>Below are a list of Languages/Apps that I have rated myself on from a scale of one to five; meaning how good I think I am at it.</p>
+                        <p className="skills-sub-title">Below are a list of Languages/Apps that I have rated myself on from a scale of one to five; meaning how knowledgeable I am in it.</p>
                     </Col>
                 </Row>
                 <Row>

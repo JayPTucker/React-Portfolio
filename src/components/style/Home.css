@@ -201,6 +201,11 @@
     font-size: calc(32px + 1.4vmax);
 }
 
+.sub-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -305,6 +310,12 @@
 .skills-row-title {
     font-family: 'Pacifico', cursive;
     font-size: 70px;
+}
+
+.skills-sub-title {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
 }
 
 .skill-img {
