@@ -165,6 +165,31 @@ function HomePage() {
                             </div>
                         </Col>
                     </Row>
+
+                    <Row>
+                    {/* <Col md={4} className="container">
+                            <img className="image" src={project4} alt="Employee Tracker"></img>
+                            <div className="overlay">
+                                <Col md={12} className="text">
+                                    <p className="work-bio">
+                                        My Old Portfolio Website that was Coded in HTML/CSS that gave it a seamless and responsive design.
+                                    </p>
+                                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
+                                        <button className="live-link-btn">
+                                            Live Link
+                                        </button>
+                                    </a>
+                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
+                                        <button className="github-link-btn">
+                                            Github Link
+                                        </button>
+                                    </a>
+                                </Col>
+                            </div>
+                        </Col> */}
+                    </Row>
                 </Col>
             </Row>
 
