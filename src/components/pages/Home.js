@@ -2,7 +2,7 @@ import React  from "react";
 import { Row, Col } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import "../style/Home.css";
 
@@ -45,7 +45,7 @@ function HomePage() {
         <div>
             <Row className='frontpage-row' id="front-page">
                 <video className="background-vid" autoPlay loop muted>
-                    <source src={stars} type='video/mp4'></source>
+                    <source src={stars} type="video/mp4" />
                 </video>
 
                 <Col md={6} className="text-center">
@@ -53,17 +53,19 @@ function HomePage() {
                 </Col>
                 <Col md={6} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UI/UX Designer,
+                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UX/UI Developer,
                     IT Specialist, <a href="#info-row" className="fp-hyperlink">& more</a>.  Located in the Western Tennessee area.</p>
 
                     <Row className="fp-skill-row">
                         <Col md={4}>
                             <p className="fp-skill">UX/UI Design</p>
-                            <p className="fp-skill">Database Design</p>
+                            <p className="fp-skill">Database Creation</p>
                             <a href="#skills-row" className="fp-skill fp-hyperlink">& more</a>
                         </Col>
-                        <Col md={4} className="text-center">
-                            <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} /> CONTACT ME</button></a>
+                        <Col md={6} className="text-center">
+                            <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a>
+                            {/* <a href="mailto:jayptuckerimportant@gmail.com" class="email-link">jayptuckerimportant@gmail.com</a> */}
+                            <a href="mailto:jayptuckerimportant@gmail.com"><button className="contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
                         </Col>
                     </Row>
                 </Col>

@@ -90,22 +90,31 @@
 
 .contact-me-btn {
     margin-top: 20px;
-    margin-bottom: 50px;
-    background-color: #1f76ac;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #1f76ace5;
     color: white;
     font-size: calc(15px + 0.3vmax);
     outline: none;
     border: 2px solid black;
     transition: all 0.2s ease-in-out;
-    width: 180px;
+    width: calc(130px + 2vmax);
     height: 60px;
     box-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 1px black;
 }
 
 .contact-me-btn:hover {
-    background-color: #125783;
+    background-color: #1f76ac;
     border: 2px solid rgb(255, 255, 255);
-    width: 200px;
+    width: calc(135px + 2.5vmax);
+}
+
+.email-link {
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
 }
 
 /* ------------------------------------------------------------ */
