@@ -64,8 +64,7 @@ function HomePage() {
                         </Col>
                         <Col md={6} className="text-center">
                             <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a>
-                            {/* <a href="mailto:jayptuckerimportant@gmail.com" class="email-link">jayptuckerimportant@gmail.com</a> */}
-                            <a href="mailto:jayptuckerimportant@gmail.com"><button className="contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
+                            <a href="mailto:jaypaultucker@gmail.com"><button className="contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
                         </Col>
                     </Row>
                 </Col>

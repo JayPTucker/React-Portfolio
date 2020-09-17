@@ -7,6 +7,8 @@ function Footer() {
     return (
         <Row className="footer-row text-center">
             <Col md={12}>
+                <p>This Website was created with React</p>
+                <p>jaypaultucker@gmail.com</p>
                 <p>© 2020 <a className="hyperlink" href="https://jayptucker.com">Jay Paul Tucker</a> || All rights reserved.</p>
             </Col>
         </Row>
