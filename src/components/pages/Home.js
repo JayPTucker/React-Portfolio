@@ -35,7 +35,13 @@ import twelve from "../assets/skills/12.png"
 import thirteen from "../assets/skills/13.png"
 import fourteen from "../assets/skills/14.png"
 
-
+// function test() {
+//     var email = document.getElementById("email")
+//     email.select();
+//     email.setSelectionRange(0, 99999)
+//     document.execCommand("copy");
+//     alert("Copied the Email to your Clipboard")
+// }
 
 function HomePage() {
 
@@ -55,6 +61,7 @@ function HomePage() {
                     <p className="fp-title">Jay Paul Tucker</p>
                     <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UX/UI Developer,
                     IT Specialist, <a href="#info-row" className="fp-hyperlink">& more</a>.  Located in the Western Tennessee area.</p>
+                    <p className="fp-email" id="email"><b>Email:</b> jaypaultucker@gmail.com</p>
 
                     <Row className="fp-skill-row">
                         <Col md={4}>
@@ -64,7 +71,7 @@ function HomePage() {
                         </Col>
                         <Col md={6} className="text-center">
                             <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a>
-                            <a href="mailto:jaypaultucker@gmail.com"><button className="contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
+                            <a href="mailto:jaypaultucker@gmail.com"><button className="email-btn contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
                         </Col>
                     </Row>
                 </Col>

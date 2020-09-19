@@ -67,6 +67,12 @@
     font-family: 'Alata', sans-serif;
 }
 
+.fp-email {
+    font-size: calc(7px + 1.3vmax);
+    font-family: 'Alata', sans-serif;
+    text-shadow: 0px 0px 4px rgb(124, 124, 124);
+}
+
 .fp-skill {
     font-size: calc(6px + 1.1vmax);
     transition: all 0.2s ease-in-out;
@@ -342,7 +348,7 @@
 }
 
 @media only screen and (max-width: 812px) {
-    .fp-title, .fp-bio, .fp-skill {
+    .fp-title, .fp-bio, .fp-skill, .fp-email {
         text-align: center;
     }
 }
