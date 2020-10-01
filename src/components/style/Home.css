@@ -114,7 +114,6 @@
 .contact-me-btn:hover {
     background-color: #1f76ac;
     border: 2px solid rgb(255, 255, 255);
-    width: calc(135px + 2.5vmax);
 }
 
 .email-link {
