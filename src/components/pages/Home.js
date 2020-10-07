@@ -59,7 +59,7 @@ function HomePage() {
                 </Col>
                 <Col md={6} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I am a UX/UI Developer,
+                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I'm a Full-Stack Web Developer,
                     IT Specialist, <a href="#info-row" className="fp-hyperlink">& more</a>.  Located in the Western Tennessee area.</p>
                     <p className="fp-email" id="email"><b>Email:</b> jaypaultucker@gmail.com</p>
 
