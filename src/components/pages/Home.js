@@ -85,21 +85,21 @@ function HomePage() {
                             <img className="info-pencil" src={pencil} alt="Pencil"></img>
                             <p className="info-title">Design what you want</p>
                             <p className="info-bio">
-                                I have 2+ years of Experience with Graphic Design as well as 8+ Months of Experience in HTML, CSS, React, and other Languages relating to design.  I'll make what you want and take the critiquing where it is needed.
+                                As an Employer, you're going to want the best of the best design for your site in order to catch the visitor's eye.  With my 1+ years of studying and experience with; HTML, CSS, Bootstrap, React, and other Libraries, I can assure you that whatever design you can imagine, I will be able to put it on the screen in front of you.
                             </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-computer" src={computer} alt="computer"></img>
                             <p className="info-title">Code what you need</p>
                             <p className="info-bio">
-                                My Skills in Coding are advancing everyday.  Whether that's learning Database creation and management, creating full-stack applications, & more.  I'm a fast learner and capable of adapting to new skills and technologies that are released with time.
+                                As a Full-Stack Developer, I come with a lot of useful Skills and Knowledge.  Whether you need help creating and managing a Database, using AWS to host a Website, creating a unique UI/UX Design, and even just solving general Computer Tech issues, I can guarantee you I will be able to help out where it is needed.  I am a fast learner and can adapt where I need to.
                             </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-internet" src={internet} alt="internet"></img>
                             <p className="info-title">Tech Skills/Experience</p>
                             <p className="info-bio">
-                                I have always kept up with the latest Technologies.  Ranging from Computers all the way to Tech in general.  I've had 4+ Years of Experience in IT Support, Building Computers, General Computer and Internet Support.  (I can basically fix your WiFi).
+                                Over the years I have gathered a lot of Experience in Technology as a whole.  That ranges from Building Computers, Troubleshooting BIOS issues, all the way to IT Support on Internet Troubles as well.  As stated, my Skills range far and wide when it comes to Programming, Computer Tech, Video Production, and more.
                             </p>
                         </Col>
                     </Row>
