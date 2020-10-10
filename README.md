@@ -6,7 +6,7 @@
  
 **GitHub Repository: [Click me!](https://github.com/JayPTucker/React-Portfolio)** 
 
-**My Website: [Click me!](https://jayptucker.github.io/)**
+**My Website: [Click me!](https://www.jayptucker.com/)**
  
 ## 📄 Description: <a name='description'></a> 
 **Updated (10/9/20):**
