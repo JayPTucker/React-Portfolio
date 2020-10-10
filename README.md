@@ -9,9 +9,9 @@
 **My Website: [Click me!](https://jayptucker.github.io/)**
  
 ## 📄 Description: <a name='description'></a> 
-**Updated (7/25/20):**
+**Updated (10/9/20):**
 
-This is an Application that is my Personal Portfolio, but designed using React!  
+This Application is a personal Website that is all about me to inform Employers on who I am as a person.  This site was coded in React alongside Bootstrap, HTML, CSS, and some Javascript.
  
 ## 📖 Table of Contents: 
 - [Description](#description) 
@@ -26,8 +26,6 @@ This is an Application that is my Personal Portfolio, but designed using React!
 - [VSCode](https://code.visualstudio.com/)
 - [GitBash](https://git-scm.com/downloads)
 - [NodeJS](https://nodejs.org/en/)
-- [MongoDB](https://www.mongodb.com/)
-- [Robo3T](https://robomongo.org/)
 
 **Installation Steps:**
 1. Clone the file from [the GitHub Repository](https://github.com/JayPTucker/React-Portfolio)
