@@ -36,11 +36,12 @@
 /* --------------------------------------- */
 
 .picOfMe {
-    width: calc(150px + 10vmax);
+    width: calc(170px + 14vmax);
     transition: 0.2s all ease-in-out;
-    -webkit-filter: drop-shadow(2px 2px 3px #000000);
-        filter: drop-shadow(4px 4px 0px #ffffff);
-    
+    background-color: rgba(207, 207, 207, 0.527);
+    border-radius: 250px;
+    border: 5px solid #0000006e;   
+    filter: drop-shadow(0 0 0.75rem rgb(6, 63, 100));
 }
 
 .picOfMe:hover {
@@ -107,13 +108,13 @@
     transition: all 0.2s ease-in-out;
     width: calc(130px + 2vmax);
     height: 60px;
-    box-shadow: 1px 1px 5px black;
     text-shadow: 1px 1px 1px black;
 }
 
 .contact-me-btn:hover {
     background-color: #1f76ac;
     border: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px black;
 }
 
 .email-link {

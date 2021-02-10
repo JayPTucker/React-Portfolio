@@ -223,7 +223,7 @@ function HomePage() {
 
             
 
-            <Row className="skills-row text-center justify-content-center" id="skills-row">
+            {/* <Row className="skills-row text-center justify-content-center" id="skills-row">
                 <Col md={12}>
                 <Row>
                     <Col md={12} className="skill-col">
@@ -254,7 +254,7 @@ function HomePage() {
                     </Col>
                 </Row>
                 </Col>
-            </Row>
+            </Row> */}
 
 
             

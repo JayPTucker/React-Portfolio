@@ -38,7 +38,7 @@ function Navbar() {
                         <a className="navbar-link" href="#skills-row">Skills</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/17DKbmfP-wDjIYwkyChEP402YOLKvX_OT/view?usp=sharing">Resume</a>
+                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1imWtrYo_CbS4fSQMH-904g9QVnJ42VZl/view?usp=sharing">Resume</a>
                     </Col>
                 </Row>
             </Col>
@@ -47,9 +47,9 @@ function Navbar() {
                     <Col className="shortcut-col">
                         <a href="mailto:jaypaultucker@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon mail-icon" icon={faEnvelope} /></a>
                     </Col>
-                    <Col className="shortcut-col">
+                    {/* <Col className="shortcut-col">
                         <a href="https://discord.gg/MUPe9vf" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon discord-icon" icon={faDiscord} /></a>
-                    </Col>
+                    </Col> */}
                     <Col className="shortcut-col">
                         <a href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon github-icon" icon={faGithub} /></a>
                     </Col>
