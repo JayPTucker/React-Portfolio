@@ -35,14 +35,11 @@ function Navbar() {
                         <a className="navbar-link" href="#work-row">Work</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="#skills-row">Skills</a>
-                    </Col>
-                    <Col className="navbar-link-col">
                         <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1imWtrYo_CbS4fSQMH-904g9QVnJ42VZl/view?usp=sharing">Resume</a>
                     </Col>
                 </Row>
             </Col>
-            <Col md={2}>
+            <Col className="test" md={2}>
                 <Row>
                     <Col className="shortcut-col">
                         <a href="mailto:jaypaultucker@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon mail-icon" icon={faEnvelope} /></a>
