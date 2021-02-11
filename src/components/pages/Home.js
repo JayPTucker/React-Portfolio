@@ -85,21 +85,20 @@ function HomePage() {
                             <img className="info-pencil" src={pencil} alt="Pencil"></img>
                             <p className="info-title">Design what you want</p>
                             <p className="info-bio">
-                                As an Employer, you're going to want the best of the best design for your site in order to catch the visitor's eye.  With my 1+ years of studying and experience with; HTML, CSS, Bootstrap, React, and other Libraries, I can assure you that whatever design you can imagine, I will be able to put it on the screen in front of you.
+                            Over the years I have learned key skills retaining to Web and Graphic design that allows me to create eye-catching Applications that are also efficient and clean.  Thanks to the several years of Computer and IT Experience I am able to understand what a consumer actually sees when they go to your Website, so with that, I’m able to determine what needs to go where and how it needs to look.
                             </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-computer" src={computer} alt="computer"></img>
                             <p className="info-title">Code what you need</p>
                             <p className="info-bio">
-                                As a Full-Stack Developer, I come with a lot of useful Skills and Knowledge.  Whether you need help creating and managing a Database, using AWS to host a Website, creating a unique UI/UX Design, and even just solving general Computer Tech issues, I can guarantee you I will be able to help out where it is needed.  I am a fast learner and can adapt where I need to.
-                            </p>
+                            As a Full-Stack Developer, I have created so many unique ideas, but what it comes down to is creating them.  Starting from nothing and creating something genuinely interesting and useful.  That is something I can assure you that I am able to do.  Whatever is imagined, I can assure you with the years of Coding Experience I have, I can make that imagination a reality on the screen in front of you.                            </p>
                         </Col>
                         <Col md={3} className="info-section">
                             <img className="info-internet" src={internet} alt="internet"></img>
                             <p className="info-title">Tech Skills/Experience</p>
                             <p className="info-bio">
-                                Over the years I have gathered a lot of Experience in Technology as a whole.  That ranges from Building Computers, Troubleshooting BIOS issues, all the way to IT Support on Internet Troubles as well.  As stated, my Skills range far and wide when it comes to Programming, Computer Tech, Video Production, and more.
+                            I’ve worked hard for all of my Technological Skills; most of it has been self-taught and the rest I have learned by furthering my Education with Vanderbilt University through their Coding Bootcamp.  Over the years I have learned so many things about Computers themselves; how they work, how to troubleshoot problems, etc.  All of these skills combined help me become an amazing developer and asset to a team, especially with the experience I have in Projects actually working and leading a team itself.
                             </p>
                         </Col>
                     </Row>
@@ -108,27 +107,21 @@ function HomePage() {
 
             <Row className="work-row text-center justify-content-center" id="work-row">
                 <Col md={12}>
-                    <p className="work-row-title">My Recent Work</p>
-                    <p className="sub-title">Below are a few Projects I would like to Display that I have worked very hard on over the past year.</p>
+                    <p className="work-row-title">My Projects</p>
+                    <p className="sub-title">Below are a few Projects I would like to display that I have worked very hard on over the past year.<br></br>Hover over or tap on any of the projects that you would like more information on.<br></br><i>(The Live Links might take at least 30 seconds to load at first)</i></p>
                     
                     <Row className="justify-content-center text-center">
                         <Col md={4} className="container">
-                            <img className="image" src={project1} alt="Witter"></img>
+                            <img className="project-1 image" src={project1} alt="Witter"></img>
                             <div className="overlay">
                                 <Col md={12} className="text">
                                     <p className="work-bio">
-                                        Witter is a Site I created with a group that was based off of Twitter.  It uses MySQL, Password Encryption, etc, to offer a fun, simple social media experience.
+                                        TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
                                     </p>
 
                                     <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
                                         <button className="live-link-btn">
                                             Live Link
-                                        </button>
-                                    </a>
-                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/NaKiNoJay">
-                                        <button className="github-link-btn">
-                                            Github Link
                                         </button>
                                     </a>
 
@@ -147,48 +140,6 @@ function HomePage() {
                                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
                                         <button className="github-link-btn">
                                             Github Link
-                                        </button>
-                                    </a>
-                                </Col>
-                            </div>
-                        </Col>
-
-                        <Col md={4} className="container">
-                            <img className="image" src={project3} alt="Employee Tracker"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        My Old Portfolio Website that was Coded in HTML/CSS that gave it a seamless and responsive design.
-                                    </p>
-                                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/">
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                    </a>
-                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/JayPTucker.github.io">
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
-                                    </a>
-                                </Col>
-                            </div>
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col md={4} className="container">
-                            <img className="image" src={project4} alt="Employee Tracker"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
-                                    </p>
-                                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://twitchrp.com">
-                                        <button className="live-link-btn">
-                                            Live Link
                                         </button>
                                     </a>
                                 </Col>
@@ -217,6 +168,27 @@ function HomePage() {
                                 </Col>
                             </div>
                         </Col>
+                    </Row>
+
+                    <Row>
+                        <Col md={4} className="container">
+                            <img className="image" src={project4} alt="Employee Tracker"></img>
+                            <div className="overlay">
+                                <Col md={12} className="text">
+                                    <p className="work-bio">
+                                        TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
+                                    </p>
+                                    
+                                    <a target="_blank" rel="noopener noreferrer" href="https://twitchrp.com">
+                                        <button className="live-link-btn">
+                                            Website Link
+                                        </button>
+                                    </a>
+                                </Col>
+                            </div>
+                        </Col>
+
+                        
                     </Row>
                 </Col>
             </Row>
