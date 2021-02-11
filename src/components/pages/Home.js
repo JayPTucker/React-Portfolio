@@ -119,9 +119,15 @@ function HomePage() {
                                         TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
                                     </p>
 
-                                    <a target="_blank" rel="noopener noreferrer" href="https://nakinojay.herokuapp.com/">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://topstocker.herokuapp.com/">
                                         <button className="live-link-btn">
                                             Live Link
+                                        </button>
+                                    </a>
+
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/TopStocker">
+                                        <button className="github-link-btn">
+                                            Github Link
                                         </button>
                                     </a>
 
