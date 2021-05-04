@@ -238,7 +238,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(20% - 3.7vmax);
+    left: 8%;
     right: 0;
     width: calc(180px + 18vmax);
     height: calc(100px + 10.4vmax);
