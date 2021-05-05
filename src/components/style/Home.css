@@ -253,24 +253,6 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 1540px) {
-    .overlay {
-        left: calc(10px + 1vmax);
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .overlay {
-        left: calc(120px - 4vmax);
-    }
-}
-
-@media only screen and (max-width: 378px) {
-    .overlay {
-        left: calc(1px + 3.4vmax)
-    }
-}
-
 /* calc(1px + 2.8vmax) */
 
 .text {
