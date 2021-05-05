@@ -35,7 +35,7 @@ function Navbar() {
                         <a className="navbar-link" href="#work-row">Work</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/147qKCTuqqdTNe1kuWIhygXtQ9mNff_nU/view?usp=sharing">Resume</a>
+                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1ugcavdlriaFvt4oQEngBw_Y4i9qMhW0e/view?usp=sharing">Resume</a>
                     </Col>
                 </Row>
             </Col>
@@ -44,18 +44,12 @@ function Navbar() {
                     <Col className="shortcut-col">
                         <a href="mailto:jaypaultucker@gmail.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon mail-icon" icon={faEnvelope} /></a>
                     </Col>
-                    {/* <Col className="shortcut-col">
-                        <a href="https://discord.gg/MUPe9vf" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon discord-icon" icon={faDiscord} /></a>
-                    </Col> */}
                     <Col className="shortcut-col">
                         <a href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon github-icon" icon={faGithub} /></a>
                     </Col>
                     <Col className="shortcut-col">
                         <a href="https://www.linkedin.com/in/jayptucker/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon linkedin-icon" icon={faLinkedin} /></a>
                     </Col>
-                    {/* <Col className="shortcut-col">
-                        <a href="https://www.instagram.com/jayptucker/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="shortcut-icon instagram-icon" icon={faInstagram} /></a>
-                    </Col> */}
                 </Row>
             </Col>
         </Row>
