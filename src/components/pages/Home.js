@@ -122,7 +122,7 @@ function HomePage() {
                     <Col md={4}>
                         <img className="project-image" src={project1} alt="TopStocker"></img>
                     </Col>
-                    <Col md={8}>
+                    <Col md={8} className="text-center justify-content-center">
                         <p className="project-title">
                             Top Stocker
                         </p>
@@ -131,7 +131,12 @@ function HomePage() {
                         </p>
                     </Col>
 
-                    <Col md={12} className="text-center justify-content-center">
+                    <Col md={4}>
+                        {/* FILLER COL */}
+                    </Col>
+
+
+                    <Col md={8} className="text-center justify-content-center">
                         <a href="https://topstocker.herokuapp.com/"><button className="shortcut-btn">Live Link</button></a>
                         <a href="https://github.com/JayPTucker/TopStocker"><button className="shortcut-btn">GitHub Link</button></a>
                     </Col>
@@ -156,7 +161,11 @@ function HomePage() {
                         </p>
                     </Col>
 
-                    <Col md={12} className="text-center justify-content-center">
+                    <Col md={4}>
+                        {/* FILLER COL */}
+                    </Col>
+
+                    <Col md={8} className="text-center justify-content-center">
                         <a href="https://github.com/JayPTucker/employee-tracker"><button className="shortcut-btn">GitHub Link</button></a>
                     </Col>
 
@@ -180,7 +189,11 @@ function HomePage() {
                         </p>
                     </Col>
 
-                    <Col md={12} className="text-center justify-content-center">
+                    <Col md={4}>
+                        {/* FILLER COL */}
+                    </Col>
+
+                    <Col md={8} className="text-center justify-content-center">
                         <a href="https://jayptucker.github.io/weather-center/"><button className="shortcut-btn">Live Link</button></a>
                         <a href="https://github.com/JayPTucker/weather-center"><button className="shortcut-btn">GitHub Link</button></a>
 
@@ -205,7 +218,11 @@ function HomePage() {
                         </p>
                     </Col>
 
-                    <Col md={12} className="text-center justify-content-center">
+                    <Col md={4}>
+                        {/* FILLER COL */}
+                    </Col>
+
+                    <Col md={8} className="text-center justify-content-center">
                         <a href="https://twitchrp.com"><button className="shortcut-btn">Website Link</button></a>
                     </Col>
                 </Row>

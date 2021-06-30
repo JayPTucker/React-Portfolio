@@ -244,13 +244,12 @@
 
 .project-title {
     font-size: 50px;
-    float: left;
     font-weight: bold;
     font-family: 'Pacifico', cursive;
 }
 
 .project-desc {
-    float: right;
+    padding-top: 10px;
     font-size: 25px;
 }
 
@@ -259,15 +258,15 @@
     margin-right: 20px;
     font-size: 20px;
     padding: 10px;
-    border-radius: 100px;
     transition: all 0.2s ease-in-out;
     color: white;
-    border: 1.5px solid black;
+    border: 2px solid black;
 }
 
 .shortcut-btn:hover {
     background-color: #125783;
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 1px 5px black;
+    border: 2px solid rgb(255, 255, 255);
 }
 
 /* --------------------------------------------------------- */
