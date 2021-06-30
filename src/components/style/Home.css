@@ -226,20 +226,44 @@
 /* ==================================== */
 /* PROJECT 1 - TOPSTOCKER */
 /* ==================================== */
-.project1-row, .project2-row {
+.project-row {
     background-color: rgb(175, 175, 175);
     padding: 10px;
-    border: 1px solid rgb(139, 139, 139);
+    border: 2px solid rgb(128, 128, 128);
     width: 95%;
     margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
 }
 
-/* ==================================== */
-/* PROJECT 1 - TOPSTOCKER */
-/* ==================================== */
-.shortcut-btn {
-    background-color: white;
+.project-row:hover {
+    background-color: rgb(168, 168, 168);
+    box-shadow: 0px 4px 10px black;
+    width: 96%;
+}
 
+.project-title {
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+}
+
+.project-desc {
+    float: right;
+    font-size: 30px;
+}
+
+.shortcut-btn {
+    background-color: #1f76ac;
+    margin-right: 20px;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    border: 1.5px solid black;
+}
+
+.shortcut-btn:hover {
+    background-color: #125783;
+    font-size: 21px;
 }
 
 /* --------------------------------------------------------- */

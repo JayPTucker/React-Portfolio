@@ -117,7 +117,7 @@ function HomePage() {
                 {/* ===================================
                     PROJECT 1 - TOP STOCKER
                 =================================== */}
-                <Row className="project1-row">
+                <Row className="project-row">
 
                     <Col md={4}>
                         <img className="project-image" src={project1} alt="TopStocker"></img>
@@ -132,8 +132,8 @@ function HomePage() {
                     </Col>
 
                     <Col md={12} className="text-center justify-content-center">
-                        <a class="shortcut-btn" href="https://topstocker.herokuapp.com/"><button>Live Link</button></a>
-                        <a class="shortcut-btn" href="https://github.com/JayPTucker/TopStocker"><button>Github Link</button></a>
+                        <a href="https://topstocker.herokuapp.com/"><button className="shortcut-btn">Live Link</button></a>
+                        <a href="https://github.com/JayPTucker/TopStocker"><button className="shortcut-btn">GitHub Link</button></a>
                     </Col>
 
                 </Row>
@@ -142,7 +142,7 @@ function HomePage() {
                     PROJECT 2 - EMPLOYEE TRACKER
                 =================================== */}
 
-                <Row className="project2-row">
+                <Row className="project-row">
 
                     <Col md={4}>
                         <img className="project-image" src={project2} alt="Employee Tracker"></img>
@@ -157,7 +157,7 @@ function HomePage() {
                     </Col>
 
                     <Col md={12} className="text-center justify-content-center">
-                        <a class="shortcut-btn" href="https://github.com/JayPTucker/employee-tracker"><button>Github Link</button></a>
+                        <a href="https://github.com/JayPTucker/employee-tracker"><button className="shortcut-btn">GitHub Link</button></a>
                     </Col>
 
                 </Row>
@@ -166,7 +166,7 @@ function HomePage() {
                     PROJECT 3 - WEATHER CENTER
                 =================================== */}
 
-                <Row className="project2-row">
+                <Row className="project-row">
 
                     <Col md={4}>
                         <img className="project-image" src={project5} alt="Weather Center"></img>
@@ -181,8 +181,8 @@ function HomePage() {
                     </Col>
 
                     <Col md={12} className="text-center justify-content-center">
-                        <a class="shortcut-btn" href="https://jayptucker.github.io/weather-center/"><button>Live Link</button></a>
-                        <a class="shortcut-btn" href="https://github.com/JayPTucker/weather-center"><button>Github Link</button></a>
+                        <a href="https://jayptucker.github.io/weather-center/"><button className="shortcut-btn">Live Link</button></a>
+                        <a href="https://github.com/JayPTucker/weather-center"><button className="shortcut-btn">GitHub Link</button></a>
 
                     </Col>
                 </Row>
@@ -191,7 +191,7 @@ function HomePage() {
                     PROJECT 4 - TWITCH RP
                 =================================== */}
 
-                <Row className="project2-row">
+                <Row className="project-row">
 
                     <Col md={4}>
                         <img className="project-image" src={project4} alt="Weather Center"></img>
@@ -206,7 +206,7 @@ function HomePage() {
                     </Col>
 
                     <Col md={12} className="text-center justify-content-center">
-                        <a class="shortcut-btn" href="https://twitchrp.com"><button>Website Link</button></a>
+                        <a href="https://twitchrp.com"><button className="shortcut-btn">Website Link</button></a>
                     </Col>
                 </Row>
 
