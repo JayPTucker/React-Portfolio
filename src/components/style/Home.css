@@ -218,6 +218,7 @@
 }
   
 .project-image {
+    margin-top: 35px;
     width: calc(180px + 18vmax);
     height: auto;
     border: 1px solid black;
@@ -229,7 +230,7 @@
 .project-row {
     background-color: rgb(175, 175, 175);
     padding: 10px;
-    border: 2px solid rgb(128, 128, 128);
+    border: 2px solid rgb(109, 109, 109);
     width: 95%;
     margin-bottom: 15px;
     transition: all 0.2s ease-in-out;
@@ -242,20 +243,23 @@
 }
 
 .project-title {
-    font-size: 40px;
+    font-size: 50px;
     float: left;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
 }
 
 .project-desc {
     float: right;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .shortcut-btn {
     background-color: #1f76ac;
     margin-right: 20px;
     font-size: 20px;
+    padding: 10px;
+    border-radius: 100px;
     transition: all 0.2s ease-in-out;
     color: white;
     border: 1.5px solid black;
@@ -263,7 +267,7 @@
 
 .shortcut-btn:hover {
     background-color: #125783;
-    font-size: 21px;
+    box-shadow: 0px 1px 10px black;
 }
 
 /* --------------------------------------------------------- */

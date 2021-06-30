@@ -124,7 +124,7 @@ function HomePage() {
                     </Col>
                     <Col md={8}>
                         <p className="project-title">
-                            TopStocker
+                            Top Stocker
                         </p>
                         <p className="project-desc">
                             TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
