@@ -207,10 +207,6 @@
     padding-bottom: 60px;
 }
 
-.work-row:hover {
-    background-color: rgb(185, 185, 185);
-}
-
 .work-row-title {
     font-family: 'Pacifico', cursive;
     font-size: calc(32px + 1.4vmax);
@@ -220,117 +216,36 @@
     font-size: 20px;
     margin-bottom: 20px;
 }
-
-.container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 30px;
-}
   
 .image {
     width: calc(180px + 18vmax);
     height: auto;
-    border: 3px solid black;
-    box-shadow: 0px 2px 5px black;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 8%;
-    right: 0;
-    width: calc(180px + 18vmax);
-    height: calc(100px + 10.4vmax);
-    opacity: 0;
-    transition: .3s ease-in-out;
-    background-color: #000000af;
-    border: 3px solid white;
-    box-shadow: 0px 4px 20px black;
-}
-
-.overlay:hover, .overlay:active, .overlay:focus {
-    opacity: 1;
-}
-
-/* calc(1px + 2.8vmax) */
-
-.text {
-    color: white;
-    font-size: calc(6px + 0.7vmax);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.work-bio {
-    font-size: calc(7px + 0.9vmax);
-}
-
-.live-link-btn, .github-link-btn {
-    background-color: rgba(0, 0, 0, 0.24);
-    border: 2px solid #1f76ac;
-    color: white;
-    font-weight: 20px;
-    margin: calc(1px + 0.2vmax) 5px;
-    transition: all 0.2s ease-in-out;
-    width: 130px;
-    height: calc(10px + 2vmax);
-}
-
-.live-link-btn:hover, .github-link-btn:hover {
-    background-color: rgba(0, 0, 0, 0.603);
-    border: 2px solid white;
-}
-
-
-/* --------------------------------------------------------- */
-/* --------------------------------------------------------- */
-
-.skills-row {
-    background-color: rgb(104, 104, 104);
     border: 1px solid black;
-    transition: all 0.2s ease-in-out;
-    color: white;
-    text-shadow: 3px 3px 1px black;
 }
 
-.skills-row:hover {
-    border: 1px solid white;
-    background-color: rgb(87, 87, 87)
+/* ==================================== */
+/* PROJECT 1 - TOPSTOCKER */
+/* ==================================== */
+.topstocker-row {
+    background-color: rgb(175, 175, 175);
+    padding: 10px;
+    border: 1px solid rgb(139, 139, 139);
+    width: 100%;
 }
 
-.skills-row-title {
-    font-family: 'Pacifico', cursive;
-    font-size: 70px;
+/* ==================================== */
+/* PROJECT 1 - TOPSTOCKER */
+/* ==================================== */
+.shortcut-btn {
+    background-color: white;
+
 }
 
-.skills-sub-title {
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 20px;
-}
-
-.skill-img {
-    width: calc(300px + 4vmax);
-    margin-bottom: calc(6px + 1vmax);
-    transition: 0.15s all ease-in-out;
-    -webkit-filter: drop-shadow(2px 2px 3px #000000);
-        filter: drop-shadow(1px 2px 0px #000000);
-}
-
-.skill-img:hover {
-    -webkit-filter: drop-shadow(2px 2px 3px #000000);
-        filter: drop-shadow(1px 2px 5px #000000);
-    transform: scale(1.1)
-}
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
 
 @media only screen and (max-width: 812px) {
-    .fp-title, .fp-bio, .fp-skill, .fp-email {
+    .fp-title, .fp-bio, .fp-email {
         text-align: center;
     }
 }

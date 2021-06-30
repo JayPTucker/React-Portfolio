@@ -105,12 +105,44 @@ function HomePage() {
                 </Col>
             </Row>
 
-            <Row className="work-row text-center justify-content-center" id="work-row">
+            <Row className="work-row justify-content-center text-center" id="work-row">
+
                 <Col md={12}>
                     <p className="work-row-title">My Projects</p>
                     <p className="sub-title">Below are a few Projects I would like to display that I have worked very hard on over the past year.<br></br>Hover over or tap on any of the projects that you would like more information on.<br></br><i>(The Live Links might take at least 30 seconds to load at first)</i></p>
-                    
-                    <Row className="justify-content-center text-center">
+                </Col>
+            
+                {/* ===================================
+                    PROJECT 1 - TOP TopStocker
+                =================================== */}
+                <Row className="topstocker-row">
+
+                    <Col md={4}>
+                        <img className="project-1 image" src={project1} alt="TopStocker"></img>
+                    </Col>
+                    <Col md={8}>
+                        <p className="project-title">
+                            TopStocker
+                        </p>
+                        <p className="project-desc">
+                            TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
+                        </p>
+                    </Col>
+
+                    <Col md={12} className="text-center justify-content-center">
+                        <a class="shortcut-btn" href="https://topstocker.herokuapp.com/"><button>Live Link</button></a>
+                        <a class="shortcut-btn" href="https://github.com/JayPTucker/TopStocker"><button>Github Link</button></a>
+                    </Col>
+
+                </Row>
+
+                {/* ===================================
+                    PROJECT 2 - TOP TopStocker
+                =================================== */}
+
+            </Row>
+
+                    {/* <Row className="justify-content-center text-center">
                         <Col md={4} className="container">
                             <img className="project-1 image" src={project1} alt="Witter"></img>
                             <div className="overlay">
@@ -192,48 +224,7 @@ function HomePage() {
                                     </a>
                                 </Col>
                             </div>
-                        </Col>
-
-                        
-                    </Row>
-                </Col>
-            </Row>
-
-            
-
-            {/* <Row className="skills-row text-center justify-content-center" id="skills-row">
-                <Col md={12}>
-                <Row>
-                    <Col md={12} className="skill-col">
-                        <p className="skills-row-title">My Skills</p>
-                        <p className="skills-sub-title">Below are a list of Languages/Apps that I have rated myself on from a scale of one to five; meaning how knowledgeable I am in it.</p>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md={4} className="skill-col">
-                        <img src={one} className="skill-img" alt="skill"></img>
-                        <img src={three} className="skill-img" alt="skill"></img>
-                        <img src={five} className="skill-img" alt="skill"></img>
-                        <img src={seven} className="skill-img" alt="skill"></img>
-                    </Col>
-                    <Col md={4} className="skill-col">
-                        <img src={two} className="skill-img" alt="skill"></img>
-                        <img src={four} className="skill-img" alt="skill"></img>
-                        <img src={six} className="skill-img" alt="skill"></img>
-                        <img src={eight} className="skill-img" alt="skill"></img>
-                        <img src={ten} className="skill-img" alt="skill"></img>
-                    </Col>
-                    <Col md={4} className="skill-col">
-                        <img src={twelve} className="skill-img" alt="skill"></img>
-                        <img src={fourteen} className="skill-img" alt="skill"></img>
-                        <img src={eleven} className="skill-img" alt="skill"></img>
-                        <img src={thirteen} className="skill-img" alt="skill"></img>
-                        <img src={nine} className="skill-img" alt="skill"></img>
-                    </Col>
-                </Row>
-                </Col>
-            </Row> */}
-
+                        </Col> */}
 
             
         </div>
