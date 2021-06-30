@@ -219,9 +219,9 @@
   
 .project-image {
     margin-top: 35px;
-    width: calc(180px + 18vmax);
+    width: calc(157px + 18vmax);
     height: auto;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 /* ==================================== */
