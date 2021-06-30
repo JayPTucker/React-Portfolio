@@ -115,7 +115,7 @@ function HomePage() {
                 {/* ===================================
                     PROJECT 1 - TOP TopStocker
                 =================================== */}
-                <Row className="topstocker-row">
+                <Row className="project1-row">
 
                     <Col md={4}>
                         <img className="project-1 image" src={project1} alt="TopStocker"></img>
@@ -140,32 +140,29 @@ function HomePage() {
                     PROJECT 2 - TOP TopStocker
                 =================================== */}
 
+                <Row className="project2-row">
+
+                    <Col md={4}>
+                        <img className="project-1 image" src={project2} alt="Employee Tracker"></img>
+                    </Col>
+                    <Col md={8}>
+                        <p className="project-title">
+                            Employee Tracker
+                        </p>
+                        <p className="project-desc">
+                            A Highly Configured MySQL, jQuery, NodeJS-Based Application that allows Companies to thoroughly organize their employees through a Database.
+                        </p>
+                    </Col>
+
+                    <Col md={12} className="text-center justify-content-center">
+                        <a class="shortcut-btn" href="https://github.com/JayPTucker/employee-tracker"><button>Github Link</button></a>
+                    </Col>
+
+                </Row>
+
             </Row>
 
-                    {/* <Row className="justify-content-center text-center">
-                        <Col md={4} className="container">
-                            <img className="project-1 image" src={project1} alt="Witter"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
-                                    </p>
-
-                                    <a target="_blank" rel="noopener noreferrer" href="https://topstocker.herokuapp.com/">
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                    </a>
-
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/TopStocker">
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
-                                    </a>
-
-                                </Col>
-                            </div>
-                        </Col>
+                    {/* 
 
                         <Col md={4} className="container">
                             <img className="image" src={project2} alt="Employee Tracker"></img>

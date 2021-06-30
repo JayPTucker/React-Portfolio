@@ -226,11 +226,12 @@
 /* ==================================== */
 /* PROJECT 1 - TOPSTOCKER */
 /* ==================================== */
-.topstocker-row {
+.project1-row, .project2-row {
     background-color: rgb(175, 175, 175);
     padding: 10px;
     border: 1px solid rgb(139, 139, 139);
-    width: 100%;
+    width: 95%;
+    margin-bottom: 15px;
 }
 
 /* ==================================== */
