@@ -127,8 +127,7 @@ function HomePage() {
                             Top Stocker
                         </p>
                         <p className="project-desc">
-                            TopStocker is an Application meant to organize and create more efficient Top-Stock in Retail Stores, creating a faster and better customer support system.
-                        </p>
+                            Top Stocker is a Full-Stack Web Application that allows Business owners to keep proper track of the stock they have in their store. However, this isn't necessarily meant for the stock that is on the shelves, but instead it's keeping track of the extra stock they have in the back, or at the top shelf, hence the name, "Top Stocker". Top Stocker was actually based off of Lowes Home Improvement and how they manage their top stock. This was made in order for the Top Stock to be easily kept track of using Amazon's Databases.                        </p>
                     </Col>
 
                     <Col md={4}>
@@ -157,8 +156,7 @@ function HomePage() {
                             Employee Tracker
                         </p>
                         <p className="project-desc">
-                            A Highly Configured MySQL, jQuery, NodeJS-Based Application that allows Companies to thoroughly organize their employees through a Database.
-                        </p>
+                            This is an Application that allows Business Owners/Managers to Properly Manage and Edit their Employees, Roles, etc through the Terminal and MySQL Database using NodeJS. You can add Departments, Roles, and Employees as well as edit and delete them at your desire.                        </p>
                     </Col>
 
                     <Col md={4}>
@@ -185,8 +183,7 @@ function HomePage() {
                             The Weather Center
                         </p>
                         <p className="project-desc">
-                            Weather Center is a Website that uses WeatherAPI in order to assist you in getting the Weather from anywhere you want.
-                        </p>
+                        This is a Website made to help you better get an understanding of the Weather conditions in the areas you'd like to see. Using this Site you'll be able to gather Weather-related Data from the Area of your Choice thanks to the Open Weather API (Linked Below). You may also view the 5-Day Forecast of any area you'd like and your most recent search is saved with Local Storage, so you may go back at any point and click on it without having to search again.                        </p>
                     </Col>
 
                     <Col md={4}>
@@ -214,7 +211,7 @@ function HomePage() {
                             TwitchRP
                         </p>
                         <p className="project-desc">
-                            TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
+                            TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS, allowing me to learn how to code for the actual game itself.
                         </p>
                     </Col>
 
