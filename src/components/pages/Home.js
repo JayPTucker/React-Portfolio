@@ -113,7 +113,7 @@ function HomePage() {
                 </Col>
             
                 {/* ===================================
-                    PROJECT 1 - TOP TopStocker
+                    PROJECT 1 - TOP STOCKER
                 =================================== */}
                 <Row className="project1-row">
 
@@ -137,7 +137,7 @@ function HomePage() {
                 </Row>
 
                 {/* ===================================
-                    PROJECT 2 - TOP TopStocker
+                    PROJECT 2 - EMPLOYEE TRACKER
                 =================================== */}
 
                 <Row className="project2-row">
@@ -160,26 +160,13 @@ function HomePage() {
 
                 </Row>
 
+                {/* ===================================
+                    PROJECT 3 - WEATHER CENTER
+                =================================== */}
+
             </Row>
 
                     {/* 
-
-                        <Col md={4} className="container">
-                            <img className="image" src={project2} alt="Employee Tracker"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        A Highly Configured MySQL, jQuery, NodeJS-Based Application that allows Companies to thoroughly organize their employees through a Database.
-                                    </p>
-                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/employee-tracker">
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
-                                    </a>
-                                </Col>
-                            </div>
-                        </Col>
 
                         <Col md={4} className="container">
                             <img className="image" src={project5} alt="Employee Tracker"></img>
