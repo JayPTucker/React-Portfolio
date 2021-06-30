@@ -105,6 +105,8 @@ function HomePage() {
                 </Col>
             </Row>
 
+            {/* =================================== */}
+
             <Row className="work-row justify-content-center text-center" id="work-row">
 
                 <Col md={12}>
@@ -185,53 +187,32 @@ function HomePage() {
                     </Col>
                 </Row>
 
+                {/* ===================================
+                    PROJECT 4 - TWITCH RP
+                =================================== */}
+
+                <Row className="project2-row">
+
+                    <Col md={4}>
+                        <img className="project-image" src={project4} alt="Weather Center"></img>
+                    </Col>
+                    <Col md={8}>
+                        <p className="project-title">
+                            TwitchRP
+                        </p>
+                        <p className="project-desc">
+                            TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
+                        </p>
+                    </Col>
+
+                    <Col md={12} className="text-center justify-content-center">
+                        <a class="shortcut-btn" href="https://twitchrp.com"><button>Website Link</button></a>
+                    </Col>
+                </Row>
+
+                {/* ========================================== */}
 
             </Row>
-
-                    {/* 
-
-                        <Col md={4} className="container">
-                            <img className="image" src={project5} alt="Employee Tracker"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        Weather Center is a Website that uses WeatherAPI in order to assist you in getting the Weather from anywhere you want.
-                                    </p>
-                                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://jayptucker.github.io/weather-center/">
-                                        <button className="live-link-btn">
-                                            Live Link
-                                        </button>
-                                    </a>
-                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/JayPTucker/weather-center">
-                                        <button className="github-link-btn">
-                                            Github Link
-                                        </button>
-                                    </a>
-                                </Col>
-                            </div>
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col md={4} className="container">
-                            <img className="image" src={project4} alt="Employee Tracker"></img>
-                            <div className="overlay">
-                                <Col md={12} className="text">
-                                    <p className="work-bio">
-                                        TRP is a GTA V, FiveM-Based Server.  I did Dev Work on here relating to In-game Menu Design & more using Vue.js alongside HTML/CSS.
-                                    </p>
-                                    
-                                    <a target="_blank" rel="noopener noreferrer" href="https://twitchrp.com">
-                                        <button className="live-link-btn">
-                                            Website Link
-                                        </button>
-                                    </a>
-                                </Col>
-                            </div>
-                        </Col> */}
-
             
         </div>
     )
