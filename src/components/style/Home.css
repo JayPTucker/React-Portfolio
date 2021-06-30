@@ -217,7 +217,7 @@
     margin-bottom: 20px;
 }
   
-.image {
+.project-image {
     width: calc(180px + 18vmax);
     height: auto;
     border: 1px solid black;

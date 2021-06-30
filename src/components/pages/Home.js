@@ -118,7 +118,7 @@ function HomePage() {
                 <Row className="project1-row">
 
                     <Col md={4}>
-                        <img className="project-1 image" src={project1} alt="TopStocker"></img>
+                        <img className="project-image" src={project1} alt="TopStocker"></img>
                     </Col>
                     <Col md={8}>
                         <p className="project-title">
@@ -143,7 +143,7 @@ function HomePage() {
                 <Row className="project2-row">
 
                     <Col md={4}>
-                        <img className="project-1 image" src={project2} alt="Employee Tracker"></img>
+                        <img className="project-image" src={project2} alt="Employee Tracker"></img>
                     </Col>
                     <Col md={8}>
                         <p className="project-title">
@@ -163,6 +163,28 @@ function HomePage() {
                 {/* ===================================
                     PROJECT 3 - WEATHER CENTER
                 =================================== */}
+
+                <Row className="project2-row">
+
+                    <Col md={4}>
+                        <img className="project-image" src={project5} alt="Weather Center"></img>
+                    </Col>
+                    <Col md={8}>
+                        <p className="project-title">
+                            The Weather Center
+                        </p>
+                        <p className="project-desc">
+                            Weather Center is a Website that uses WeatherAPI in order to assist you in getting the Weather from anywhere you want.
+                        </p>
+                    </Col>
+
+                    <Col md={12} className="text-center justify-content-center">
+                        <a class="shortcut-btn" href="https://jayptucker.github.io/weather-center/"><button>Live Link</button></a>
+                        <a class="shortcut-btn" href="https://github.com/JayPTucker/weather-center"><button>Github Link</button></a>
+
+                    </Col>
+                </Row>
+
 
             </Row>
 
