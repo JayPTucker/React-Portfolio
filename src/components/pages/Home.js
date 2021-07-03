@@ -222,19 +222,17 @@ function HomePage() {
             {/* =========================================================================================================================== */}
 
             <Row className="education-row text-center justify-content-center">
-                <Row className="text-center justify-content-center">
                     <Col md={12}>
                         <p className="work-row-title">Education</p>
                         <p className="edu-title">Vanderbilt University<br></br>Web Development Bootcamp</p>
                         <p className="edu-date">2020</p>
                     </Col>
-                    <Col md={6}>
+                    <Col md={12}>
                         <p className="edu-bio">A 6-month intensive boot camp program focused on gaining technical programming and market-driven skills in the Web
                         Development field. Graduated with an A- at the top of the class.</p>
                     </Col>
-                </Row>
 
-                <Col>
+                <Col md={12}>
                     <img src={certificate} className="edu-img"></img>
                 </Col>
             </Row>
