@@ -233,7 +233,7 @@ function HomePage() {
                     </Col>
 
                 <Col md={12}>
-                    <img src={certificate} className="edu-img"></img>
+                    <img src={certificate} alt="Vanderbilt University Certificate" className="edu-img"></img>
                 </Col>
             </Row>
             
