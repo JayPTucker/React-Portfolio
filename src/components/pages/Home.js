@@ -227,7 +227,7 @@ function HomePage() {
                         <p className="edu-title">Vanderbilt University<br></br>Web Development Bootcamp</p>
                         <p className="edu-date">2020</p>
                     </Col>
-                    <Col md={12}>
+                    <Col md={6}>
                         <p className="edu-bio">A 6-month intensive boot camp program focused on gaining technical programming and market-driven skills in the Web
                         Development field. Graduated with an A- at the top of the class.</p>
                     </Col>
