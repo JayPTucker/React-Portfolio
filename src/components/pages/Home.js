@@ -15,25 +15,10 @@ import internet from "../assets/internet.png";
 
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 
-
-import one from "../assets/skills/1.png"
-import two from "../assets/skills/2.png"
-import three from "../assets/skills/3.png"
-import four from "../assets/skills/4.png"
-import five from "../assets/skills/5.png"
-import six from "../assets/skills/6.png"
-import seven from "../assets/skills/7.png"
-import eight from "../assets/skills/8.png"
-import nine from "../assets/skills/9.png"
-import ten from "../assets/skills/10.png"
-import eleven from "../assets/skills/11.png"
-import twelve from "../assets/skills/12.png"
-import thirteen from "../assets/skills/13.png"
-import fourteen from "../assets/skills/14.png"
+import certificate from "../assets/certificate.png";
 
 // function test() {
 //     var email = document.getElementById("email")
@@ -237,9 +222,20 @@ function HomePage() {
             {/* =========================================================================================================================== */}
 
             <Row className="education-row text-center justify-content-center">
-                <Col md={12}>
-                    <p className="work-row-title">Education</p>
-                    <p>--WIP--</p>
+                <Row className="text-center justify-content-center">
+                    <Col md={12}>
+                        <p className="work-row-title">Education</p>
+                        <p className="edu-title">Vanderbilt University<br></br>Web Development Bootcamp</p>
+                        <p className="edu-date">2020</p>
+                    </Col>
+                    <Col md={6}>
+                        <p className="edu-bio">A 6-month intensive boot camp program focused on gaining technical programming and market-driven skills in the Web
+                        Development field. Graduated with an A- at the top of the class.</p>
+                    </Col>
+                </Row>
+
+                <Col>
+                    <img src={certificate} className="edu-img"></img>
                 </Col>
             </Row>
             

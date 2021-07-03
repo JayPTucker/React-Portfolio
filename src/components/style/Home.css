@@ -290,9 +290,34 @@
 .education-row:hover {
     background-color: rgb(168, 168, 168);
     border: 1px solid rgb(255, 255, 255);
-
 }
 
+.edu-title {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.edu-date {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.edu-bio {
+    font-size: 20px;
+}
+
+.edu-img {
+    width: 45%;
+    height: auto;
+    border: 2px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.edu-img:hover {
+    width: 49%;
+    height: auto;
+}
 
 /* --------------------------------------------------------- */
 /* --------------------------------------------------------- */
