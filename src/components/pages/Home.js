@@ -239,6 +239,7 @@ function HomePage() {
             <Row className="education-row text-center justify-content-center">
                 <Col md={12}>
                     <p className="work-row-title">Education</p>
+                    <p>--WIP--</p>
                 </Col>
             </Row>
             
