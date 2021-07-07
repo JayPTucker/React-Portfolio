@@ -29,14 +29,14 @@
     width: 99.9%;
     height: 110%;
     object-fit: cover;
-    margin-top: calc(-300px);
+    margin-top: calc(-120px - 6vmax);
 }
 
 
 /* --------------------------------------- */
 
 .picOfMe {
-    width: calc(170px + 14vmax);
+    width: calc(80px + 19vmax);
     transition: 0.2s all ease-in-out;
     background-color: rgba(207, 207, 207, 0.527);
     border-radius: 250px;
