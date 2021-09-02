@@ -20,12 +20,11 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #1f76ac; 
-    border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #125783; 
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
   }
