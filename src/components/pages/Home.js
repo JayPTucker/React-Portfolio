@@ -20,13 +20,6 @@ import project5 from "../assets/projects/project-5.png";
 
 import certificate from "../assets/certificate.png";
 
-// function test() {
-//     var email = document.getElementById("email")
-//     email.select();
-//     email.setSelectionRange(0, 99999)
-//     document.execCommand("copy");
-//     alert("Copied the Email to your Clipboard")
-// }
 
 function HomePage() {
 
@@ -40,13 +33,12 @@ function HomePage() {
                     Your browser does not support the video tag.
                 </video>
 
-                <Col md={6} className="text-center">
+                <Col md={5} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
                 </Col>
-                <Col md={6} className="">
+                <Col md={7} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-bio">Hey there, my name is Jay Paul Tucker.  I'm a Full-Stack Web Developer,
-                    IT Specialist, <a href="#info-row" className="fp-hyperlink">& more</a>.  Located in the Raleigh, NC.</p>
+                    <p className="fp-bio">Certified Full-Stack Web Developer, Tech-Savvy, along with skills in Retail, Carpentry, and Mechanic-related fields.   Located in the Raleigh, NC area.</p>
                     <p className="fp-email" id="email"><b>Email:</b> jaypaultucker@gmail.com</p>
 
                     <Row className="fp-skill-row">
