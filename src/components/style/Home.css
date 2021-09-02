@@ -167,10 +167,10 @@
 }
 
 .info-pencil {
-    margin: 20px 0px;
+    margin: 15px 0px;
     width: calc(50px + 4vmax);
     -webkit-filter: drop-shadow(2px 2px 3px #000000);
-        filter: drop-shadow(2px 2px 0px #000000);
+        filter: drop-shadow(1.5px 1.5px 0px #000000);
 }
 
 .info-computer {
