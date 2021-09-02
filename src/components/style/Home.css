@@ -139,14 +139,14 @@
 
 .info-section {
     background-color: #1f76ac;
-    margin: calc(-20px + 2px) 5px 40px 5px;
+    margin: calc(-20px + 2px) 10px 40px 10px;
     border: 1px solid rgb(0, 0, 0);
     transition: all 0.2s ease-in-out;
     font-family: 'Alata', sans-serif;
     color: rgb(255, 255, 255);
     box-shadow: 0px 5px 10px black;
     text-shadow: 1px 1px 0px black;
-    height: calc(160px + 24vmax);
+    height: calc(190px + 25vmax);
 }
 
 .info-section:hover {
