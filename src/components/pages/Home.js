@@ -38,15 +38,10 @@ function HomePage() {
                 </Col>
                 <Col md={7} className="">
                     <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-bio">Certified Full-Stack Web Developer, Tech-Savvy, along with skills in Retail, Carpentry, and Mechanic-related fields.   Located in the Raleigh, NC area.</p>
+                    <p className="fp-bio">Certified Full-Stack Web Developer, Tech Enthusiest, along with experience in Customer Support, Carpentry, and Mechanic-related fields.  Feel free to check out my <a lassName="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EYHWRSyYro_H57KEOClVeC6Tj1GhPYdf/view?usp=sharing">Resume</a> for more info. </p>
                     <p className="fp-email" id="email"><b>Email:</b> jaypaultucker@gmail.com</p>
 
                     <Row className="fp-skill-row">
-                        <Col md={4}>
-                            <p className="fp-skill">UX/UI Design</p>
-                            <p className="fp-skill">Database Creation</p>
-                            <a href="#skills-row" className="fp-skill fp-hyperlink">& more</a>
-                        </Col>
                         <Col md={6} className="text-center">
                             <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a>
                             <a href="mailto:jaypaultucker@gmail.com"><button className="email-btn contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
