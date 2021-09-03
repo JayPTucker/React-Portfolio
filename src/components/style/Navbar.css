@@ -1,6 +1,6 @@
 .navbar-row {
     background-color: rgba(104, 104, 104, 0.945);
-    height: calc(50px + 1.2vmax);
+    height: calc(160px - 5vmax);
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0px 5px 10px;
     padding: 0px !important;

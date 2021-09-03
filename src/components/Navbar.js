@@ -32,7 +32,10 @@ function Navbar() {
                         <a className="navbar-link" href="https://jayptucker.com">Home</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" href="#work-row">Work</a>
+                        <a className="navbar-link" href="#work-row">Projects</a>
+                    </Col>
+                    <Col className="navbar-link-col">
+                        <a className="navbar-link" href="#education-row">Education</a>
                     </Col>
                     <Col className="navbar-link-col">
                         <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EYHWRSyYro_H57KEOClVeC6Tj1GhPYdf/view?usp=sharing">Resume</a>
