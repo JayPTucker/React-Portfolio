@@ -292,22 +292,22 @@
 }
 
 .edu-title {
-    font-size: 40px;
+    font-size: calc(15px + 1.1vmax);
     font-weight: bolder;
 }
 
 .edu-date {
-    font-size: 25px;
+    font-size: calc(13px + 1.1vmax);
     font-weight: bold;
     margin-top: -20px;
 }
 
 .edu-bio {
-    font-size: 20px;
+    font-size: calc(10px + 1.1vmax);
 }
 
 .edu-img {
-    width: 45%;
+    width: calc(330px + 2vmax);
     height: auto;
     border: 2px solid black;
     transition: all 0.2s ease-in-out;
