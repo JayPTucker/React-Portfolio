@@ -85,7 +85,7 @@ function HomePage() {
 
                 <Col md={12}>
                     <p className="work-row-title">My Projects</p>
-                    <p className="sub-title">Below are a few Projects I would like to display that I have worked very hard on over the past year.<br></br>Hover over or tap on any of the projects that you would like more information on.<br></br><i>(The Live Links might take at least 30 seconds to load at first)</i></p>
+                    <p className="sub-title">Below are a few Projects I would like to display that I have worked very hard on over the past year.<br></br><br></br>Hover over or tap on any of the projects that you would like more information on.<br></br><br></br><i>(The Live Links might take at least 30 seconds to load at first)</i></p>
                 </Col>
             
                 {/* ===================================

@@ -219,7 +219,7 @@
 }
 
 .sub-title {
-    font-size: 20px;
+    font-size: calc(10px + 1.1vmax);
     margin-bottom: 20px;
 }
   
@@ -250,14 +250,13 @@
 }
 
 .project-title {
-    font-size: 50px;
+    font-size: calc(25px + 1.1vmax);
     font-weight: bold;
     font-family: 'Pacifico', cursive;
 }
 
 .project-desc {
-    padding-top: 10px;
-    font-size: 25px;
+    font-size: calc(10px + 1.1vmax);
 }
 
 .shortcut-btn {
