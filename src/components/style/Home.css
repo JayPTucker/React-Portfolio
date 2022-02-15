@@ -63,6 +63,12 @@
     font-family: 'Pacifico', cursive;
 }
 
+.fp-subtitle {
+    font-size: calc(9px + 1vmax);
+    margin-top: -15px;
+    font-family: 'Alata', sans-serif;
+}
+
 .fp-bio {
     font-size: calc(7px + 1.3vmax);
     font-family: 'Alata', sans-serif;
