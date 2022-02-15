@@ -10,6 +10,7 @@
 
 /* --------------------------------------- */
 
+
 .frontpage-row {
     background-color: rgba(238, 238, 238, 0.63);
     padding: calc(5px + 4vmax) 0px calc(1px + 3vmax) 0px;
@@ -66,7 +67,18 @@
 .fp-subtitle {
     font-size: calc(9px + 1vmax);
     margin-top: -15px;
+    margin-left: 20px;
     font-family: 'Alata', sans-serif;
+}
+
+.apple-link, .resume-link {
+    color: rgb(31, 83, 133) !important;
+}
+
+.apple-link:hover, .resume-link:hover {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: rgb(4, 20, 34) !important;
 }
 
 .fp-bio {
