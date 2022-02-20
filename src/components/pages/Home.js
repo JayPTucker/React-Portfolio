@@ -47,7 +47,7 @@ function HomePage() {
 
                     <Row className="fp-skill-row">
                         <Col md={6} className="text-center">
-                            <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a>
+                            {/* <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a> */}
                             <a href="mailto:jaypaultucker@gmail.com"><button className="email-btn contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
                         </Col>
                     </Row>
@@ -212,7 +212,7 @@ function HomePage() {
             {/* EDUCATION ROW */}
             {/* =========================================================================================================================== */}
 
-            <Row className="education-row text-center justify-content-center">
+            <Row className="education-row text-center justify-content-center" id="education-row">
                     <Col md={12}>
                         <p className="work-row-title">Education</p>
                         <p className="edu-title">Vanderbilt University<br></br>Web Development Bootcamp</p>
