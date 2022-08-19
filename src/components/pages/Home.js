@@ -143,6 +143,8 @@ function HomePage() {
 
                     <Col md={8} className="text-center justify-content-center">
                         <a href="https://github.com/JayPTucker/employee-tracker"><button className="shortcut-btn">GitHub Link</button></a>
+                        <a href="https://drive.google.com/file/d/1Bmulf7ZZtzbtcX-LvcvxexnjyobPNK6L/view?usp=sharing"><button className="shortcut-btn">Video Link</button></a>
+
                     </Col>
 
                 </Row>
