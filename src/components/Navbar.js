@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-import favicon from "../components/assets/favicon.png"
+import favicon from "./assets/favicon.png"
 import "./style/Navbar.css"
 
 function Navbar() {

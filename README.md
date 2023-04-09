@@ -1,60 +1,70 @@
-# React-Portfolio
+# Getting Started with Create React App
 
-![License](https://img.shields.io/badge/License-CCL-brightgreen) 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**Live Link: [Click me!](https://jayptucker.github.io/React-Portfolio/)** 
- 
-**GitHub Repository: [Click me!](https://github.com/JayPTucker/React-Portfolio)** 
+## Available Scripts
 
-**My Website: [Click me!](https://www.jayptucker.com/)**
- 
-## 📄 Description: <a name='description'></a> 
-**Updated (10/9/20):**
+In the project directory, you can run:
 
-This Application is a personal Website that is all about me to inform Employers on who I am as a person.  This site was coded in React alongside Bootstrap, HTML, CSS, and some Javascript.
- 
-## 📖 Table of Contents: 
-- [Description](#description) 
-- [Installation](#installation) 
-- [Usage](#usage) 
-- [Credits](#credits) 
+### `npm start`
 
- 
-## 🔌 Installation: <a name='installation'></a> 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Requirements:**
-- [VSCode](https://code.visualstudio.com/)
-- [GitBash](https://git-scm.com/downloads)
-- [NodeJS](https://nodejs.org/en/)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**Installation Steps:**
-1. Clone the file from [the GitHub Repository](https://github.com/JayPTucker/React-Portfolio)
-2. Put it somewhere you'll remember (Best Choice for Easy Access: In a Folder on your Desktop)
-3. Open GitBash and cd directly into the directory.
-- "cd desktop" -> "cd react-portfolio" -> Done!
-4. Once you're CD'd inside of the Repository, type "code ." into GitBash and hit Enter.
-5. VSCode should open (Or any other Software you use to code).
-6. Next, Right click anywhere on the root directory and click on "Open in Terminal"
-7. Once your Terminal is open type in:
+### `npm test`
 
-> npm install
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-8. Wait for the Packages to install, once it's done you should now have a "node_modules" Folder to the left of your screen.
-9. After that is done you can type in "npm start" into the Terminal in order to start the Application.
-10.  Done!
- 
-## 💻 Usage: <a name='usage'></a> 
- 
-This is mainly used in order to Present to people that I am aware on how to use React and also to present to Job Employers what I can do as a whole.
- 
-## 👨‍💼 Credits <a name='credits'></a>: 
- 
-<img src="https://avatars3.githubusercontent.com/u/58493507?s=460&u=263ac14280eff2f063c0507859985bb7750aaa00&v=4" width="70" style="border: 2px solid black"></img><br>
-<a href="https://github.com/JayPTucker"><b>@JayPTucker</b></a>
-<ul>
-    <li><b>ROLE:</b> Main Developer</li>
-</ul>
-<br>
+### `npm run build`
 
-## License:
-https://creativecommons.org/licenses/
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
