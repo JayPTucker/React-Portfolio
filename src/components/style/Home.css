@@ -27,10 +27,10 @@
 .background-vid {
     z-index: -1;
     position: absolute;
-    width: 99.9%;
-    height: 110%;
     object-fit: cover;
-    margin-top: calc(-120px - 6vmax);
+    width: 100% !important;
+    padding: 0px !important;
+    margin-top: -200px !important;
 }
 
 
