@@ -38,7 +38,7 @@ function Navbar() {
                         <a className="navbar-link" href="#education-row">Education</a>
                     </Col>
                     <Col className="navbar-link-col">
-                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1glYRi0e0N1ymKmOk0lKXWyX1TNZdtbMI/view?usp=sharing">Resume</a>
+                        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Resume</a>
                     </Col>
                 </Row>
             </Col>
