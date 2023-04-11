@@ -2,16 +2,12 @@ import React  from "react";
 import { Row, Col } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import "../style/Home.css";
 
 import stars from "../assets/stars.mp4";
 import picOfMe from "../assets/me.png";
-
-import pencil from "../assets/pencil.png";
-import computer from "../assets/computer.png";
-import internet from "../assets/internet.png";
 
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
@@ -19,6 +15,9 @@ import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
 
 import certificate from "../assets/certificate.png";
+import certificate2 from "../assets/certificate2.png";
+import certificate3 from "../assets/certificate3.png";
+
 
 
 function HomePage() {
@@ -187,20 +186,63 @@ function HomePage() {
             {/* =========================================================================================================================== */}
 
             <Row className="education-row text-center justify-content-center" id="education-row">
-                    <Col md={12}>
-                        <p className="work-row-title">Education</p>
-                        <p className="edu-title">Vanderbilt University<br></br>Web Development Bootcamp</p>
-                        <p className="edu-date">2020</p>
-                    </Col>
+                <p className="work-row-title">Education</p>
+                <Row>
                     <Col md={6}>
+                        <img src={certificate} alt="Vanderbilt University Certificate" className="edu-img"></img>
+                    </Col>
+
+                    <Col md={6}>
+                        <p className="edu-title">Vanderbilt University Web Development Bootcamp</p>
+                        <p className="edu-date">2020</p>
                         <p className="edu-bio">A 6-month intensive boot camp program focused on gaining technical programming and market-driven skills in the Web
                         Development field. Graduated with an A- at the top of the class.</p>
                     </Col>
+                </Row>
 
-                <Col md={12}>
-                    <img src={certificate} alt="Vanderbilt University Certificate" className="edu-img"></img>
-                </Col>
+                <hr></hr>
+
+                <Row>
+                    <Col md={6}>
+                        <img src={certificate2} alt="Google Technical Support Funamentals Certification" className="edu-img"></img>
+                    </Col>
+
+                    <Col md={6}>
+                        <p className="edu-title">Google Technical Support Fundamentals Certifcation</p>
+                        <p className="edu-date">2023</p>
+                        <p className="edu-bio2">● Understand how the binary system works<br></br>
+                        ● Assemble a computer from scratch <br></br>
+                        ● Choose and install an operating system on a computer <br></br>
+                        ● Understand what the Internet is, how it works, and the impact it has in the modern world <br></br>
+                        ● Learn how applications are created and how they work under the hood of a computer<br></br>
+                        ● Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                    </Col>
+
+                    
+                </Row>
+
+                <hr></hr>
+
+                <Row>
+                    <Col md={6}>
+                        <img src={certificate3} alt="Google Bits and Bytes of Computer Networking" className="edu-img"></img>
+                    </Col>
+
+                    <Col md={6}>
+                        <p className="edu-title">Google Networking Certification</p>
+                        <p className="edu-date">2023</p>
+                        <p className="edu-bio">● Describe computer networks in terms of a five-layer model<br></br>
+                        ● Understand all of the standard protocols involved with TCP/IP communications<br></br>
+                        ● Grasp powerful network troubleshooting tools and techniques<br></br>
+                        ● Learn network services like DNS and DHCP that help make computer networks run<br></br>
+                        ● Understand cloud computing, everything as a service, and cloud storage</p>
+                    </Col>
+
+                    
+                </Row>
+                
             </Row>
+            
             
         </div>
     )
