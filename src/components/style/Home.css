@@ -26,11 +26,12 @@
 
 .background-vid {
     z-index: -1;
-    position: absolute;
-    object-fit: cover;
-    width: 100% !important;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 2000px !important;
+    height: 1080px !important;
     padding: 0px !important;
-    margin-top: -200px !important;
 }
 
 
