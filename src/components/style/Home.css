@@ -167,6 +167,7 @@
   
 .project-image {
     margin-top: 35px;
+    max-width: 100%;
     width: calc(157px + 18vmax);
     height: auto;
     border: 2px solid black;
@@ -254,11 +255,12 @@
 }
 
 .edu-img {
-    width: calc(40% + 35vmin);
+    width: 37rem;
+    max-width: 100%;
     height: auto;
     border: 2px solid black;
     transition: all 0.2s ease-in-out;
-    margin: calc(50px - 1vmax) 0px;
+    margin: 1em 0px;
 }
 
 .edu-img:hover {
