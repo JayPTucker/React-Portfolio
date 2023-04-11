@@ -1,6 +1,6 @@
 .navbar-row {
     background-color: rgba(104, 104, 104, 0.945);
-    height: calc(160px - 5vmax);
+    height: calc(160px - 4vmax);
     transition: all 0.3s ease-in-out;
     box-shadow: inset 0px 5px 10px;
     padding: 0px !important;
@@ -32,6 +32,7 @@
     transition: 0.2s all ease-in-out;
     text-shadow: 2px 2px 0px black;
     font-family: 'Alata', sans-serif;
+    text-decoration: none;
 }
 
 .navbar-link:hover {
