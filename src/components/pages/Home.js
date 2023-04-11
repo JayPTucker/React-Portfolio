@@ -26,11 +26,12 @@ function HomePage() {
 
     return(
         <div>
-            <Row className='frontpage-row' id="front-page">
-                <video autoPlay loop muted repeat className="background-vid" >
-                    <source src={stars} type="video/mp4" />
+            <video autoPlay loop muted repeat className="background-vid" >
+                <source src={stars} type="video/mp4" />
                     Your browser does not support the video tag.
-                </video>
+            </video>
+
+            <Row className='frontpage-row' id="front-page">
 
                 <Col md={5} className="text-center">
                     <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>

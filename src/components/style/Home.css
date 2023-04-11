@@ -29,8 +29,8 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 2000px !important;
-    height: 1080px !important;
+    max-width: 400%;
+    height: auto;
     padding: 0px !important;
 }
 
