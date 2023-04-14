@@ -1,7 +1,7 @@
 /* Navbar.css */
 .navbar {
     padding: 10px; /* Add padding as needed */
-    border: 0px black;
+    border: 1px solid black; /* TEMP: Add border for visibility */
   }
   
   .navbar-title {
@@ -17,13 +17,23 @@
   }
   
   .navbar-link {
-    margin-right: 10px; /* Add margin between links as needed */
+    margin-left: 35px; /* Add margin between links as needed */
     text-decoration: none; /* Remove underline */
-    color: #333; /* Set your desired link color */
+    color: #000000 !important; /* Set your desired link color */
   }
   
   .navbar-link:hover {
-    color: #007bff; /* Set your desired link color on hover */
+    color: #6298d1 !important; /* Set your desired link color on hover */
+  }
+
+  .resume-link {
+    border: 1px solid #6298d1; /* Set your desired border color */
+    border-radius: 5px;
+  }
+
+  .resume-link:hover {
+    background-color: #6298d173;
+    color: #0b2847 !important;
   }
   
   /* Add any additional styling as needed */

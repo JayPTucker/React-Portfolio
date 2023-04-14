@@ -1,27 +1,33 @@
 import React from 'react';
-import { Row, Col } from "react-bootstrap";
+import { Navbar, Nav, Container, Row, Col } from "react-bootstrap";
 
 // Even though Router, Routes, Route, and Link are not used in this file, they are needed for the app to work
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "../styles/Navbar.css";
 
 
-function Navbar() {
+function NavbarFunc() {
   return (
-  <Row className="navbar">
+    <Navbar expand="md" className="navbar">
+    <Container>
 
-    <Col md={4}>
-        <p className="navbar-title">Jay Paul Tucker</p>
-    </Col>
+      <Navbar.Brand className="navbar-title">Jay Paul Tucker</Navbar.Brand>
 
-    <Col md={8} className="navbar-links-col">
-        <a className="navbar-link" href="/">Home</a>
-        <a className="navbar-link" href="/#work">Work</a>
-        <Link to="/about" className="navbar-link">About</Link>
-        <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Resume</a>
-    </Col>
+      <Navbar.Toggle aria-controls="navbar-collapse" />
 
-  </Row>
+      <Navbar.Collapse id="navbar-collapse">
+
+        <Nav className="navbar-links-col ms-auto">
+          <Nav.Link href="/" className="navbar-link">Home</Nav.Link>
+          <Nav.Link href="/#work" className="navbar-link">Work</Nav.Link>
+          <Nav.Link as={Link} to="/about" className="navbar-link">About</Nav.Link>
+          <Nav.Link target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing" className="navbar-link resume-link">Resume</Nav.Link>
+        </Nav>
+
+      </Navbar.Collapse>
+
+    </Container>
+  </Navbar>
   )};
 
-export default Navbar;
+export default NavbarFunc;

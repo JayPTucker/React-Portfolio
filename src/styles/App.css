@@ -7,6 +7,8 @@ body {
 }
 
 .mainContainer {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+  margin: 0;
+  padding: 0;
 }
 
