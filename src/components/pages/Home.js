@@ -19,10 +19,7 @@ import certificate2 from "../assets/certificate2.png";
 import certificate3 from "../assets/certificate3.png";
 
 
-
 function HomePage() {
-
-    document.addEventListener("touchstart", function() {},false);
 
     return(
         <div>
@@ -192,11 +189,11 @@ function HomePage() {
                         <p className="edu-title">Google Technical Support Fundamentals Certifcation</p>
                         <p className="edu-date">2023</p>
                         <p className="edu-bio2">● Understand how the binary system works<br></br>
-                        ● Assemble a computer from scratch <br></br>
-                        ● Choose and install an operating system on a computer <br></br>
-                        ● Understand what the Internet is, how it works, and the impact it has in the modern world <br></br>
-                        ● Learn how applications are created and how they work under the hood of a computer<br></br>
-                        ● Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
+                        Assemble a computer from scratch <br></br>
+                        Choose and install an operating system on a computer <br></br>
+                        Understand what the Internet is, how it works, and the impact it has in the modern world <br></br>
+                        Learn how applications are created and how they work under the hood of a computer<br></br>
+                        Utilize common problem-solving methodologies and soft skills in an Information Technology setting</p>
                     </Col>
 
                     
@@ -213,10 +210,10 @@ function HomePage() {
                         <p className="edu-title">Google Networking Certification</p>
                         <p className="edu-date">2023</p>
                         <p className="edu-bio">● Describe computer networks in terms of a five-layer model<br></br>
-                        ● Understand all of the standard protocols involved with TCP/IP communications<br></br>
-                        ● Grasp powerful network troubleshooting tools and techniques<br></br>
-                        ● Learn network services like DNS and DHCP that help make computer networks run<br></br>
-                        ● Understand cloud computing, everything as a service, and cloud storage</p>
+                        Understand all of the standard protocols involved with TCP/IP communications<br></br>
+                        Grasp powerful network troubleshooting tools and techniques<br></br>
+                        Learn network services like DNS and DHCP that help make computer networks run<br></br>
+                        Understand cloud computing, everything as a service, and cloud storage</p>
                     </Col>
 
                     
