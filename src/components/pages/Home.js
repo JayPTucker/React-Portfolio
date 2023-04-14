@@ -1,13 +1,7 @@
 import React  from "react";
 import { Row, Col } from "react-bootstrap";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
 import "../style/Home.css";
-
-import stars from "../assets/stars.mp4";
-import picOfMe from "../assets/me.png";
 
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
