@@ -9,7 +9,7 @@ const Home = () => {
 
       <Row className="FrontPageRow">
 
-        <Col className="info-panel-left" md={1}>
+        <Col className="info-panel-left" orientation="left" md={1}>
           <p>Github</p>
           <p>Linkedin</p>
           <p>Gmail</p>
@@ -25,8 +25,12 @@ const Home = () => {
 
         </Col>
 
-        <Col className="info-panel-right" md={1}>
+        <Col className="info-panel-right" orientation="left" md={1}>
           <p>test</p>
+          <p>Github</p>
+          <p>Linkedin</p>
+          <p>Gmail</p>
+          <p>Instagram</p>
         </Col>
 
       </Row>

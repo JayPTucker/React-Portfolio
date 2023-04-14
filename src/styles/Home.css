@@ -1,29 +1,35 @@
 .FrontPageRow {
     border: 1px solid red;
     margin: 0px 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    max-width: 100%
 }
 
 .info-panel-left {
+    width: 40px;
     position: fixed;
-    text-align: left;
-    bottom: 0;
-    left: 0;
-    width: 100px; /* adjust width as needed */
-    height: 100%; /* adjust height as needed */
-    background-color: #f8f8f800; /* adjust background color as needed */
-    /* Additional styles for info-panel-left */
-    padding-top: 38%
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
 }
 
 .info-panel-right {
+    width: 40px;
     position: fixed;
-    text-align: right;
-    bottom: 0;
-    right: 0;
-    width: 100px; /* adjust width as needed */
-    height: 100%; /* adjust height as needed */
-    background-color: #f8f8f800; /* adjust background color as needed */
-    /* Additional styles for info-panel-left */
-    padding-top: 38%
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
 }
 
+
+/* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
+@media (max-width: 767px) {
+    .info-panel-left, .info-panel-right {
+      display: none; /* hide info-panel-left below 768px */
+    }
+
+    .FrontPageRow {
+        margin: 0px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    }
+  }
