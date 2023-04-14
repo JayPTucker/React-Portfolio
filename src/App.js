@@ -1,9 +1,22 @@
-import './App.css';
+// src/App.js
 
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Navbar from './pages/Navbar';
+
+const App = () => {
   return (
-    <div>Jay Paul Tucker</div>
+    <Router>
+      <Navbar></Navbar>
+      {/* Define routes and components */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
