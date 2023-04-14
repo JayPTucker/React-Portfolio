@@ -1,6 +1,7 @@
 /* Navbar.css */
 .navbar {
     padding: 10px; /* Add padding as needed */
+    border: 0px black;
   }
   
   .navbar-title {

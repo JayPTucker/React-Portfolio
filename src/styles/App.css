@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.test {
-    padding: 0px !important;
-    margin: 0px !important;
+/* Reset margin on body */
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .mainContainer {
   font-family: 'Roboto', sans-serif;
-  border: 1px solid black;
 }
+

@@ -5,9 +5,11 @@ import { Row, Col } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "../styles/Navbar.css";
 
+
 function Navbar() {
   return (
-  <Row className="navbar sticky-top fixed-top">
+  <Row className="navbar">
+
     <Col md={4}>
         <p className="navbar-title">Jay Paul Tucker</p>
     </Col>
@@ -18,6 +20,7 @@ function Navbar() {
         <Link to="/about" className="navbar-link">About</Link>
         <a className="navbar-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Resume</a>
     </Col>
+
   </Row>
   )};
 

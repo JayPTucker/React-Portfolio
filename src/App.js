@@ -7,12 +7,13 @@ import About from './pages/About';
 import Navbar from './pages/Navbar';
 
 import { Container } from 'react-bootstrap';
+import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 
 import './styles/App.css';
 
 const App = () => {
   return (
-    <Router className="test">
+    <Router>
       <Container className="mainContainer" fluid>
         <Navbar></Navbar>
         {/* Define routes and components */}
