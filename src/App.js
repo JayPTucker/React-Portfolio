@@ -6,15 +6,21 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Navbar from './pages/Navbar';
 
+import { Container } from 'react-bootstrap';
+
+import './styles/App.css';
+
 const App = () => {
   return (
-    <Router>
-      <Navbar></Navbar>
-      {/* Define routes and components */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+    <Router className="test">
+      <Container className="mainContainer" fluid>
+        <Navbar></Navbar>
+        {/* Define routes and components */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Container>
     </Router>
   );
 };
