@@ -1,3 +1,29 @@
 .FrontPageRow {
     border: 1px solid red;
+    margin: 0px 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
 }
+
+.info-panel-left {
+    position: fixed;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    width: 100px; /* adjust width as needed */
+    height: 100%; /* adjust height as needed */
+    background-color: #f8f8f800; /* adjust background color as needed */
+    /* Additional styles for info-panel-left */
+    padding-top: 38%
+}
+
+.info-panel-right {
+    position: fixed;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+    width: 100px; /* adjust width as needed */
+    height: 100%; /* adjust height as needed */
+    background-color: #f8f8f800; /* adjust background color as needed */
+    /* Additional styles for info-panel-left */
+    padding-top: 38%
+}
+
