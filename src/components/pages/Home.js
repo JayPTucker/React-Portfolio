@@ -26,30 +26,13 @@ function HomePage() {
 
     return(
         <div>
-            <video autoPlay loop muted repeat className="background-vid" >
-                <source src={stars} type="video/mp4" />
-                    Your browser does not support the video tag.
-            </video>
-
             <Row className='frontpage-row' id="front-page">
 
                 <Col md={5} className="text-center">
-                    <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img>
+                    {/* <img className="picOfMe" src={picOfMe} alt="Pic of Me"></img> */}
                 </Col>
-                <Col md={7} className="">
-                    <p className="fp-title">Jay Paul Tucker</p>
-                    <p className="fp-subtitle">Technical Expert at <a className="apple-link" target="_blank" rel="noopener noreferrer" href="https://apple.com">Apple</a></p>
-                    <p className="fp-bio">
-                                        Full Stack Web Developer and Software Developer certified<br></br> by Vanderbilt University, Google, and IBM [WIP]<br></br> 
-                                        Check out my <a className="resume-link" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EYHWRSyYro_H57KEOClVeC6Tj1GhPYdf/view?usp=sharing">Resume</a> for more info. </p>
-                    <p className="fp-email" id="email"><b>Email:</b> jaypaultucker@gmail.com</p>
-
-                    <Row className="fp-skill-row">
-                        <Col md={6} className="text-center">
-                            {/* <a href="tel:7316764285"><button className="contact-me-btn"><FontAwesomeIcon icon={faPhone} />  CALL ME</button></a> */}
-                            <a href="mailto:jaypaultucker@gmail.com"><button className="email-btn contact-me-btn"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>  EMAIL ME</button></a>
-                        </Col>
-                    </Row>
+                <Col md={7}>
+                    
                 </Col>
             </Row>
         

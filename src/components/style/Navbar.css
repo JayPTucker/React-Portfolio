@@ -1,97 +1,29 @@
-.navbar-row {
-    background-color: rgba(104, 104, 104, 0.945);
-    height: calc(160px - 4vmax);
-    transition: all 0.3s ease-in-out;
-    box-shadow: inset 0px 5px 10px;
-    padding: 0px !important;
-    border: 1px solid rgb(39, 39, 39);
-}
-
-.navbar-row:hover {
-    background-color: rgba(88, 88, 88, 0.959);
-    border: 1px solid rgb(255, 255, 255);
-}
-
-.logo {
-    width: calc(20px + 2vmax);
-    -webkit-filter: drop-shadow(0px 1px 1px #000000);
-        filter: drop-shadow(0px 2px 5px #000000);
-}
-
-
-/* ------------------------------------------ */
-
-
-.navbar-link-col {
-    padding: 0px !important;
-}
-
-.navbar-link {
-    color: white;
-    font-size: calc(10px + 1.1vmax);
-    transition: 0.2s all ease-in-out;
-    text-shadow: 2px 2px 0px black;
-    font-family: 'Alata', sans-serif;
-    text-decoration: none;
-}
-
-.navbar-link:hover {
-    text-decoration: none;
-    color: #1f76ac;
-    text-shadow: 2px 2px 0px rgb(0, 0, 0);
-}
-
-
-/* ------------------------------------------ */
-
-.shortcut-col {
-    padding: 0px !important;
-}
-
-.shortcut-icon {
+.navbar {
+    display: flex;
+    align-items: center;
+    height: calc(130px - 4vmax);
+    transition: all 0.1s ease-in-out;
+    background-color: white;
+  }
+  
+  .navbar-title {
+    flex-grow: 1; /* Add flex-grow property to occupy remaining space and push navbar-links-col to the right */
+    display: flex; /* Add display: flex to align text vertically */
+    align-items: center; /* Vertically center text */
+    justify-content: center; /* Horizontally center text */
+    font-weight: bold;
     font-size: 30px;
-    color: rgb(255, 255, 255);
-    transition: 0.2s all ease-in-out;
-    -webkit-filter: drop-shadow(0px 1px 1px #000000);
-        filter: drop-shadow(0px 2px 0px #000000);
-}
+    margin-top: 15px;
+  }
+  
+  .navbar-links-col {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+  }
 
-.shortcut-icon:hover {
-    font-size: 30px;
-    -webkit-filter: drop-shadow(0px 1px 5px #000000);
-    filter: drop-shadow(0px 3px 2px #000000);
-}
-
-.mail-icon:hover {
-    color: rgb(224, 79, 79);
-}
-
-.discord-icon:hover {
-    color: rgb(103, 103, 182);
-}
-
-.github-icon:hover {
-    color: black;
-}
-
-.linkedin-icon:hover {
-    color: rgb(56, 137, 212);
-}
-
-/* .instagram-icon:hover {
-    color: rgb(184, 45, 209);
-} */
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+  .navbar-link {
+    margin: 0px 20px;
+    text-decoration: none !important;
+    color: black !important;
+  }  

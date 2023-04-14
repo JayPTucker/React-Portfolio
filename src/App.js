@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-    <Container fluid>
+    <Container className='mainContainer' fluid>
       <Navbar />
 
       <HomePage />
