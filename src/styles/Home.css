@@ -1,7 +1,12 @@
+p {
+    margin: 0 !important;
+}
+
 .FrontPageRow {
     border: 1px solid red;
-    margin: 0px 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-    max-width: 100%
+    margin: 10em 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    max-width: 80%;
+    justify-content: center;
 }
 
 .info-panel-left {
@@ -21,6 +26,29 @@
     right: 40px;
     z-index: 10;
 }
+
+/* ------------------------------------ */
+
+.title {
+    font-size: 18px;
+}
+
+.name-title {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.what-i-do {
+    margin-top: -20px !important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mini-bio {
+    margin-top: 15px !important;
+    font-size: 20px;
+}
+
 
 
 /* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
