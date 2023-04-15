@@ -18,10 +18,11 @@ function NavbarFunc() {
       <Navbar.Collapse id="navbar-collapse">
 
         <Nav className="navbar-links-col ms-auto">
-          <Nav.Link href="/" className="navbar-link">Home</Nav.Link>
-          <Nav.Link href="/#work" className="navbar-link">Work</Nav.Link>
-          <Nav.Link as={Link} to="/about" className="navbar-link">About</Nav.Link>
-          <Nav.Link target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing" className="navbar-link resume-link">Resume</Nav.Link>
+          <Nav.Link href="/" className="navbar-link"><span className='navbar-link-number'>01. </span>Home</Nav.Link>
+          <Nav.Link href="/#work" className="navbar-link"><span className='navbar-link-number'>02. </span>Work</Nav.Link>
+          <Nav.Link as={Link} to="/about" className="navbar-link"><span className='navbar-link-number'>03. </span>About</Nav.Link>
+          <Nav.Link href="/#contact" className="navbar-link"><span className='navbar-link-number'>04. </span>Contact</Nav.Link>
+          <Nav.Link target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing" className="resume-link">Resume</Nav.Link>
         </Nav>
 
       </Navbar.Collapse>

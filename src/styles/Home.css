@@ -3,7 +3,6 @@ p {
 }
 
 .FrontPageRow {
-    border: 1px solid red;
     margin: 10em 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
     max-width: 80%;
     justify-content: center;
@@ -29,8 +28,15 @@ p {
 
 /* ------------------------------------ */
 
+.socialMediaLink {
+    color: white !important;
+}
+
+/* ------------------------------------ */
+
 .title {
     font-size: 18px;
+    color: #9ecdff !important;
 }
 
 .name-title {
@@ -40,16 +46,29 @@ p {
 
 .what-i-do {
     margin-top: -20px !important;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
+    color: #797979 !important; 
 }
 
 .mini-bio {
     margin-top: 15px !important;
-    font-size: 20px;
+    font-size: 17px;
+    max-width: 70%;
 }
 
+.myResumeBtn {
+    text-decoration: none;
+    color: #9ecdff;
+    border: 1px solid #9ecdff;
+    padding: 10px;
+    border-radius: 5px;
+}
 
+.myResumeBtn:hover {
+    background-color: #6298d173;
+    color: #9ecdff !important;
+}
 
 /* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
 @media (max-width: 767px) {

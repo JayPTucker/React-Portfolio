@@ -1,10 +1,10 @@
 /* Navbar.css */
 .navbar {
     padding: 10px; /* Add padding as needed */
-    border: 1px solid black; /* TEMP: Add border for visibility */
   }
   
   .navbar-title {
+    color: #bbbbbb !important; 
     font-size: 24px; /* Set your desired font size */
     font-weight: bold; /* Set your desired font weight */
     margin: 0; /* Reset margin */
@@ -15,11 +15,15 @@
     justify-content: flex-end; /* Align items to the right */
     align-items: center; /* Center items vertically within the column */
   }
+
+  .navbar-link-number {
+    color: #9ecdff;
+  }
   
   .navbar-link {
     margin-left: 35px; /* Add margin between links as needed */
     text-decoration: none; /* Remove underline */
-    color: #000000 !important; /* Set your desired link color */
+    color: #bbbbbb !important; /* Set your desired link color */
   }
   
   .navbar-link:hover {
@@ -27,14 +31,17 @@
   }
 
   .resume-link {
-    border: 1px solid #6298d1; /* Set your desired border color */
+    margin-left: 35px; /* Add margin between links as needed */
+    color: #9ecdff !important; /* Set your desired link color */
+    border: 1px solid #9ecdff; /* Set your desired border color */
     border-radius: 5px;
   }
 
   .resume-link:hover {
     background-color: #6298d173;
-    color: #0b2847 !important;
+    color: #9ecdff !important;
   }
+  
   
   /* Add any additional styling as needed */
   
