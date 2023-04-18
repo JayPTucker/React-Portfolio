@@ -1,0 +1,98 @@
+p {
+    margin: 0 !important;
+}
+
+.FrontPageRow {
+    margin: 10em 10% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    max-width: 100%;
+    justify-content: center;
+}
+
+.info-panel-left {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+}
+
+.info-panel-right {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+}
+
+/* ------------------------------------ */
+
+.githubIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
+}
+
+.linkedinIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
+}
+
+.emailIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
+}
+
+/* ------------------------------------ */
+
+.title {
+    font-size: 18px;
+    color: #b0ecff !important;
+}
+
+.name-title {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.what-i-do {
+    margin-top: -20px !important;
+    font-size: 60px;
+    font-weight: bold;
+    color: #82b1bd !important; 
+}
+
+.mini-bio {
+    margin-top: 15px !important;
+    font-size: 17px;
+    max-width: 70%;
+}
+
+.myResumeBtn {
+    text-decoration: none;
+    color: #b0ecff;
+    border: 1px solid #b0ecff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out
+}
+
+.myResumeBtn:hover {
+    background-color: #6298d173;
+    color: #9ecdff !important;
+    width: 100px;
+}
+
+/* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
+@media (max-width: 767px) {
+    .info-panel-left, .info-panel-right {
+      display: none; /* hide info-panel-left below 768px */
+    }
+
+    .FrontPageRow {
+        margin: 0px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    }
+  }
