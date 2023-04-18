@@ -45,7 +45,7 @@ const Home = () => {
         <p className='what-i-do'>Full Stack Web Developer</p>
         <p className='mini-bio'>I'm a passionate Full-Stack Developer specializing in Front-End and Back-End languages. Currently working at Apple as a Technical Expert, I'm dedicated to delivering innovative solutions. Continuously advancing my skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
         <br></br>
-        <a className="myResumeBtn" target="_blank" href="">Check out my Resume</a>
+        <a className="myResumeBtn" target="_blank" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
 
       </Col>
 
