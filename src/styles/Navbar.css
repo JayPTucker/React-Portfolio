@@ -40,6 +40,19 @@
     background-color: #6298d173;
     color: #9ecdff !important;
   }
+
+  /* NAVBAR STYLING FOR MOBILE */
+  /* Turning the Navbar Expand button border white */
+  .navbar-toggler {
+    border-color: #ebebeb !important;
+  }
+
+  /* Turn the navbar span tag white */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235, 235, 235, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
   
   
   /* Add any additional styling as needed */

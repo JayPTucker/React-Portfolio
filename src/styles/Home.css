@@ -29,22 +29,15 @@ p {
 
 /* ------------------------------------ */
 
-.githubIcon {
+.githubIcon, .linkedinIcon, .emailIcon {
     fill: white !important;
     width: 26px;
     height: auto;
 }
 
-.linkedinIcon {
-    fill: white !important;
-    width: 26px;
-    height: auto;
-}
-
-.emailIcon {
-    fill: white !important;
-    width: 26px;
-    height: auto;
+.githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover {
+  transition: all 0.5s ease-in-out !important;
+  fill: #b0ecff !important;
 }
 
 /* ------------------------------------ */
