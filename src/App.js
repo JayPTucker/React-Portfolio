@@ -2,6 +2,7 @@
 // IMPORTS:
 import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
@@ -37,20 +38,21 @@ const App = () => {
   return (
     
     <Router>
-      {/* Implementation of loading screen */}
-      {isLoading ? (
-      <LoadingScreen /> // Display the loading screen if isLoading is true
-      ) : (
-
+      <CSSTransition
+        in={!isLoading} // Condition to trigger the animation
+        timeout={1000} // Duration of the animation in milliseconds
+        classNames="fade" // CSS class prefix for the animation
+        unmountOnExit
+      >
         <Container className="mainContainer" fluid>
           <Navbar></Navbar>
-          {/* Define routes and components */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </Container>
-      )}
+      </CSSTransition>
+      {isLoading && <LoadingScreen />}
     </Router>
   );
 };
