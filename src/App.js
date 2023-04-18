@@ -30,7 +30,7 @@ const App = () => {
     // Simulate data loading or other async tasks
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
   
   // ================================
@@ -40,7 +40,7 @@ const App = () => {
     <Router>
       <CSSTransition
         in={!isLoading} // Condition to trigger the animation
-        timeout={1000} // Duration of the animation in milliseconds
+        timeout={3000} // Duration of the animation in milliseconds
         classNames="fade" // CSS class prefix for the animation
         unmountOnExit
       >
