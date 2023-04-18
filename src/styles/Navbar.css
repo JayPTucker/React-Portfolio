@@ -4,9 +4,8 @@
   }
   
   .navbar-title {
-    color: #bbbbbb !important; 
+    color: #ebebeb !important; 
     font-size: 24px; /* Set your desired font size */
-    font-weight: bold; /* Set your desired font weight */
     margin: 0; /* Reset margin */
   }
   
@@ -17,13 +16,13 @@
   }
 
   .navbar-link-number {
-    color: #9ecdff;
+    color: #b0ecff;
   }
   
   .navbar-link {
     margin-left: 35px; /* Add margin between links as needed */
     text-decoration: none; /* Remove underline */
-    color: #bbbbbb !important; /* Set your desired link color */
+    color: #ebebeb !important; /* Set your desired link color */
   }
   
   .navbar-link:hover {
@@ -32,8 +31,8 @@
 
   .resume-link {
     margin-left: 35px; /* Add margin between links as needed */
-    color: #9ecdff !important; /* Set your desired link color */
-    border: 1px solid #9ecdff; /* Set your desired border color */
+    color: #b0ecff !important; /* Set your desired link color */
+    border: 1px solid #b0ecff; /* Set your desired border color */
     border-radius: 5px;
   }
 

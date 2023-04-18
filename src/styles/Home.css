@@ -3,8 +3,8 @@ p {
 }
 
 .FrontPageRow {
-    margin: 10em 80px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-    max-width: 80%;
+    margin: 10em 10% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    max-width: 100%;
     justify-content: center;
 }
 
@@ -28,15 +28,29 @@ p {
 
 /* ------------------------------------ */
 
-.GithubIcon {
-    color: white !important
+.githubIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
+}
+
+.linkedinIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
+}
+
+.emailIcon {
+    fill: white !important;
+    width: 26px;
+    height: auto;
 }
 
 /* ------------------------------------ */
 
 .title {
     font-size: 18px;
-    color: #9ecdff !important;
+    color: #b0ecff !important;
 }
 
 .name-title {
@@ -48,7 +62,7 @@ p {
     margin-top: -20px !important;
     font-size: 60px;
     font-weight: bold;
-    color: #797979 !important; 
+    color: #82b1bd !important; 
 }
 
 .mini-bio {
@@ -59,15 +73,17 @@ p {
 
 .myResumeBtn {
     text-decoration: none;
-    color: #9ecdff;
-    border: 1px solid #9ecdff;
+    color: #b0ecff;
+    border: 1px solid #b0ecff;
     padding: 10px;
     border-radius: 5px;
+    transition: all 0.2s ease-in-out
 }
 
 .myResumeBtn:hover {
     background-color: #6298d173;
     color: #9ecdff !important;
+    width: 100px;
 }
 
 /* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
