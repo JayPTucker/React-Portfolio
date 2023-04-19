@@ -1,60 +1,76 @@
 /* Navbar.css */
 .navbar {
     padding: 10px; /* Add padding as needed */
-  }
-  
-  .navbar-title {
-    color: #ebebeb !important; 
-    font-size: 24px; /* Set your desired font size */
-    margin: 0; /* Reset margin */
-  }
-  
-  .navbar-links-col {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center; /* Center items vertically within the column */
+    border-bottom: 0.2px solid #ebebeb31; /* Add border as needed */
   }
 
-  .navbar-link-number {
-    color: #b0ecff;
-  }
-  
-  .navbar-link {
-    margin-left: 35px; /* Add margin between links as needed */
-    text-decoration: none; /* Remove underline */
-    color: #ebebeb !important; /* Set your desired link color */
-  }
-  
-  .navbar-link:hover {
-    color: #6298d1 !important; /* Set your desired link color on hover */
-  }
+/* ============================================== */
+/* NAVBAR TITLE */
+/* ============================================== */
 
-  .resume-link {
-    margin-left: 35px; /* Add margin between links as needed */
-    color: #b0ecff !important; /* Set your desired link color */
-    border: 1px solid #b0ecff; /* Set your desired border color */
-    border-radius: 5px;
-  }
+.navbar-title {
+  color: #ebebeb !important; 
+  font-size: 24px; /* Set your desired font size */
+  margin: 0; /* Reset margin */
+}
 
-  .resume-link:hover {
-    background-color: #6298d173;
-    color: #9ecdff !important;
-  }
+/* ============================================== */
+/* NAVBAR LINKS */
+/* ============================================== */
 
-  /* NAVBAR STYLING FOR MOBILE */
-  /* Turning the Navbar Expand button border white */
-  .navbar-toggler {
-    border-color: #ebebeb !important;
-  }
+.navbar-links-col {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically within the column */
+}
 
-  /* Turn the navbar span tag white */
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235, 235, 235, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.navbar-link-number {
+  color: #b0ecff;
+}
+
+.navbar-link {
+  margin-left: 35px; /* Add margin between links as needed */
+  text-decoration: none; /* Remove underline */
+  color: #ebebeb !important; /* Set your desired link color */
+}
+
+.navbar-link:hover {
+  color: #6298d1 !important; /* Set your desired link color on hover */
+}
+
+.resume-link {
+  margin-left: 35px; /* Add margin between links as needed */
+  color: #b0ecff !important; /* Set your desired link color */
+  border: 1px solid #b0ecff; /* Set your desired border color */
+  border-radius: 5px;
+}
+
+.resume-link:hover {
+  background-color: #6298d173;
+  color: #9ecdff !important;
+}
+
+/* ============================================== */
+/* NAVBAR TOGGLE BUTTON ON MOBILE */
+/* ============================================== */
+
+/* Turning the Navbar Expand button border white */
+.navbar-toggler {
+  border-color: #ebebeb !important;
+}
+
+/* Turn the navbar span tag white */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235, 235, 235, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ============================================== */
+/* MEDIA QUERIES */
+/* ============================================== */
+
+/* Add any additional styling as needed */
+@media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 80px;
   }
-  
-  /* Add any additional styling as needed */
-  @media (max-width: 767px) {
-    .navbar {
-      margin-bottom: 80px;
-    }
-  }
+}

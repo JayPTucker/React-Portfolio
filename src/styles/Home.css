@@ -109,7 +109,7 @@ p {
   
   .mini-bio {
     margin-top: 15px !important;
-    font-size: calc(1vmax + 5px); /* Adjust the font size as needed */
+    font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
     max-width: 70%;
   }
   
