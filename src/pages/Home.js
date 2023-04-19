@@ -33,8 +33,10 @@ const Home = () => {
             <path d="M4.17 49.14a1.5 1.5 0 0 1-1-2.62l18.4-16.41a1.5 1.5 0 0 1 2 2.24L5.17 48.76a1.46 1.46 0 0 1-1 .38zm55.66 0a1.46 1.46 0 0 1-1-.38l-18.4-16.41a1.5 1.5 0 1 1 2-2.24l18.39 16.41a1.5 1.5 0 0 1-1 2.62z"></path>
           </svg>        
         </a>
-        
-        <br></br><br></br>
+
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+        <div class="vertical-line-left"></div>
 
       </Col>
 
@@ -50,8 +52,13 @@ const Home = () => {
       </Col>
 
       <Col className="info-panel-right" orientation="left" md={1}>
-        {/* Empty for now */}
+        <a className="vertical-text" href="mailto:jaypaultucker@gmail.com">jaypaultucker@gmail.com</a>
+
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        
+        <div class="vertical-line-right"></div>
       </Col>
+      
 
     </Row>
     

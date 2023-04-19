@@ -3,42 +3,82 @@ p {
 }
 
 .FrontPageRow {
-    transition: all 0.2s ease-in-out !important;
-    margin: 10em 10% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-    max-width: 100%;
-    justify-content: center;
+  transition: all 0.2s ease-in-out !important;
+  margin: calc(6vmax + 10px) 10% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+  max-width: 100%;
+  justify-content: center;
 }
 
 .info-panel-left {
-    width: 40px;
-    position: fixed;
-    bottom: 0px;
-    left: 40px;
-    right: auto;
-    z-index: 10;
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
 }
 
 .info-panel-right {
-    width: 40px;
-    position: fixed;
-    bottom: 0px;
-    left: auto;
-    right: 40px;
-    z-index: 10;
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
 }
+
+.vertical-line-right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 64px;
+  right: auto;
+  z-index: 10;
+  height: 15%;
+  border-left: 2px solid #ebebebc0; 
+}
+
+.vertical-line-left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 64px;
+  left: auto;
+  z-index: 10;
+  height: 15%;
+  border-right: 2px solid #ebebebc0; 
+}
+
+.vertical-text {
+  transition: all 0.3s ease-in-out !important;
+  font-family: 'Roboto', sans-serif !important;
+  writing-mode: vertical-rl; /* Use vertical writing mode */
+  text-decoration: none;
+  color: #ebebebc0;
+  margin-left: -10px;
+  letter-spacing: 3px;
+}
+
+.vertical-text:hover {
+  color: #b0ecff !important;
+  margin-bottom: 10px;
+}
+
 
 /* ------------------------------------ */
 
 .githubIcon, .linkedinIcon, .emailIcon {
-    fill: white !important;
-    width: 26px;
-    height: auto;
+  fill: #ebebebc0 !important;
+  width: 26px;
+  height: auto;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover {
-  transition: all 0.5s ease-in-out !important;
   fill: #b0ecff !important;
+  margin-bottom: 5px !important;
 }
+
 
 /* ------------------------------------ */
 
