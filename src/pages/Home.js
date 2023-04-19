@@ -44,8 +44,8 @@ const Home = () => {
       
         <p className='title'>Hey there, my name is</p>
         <p className='name-title'>Jay Paul Tucker.</p>
-        <p className='what-i-do'>Full Stack Web Developer</p>
-        <p className='mini-bio'>I'm a passionate Full-Stack Developer specializing in Front-End and Back-End languages. Currently working at Apple as a Technical Expert, I'm dedicated to delivering innovative solutions. Continuously advancing my skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
+        <p className='what-i-do'>I'm a Full Stack Web Developer</p>
+        <p className='mini-bio'>Specializing in Front-End and Back-End languages. Currently working at Apple as a Technical Expert, I'm dedicated to delivering innovative solutions. Continuously advancing my skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
         <br></br>
         <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
 
@@ -55,7 +55,7 @@ const Home = () => {
         <a className="vertical-text" href="mailto:jaypaultucker@gmail.com">jaypaultucker@gmail.com</a>
 
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-        
+
         <div class="vertical-line-right"></div>
       </Col>
       
