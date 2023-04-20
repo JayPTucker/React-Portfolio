@@ -37,7 +37,7 @@ const Home = () => {
           </svg>        
         </a>
 
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
         <div class="vertical-line-left"></div>
 
@@ -47,7 +47,7 @@ const Home = () => {
       {/* ================== FRONT PAGE SECTION ================== */}
       <Row className="FrontPageRow">
 
-        <Col md={8} className="FrontPageMainCol"> 
+        <Col md={12} className="FrontPageMainCol"> 
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
@@ -104,7 +104,7 @@ const Home = () => {
       <Col className="info-panel-right" orientation="left" md={1}>
         <a className="vertical-text" href="mailto:jaypaultucker@gmail.com">jaypaultucker@gmail.com</a>
 
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
         <div class="vertical-line-right"></div>
       </Col>
