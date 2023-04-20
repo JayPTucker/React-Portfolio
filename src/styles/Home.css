@@ -2,9 +2,9 @@ p {
     margin: 0 !important;
 }
 
-.FrontPageRow {
+.FrontPageRow, .aboutMeRow {
   transition: all 0.2s ease-in-out !important;
-  margin: calc(6vmax + 10px) 10% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+  margin: calc(6vmax + 10px) 8% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
   max-width: 100%;
   justify-content: center;
 }
@@ -17,7 +17,7 @@ p {
   width: 40px;
   position: fixed;
   bottom: 0px;
-  left: 40px;
+  left: 52px;
   right: auto;
   z-index: 10;
 }
@@ -55,7 +55,7 @@ p {
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 40px;
+  right: 28px;
   z-index: 10;
 }
 
@@ -111,6 +111,7 @@ p {
     margin-top: 15px !important;
     font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
     max-width: 70%;
+    color: #ebebebcc !important;
   }
   
   .myResumeBtn {
@@ -128,6 +129,67 @@ p {
     width: 100px;
   }
 
+/* ============================================ */
+/* ABOUT ME ROW */
+/* ============================================ */
+ 
+.aboutMeRow {
+  margin-top: calc(16vmax + 100px) !important;
+}
+
+.aboutmeTitle {
+  font-size: calc(1.8vmax + 9px); /* Adjust the font size as needed */
+  color: #ebebeb;
+}
+
+.aboutmeNumber {
+  font-size: calc(1vmax + 7px); /* Adjust the font size as needed */
+  color: #b0ecff !important;
+}
+
+.aboutmeBio {
+  margin-top: 15px !important;
+  font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
+  color: #ebebebcc !important;
+}
+
+.bioLink {
+  text-decoration: none;
+  color: #b0ecff;
+  transition: all 0.2s ease-in-out;
+}
+
+.bioLink:hover {
+  color: #9ecdff;
+}
+
+.horizontal-list {
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+  font-size: calc(0.8vmax + 5px); /* Adjust the font size as needed */
+}
+
+.horizontal-list li {
+  display: inline-block; /* display list items horizontally */
+  margin-right: 10px; /* add some space between list items */
+}
+
+.aboutmePic {
+  margin-top: calc(4vmax + 10px) !important;
+  position: relative;
+  border-radius: 2%;
+  max-width: 100%;
+  border: 2px solid #568b9c;
+  box-shadow: 10px 10px 0 0 #b0ecff;
+  filter: grayscale(10%);
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutmePic:hover {
+  filter: grayscale(50%);
+  border: 2px solid #3b6b7b;
+  box-shadow: 20px 20px 0 0 #b0edffc7;
+}
 
 /* ============================================ */
 /* MEDIA QUERIES */
@@ -154,6 +216,6 @@ p {
     }
 }
   
-  
+
   
   

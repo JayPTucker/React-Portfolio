@@ -1,13 +1,16 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import '../styles/Home.css';
+
+import meImg from '../img/me_img.jpeg';
 
 const Home = () => {
   return (
-    <Row className="FrontPageRow">
+    <Container>
+      {/* =========================================================== */}
+      {/* ================== INFO BAR LEFT SECTION ================== */}
 
       <Col className="info-panel-left" orientation="left" md={1}>
-
         {/* GITHUB ICON */}
         <a href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer">
           <svg className="githubIcon" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="github">
@@ -40,16 +43,63 @@ const Home = () => {
 
       </Col>
 
-      <Col md={8} className="FrontPageMainCol"> 
-      
-        <p className='title'>Hey there, my name is</p>
-        <p className='name-title'>Jay Paul Tucker.</p>
-        <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-        <p className='mini-bio'>Specializing in Front-End and Back-End languages. Currently working at Apple as a Technical Expert, I'm dedicated to delivering innovative solutions. Continuously advancing my skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
-        <br></br>
-        <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
+      {/* ====================================================== */}
+      {/* ================== FRONT PAGE SECTION ================== */}
+      <Row className="FrontPageRow">
 
-      </Col>
+        <Col md={8} className="FrontPageMainCol"> 
+          <p className='title'>Hey there, my name is</p>
+          <p className='name-title'>Jay Paul Tucker.</p>
+          <p className='what-i-do'>I'm a Full Stack Web Developer</p>
+          <p className='mini-bio'>Specializing in Front-End and Back-End languages. Currently working at Apple as a Technical Expert, I'm dedicated to delivering innovative solutions. Continuously advancing my skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
+          <br></br>
+          <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
+        </Col>
+
+      </Row>
+
+      {/* ====================================================== */}
+      {/* ================== ABOUT ME SECTION ================== */}
+
+      <Row className="aboutMeRow" id="about">
+
+        <Col md={8} className="aboutmeCol">
+          <p className='aboutmeTitle'><span className="aboutmeNumber">01. </span>About Me</p>
+
+          <br></br>
+
+          <p className="aboutmeBio">
+            Hey there, my name is Jay Paul, I enjoy anything IT related whether that is Gaming, Coding, Hardware Repair, or learning new Software.
+            My interest in Web Development and programming in general started around 2018 with Python from a friend I met Online and we were slowly getting into
+            learning about Python and that is what brought me to continue with my educaiton through Vanderbilt University in 2020 specializing in mainly
+            HTML, CSS, JavaScript, APIs, JS Libraries, and many more that can be seen on my <a className="bioLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">resume</a>.
+            <br></br><br></br>
+            Present day, I am currently working at <a className="bioLink" href="https://apple.com" rel="noopener noreferrer" target='_blank'>Apple</a> as a Technical Expert.  Currently studying via Coursera through IBM and Google to stay ahead in the ever-evolving field of software development.
+            Looking to pursue a career in the IT field and continue to learn and grow as a developer.
+            <br></br><br></br>
+            Here are a few technologies I've been working with recently:
+            <br></br>
+
+          </p>
+
+          <ul className='horizontal-list'>
+              <li>JavaScript (ES6+)</li>
+              <li>React & Bootstrap</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MySQL, MongoDB</li>
+              <li>HTML & (S)CSS</li>
+          </ul>
+        </Col>
+
+        <Col md={4}>
+          <img className="aboutmePic" src={meImg} alt="What I look like"></img>
+        </Col>
+
+      </Row>
+
+      {/* =========================================================== */}
+      {/* ================== INFO BAR RIGHT SECTION ================== */}
 
       <Col className="info-panel-right" orientation="left" md={1}>
         <a className="vertical-text" href="mailto:jaypaultucker@gmail.com">jaypaultucker@gmail.com</a>
@@ -58,9 +108,8 @@ const Home = () => {
 
         <div class="vertical-line-right"></div>
       </Col>
-      
 
-    </Row>
+    </Container>
     
   );
 };
