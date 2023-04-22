@@ -11,7 +11,7 @@ import './styles/App.css';
 // =========================================
 // PAGES
 import Home from './pages/Home';
-import About from './pages/About';
+// import About from './pages/About';
 import Navbar from './pages/Navbar';
 import LoadingScreen from "./pages/LoadingScreen.js";
 // =========================================
@@ -48,7 +48,7 @@ const App = () => {
           <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} /> */}
           </Routes>
         </Container>
       </CSSTransition>
