@@ -1,10 +1,13 @@
-import React from 'react';
-import { Row, Col, Container } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Row, Col, Container, ListGroup, Tab } from 'react-bootstrap';
 import '../styles/Home.css';
 
 import meImg from '../img/me_img.jpeg';
 
 const Home = () => {
+
+  const [key, setKey] = useState('home');
+
   return (
     <Container>
       {/* =========================================================== */}
@@ -97,6 +100,47 @@ const Home = () => {
         </Col>
 
       </Row>
+
+      {/* ====================================================== */}
+      {/* ================== EXPERIENCE SECTION ================== */}
+
+      <Row className="experienceRow" id="experience">
+        <Col md={12}>
+          <p className='experienceTitle'><span className="experienceNumber">02. </span>Experience</p>
+          <Tab.Container activeKey={key} onSelect={(k) => setKey(k)}>
+              <ListGroup>
+                <ListGroup.Item action eventKey="home">
+                  Home
+                </ListGroup.Item>
+                <ListGroup.Item action eventKey="profile">
+                  Profile
+                </ListGroup.Item>
+                <ListGroup.Item action eventKey="messages">
+                  Messages
+                </ListGroup.Item>
+                <ListGroup.Item action eventKey="settings">
+                  Settings
+                </ListGroup.Item>
+              </ListGroup>
+
+              <Tab.Content>
+                <Tab.Pane eventKey="home">
+                  <p>Home tab content</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="profile">
+                  <p>Profile tab content</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="messages">
+                  <p>Messages tab content</p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="settings">
+                  <p>Settings tab content</p>
+                </Tab.Pane>
+              </Tab.Content>
+          </Tab.Container>
+        </Col>
+      </Row>
+
 
       {/* =========================================================== */}
       {/* ================== INFO BAR RIGHT SECTION ================== */}
