@@ -149,8 +149,7 @@ const Home = () => {
 
       {/* =========================================================== */}
       {/* ==================== PROJECTS SECTION ==================== */}
-      <Row className="projectsRow justify-content-center" id="projects">
-        <Col md={10}>
+      <Row className="projectsRow" id="projects">
         <p className='projectsTitle'><span className="projectsNumber">02. </span>Projects</p>
 
         <Row className="project1 d-flex align-items-center">
@@ -167,7 +166,6 @@ const Home = () => {
           </Col>
 
         </Row>
-        </Col>
       </Row>
 
       {/* =========================================================== */}
