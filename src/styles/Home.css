@@ -2,11 +2,30 @@ p {
     margin: 0 !important;
 }
 
-.FrontPageRow, .aboutMeRow {
+.FrontPageRow, .aboutMeRow, .projectsRow {
   transition: all 0.2s ease-in-out !important;
   margin: calc(6vmax + 10px) 8% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
   max-width: 100%;
   justify-content: center;
+  margin-bottom: calc(16vmax + 100px) !important;
+}
+
+.rowHeaderTitle {
+  font-size: calc(1.5vmax + 9px); /* Adjust the font size as needed */
+  color: #ebebeb;
+}
+
+hr {
+  margin-bottom: 50px !important;
+}
+
+.rowHeaderNumber {
+  font-size: calc(1vmax + 7px); /* Adjust the font size as needed */
+  color: #b0ecff !important;
+}
+
+.bioDescColor {
+  color: #ebebebcc !important;
 }
 
 /* ============================================ */
@@ -98,7 +117,7 @@ p {
   }
   
   .name-title {
-    font-size: calc(4.4vmax + 7px); /* Adjust the font size as needed */
+    font-size: calc(4.4vmax + 3px); /* Adjust the font size as needed */
     font-weight: bold;
   }
   
@@ -113,8 +132,7 @@ p {
     margin-top: 15px !important;
     font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
     max-width: 70%;
-    color: #ebebebcc !important;
-  }
+    }
   
   .myResumeBtn {
     text-decoration: none;
@@ -135,24 +153,13 @@ p {
 /* ABOUT ME ROW */
 /* ============================================ */
  
-.aboutMeRow {
+/* .aboutMeRow {
+  WAS USED TO GIVE SPACE BETWEEN ABOUT ROW AND TOP ROW
   margin-top: calc(16vmax + 100px) !important;
-}
-
-.aboutmeTitle {
-  font-size: calc(1.8vmax + 9px); /* Adjust the font size as needed */
-  color: #ebebeb;
-}
-
-.aboutmeNumber {
-  font-size: calc(1vmax + 7px); /* Adjust the font size as needed */
-  color: #b0ecff !important;
-}
+} */
 
 .aboutmeBio {
-  margin-top: 15px !important;
   font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
-  color: #ebebebcc !important;
 }
 
 .bioLink {
@@ -194,6 +201,75 @@ p {
 }
 
 /* ============================================ */
+/* EXPERIENCE */
+/* ============================================ */
+
+/* ============================================ */
+/* PROJECTS */
+/* ============================================ */
+.projectsCol {
+  position: relative;
+}
+
+.projectImg {
+  box-shadow: 1px 1px 10px black;
+  filter: grayscale(100%) !important;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+  opacity: 0.65;
+  max-width: 110%;
+  border: 1px solid #568b9c;
+  transition: all 0.3s ease-in-out !important;  
+}
+
+.projectImg:hover {
+  /* Make the image fully visible when it is hovered */
+  opacity: 1;
+  filter: grayscale(0%) !important;
+  max-width: 115%;
+  /* When it is hovered, make the image bigger and not move other elements */
+}
+
+.featuredProject {
+  color: #b0ecff;
+}
+
+.projectTitle {
+  font-weight: bold;
+  font-size: calc(1vmax + 12px);
+  margin-bottom: 10px !important;
+}
+
+.projectDesc {
+  background-color: #134657;
+  padding: 20px;
+  color: rgb(201, 201, 201);
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 10px !important;
+  font-size: calc(0.3vmax + 10px);
+  transition: all 0.3s ease-in-out !important;
+}
+
+.projectDesc:hover {
+  background-color: #17647e;
+  font-size: calc(0.45vmax + 10px);
+}
+
+.skillsUsed {
+  font-size: calc(0.4vmax + 6px);
+  color: #b0ecff;
+  letter-spacing: 1px;
+}
+  
+/* PROJECT 1 */
+/* ========= */
+
+.project1Col {
+  text-align: right;
+  margin-left: calc(-4vmax - 10px);
+}
+
+
+/* ============================================ */
 /* MEDIA QUERIES */
 /* ============================================ */
 
@@ -215,6 +291,19 @@ p {
 
     .mini-bio {
         max-width: 100%;
+    }
+
+    .projectImg {
+      max-width: 100%;
+    }
+
+    .projectImg:hover {
+      max-width: 101%;
+    }
+
+    .project1Col {
+      text-align: center;
+      margin-left: 0px;
     }
 }
   
