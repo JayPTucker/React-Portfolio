@@ -194,6 +194,47 @@ p {
 }
 
 /* ============================================ */
+/* EXPERIENCE */
+/* ============================================ */
+
+/* ============================================ */
+/* PROJECTS */
+/* ============================================ */
+.projectsRow {
+  max-width: 90%;
+}
+
+.project1 {
+  /* For dev purposes */
+  border: 1px solid red;
+}
+
+.project1Img {
+/* Make the image transparent */
+  opacity: 0.65;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+  max-width: 100%;
+}
+
+.projectsCol {
+  position: relative;
+  border: 1px solid blue;
+}
+
+.project1Col {
+  text-align: right;
+  margin-left: calc(-4vmax - 10px);
+}
+
+.projectDesc {
+  background-color: #285463;
+  padding: 20px;
+}
+
+.project1Desc {
+}
+
+/* ============================================ */
 /* MEDIA QUERIES */
 /* ============================================ */
 

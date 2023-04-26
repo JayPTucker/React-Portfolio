@@ -4,6 +4,8 @@ import '../styles/Home.css';
 
 import meImg from '../img/me_img.jpeg';
 
+import project1Img from '../img/project-1.gif';
+
 const Home = () => {
 
   const [key, setKey] = useState('home');
@@ -104,7 +106,7 @@ const Home = () => {
       {/* ====================================================== */}
       {/* ================== EXPERIENCE SECTION ================== */}
 
-      <Row className="experienceRow" id="experience">
+      {/* <Row className="experienceRow" id="experience">
         <p className='experienceTitle'><span className="experienceNumber">02. </span>Experience</p>
         <Tab.Container activeKey={key} onSelect={(k) => setKey(k)}>
           <Row>
@@ -143,8 +145,30 @@ const Home = () => {
             </Col>
           </Row>
         </Tab.Container>
-      </Row>
+      </Row> */}
 
+      {/* =========================================================== */}
+      {/* ==================== PROJECTS SECTION ==================== */}
+      <Row className="projectsRow justify-content-center" id="projects">
+        <Col md={10}>
+        <p className='projectsTitle'><span className="projectsNumber">02. </span>Projects</p>
+
+        <Row className="project1 d-flex align-items-center">
+
+          <Col md={6}>
+            <img className="project1Img" src={project1Img} alt="Project 1"></img>
+
+          </Col>
+          <Col md={6} className="project1Col projectsCol">
+            <p className="projectTitle">Project 1</p>
+            <div className="project1Desc projectDesc">
+              <p>Text box</p>
+            </div>
+          </Col>
+
+        </Row>
+        </Col>
+      </Row>
 
       {/* =========================================================== */}
       {/* ================== INFO BAR RIGHT SECTION ================== */}
