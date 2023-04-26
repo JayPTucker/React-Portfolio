@@ -159,7 +159,7 @@ hr {
 } */
 
 .aboutmeBio {
-  font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
+  font-size: calc(0.8vmax + 8px); /* Adjust the font size as needed */
 }
 
 .bioLink {
@@ -187,7 +187,7 @@ hr {
   margin-top: calc(4vmax + 10px) !important;
   position: relative;
   border-radius: 2%;
-  max-width: 100%;
+  max-width: 85%;
   border: 2px solid #568b9c;
   box-shadow: 10px 10px 0 0 #b0ecff;
   filter: grayscale(10%);
@@ -240,18 +240,17 @@ hr {
 }
 
 .projectDesc {
-  background-color: #134657;
+  background-color: #28748b;
   padding: 20px;
   color: rgb(201, 201, 201);
   box-shadow: 1px 1px 10px black;
   margin-bottom: 10px !important;
-  font-size: calc(0.3vmax + 10px);
+  font-size: calc(0.8vmax + 8px); /* Adjust the font size as needed */
   transition: all 0.3s ease-in-out !important;
 }
 
 .projectDesc:hover {
-  background-color: #17647e;
-  font-size: calc(0.45vmax + 10px);
+  background-color: #185c71;
 }
 
 .skillsUsed {
