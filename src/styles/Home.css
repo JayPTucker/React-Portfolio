@@ -117,7 +117,7 @@ hr {
   }
   
   .name-title {
-    font-size: calc(4.4vmax + 7px); /* Adjust the font size as needed */
+    font-size: calc(4.4vmax + 3px); /* Adjust the font size as needed */
     font-weight: bold;
   }
   
@@ -227,8 +227,6 @@ hr {
   filter: grayscale(0%) !important;
   max-width: 115%;
   /* When it is hovered, make the image bigger and not move other elements */
-  position: relative;
-  z-index: 1;
 }
 
 .featuredProject {
