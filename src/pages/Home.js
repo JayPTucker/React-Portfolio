@@ -105,9 +105,10 @@ const Home = () => {
       {/* ================== EXPERIENCE SECTION ================== */}
 
       <Row className="experienceRow" id="experience">
-        <Col md={12}>
-          <p className='experienceTitle'><span className="experienceNumber">02. </span>Experience</p>
-          <Tab.Container activeKey={key} onSelect={(k) => setKey(k)}>
+        <p className='experienceTitle'><span className="experienceNumber">02. </span>Experience</p>
+        <Tab.Container activeKey={key} onSelect={(k) => setKey(k)}>
+          <Row>
+            <Col md={4}>
               <ListGroup>
                 <ListGroup.Item action eventKey="home">
                   Home
@@ -122,7 +123,9 @@ const Home = () => {
                   Settings
                 </ListGroup.Item>
               </ListGroup>
+            </Col>
 
+            <Col md={8}>
               <Tab.Content>
                 <Tab.Pane eventKey="home">
                   <p>Home tab content</p>
@@ -137,8 +140,9 @@ const Home = () => {
                   <p>Settings tab content</p>
                 </Tab.Pane>
               </Tab.Content>
-          </Tab.Container>
-        </Col>
+            </Col>
+          </Row>
+        </Tab.Container>
       </Row>
 
 
