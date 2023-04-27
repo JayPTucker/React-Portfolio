@@ -175,7 +175,7 @@ const Home = () => {
         </Row>
 
         {/* PROJECT 2: */}
-        <Row className='project2Row d-flex align-items-center'>
+        {/* <Row className='project2Row d-flex align-items-center'>
           <Col md={6} className="project2Col projectsCol">
             <p className="featuredProject">Featured Project</p>
             <p className="projectTitle">Title</p>
@@ -192,7 +192,7 @@ const Home = () => {
           <Col md={6}>
             <img className="project2Img projectImg" alt="Project 1"></img>
           </Col>
-        </Row>
+        </Row> */}
 
       </Row>
 
