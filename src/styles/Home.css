@@ -207,18 +207,20 @@ hr {
 /* ============================================ */
 /* PROJECTS */
 /* ============================================ */
-.projectsCol {
-  position: relative;
+
+.project1Row, .project2Row {
+  margin-bottom: calc(3vmax + 20px) !important;
 }
 
 .projectImg {
   box-shadow: 1px 1px 10px black;
   filter: grayscale(100%) !important;
   filter: alpha(opacity=75); /* For IE8 and earlier */
-  opacity: 0.65;
   max-width: 110%;
   border: 1px solid #568b9c;
   transition: all 0.3s ease-in-out !important;  
+  position: relative;
+  z-index: -1;
 }
 
 .projectImg:hover {
@@ -267,6 +269,13 @@ hr {
   margin-left: calc(-4vmax - 10px);
 }
 
+/* PROJECT 2 */
+/* ========= */
+
+.project2Col {
+  text-align: left;
+  margin-right: calc(-4vmax - 10px);
+}
 
 /* ============================================ */
 /* MEDIA QUERIES */
