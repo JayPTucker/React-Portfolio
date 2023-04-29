@@ -219,7 +219,7 @@ const Home = () => {
             </Col>
 
             <Col md={4}>
-              <Card>
+              <Card className="projectCard">
                 <Card.Body>
                   <Card.Title>Card Title</Card.Title>
                   <Card.Text>
@@ -234,54 +234,7 @@ const Home = () => {
             </Col>
 
             <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    <br></br>
-                    <br></br>
-                    <a href="">Link</a>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-
-          <Row>
-          <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    <br></br>
-                    <br></br>
-                    <a href="">Link</a>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    <br></br>
-                    <br></br>
-                    <a href="">Link</a>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={4}>
-              <Card>
+              <Card className="projectCard">
                 <Card.Body>
                   <Card.Title>Card Title</Card.Title>
                   <Card.Text>

@@ -281,6 +281,21 @@ hr {
 }
 
 /* ============================================ */
+/* OTHER NOTEWORTHY PROJECTS */
+/* ============================================ */
+
+.projectCard {
+  background-color: #28748b;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectCard:hover {
+  background-color: #185c71;
+}
+
+
+
+/* ============================================ */
 /* MEDIA QUERIES */
 /* ============================================ */
 
