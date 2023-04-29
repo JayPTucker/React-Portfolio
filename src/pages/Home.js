@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Container, ListGroup, Tab } from 'react-bootstrap';
+import { Row, Col, Container, Card, ListGroup, Tab } from 'react-bootstrap';
 import '../styles/Home.css';
 
 import meImg from '../img/me_img.jpeg';
@@ -194,7 +194,112 @@ const Home = () => {
           </Col>
         </Row> */}
 
+        <div className="cardSection">
+          <Row>
+            <Col md={6}>
+              <p>Other Noteworthy Projects:</p>
+            </Col>
+          </Row>
+
+
+          <Row>
+            <Col md={4}>
+              <Card className="projectCard">
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+
+          <Row>
+          <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+
+            <Col md={4}>
+              <Card>
+                <Card.Body>
+                  <Card.Title>Card Title</Card.Title>
+                  <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                    <br></br>
+                    <br></br>
+                    <a href="">Link</a>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+
+
       </Row>
+
 
       {/* =========================================================== */}
       {/* ================== INFO BAR RIGHT SECTION ================== */}
