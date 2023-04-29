@@ -97,9 +97,9 @@ const Home = () => {
           </ul>
         </Col>
 
-        <Col md={4}>
+        {/* <Col md={4}>
           <img className="aboutmePic" src={meImg} alt="What I look like"></img>
-        </Col>
+        </Col> */}
 
       </Row>
 
