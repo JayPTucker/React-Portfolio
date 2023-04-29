@@ -220,15 +220,14 @@ hr {
   border: 1px solid #568b9c;
   transition: all 0.3s ease-in-out !important;  
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 .projectImg:hover {
-  /* Make the image fully visible when it is hovered */
-  opacity: 1;
   filter: grayscale(0%) !important;
-  max-width: 140% !important;
-  /* When it is hovered, make the image bigger and not move other elements */
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+  max-width: 131%;
+  border: 1px solid #3b6b7b;
 }
 
 .featuredProject {
@@ -249,6 +248,8 @@ hr {
   margin-bottom: 10px !important;
   font-size: calc(0.8vmax + 8px); /* Adjust the font size as needed */
   transition: all 0.3s ease-in-out !important;
+  z-index: 1;
+  position: relative;
 }
 
 .projectDesc:hover {
@@ -259,6 +260,8 @@ hr {
   font-size: calc(0.4vmax + 6px);
   color: #b0ecff;
   letter-spacing: 1px;
+  z-index: 1;
+  position: relative;
 }
   
 /* PROJECT 1 */
