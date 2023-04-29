@@ -216,7 +216,7 @@ hr {
   box-shadow: 1px 1px 10px black;
   filter: grayscale(100%) !important;
   filter: alpha(opacity=75); /* For IE8 and earlier */
-  max-width: 110%;
+  max-width: 130%;
   border: 1px solid #568b9c;
   transition: all 0.3s ease-in-out !important;  
   position: relative;
@@ -227,7 +227,7 @@ hr {
   /* Make the image fully visible when it is hovered */
   opacity: 1;
   filter: grayscale(0%) !important;
-  max-width: 115%;
+  max-width: 140% !important;
   /* When it is hovered, make the image bigger and not move other elements */
 }
 
