@@ -240,6 +240,7 @@ hr {
   margin-bottom: 10px !important;
 }
 
+
 .projectDesc {
   background-color: #28748b;
   padding: 20px;
@@ -283,6 +284,12 @@ hr {
 /* ============================================ */
 /* OTHER NOTEWORTHY PROJECTS */
 /* ============================================ */
+.projectCardGithubIcon {
+  fill: #b0ecff !important;
+  width: 25px;
+  height: auto;
+  transition: all 0.3s ease-in-out !important;
+}
 
 .projectCard {
   background-color: #28748b;
