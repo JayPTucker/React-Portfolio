@@ -287,6 +287,13 @@ hr {
 /* OTHER NOTEWORTHY PROJECTS */
 /* ============================================ */
 
+.cardSectionTitle {
+  justify-content: center;
+  text-align: center;
+  font-size: calc(2.5vmax + 8px);
+  margin-bottom: 40px;
+}
+
 .projectCardGithubIcon {
   fill: #b0ecff !important;
   width: 25px;
@@ -298,6 +305,7 @@ hr {
 .projectCard {
   background-color: #28748b;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 20px; /* Space for responsive design */
 }
 
 .projectCard:hover {
