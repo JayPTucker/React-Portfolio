@@ -68,7 +68,7 @@ const Home = () => {
 
       <Row className="aboutMeRow" id="about">
 
-        <Col md={8} className="aboutmeCol">
+        <Col md={10} className="aboutmeCol">
           {/* PAGE TITLE */}
           <p className='rowHeaderTitle'><span className="rowHeaderNumber">01. </span>About Me</p>
           <hr></hr>

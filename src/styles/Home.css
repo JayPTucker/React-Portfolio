@@ -158,7 +158,7 @@ hr {
 } */
 
 .aboutmeBio {
-  font-size: calc(0.8vmax + 8px); /* Adjust the font size as needed */
+  font-size: calc(1.2vmax + 8px); /* Adjust the font size as needed */
 }
 
 .bioLink {
