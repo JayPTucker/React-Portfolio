@@ -15,7 +15,7 @@ p {
   color: #ebebeb;
 }
 
-hr {
+.customHr {
   margin-bottom: 50px !important;
 }
 
@@ -236,7 +236,7 @@ hr {
 .projectTitle {
   font-weight: bold;
   font-size: calc(1vmax + 12px);
-  margin-bottom: 10px !important;
+  margin-bottom: 20px !important;
 }
 
 
@@ -296,10 +296,15 @@ hr {
 
 .projectCardGithubIcon {
   fill: #b0ecff !important;
-  width: 25px;
+  width: 30px;
   height: auto;
-  transition: all 0.3s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
   float: right;
+}
+
+.projectCardGithubIcon:hover {
+  fill: #597882 !important;
+  transform: scale(1.3);
 }
 
 .projectCard {
@@ -311,7 +316,7 @@ hr {
 .projectCard:hover {
   background-color: #185c71;
   margin-top: -10px;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 
