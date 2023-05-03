@@ -57,7 +57,7 @@ p {
   width: 26px;
   height: auto;
   transition: all 0.3s ease-in-out !important;
-  margin-top: 20px !important;
+  margin-top: 20px;
 }
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover {
@@ -158,7 +158,7 @@ p {
 } */
 
 .aboutmeBio {
-  font-size: calc(1.2vmax + 8px); /* Adjust the font size as needed */
+  font-size: calc(0.9vmax + 8px); /* Adjust the font size as needed */
 }
 
 .bioLink {
@@ -235,7 +235,7 @@ p {
 
 .projectTitle {
   font-weight: bold;
-  font-size: calc(1vmax + 12px);
+  font-size: calc(0.9vmax + 12px);
   margin-bottom: 20px !important;
 }
 
@@ -246,7 +246,7 @@ p {
   color: rgb(201, 201, 201);
   box-shadow: 1px 1px 10px black;
   margin-bottom: 10px !important;
-  font-size: calc(0.8vmax + 8px); /* Adjust the font size as needed */
+  font-size: calc(0.5vmax + 8px); /* Adjust the font size as needed */
   transition: all 0.3s ease-in-out !important;
   z-index: 1;
   position: relative;
@@ -290,7 +290,7 @@ p {
 .cardSectionTitle {
   justify-content: center;
   text-align: center;
-  font-size: calc(2.5vmax + 8px);
+  font-size: calc(2.2vmax + 8px);
   margin-bottom: 40px;
 }
 
