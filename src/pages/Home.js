@@ -274,11 +274,22 @@ const Home = () => {
 
       </Row>
 
-      <Row className="contactRow">
+      <Row className="contactRow" id="contactRow">
+      <p className='rowHeaderTitle'><span className="rowHeaderNumber">03. </span>Contact</p>
+      <hr className="customHr"></hr>
         <Col md={12}>
-          <p>Get In Touch</p>
-          <p>Feel free to contact me below.  I am currently looking for work and am open to any opportunities.  My response time is same-day.  Thank you!</p>
-          <button>Email me!</button>
+          <p className="contactRowTitle">Get In Touch</p>
+        </Col>
+        <Col md={6} className="contactCol">
+          <p className="contactRowText">Feel free to contact me below, I am currently looking for work and am open to any opportunities.  My response time is same-day.  Thank you!</p>
+          <br></br>
+          <button className="contactMeBtn">Email me!</button>
+        </Col>
+      </Row>
+
+      <Row className="creditsRow">
+        <Col md={12}>
+          <a className="githubLink" target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/React-Portfolio">Designed and built by Jay Paul Tucker</a>
         </Col>
       </Row>
 

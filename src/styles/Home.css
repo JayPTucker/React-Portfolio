@@ -287,11 +287,12 @@ p {
 /* OTHER NOTEWORTHY PROJECTS */
 /* ============================================ */
 
-.cardSectionTitle {
+.cardSectionTitle, .contactRowTitle {
   justify-content: center;
   text-align: center;
   font-size: calc(2.2vmax + 8px);
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .projectCardGithubIcon {
@@ -319,7 +320,57 @@ p {
   transform: scale(1.02);
 }
 
+/* ============================================ */
+/* CONTACT ROW */
+/* ============================================ */
 
+.contactRowText {
+  max-width: 100%;
+  color: rgb(201, 201, 201);
+  padding-bottom: 30px;
+  font-size: calc(1vmax + 1px);
+}
+
+.contactCol {
+  justify-content: center;
+  text-align: center;
+}
+
+.contactMeBtn {
+  color: #b0ecff !important; /* Set your desired link color */
+  border: 1px solid #b0ecff; /* Set your desired border color */
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactMeBtn:hover {
+  background-color: #6298d173;
+  color: #9ecdff !important;
+  transform: scale(1.02);
+}
+
+/* ============================================ */
+/* CREDITS ROW */
+/* ============================================ */
+
+
+.creditsRow {
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.githubLink {
+  color: rgba(255, 255, 255, 0.521) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.githubLink:hover {
+  color: rgba(255, 255, 255, 0.781) !important;
+}
 
 /* ============================================ */
 /* MEDIA QUERIES */
