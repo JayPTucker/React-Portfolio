@@ -2,7 +2,7 @@ p {
     margin: 0 !important;
 }
 
-.FrontPageRow, .aboutMeRow, .projectsRow {
+.FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
   transition: all 0.2s ease-in-out !important;
   margin: calc(6vmax + 10px) 8% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
   max-width: 100%;

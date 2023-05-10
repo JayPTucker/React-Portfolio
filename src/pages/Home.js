@@ -274,6 +274,14 @@ const Home = () => {
 
       </Row>
 
+      <Row className="contactRow">
+        <Col md={12}>
+          <p>Get In Touch</p>
+          <p>Feel free to contact me below.  I am currently looking for work and am open to any opportunities.  My response time is same-day.  Thank you!</p>
+          <button>Email me!</button>
+        </Col>
+      </Row>
+
 
       {/* =========================================================== */}
       {/* ================== INFO BAR RIGHT SECTION ================== */}
