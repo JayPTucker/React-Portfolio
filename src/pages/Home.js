@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Row, Col, Container, Card, ListGroup, Tab } from 'react-bootstrap';
+import { Row, Col, Container, Card} from 'react-bootstrap';
 import '../styles/Home.css';
 
 import meImg from '../img/me_img.jpeg';

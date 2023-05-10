@@ -312,11 +312,11 @@ p {
   background-color: #28748b;
   transition: all 0.3s ease-in-out;
   margin-bottom: 20px; /* Space for responsive design */
+  min-height: 100%;
 }
 
 .projectCard:hover {
   background-color: #185c71;
-  margin-top: -10px;
   transform: scale(1.02);
 }
 
@@ -328,7 +328,7 @@ p {
   max-width: 100%;
   color: rgb(201, 201, 201);
   padding-bottom: 30px;
-  font-size: calc(1vmax + 1px);
+  font-size: calc(1vmax + 6px);
 }
 
 .contactCol {
