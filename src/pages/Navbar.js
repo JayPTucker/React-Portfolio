@@ -11,7 +11,9 @@ function NavbarFunc() {
     <Navbar expand="md" className="navbar">
     <Container>
 
-      <Navbar.Brand className="navbar-title">Jay Paul Tucker</Navbar.Brand>
+      <Navbar.Brand>
+        <img className="navbar-logo" src="./favicon.ico"></img>
+      </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="navbar-collapse" />
 

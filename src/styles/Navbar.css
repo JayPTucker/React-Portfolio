@@ -1,16 +1,22 @@
 /* Navbar.css */
 .navbar {
-    padding: 10px; /* Add padding as needed */
+  padding: 10px;
 }
 
 /* ============================================== */
 /* NAVBAR TITLE */
 /* ============================================== */
 
-.navbar-title {
-  color: #ebebeb !important; 
-  font-size: 24px; /* Set your desired font size */
-  margin: 0; /* Reset margin */
+.navbar-logo {
+  max-width: 90%;
+  border-radius: 100px;
+  border: 1px solid #b0ecff;
+  transition: all 3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  transform: rotate(1600deg);
+  border: 1px solid #497c8b;
 }
 
 /* ============================================== */
