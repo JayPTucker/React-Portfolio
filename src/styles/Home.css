@@ -129,15 +129,16 @@ p {
   
   .mini-bio {
     margin-top: 15px !important;
-    font-size: calc(1vmax + 8px); /* Adjust the font size as needed */
-    max-width: 70%;
+    font-size: calc(1vmax + 10px); /* Adjust the font size as needed */
+    max-width: 80%;
     }
   
   .myResumeBtn {
     text-decoration: none;
+    font-size: calc(1vmax + 5px);
     color: #b0ecff;
     border: 1px solid #b0ecff;
-    padding: 17px;
+    padding: 20px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
   }
