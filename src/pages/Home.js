@@ -92,10 +92,10 @@ const Home = () => {
           </Col>
         </Row>
 
-        <Row className="project1Row d-flex align-items-center">
-          {/* PROJECT 2: */}
+        {/* <Row className="project1Row d-flex align-items-center">
+          {/* PROJECT 2:
           <Col md={6}>
-            {/* <img className="project1Img projectImg" src={project1Img} alt="Project 2"></img> */}
+            <img className="project1Img projectImg" src={project1Img} alt="Project 2"></img> *
           </Col>
           <Col md={6} className="project1Col projectsCol">
             <p className="featuredProject">Featured Project</p>
@@ -110,7 +110,7 @@ const Home = () => {
               </svg>
             </a>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row className="project1Row d-flex align-items-center">
             {/* PROJECT 3: */}
