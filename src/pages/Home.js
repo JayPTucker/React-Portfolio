@@ -3,6 +3,7 @@ import { Row, Col, Container, Card} from 'react-bootstrap';
 import '../styles/Home.css';
 
 import meImg from '../img/me_img.jpeg';
+import greenScreenTest from '../img/GreenScreenTest.mov';
 
 import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.png';
@@ -51,9 +52,16 @@ const Home = () => {
 
       {/* ====================================================== */}
       {/* ================== FRONT PAGE SECTION ================== */}
+      <div className="video-container">
+          <video autoPlay loop muted className="transparent-video">
+            <source src={greenScreenTest} type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
       <Row className="FrontPageRow">
 
-        <Col md={12} className="FrontPageMainCol"> 
+        <Col md={8} className="FrontPageMainCol"> 
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>

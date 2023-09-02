@@ -28,6 +28,18 @@ p {
   color: #ebebebcc !important;
 }
 
+.video-container {
+  position: absolute;
+  margin: 0px !important;
+  max-width: 100%; /* Adjust as needed */
+  transform: scaleX(-1);
+}
+
+.transparent-video {
+  width: 100%;
+  height: auto;
+}
+
 /* ============================================ */
 /* BOTTOM LEFT INFO PANEL */
 /* ============================================ */
