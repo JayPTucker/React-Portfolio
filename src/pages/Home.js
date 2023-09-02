@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Container, Card} from 'react-bootstrap';
 import '../styles/Home.css';
 
-import greenScreenTest from '../img/GreenScreenTest.mov';
+import greenScreenTest from '../img/PCGreenScreen.mp4';
 
 import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.png';
@@ -53,10 +53,10 @@ const Home = () => {
       {/* ================== FRONT PAGE SECTION ================== */}
       <div className="video-container">
           <video autoPlay loop muted className="transparent-video">
-            <source src={greenScreenTest} type="video/webm" />
+            <source src={greenScreenTest} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+      </div>
 
       <Row className="FrontPageRow">
 
