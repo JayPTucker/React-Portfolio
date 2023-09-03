@@ -28,18 +28,6 @@ p {
   color: #ebebebcc !important;
 }
 
-.video-container {
-  position: absolute;
-  margin: 0px !important;
-  max-width: 100%; /* Adjust as needed */
-  transform: scaleX(-1);
-}
-
-.transparent-video {
-  width: 100%;
-  height: auto;
-}
-
 /* ============================================ */
 /* BOTTOM LEFT INFO PANEL */
 /* ============================================ */
@@ -134,14 +122,14 @@ p {
   
   .what-i-do {
     margin-top: -20px !important;
-    font-size: calc(4vmax - 10px); /* Adjust the font size as needed */
+    font-size: calc(2vmax + 3px); /* Adjust the font size as needed */
     font-weight: bold;
     color: #82b1bd !important; 
   }
   
   .mini-bio {
     margin-top: 15px !important;
-    font-size: calc(1vmax + 10px); /* Adjust the font size as needed */
+    font-size: calc(1.5vmax + 3px); /* Adjust the font size as needed */
     max-width: 80%;
     }
   
