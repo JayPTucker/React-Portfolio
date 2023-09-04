@@ -43,32 +43,33 @@ const Home = () => {
 
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
-        <div class="vertical-line-left"></div>
+        <div className="vertical-line-left"></div>
 
       </Col>
 
       {/* ====================================================== */}
       {/* ================== FRONT PAGE SECTION ================== */}
-      <video autoPlay loop muted className="GreenScreenVid" alt="Gif of me">
+
+
+        <video autoPlay loop muted className="GreenScreenVid" alt="Gif of me">
           {/* <source src={GreenScreenGif} type="video/webm" /> */}
           <source src={GreenScreenVid} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
-      </video>
+        </video>
 
-      <Row className="FrontPageRow">
+        <Row className="FrontPageRow">
 
-        <Col md={12} className="FrontPageMainCol"> 
-          <p className='title'>Hey there, my name is</p>
-          <p className='name-title'>Jay Paul Tucker.</p>
-          <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-          <p className='mini-bio bioDescColor'>Specializing in Front-End and Back-End development. Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
-          <br></br>
-          <br></br>
-          <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
-        </Col>
+          <Col md={12} className="FrontPageMainCol"> 
+            <p className='title'>Hey there, my name is</p>
+            <p className='name-title'>Jay Paul Tucker.</p>
+            <p className='what-i-do'>I'm a Full Stack Web Developer</p>
+            <p className='mini-bio bioDescColor'>Specializing in Front-End and Back-End development. Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
+            <br></br>
+            <br></br>
+            <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
+          </Col>
 
       </Row>
-
       {/* =========================================================== */}
       {/* ==================== PROJECTS SECTION ==================== */}
       <Row className="projectsRow" id="projects">
@@ -186,7 +187,7 @@ const Home = () => {
 
         <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
-        <div class="vertical-line-right"></div>
+        <div className="vertical-line-right"></div>
       </Col>
 
     </Container>

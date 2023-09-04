@@ -10,6 +10,16 @@ p {
   margin-bottom: calc(16vmax + 100px) !important;
 }
 
+.GreenScreenVid {
+  mix-blend-mode: screen !important;
+  transform: scaleX(-1);
+  position: absolute;
+  width: 88%;
+  /* Prevents someone from clicking on the video by accident and puts it behind everything else. */
+  z-index: -1;
+  margin-top: -150px;
+}
+
 .rowHeaderTitle {
   font-size: calc(1.5vmax + 9px); /* Adjust the font size as needed */
   color: #ebebeb;
@@ -147,25 +157,6 @@ p {
     color: #9ecdff !important;
     width: 100px;
   }
-  
-  .videoCol {
-    max-width: 100%;
-  }
-
-  .GreenScreenVid {
-    mix-blend-mode: screen;
-    width: 88%;
-    height: auto;
-    transform: scaleX(-1);
-    position: absolute;
-    /* Prevents someone from clicking on the video by accident and puts it behind everything else. */
-    z-index: -1;
-  }
-
-  .vidtest {
-    mix-blend-mode: screen;
-  }
-
 
 /* ============================================ */
 /* ABOUT ME ROW */
