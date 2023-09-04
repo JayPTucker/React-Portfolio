@@ -6,7 +6,7 @@ p {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
   justify-content: center;
-  margin: calc(10vmax + 2px) calc(8vmax + 2px)!important;
+  margin: calc(8vmax + 20px) calc(1vmax + 30px)!important;
 }
 
 .GreenScreenVid {
