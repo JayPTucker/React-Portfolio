@@ -105,14 +105,6 @@ p {
   margin-bottom: 10px;
 }
 
-.GreenScreenGif {
-  mix-blend-mode:screen;
-  max-width: 100%;
-  transform: scaleX(-1);
-  position: absolute;
-  margin-top: -100px;
-}
-
 /* ============================================ */
 /* MAIN PAGE */
 /* ============================================ */
@@ -123,26 +115,26 @@ p {
   }
   
   .name-title {
-    font-size: calc(4.4vmax + 3px); /* Adjust the font size as needed */
+    font-size: calc(3vmax + 6px); /* Adjust the font size as needed */
     font-weight: bold;
   }
   
   .what-i-do {
     margin-top: -20px !important;
-    font-size: calc(2vmax + 3px); /* Adjust the font size as needed */
+    font-size: calc(2vmax + 6px); /* Adjust the font size as needed */
     font-weight: bold;
     color: #82b1bd !important; 
   }
   
   .mini-bio {
     margin-top: 15px !important;
-    font-size: calc(1.5vmax + 3px); /* Adjust the font size as needed */
+    font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
     max-width: 80%;
     }
   
   .myResumeBtn {
     text-decoration: none;
-    font-size: calc(1vmax + 5px);
+    font-size: calc(1vmax + 6px);
     color: #b0ecff;
     border: 1px solid #b0ecff;
     padding: 20px;
@@ -155,6 +147,22 @@ p {
     color: #9ecdff !important;
     width: 100px;
   }
+  
+  .videoCol {
+    max-width: 100%;
+  }
+
+  .GreenScreenGif {
+    mix-blend-mode: screen;
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    margin-top: -100px;
+    /* Prevents someone from clicking on the video by accident and puts it behind everything else. */
+    z-index: -1;
+  }
+
 
 /* ============================================ */
 /* ABOUT ME ROW */
