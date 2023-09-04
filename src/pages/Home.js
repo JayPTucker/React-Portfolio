@@ -2,7 +2,8 @@ import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../styles/Home.css';
 
-import GreenScreenGif from '../img/GSFmp4TOmovCOMPRESSED.mov'
+// import GreenScreenGif from '../img/GSFmp4TOmovCOMPRESSED.mov'
+import GreenScreenGif2 from '../img/gsfCompat.mp4'
 
 import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.png';
@@ -52,7 +53,8 @@ const Home = () => {
       <Row className="FrontPageRow">
 
         <video autoPlay loop muted className="GreenScreenGif">
-          <source src={GreenScreenGif} type="video/webm" />
+          {/* <source src={GreenScreenGif} type="video/webm" /> */}
+          <source src={GreenScreenGif2} type="video/mp4" />
           {/* Add additional source elements for different video formats if needed */}
         </video>
 
