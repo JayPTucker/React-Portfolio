@@ -166,7 +166,9 @@ const Home = () => {
         <Col md={6} className="contactCol">
           <p className="contactRowText">Feel free to contact me below, I am currently looking for work and am open to any opportunities.  My response time is same-day.  Thank you!</p>
           <br></br>
-          <button className="contactMeBtn">Email me!</button>
+          <a href="mailto:jaypaultucker@gmail.com">
+            <button className="contactMeBtn">Email me!</button>
+          </a>
         </Col>
       </Row>
 
