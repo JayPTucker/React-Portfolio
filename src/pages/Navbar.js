@@ -2,7 +2,6 @@ import React from 'react';
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 // Even though Router, Routes, Route, and Link are not used in this file, they are needed for the app to work
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "../styles/Navbar.css";
 
 
@@ -12,7 +11,7 @@ function NavbarFunc() {
     <Container>
 
       <Navbar.Brand>
-        <img className="navbar-logo" src="./favicon.ico"></img>
+        <img className="navbar-logo" alt="My logo" src="./favicon.ico"></img>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="navbar-collapse" />

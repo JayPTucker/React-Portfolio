@@ -1,6 +1,6 @@
 // =========================================
 // IMPORTS:
-import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Container } from 'react-bootstrap';
