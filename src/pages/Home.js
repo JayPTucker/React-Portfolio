@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Row, Col, Container, Card} from 'react-bootstrap';
 import '../styles/Home.css';
 
-import GreenScreenGif from '../img/FinalGreenScreen.webm'
+import GreenScreenGif from '../img/GSFmp4TOmovCOMPRESSED.mov'
 
 import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.png';
@@ -53,10 +53,10 @@ const Home = () => {
       {/* ================== FRONT PAGE SECTION ================== */}
       <Row className="FrontPageRow">
 
-      <video autoPlay loop className="GreenScreenGif">
-            <source src={GreenScreenGif} type="video/webm" />
-            {/* Add additional source elements for different video formats if needed */}
-          </video>
+        <video autoPlay loop muted className="GreenScreenGif">
+          <source src={GreenScreenGif} type="video/webm" />
+          {/* Add additional source elements for different video formats if needed */}
+        </video>
 
         <Col md={12} className="FrontPageMainCol"> 
           <p className='title'>Hey there, my name is</p>
