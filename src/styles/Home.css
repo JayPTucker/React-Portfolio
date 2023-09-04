@@ -152,15 +152,18 @@ p {
     max-width: 100%;
   }
 
-  .GreenScreenGif {
+  .GreenScreenVid {
     mix-blend-mode: screen;
-    width: 100%;
+    width: 88%;
     height: auto;
     transform: scaleX(-1);
     position: absolute;
-    margin-top: -100px;
     /* Prevents someone from clicking on the video by accident and puts it behind everything else. */
     z-index: -1;
+  }
+
+  .vidtest {
+    mix-blend-mode: screen;
   }
 
 

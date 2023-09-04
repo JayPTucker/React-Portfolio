@@ -49,13 +49,13 @@ const Home = () => {
 
       {/* ====================================================== */}
       {/* ================== FRONT PAGE SECTION ================== */}
-      <Row className="FrontPageRow">
-
-        <video autoPlay loop muted className="GreenScreenGif">
+      <video autoPlay loop muted className="GreenScreenVid" alt="Gif of me">
           {/* <source src={GreenScreenGif} type="video/webm" /> */}
           <source src={GreenScreenVid} type="video/webm" />
           {/* Add additional source elements for different video formats if needed */}
-        </video>
+      </video>
+
+      <Row className="FrontPageRow">
 
         <Col md={12} className="FrontPageMainCol"> 
           <p className='title'>Hey there, my name is</p>
