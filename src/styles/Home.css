@@ -4,10 +4,9 @@ p {
 
 .FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
   transition: all 0.2s ease-in-out !important;
-  margin: calc(6vmax + 10px) 8% !important; /* Gives our shortcuts room to breathe at the bottom left and right */
   max-width: 100%;
   justify-content: center;
-  margin-bottom: calc(16vmax + 100px) !important;
+  margin: calc(10vmax + 2px) calc(8vmax + 2px)!important;
 }
 
 .GreenScreenVid {
