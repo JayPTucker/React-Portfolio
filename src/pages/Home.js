@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Row, Col, Container, Card} from 'react-bootstrap';
+import React from 'react';
+import { Row, Col, Container} from 'react-bootstrap';
 import '../styles/Home.css';
 
 import GreenScreenGif from '../img/GSFmp4TOmovCOMPRESSED.mov'
@@ -8,8 +8,6 @@ import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.png';
 
 const Home = () => {
-
-  const [key, setKey] = useState('home');
 
   return (
     <Container>
