@@ -10,7 +10,8 @@ p {
 }
 
 .GreenScreenVid {
-  /* mix-blend-mode: screen !important; */
+  /* This is only needed for MacOS for Safari */
+  mix-blend-mode: screen !important;
   transform: scaleX(-1);
   position: absolute;
   width: 88%;
