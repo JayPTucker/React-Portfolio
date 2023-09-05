@@ -10,7 +10,7 @@ p {
 }
 
 .GreenScreenVid {
-  mix-blend-mode: screen !important;
+  /* mix-blend-mode: screen !important; */
   transform: scaleX(-1);
   position: absolute;
   width: 88%;
