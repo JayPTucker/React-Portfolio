@@ -230,7 +230,7 @@ p {
 
 .projectImg {
   box-shadow: 1px 1px 10px black;
-  filter: grayscale(100%) !important;
+  filter: grayscale(90%) !important;
   filter: alpha(opacity=75); /* For IE8 and earlier */
   max-width: 130%;
   border: 1px solid #568b9c;
@@ -252,18 +252,18 @@ p {
 
 .projectTitle {
   font-weight: bold;
-  font-size: calc(0.9vmax + 12px);
+  font-size: 3vh;
   margin-bottom: 20px !important;
 }
 
 
 .projectDesc {
-  background-color: #28748b;
+  background-color: #28748bca;
   padding: 20px;
   color: rgb(201, 201, 201);
   box-shadow: 1px 1px 10px black;
   margin-bottom: 10px !important;
-  font-size: calc(0.5vmax + 8px); /* Adjust the font size as needed */
+  font-size: 1.9vh; /* Adjust the font size as needed */
   transition: all 0.3s ease-in-out !important;
   z-index: 1;
   position: relative;
@@ -277,7 +277,7 @@ p {
 }
 
 .skillsUsed {
-  font-size: calc(0.4vmax + 6px);
+  font-size: 2vh;
   color: #b0ecff;
   letter-spacing: 1px;
   z-index: 1;
