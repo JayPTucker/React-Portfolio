@@ -130,27 +130,22 @@ const Home = () => {
           <hr className="customHr"></hr>
 
           <p className="aboutmeBio bioDescColor">
-            Hey there, my name is Jay Paul, I enjoy anything IT related whether that is Gaming, Coding, Hardware Repair, or learning new Software.
-            My interest in Web Development and programming in general started around 2018 with Python from a friend I met Online and we were slowly getting into
-            learning about Python and that is what brought me to continue with my educaiton through Vanderbilt University in 2020 specializing in mainly
-            HTML, CSS, JavaScript, APIs, JS Libraries, and many more that can be seen on my <a className="bioLink" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">resume</a>.
+            Hello, I'm Jay Paul, an IT enthusiast with a passion for coding, hardware, and software. My journey into web development began in 2018, starting with Python and later expanding my skills. In 2020, I honed my expertise in Front-End and Back-End development involving HTML, CSS, JavaScript, MySQL, APIs, and more seen on my resume.
+            Today, I'm a Technical Expert at Apple, where I apply my knowledge to solve technical challenges. I'm committed to continuous learning and am currently enrolled in courses by IBM and Google via Coursera to stay updated in the dynamic field of software development.
             <br></br><br></br>
-            Present day, I am currently working at <a className="bioLink" href="https://apple.com" rel="noopener noreferrer" target='_blank'>Apple</a> as a Technical Expert.  Currently studying via Coursera through IBM and Google to stay ahead in the ever-evolving field of software development.
-            Looking to pursue a career in the IT field and continue to learn and grow as a developer.
-            <br></br><br></br>
-            Here are a few technologies I've been working with recently:
-            <br></br>
-
-          </p>
-
-          <ul className='horizontal-list'>
+            Here are some of the technologies I'm proficient in:
+            <ul>
+              <li>HTML & CSS</li>
               <li>JavaScript (ES6+)</li>
               <li>React & Bootstrap</li>
               <li>Node.js</li>
               <li>Express</li>
-              <li>MySQL, MongoDB</li>
-              <li>HTML & (S)CSS</li>
-          </ul>
+              <li>MySQL & MongoDB</li>
+            </ul>
+
+            I'm dedicated to my career in IT and excited about the opportunities for growth and innovation in the ever-evolving tech landscape.
+
+          </p>
         </Col>
       </Row>
 
