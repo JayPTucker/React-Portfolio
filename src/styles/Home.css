@@ -6,18 +6,25 @@ p {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
   justify-content: center;
-  margin: calc(8vmax + 20px) calc(1vmax + 30px)!important;
+  margin: 20vh 30vh !important;
 }
 
 .GreenScreenVid {
   /* This is only needed for MacOS for Safari */
   mix-blend-mode: screen !important;
   transform: scaleX(-1);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
   position: absolute;
-  width: 88%;
-  /* Prevents someone from clicking on the video by accident and puts it behind everything else. */
-  z-index: -1;
-  margin-top: -150px;
+  top: 0;
+  right: 0; /* Set right to 0 to align it to the far right side */
+  bottom: 0;
+  margin-top: auto;
+  margin-right: 0; /* Set margin-right to 0 to align it to the far right side */
+  margin-bottom: auto;
+  z-index: 0;
 }
 
 .rowHeaderTitle {
