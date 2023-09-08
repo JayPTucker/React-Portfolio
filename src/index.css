@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ebebeb;
+  background-image: url('./img/background.jpg'); /* Replace with the actual path to your image */
+  background-size: cover; /* Scale the image to cover the entire body element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed;
+  background-blend-mode:difference;
+  background-color: #172941cb;
+}

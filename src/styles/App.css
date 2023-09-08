@@ -9,13 +9,6 @@
   text-shadow: 1px 1px 1px rgb(0, 0, 0) !important;
 }
 
-body {
-    background-color: #001a30;
-    margin: 0;
-    padding: 0;
-    color: #ebebeb;
-}
-
 /* Define the fade-in animation */
 .fade-enter {
   opacity: 0;
