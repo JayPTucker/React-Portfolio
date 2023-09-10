@@ -24,7 +24,7 @@ p {
   margin-top: auto;
   margin-right: 0; /* Set margin-right to 0 to align it to the far right side */
   margin-bottom: auto;
-  z-index: 0;
+  z-index: -1;
 }
 
 .rowHeaderTitle {
