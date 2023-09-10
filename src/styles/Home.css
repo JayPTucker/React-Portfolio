@@ -244,6 +244,7 @@ p {
   filter: alpha(opacity=100); /* For IE8 and earlier */
   border: 1px solid #3b6b7b;
   transform: scale(1.1);
+  z-index: 2;
 }
 
 .featuredProject {
