@@ -6,7 +6,7 @@ p {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
   justify-content: center;
-  margin: 15vh calc(4vmax + 10px) !important;
+  margin: 15vh calc(4vmax + 100px) !important;
 }
 
 .GreenScreenVid {
@@ -71,10 +71,10 @@ p {
 
 .githubIcon, .linkedinIcon, .emailIcon {
   fill: #ebebebc0 !important;
+  margin-top: 10px;
   width: 26px;
   height: auto;
   transition: all 0.3s ease-in-out !important;
-  margin-top: 20px;
 }
 
 .githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover {
@@ -283,8 +283,31 @@ p {
   letter-spacing: 1px;
   z-index: 1;
   position: relative;
+  margin-bottom: 10px !important;
 }
-  
+
+.visit-site-btn {
+  text-decoration: none;
+  font-size: calc(1vmax + 6px);
+  color: #b0ecff;
+  border: 1px solid #b0ecff;
+  padding: 5px;
+  width: 140px;
+  margin-right: 30px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.visit-site-btn:hover {
+  background-color: #0a3846;
+}
+
+.button-container {
+  display: flex;
+  float: right;
+}
+
 /* PROJECT 1 */
 /* ========= */
 
@@ -400,8 +423,8 @@ p {
         display: none; /* hide info-panel-left below 768px */
     }
 
-    .FrontPageRow {
-        margin: 0px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+    .FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
+        margin: 70px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
         text-align: center;
         justify-content: center;
     }
