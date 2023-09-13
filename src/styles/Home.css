@@ -148,22 +148,6 @@ p {
     font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
     max-width: 80%;
     }
-  
-  .myResumeBtn {
-    text-decoration: none;
-    font-size: calc(1vmax + 6px);
-    color: #b0ecff;
-    border: 1px solid #b0ecff;
-    padding: 20px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .myResumeBtn:hover {
-    background-color: #6298d173;
-    color: #9ecdff !important;
-    width: 100px;
-  }
 
 /* ============================================ */
 /* ABOUT ME ROW */

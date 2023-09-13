@@ -2,6 +2,8 @@ import React from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import '../styles/Home.css';
 
+import ButtonComponent from '../components/button.js';
+
 import GreenScreenVid from '../img/GSFffm.webm'
 
 import project1Img from '../img/project-1.gif';
@@ -60,7 +62,7 @@ const Home = () => {
           <p className='mini-bio bioDescColor'>Specializing in Front-End and Back-End development. Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
           <br></br>
           <br></br>
-          <a className="myResumeBtn" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">Check out my Resume</a>
+          <ButtonComponent></ButtonComponent>
         </Col>
 
       </Row>
