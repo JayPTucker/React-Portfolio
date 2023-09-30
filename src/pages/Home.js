@@ -59,7 +59,7 @@ const Home = () => {
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-          <p className='mini-bio bioDescColor'>Specializing in Front-End and Back-End development. Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
+          <p className='mini-bio bioDescColor'>Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
           <br></br>
           <br></br>
           <ButtonComponent></ButtonComponent>
