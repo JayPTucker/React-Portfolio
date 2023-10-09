@@ -3,8 +3,7 @@ import { Row, Col, Container} from 'react-bootstrap';
 import '../styles/Home.css';
 
 import ButtonComponent from '../components/button.js';
-
-import GreenScreenVid from '../img/GSFffm.webm'
+import GreenScreenComponent from '../components/greenscreen.js';
 
 import project1Img from '../img/project-1.gif';
 import project3Img from '../img/project-3.gif';
@@ -65,13 +64,10 @@ const Home = () => {
           <ButtonComponent></ButtonComponent>
         </Col>
 
+        <GreenScreenComponent></GreenScreenComponent>
       </Row>
 
-      <video autoPlay loop muted className="GreenScreenVid" alt="Gif of me">
-              {/* <source src={GreenScreenGif} type="video/webm" /> */}
-              <source src={GreenScreenVid} type="video/webm" />
-              {/* Add additional source elements for different video formats if needed */}
-      </video>
+      
       {/* =========================================================== */}
       {/* ==================== PROJECTS SECTION ==================== */}
       <Row className="projectsRow" id="projects">
