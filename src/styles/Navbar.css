@@ -1,8 +1,3 @@
-/* Navbar.css */
-.navbar {
-  padding: 10px;
-}
-
 /* ============================================== */
 /* NAVBAR TITLE */
 /* ============================================== */
@@ -24,19 +19,25 @@
 /* ============================================== */
 
 .navbar-links-col {
-  display: flex !important; /* Use flexbox for alignment */
   justify-content: flex-end; /* Align items to the right */
   align-items: center; /* Center items vertically within the column */
 }
+.navbar-link a {
+  display: inline !important; /* Set to "inline" to keep the link and span side by side */
+  text-decoration: none; /* To remove underline if needed */
+}
 
 .navbar-link-number {
+  display: inline; /* Set to "inline" to keep the number and text side by side */
   color: #b0ecff;
 }
 
 .navbar-link {
-  margin-left: 35px; /* Add margin between links as needed */
   text-decoration: none; /* Remove underline */
   color: #ebebeb !important; /* Set your desired link color */
+  /* Media Query */
+  margin: 0px 20px;
+  font-size: 20px;
 }
 
 .navbar-link:hover {
@@ -44,10 +45,13 @@
 }
 
 .resume-link {
-  margin-left: 35px; /* Add margin between links as needed */
   color: #b0ecff !important; /* Set your desired link color */
   border: 1px solid #b0ecff; /* Set your desired border color */
   border-radius: 5px;
+  text-decoration: none;
+  /* Media Query */
+  padding: 10px;
+  font-size: 20px;
 }
 
 .resume-link:hover {
@@ -73,9 +77,22 @@
 /* MEDIA QUERIES */
 /* ============================================== */
 
-/* Add any additional styling as needed */
 @media (max-width: 767px) {
-  .navbar {
-    margin-bottom: 80px;
+  .FrontPageRow {
+    margin: 30px 20px !important;
+  }
+  .navbar-links-col, .navbar-collapse {
+    justify-content: center !important; /* Align items to the right */
+    align-items: center !important;
+  }
+
+  .navbar-link {
+    margin: 0px 12px;
+    font-size: 14px;
+  }
+
+  .resume-link {
+    padding: 5px;
+    font-size: 14px;
   }
 }
