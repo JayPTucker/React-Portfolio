@@ -24,7 +24,7 @@
 /* ============================================== */
 
 .navbar-links-col {
-  display: flex; /* Use flexbox for alignment */
+  display: flex !important; /* Use flexbox for alignment */
   justify-content: flex-end; /* Align items to the right */
   align-items: center; /* Center items vertically within the column */
 }
@@ -64,9 +64,9 @@
   border-color: #ebebeb !important;
 }
 
-/* Turn the navbar span tag white */
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(235, 235, 235, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 /* ============================================== */
