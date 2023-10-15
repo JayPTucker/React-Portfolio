@@ -92,7 +92,7 @@ p {
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 28px;
+  right: -4%;
   z-index: 10;
 }
 
@@ -114,7 +114,6 @@ p {
   text-decoration: none;
   color: #ebebebc0;
   letter-spacing: 3px;
-  margin-left: 9vh;
 }
 
 .vertical-text:hover {
