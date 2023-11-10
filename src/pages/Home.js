@@ -58,7 +58,10 @@ const Home = () => {
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-          <p className='mini-bio bioDescColor'>Currently working at Apple as a Technical Expert; dedicated to delivering innovative solutions. Continuously advancing skills with IBM and Google to stay ahead in the ever-evolving field of software development.</p>
+          <p className='mini-bio bioDescColor'>Certified Full Stack Web Developer with 4+ years of experience in Front and Back-End development alongside
+          experience with the Software Development Life Cycle and CI/CD concepts. Currently working at Apple as a Technical
+          Expert, advancing knowledge in fast-paced work environments and in collaboration with a large team that benefits off of
+          feedback culture.</p>
           <br></br>
           <br></br>
           <ButtonComponent></ButtonComponent>
@@ -135,21 +138,13 @@ const Home = () => {
           <hr className="customHr"></hr>
 
           <p className="aboutmeBio bioDescColor">
-            Hello, I'm Jay Paul, an IT enthusiast with a passion for coding, hardware, and software. My journey into web development began in 2018, starting with Python and later expanding my skills. In 2020, I honed my expertise in Front-End and Back-End development involving HTML, CSS, JavaScript, MySQL, APIs, and more seen on my resume.
-            Today, I'm a Technical Expert at Apple, where I apply my knowledge to solve technical challenges. I'm committed to continuous learning and am currently enrolled in courses by IBM and Google via Coursera to stay updated in the dynamic field of software development.
-            <br></br><br></br>
-            Here are some of the technologies I'm proficient in:
-            <ul>
-              <li>HTML & CSS</li>
-              <li>JavaScript (ES6+)</li>
-              <li>React & Bootstrap</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>MySQL & MongoDB</li>
-            </ul>
-
-            I'm dedicated to my career in IT and excited about the opportunities for growth and innovation in the ever-evolving tech landscape.
-
+          Certified Full Stack Web Developer with 4+ years of experience in Front and Back-End development alongside
+          experience with the Software Development Life Cycle and CI/CD concepts. Currently working at Apple as a Technical
+          Expert, advancing knowledge in fast-paced work environments and in collaboration with a large team that benefits off of
+          feedback culture. Proactive problem-solver dedicated to promoting positive change within the workplace. Adaptable to
+          rapid changing work environments and always seeking out new learning opportunities to enhance overall skillset.
+          Enthusiastic about tackling challenges and learning new development languages, libraries, and frameworks to make
+          lasting impacts on the user experience.
           </p>
         </Col>
       </Row>
