@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Container } from "react-bootstrap";
 
 // Even though Router, Routes, Route, and Link are not used in this file, they are needed for the app to work
 import "../styles/Navbar.css";
