@@ -58,7 +58,7 @@ const Home = () => {
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-          <p className='mini-bio bioDescColor'>Certified Full Stack Web Developer with 4+ years of experience in Front and Back-End development alongside
+          <p className='mini-bio bioDescColor'>Certified Full Stack Web Developer with 5+ years of experience in Front and Back-End development alongside
           experience with the Software Development Life Cycle and CI/CD concepts. Currently working at Apple as a Technical
           Expert, advancing knowledge in fast-paced work environments and in collaboration with a large team that benefits off of
           feedback culture.</p>
@@ -138,7 +138,7 @@ const Home = () => {
           <hr className="customHr"></hr>
 
           <p className="aboutmeBio bioDescColor">
-          Certified Full Stack Web Developer with 4+ years of experience in Front and Back-End development alongside
+          Certified Full Stack Web Developer with 5+ years of experience in Front and Back-End development alongside
           experience with the Software Development Life Cycle and CI/CD concepts. Currently working at Apple as a Technical
           Expert, advancing knowledge in fast-paced work environments and in collaboration with a large team that benefits off of
           feedback culture. Proactive problem-solver dedicated to promoting positive change within the workplace. Adaptable to
