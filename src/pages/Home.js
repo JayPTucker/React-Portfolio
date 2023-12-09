@@ -58,9 +58,11 @@ const Home = () => {
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
-          <p className='mini-bio bioDescColor'>Currently working at Apple as a Technical Expert as I continue to practice and hone my skills in Full Stack Web Development
-            by continuing to get Certifications from Google alongside IBM.  Present Day, I am working on a Full-Stack CRUD Project called Witter alongisde keeping my Portfolio Website up to date.
-            These Projects can be seen below under the projects tab below.</p>
+          <p className='mini-bio bioDescColor'>
+            Currently working as a Technical Expert at Apple actively refining my Full Stack Web Development skills. 
+            I'm dedicated to continuous improvement, acquiring certifications from both Google and IBM. Currently, I'm immersed in a Full-Stack CRUD Project
+            named Witter while ensuring my Portfolio Website stays current. Explore these projects further in the 'Projects' tab below.
+          </p>
           <br></br>
           <br></br>
           <ButtonComponent></ButtonComponent>
