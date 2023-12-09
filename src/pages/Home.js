@@ -85,7 +85,7 @@ const Home = () => {
             
           </Col>
           <Col md={6} className="project1Col projectsCol">
-            <p className="featuredProject">Featured Project</p>
+            <p className="featuredProject">Main Highlight Project</p>
             <p className="projectTitle">[WIP] Witter</p>
             <div className="project1Desc projectDesc">
               <p>Coming Soon...</p>
@@ -105,7 +105,7 @@ const Home = () => {
             <img className="project3Img projectImg" src={project3Img} alt="Project 3"></img>
           </Col>
           <Col md={6} className="project1Col projectsCol">
-            <p className="featuredProject">Current Work in Progress</p>
+            <p className="featuredProject">Featured Project</p>
             <p className="projectTitle">FS Hockey Portfolio</p>
             <div className="project1Desc projectDesc">
               <p>This is a Portfolio Website made for Online Persona FSHockey to show off his well-known 3D Models using Blender/Unity.  The Website is created using React, HTML, CSS and utilizes Bootstrap and other elements for a great User Experience</p>
