@@ -6,7 +6,16 @@ function GreenScreenComponent() {
     const isUsingSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
     if (isUsingSafari === true) {
-        alert("This Website does not support Safari - Some features may not work as intended.  Please use Chrome or any other browser.")
+      return (
+        
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              You're currently using Safari; some Features may not work on this browser as intended.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+    );
+
     } else {
         return (
         

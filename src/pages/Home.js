@@ -42,9 +42,9 @@ const Home = () => {
           </svg>        
         </a>
 
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-
-        <div className="vertical-line-left"></div>
+        <br></br>
+        <br></br>
+        <br></br>
 
       </Col>
 
@@ -203,10 +203,8 @@ const Home = () => {
       <Col className="info-panel-right" orientation="left" md={1}>
         
         <a className="vertical-text" href="mailto:jaypaultucker@gmail.com">jaypaultucker@gmail.com</a>
+        <br></br><br></br><br></br>
 
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-
-        <div className="vertical-line-right"></div>
       </Col>
 
     </Container>
