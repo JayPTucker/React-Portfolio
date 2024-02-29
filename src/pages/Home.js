@@ -5,7 +5,8 @@ import '../styles/Home.css';
 import ButtonComponent from '../components/button.js';
 import GreenScreenComponent from '../components/greenscreen.js';
 
-import project1Img from '../img/project-1.gif';
+import projectWitterImg from '../img/projectWitter.png';
+import project2Img from '../img/project-2.gif';
 import project3Img from '../img/project-3.gif';
 
 const Home = () => {
@@ -82,13 +83,17 @@ const Home = () => {
           <Row className="project1Row d-flex align-items-center">
           {/* PROJECT 1: */}
           <Col md={6}>
-            
+            <img className="projectWitterImg projectImg" src={projectWitterImg} alt="Project Witter"></img>
           </Col>
           <Col md={6} className="project1Col projectsCol">
             <p className="featuredProject">Main Highlight Project</p>
             <p className="projectTitle">[WIP] Witter</p>
             <div className="project1Desc projectDesc">
-              <p>Coming Soon...</p>
+              <p>
+                Full Stack CRUD Application inspired by multiple social media platforms.  Includes an in-depth login and registration system
+                with password encryption and Email two-factor authentication.  Allows you to create, read, update, or destroy "Wits" whcih may include
+                text, photos, or even videos.  More features to come as this is a Work-In-Progress.
+                </p>
             </div>
             <p className="skillsUsed">Passport bcrypt Sequelize MySQL Node.js inquirer Javascript jQuery HTML CSS Express</p>
             <a className="skills-github" href="https://github.com/JayPTucker/witter" target="_blank" rel="noopener noreferrer">
@@ -129,7 +134,7 @@ const Home = () => {
         <Row className="project1Row d-flex align-items-center">
           {/* PROJECT 1: */}
           <Col md={6}>
-            <img className="project1Img projectImg" src={project1Img} alt="Project 1"></img>
+            <img className="project1Img projectImg" src={project2Img} alt="Project 1"></img>
           </Col>
           <Col md={6} className="project1Col projectsCol">
             <p className="featuredProject">Featured Project</p>

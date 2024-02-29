@@ -250,9 +250,9 @@ p {
 
 
 .projectDesc {
-  background-color: #28748bca;
+  background-color: #28748bea;
   padding: 20px;
-  color: rgb(201, 201, 201);
+  color: rgb(224, 224, 224);
   box-shadow: 1px 1px 10px black;
   margin-bottom: 10px !important;
   font-size: 1.9vh; /* Adjust the font size as needed */
