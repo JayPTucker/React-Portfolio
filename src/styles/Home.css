@@ -223,7 +223,7 @@ p {
   box-shadow: 1px 1px 10px black;
   filter: grayscale(90%) !important;
   filter: alpha(opacity=75); /* For IE8 and earlier */
-  max-width: 130%;
+  max-width: 520px;
   border: 1px solid #568b9c;
   transition: all 0.3s ease-in-out !important;  
   position: relative;
