@@ -60,9 +60,7 @@ const Home = () => {
           <p className='name-title'>Jay Paul Tucker.</p>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
           <p className='mini-bio bioDescColor'>
-            Currently working as a Technical Expert at Apple actively refining my Full Stack Web Development skills. 
-            I'm dedicated to continuous improvement, acquiring certifications from both Google and IBM. Currently, I'm immersed in a Full-Stack CRUD Project
-            named Witter while ensuring my Portfolio Website stays current. Explore these projects further in the 'Projects' tab below.
+          Certified Full Stack Web Developer with 5+ years of experience in Front and Back-End development; currently at Apple as a Technical Expert. Pursuing Bachelors in Software Engineering at Western Governors University. Expertise in Software Development Life Cycle, CI/CD, APIs, and end-to-end solutions. Proactive problem-solver driving results and positive change. Adaptable to rapid changes, committed to continuous learning, and passionate about IT, programming, innovation, Electric Vehicles, and Virtual Reality.
           </p>
           <br></br>
           <br></br>
