@@ -58,9 +58,10 @@ const Home = () => {
         <Col md={12} className="FrontPageMainCol"> 
           <p className='title'>Hey there, my name is</p>
           <p className='name-title'>Jay Paul Tucker.</p>
+          <br></br>
           <p className='what-i-do'>I'm a Full Stack Web Developer</p>
           <p className='mini-bio bioDescColor'>
-          Certified Full Stack Web Developer with 5+ years of experience in Front and Back-End development; currently at Apple as a Technical Expert. Pursuing Bachelors in Software Engineering at Western Governors University. Expertise in Software Development Life Cycle, CI/CD, APIs, and end-to-end solutions. Proactive problem-solver driving results and positive change. Adaptable to rapid changes, committed to continuous learning, and passionate about IT, programming, innovation, Electric Vehicles, and Virtual Reality.
+            Currently working Full-Time as a Technical Expert at Apple while pursuing a Bachelors Degree in Software Engineering at Western Governors University.  Currently looking for work to further my Career in Software Engineering.
           </p>
           <br></br>
           <br></br>
@@ -162,14 +163,10 @@ const Home = () => {
           <hr className="customHr"></hr>
 
           <p className="aboutmeBio bioDescColor">
-            Certified Full Stack Web Developer with 5+ years of experience in Front and Back-End development, alongside years of
-            debugging expertise. Knowledge in the Software Development Life Cycle, CI/CD concepts, APIs, and creating end-to-
-            end solutions. Currently working at Apple as a Technical Expert, advancing knowledge in fast-paced work environments
-            and in collaboration with a large team that benefits from a feedback culture. Proactive problem-solver dedicated to
-            promoting positive change within the workplace. Adaptable to rapid changing work environments and always seeking
-            out new learning opportunities to enhance overall skillset. Enthusiastic about tackling challenges and learning new
-            development languages, libraries, and frameworks to make lasting impacts on the user experience.
-          </p>
+          Dedicated Full Stack Web Developer with 5+ years of experience and currently pursuing a Bachelor's Degree in Software Engineering
+at Western Governors University. Thriving at Apple as a Technical Expert, adept in the Software Development Life Cycle, CI/CD
+concepts, and crafting end-to-end solutions. Proactive problem-solver committed to driving results and fostering positive change.
+Passionate about IT, programming, and innovation, with a keen interest in Electric Vehicles, Gaming, and Virtual Reality.          </p>
         </Col>
       </Row>
 
