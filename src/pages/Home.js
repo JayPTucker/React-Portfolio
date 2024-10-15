@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import ButtonComponent from '../components/button.js';
 import GreenScreenComponent from '../components/greenscreen.js';
 
-import projectWitterImg from '../img/projectWitter.png';
+import witterImage from '../img/witterLogo.png';
 
 import '../styles/Home.css';
 
@@ -66,41 +66,48 @@ const Home = () => {
         </Row>
       </motion.div>
 
+{/* ======================================= */}
       {/* PROJECTS SECTION */}
       <Row className="projectsRow" id="projects">
         <motion.div
-          className="rowHeaderTitle"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.8 }}
-          variants={projectVariants}
-        >
-          <span className="rowHeaderNumber">01. </span>Projects
-        </motion.div>
-        <hr className="customHr" />
-
-        <motion.div
-          className="project1Row d-flex align-items-center"
+          className="project1Row"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={projectVariants}
         >
-          <Col md={6}>
-            <img className="projectWitterImg projectImg" src={projectWitterImg} alt="Project Witter" />
+          {/* Header with Logo and Title */}
+          <Col md={12} className="text-center">
+            <div className="projectHeader d-flex justify-content-center align-items-center">
+              <img className="witterLogo" src={witterImage} alt="Witter Logo" />
+              <p className="projectTitle">Witter</p>
+            </div>
           </Col>
-          <Col md={6} className="projectsCol">
-            <p className="featuredProject">Main Highlight Project</p>
-            <p className="projectTitle">[WIP] Witter</p>
-            <p className="projectDesc">Full Stack CRUD Application...</p>
-            <a href="https://github.com/JayPTucker/witter" target="_blank" rel="noopener noreferrer">
-              <svg className="githubIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="github">
-                <path d="..."></path>
-              </svg>
-            </a>
-          </Col>
+
+          {/* Row for the three sections under the title */}
+          <Row className="projectSections justify-content-center text-center mt-4">
+            <Col md={3} className='witter-col'>
+              <div className="section">
+                <h4>Section 1</h4>
+                <p>Description for section 1.</p>
+              </div>
+            </Col>
+            <Col md={3} className='witter-col'>
+              <div className="section">
+                <h4>Section 2</h4>
+                <p>Description for section 2.</p>
+              </div>
+            </Col>
+            <Col md={3} className='witter-col'>
+              <div className="section">
+                <h4>Section 3</h4>
+                <p>Description for section 3.</p>
+              </div>
+            </Col>
+          </Row>
         </motion.div>
       </Row>
+{/* ======================================= */}
 
       {/* ABOUT ME SECTION */}
       <motion.div

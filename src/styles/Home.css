@@ -6,9 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.projectsRow {
-  padding: 50px 0;
-}
 
 .project1Row {
   opacity: 0;
@@ -31,7 +28,7 @@ html {
   margin-top: 100px !important;
 }
 
-.FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
+.FrontPageRow, .aboutMeRow, .contactRow {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
   justify-content: center;
@@ -172,7 +169,7 @@ html {
   }
   
   .mini-bio {
-    margin-top: 15px !important;
+    margin: 0px 0px 35px 0px  !important;
     font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
     max-width: 80%;
     }
@@ -180,11 +177,6 @@ html {
 /* ============================================ */
 /* ABOUT ME ROW */
 /* ============================================ */
- 
-/* .aboutMeRow {
-  WAS USED TO GIVE SPACE BETWEEN ABOUT ROW AND TOP ROW
-  margin-top: calc(16vmax + 100px) !important;
-} */
 
 .aboutmeBio {
   font-size: calc(0.9vmax + 8px); /* Adjust the font size as needed */
@@ -229,15 +221,15 @@ html {
 }
 
 /* ============================================ */
-/* EXPERIENCE */
-/* ============================================ */
-
-/* ============================================ */
 /* PROJECTS */
 /* ============================================ */
 
-.project1Row, .project2Row {
+.project1Row {
   margin-bottom: calc(3vmax + 20px) !important;
+  background-color: rgba(53, 53, 53, 0.394);
+  padding: 175px 100px;
+  border-radius: 50px;
+  border: 1px solid gray;
 }
 
 .projectImg {
@@ -263,12 +255,32 @@ html {
   color: #b0ecff;
 }
 
-.projectTitle {
-  font-weight: bold;
-  font-size: 3vh;
-  margin-bottom: 20px !important;
+.projectHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Optional spacing between the logo and title */
 }
 
+.witterLogo {
+  width: 10%;  /* Adjust as needed */
+  height: auto;
+  vertical-align: middle;
+}
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 10vh;
+  margin: 0; /* Remove any default margin */
+}
+
+.witter-col {
+  background-color: rgba(128, 128, 128, 0.528);
+  margin: 25px 10px !important;
+  border-radius: 50px;
+  border: 1px solid gray;
+  padding: 20px 0px;
+}
 
 .projectDesc {
   background-color: #28748bea;
