@@ -277,9 +277,14 @@ html {
 .witter-col {
   background-color: rgba(128, 128, 128, 0.528);
   margin: 25px 10px !important;
-  border-radius: 50px;
+  border-radius: 35px;
   border: 1px solid gray;
   padding: 20px 0px;
+  transition: 0.3s all ease-in-out;
+}
+
+.witter-col:hover {
+  background-color: rgba(158, 158, 158, 0.696);
 }
 
 .projectDesc {

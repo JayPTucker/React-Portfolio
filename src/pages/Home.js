@@ -109,24 +109,6 @@ const Home = () => {
       </Row>
 {/* ======================================= */}
 
-      {/* ABOUT ME SECTION */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={projectVariants}
-      >
-        <Row className="aboutMeRow" id="about">
-          <Col md={10} className="aboutmeCol">
-            <p className='rowHeaderTitle'><span className="rowHeaderNumber">02. </span>About Me</p>
-            <hr className="customHr"></hr>
-            <p className="aboutmeBio bioDescColor">
-              Dedicated Full Stack Web Developer with 5+ years of experience and currently pursuing a Bachelor's Degree in Software Engineering at Western Governors University. Thriving at Apple as a Technical Expert, adept in the Software Development Life Cycle, CI/CD concepts, and crafting end-to-end solutions...
-            </p>
-          </Col>
-        </Row>
-      </motion.div>
-
       {/* CONTACT ME SECTION */}
       <motion.div
         initial="hidden"
@@ -135,13 +117,11 @@ const Home = () => {
         variants={projectVariants}
       >
         <Row className="contactRow" id="contactRow">
-          <p className='rowHeaderTitle'><span className="rowHeaderNumber">03. </span>Contact</p>
-          <hr className="customHr"></hr>
           <Col md={12}>
             <p className="contactRowTitle">Get In Touch</p>
           </Col>
           <Col md={6} className="contactCol">
-            <p className="contactRowText">Feel free to contact me below...</p>
+            <p className="contactRowText">Feel free to contact me below</p>
             <a href="mailto:jaypaultucker@gmail.com">
               <button className="contactMeBtn">Email me!</button>
             </a>
