@@ -1,6 +1,27 @@
-p {
-    margin: 0 !important;
+/* ============================ */
+/* LOADING ANIMATON: */
+/* ============================ */
+
+html {
+  scroll-behavior: smooth;
 }
+
+.projectsRow {
+  padding: 50px 0;
+}
+
+.project1Row {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.project1Row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================ */
 
 .alert {
   background-color: red !important;
@@ -305,14 +326,6 @@ p {
 .project1Col {
   text-align: right;
   margin-left: calc(-4vmax - 10px);
-}
-
-/* PROJECT 2 */
-/* ========= */
-
-.project2Col {
-  text-align: left;
-  margin-right: calc(-4vmax - 10px);
 }
 
 /* ============================================ */
