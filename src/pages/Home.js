@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 import ButtonComponent from '../components/button.js';
