@@ -6,6 +6,7 @@ import ButtonComponent from '../components/button.js';
 import GreenScreenComponent from '../components/greenscreen.js';
 
 import witterImage from '../img/witterLogo.png';
+import witterDesktop from '../img/witter-desktop.png';
 
 import '../styles/Home.css';
 
@@ -69,41 +70,62 @@ const Home = () => {
       {/* PROJECTS SECTION */}
       <Row className="projectsRow" id="projects">
         <motion.div
-          className="project1Row"
+          className="witter-row"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           variants={projectVariants}
         >
+          <Row className='justify-content-center'>
+            <Col md={6}>
+                <img className='witterDesktop' src={witterDesktop} alt="Witter pic on Desktop and Mobile Device"></img>
+            </Col>
+          </Row>
+
           {/* Header with Logo and Title */}
           <Col md={12} className="text-center">
             <div className="projectHeader d-flex justify-content-center align-items-center">
               <img className="witterLogo" src={witterImage} alt="Witter Logo" />
               <p className="projectTitle">Witter</p>
             </div>
-          </Col>
 
-          {/* Row for the three sections under the title */}
-          <Row className="projectSections justify-content-center text-center mt-4">
-            <Col md={3} className='witter-col'>
-              <div className="section">
-                <h4>Section 1</h4>
-                <p>Description for section 1.</p>
-              </div>
-            </Col>
-            <Col md={3} className='witter-col'>
-              <div className="section">
-                <h4>Section 2</h4>
-                <p>Description for section 2.</p>
-              </div>
-            </Col>
-            <Col md={3} className='witter-col'>
-              <div className="section">
-                <h4>Section 3</h4>
-                <p>Description for section 3.</p>
-              </div>
-            </Col>
-          </Row>
+            <Row className='justify-content-center'>
+              <Col md={4}>
+                <p className='witter-desc'>
+                  A Platform where you can make your Wits and ideas come to life. 
+                  You can follow your friends, like their posts, and much more coming in the future.
+                </p>
+              </Col>
+            </Row>
+
+            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com/witter">
+              Live Link
+            </a>
+            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
+              Github Link
+            </a>
+
+          </Col>
+        </motion.div>
+      </Row>
+
+      <Row className="projectSections justify-content-center text-center mt-4">
+        <motion.div
+        className="project1Row"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={projectVariants}
+      >
+        <Row>
+          <Col md={4}>
+            <p>test</p>
+          </Col>
+          <Col md={4}>
+            <p>test</p>
+          </Col>
+        </Row>
+
         </motion.div>
       </Row>
 {/* ======================================= */}
