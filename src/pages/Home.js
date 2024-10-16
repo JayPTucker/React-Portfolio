@@ -53,7 +53,7 @@ const Home = () => {
         variants={projectVariants}
       >
         <Row className="FrontPageRow">
-          <Col md={12} className="FrontPageMainCol">
+          <Col md={10} sm={12} className="FrontPageMainCol">
             <p className='title'>Hey there, my name is</p>
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>I'm a Full Stack Web Developer</p>
@@ -68,7 +68,10 @@ const Home = () => {
 
 {/* ======================================= */}
       {/* PROJECTS SECTION */}
-      <Row className="projectsRow" id="projects">
+      <Row className="projectsRow justify-content-center text-center" id="projects">
+
+        <Col md={10}>
+
         <motion.div
           className="witter-row"
           initial="hidden"
@@ -76,8 +79,8 @@ const Home = () => {
           viewport={{ once: true, amount: 0.5 }}
           variants={projectVariants}
         >
-          <Row className='justify-content-center'>
-            <Col md={6}>
+          <Row className='justify-content-center text-center'>
+            <Col md={12}>
                 <img className='witterDesktop' src={witterDesktop} alt="Witter pic on Desktop and Mobile Device"></img>
             </Col>
           </Row>
@@ -90,7 +93,7 @@ const Home = () => {
             </div>
 
             <Row className='justify-content-center'>
-              <Col md={4}>
+              <Col md={4} sm={8}>
                 <p className='witter-desc'>
                   A Platform where you can make your Wits and ideas come to life. 
                   You can follow your friends, like their posts, and much more coming in the future.
@@ -107,11 +110,12 @@ const Home = () => {
 
           </Col>
         </motion.div>
+        </Col>
       </Row>
 
       <Row className="projectSections justify-content-center text-center mt-4">
         <motion.div
-        className="project1Row"
+        className="witter-row-2"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
