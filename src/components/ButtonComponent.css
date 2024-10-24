@@ -12,6 +12,7 @@
     background-color: #6298d173;
     color: #9ecdff !important;
     width: 100px;
+    text-decoration: none !important;
   }
 
   @keyframes blinker {

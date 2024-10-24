@@ -60,82 +60,6 @@ html {
 }
 
 /* ============================================ */
-/* BOTTOM LEFT INFO PANEL */
-/* ============================================ */
-
-.info-panel-left {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: 52px;
-  right: auto;
-  z-index: 10;
-}
-
-/* .vertical-line-left {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  right: 64px;
-  left: auto;
-  z-index: 10;
-  height: 15%;
-  border-right: 2px solid #ebebebc0; 
-} */
-
-.githubIcon, .linkedinIcon, .emailIcon {
-  fill: #ebebebc0 !important;
-  margin-top: 30px;
-  width: 35px;
-  height: auto;
-  transition: all 0.3s ease-in-out !important;
-}
-
-.githubIcon:hover, .linkedinIcon:hover, .emailIcon:hover {
-  fill: #b0ecff !important;
-  transform: scale(1.4);
-}
-
-/* ============================================ */
-/* BOTTOM RIGHT INFO PANEL */
-/* ============================================ */
-
-
-.info-panel-right {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: auto;
-  right: -4%;
-  z-index: 10;
-}
-
-/* .vertical-line-right {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: 64px;
-  right: auto;
-  z-index: 10;
-  height: 15%;
-  border-left: 2px solid #ebebebc0; 
-} */
-
-.vertical-text {
-  transition: all 0.3s ease-in-out !important;
-  font-family: 'Roboto', sans-serif !important;
-  writing-mode: vertical-rl; /* Use vertical writing mode */
-  text-decoration: none;
-  color: #ebebebc0;
-  letter-spacing: 3px;
-}
-
-.vertical-text:hover {
-  color: #b0ecff !important;
-  margin-bottom: 10px;
-}
-
-/* ============================================ */
 /* MAIN PAGE */
 /* ============================================ */
 
@@ -287,7 +211,7 @@ html {
   background-color: #6298d173;
   color: #9ecdff !important;
   transform: scale(1.02);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* ============================================ */

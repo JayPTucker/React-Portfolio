@@ -23,28 +23,6 @@ const Home = () => {
   return (
     <Container fluid>
 
-      {/* INFO BAR LEFT SECTION */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={projectVariants}
-      >
-        <Col className="info-panel-left" orientation="left" md={1}>
-          <a className="info-panel-icons" href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer">
-            {/* SVG Icons */}
-          </a>
-          <br></br>
-          <a className="info-panel-icons" href="https://www.linkedin.com/in/jayptucker/" target="_blank" rel="noopener noreferrer">
-            {/* LinkedIn SVG */}
-          </a>
-          <br></br>
-          <a className="info-panel-icons" href="mailto:jaypaultucker@gmail.com" target="_blank" rel="noopener noreferrer">
-            {/* Mail SVG */}
-          </a>
-        </Col>
-      </motion.div>
-
       {/* FRONT PAGE SECTION */}
       <motion.div
         initial="hidden"
