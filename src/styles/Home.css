@@ -142,6 +142,7 @@ html {
 .title {
   font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
   color: #b0ecff !important;
+  margin: 0px !important;
 }
 
 .name-title {

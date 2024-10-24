@@ -13,6 +13,8 @@
   border: 1px solid #497c8b;
 }
 
+
+
 /* ============================================== */
 /* NAVBAR LINKS */
 /* ============================================== */
@@ -32,15 +34,29 @@
 }
 
 .navbar-link {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none !important; /* Remove underline */
   color: #ebebeb !important; /* Set your desired link color */
   /* Media Query */
   margin: 0px 20px;
   font-size: 20px;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-link:hover {
+  text-decoration: none !important; /* Remove underline */
   color: #6298d1 !important; /* Set your desired link color on hover */
+}
+
+.nav-icon {
+  font-size: 30px;
+  color: #b0ecff !important; /* Set your desired link color */
+  margin: 0px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+  color: #9ecdff !important;
+  transform: scale(1.2)
 }
 
 .resume-link {
@@ -51,9 +67,12 @@
   /* Media Query */
   padding: 10px;
   font-size: 20px;
+  margin-left: 15px !important;
+  transition: all 0.2s ease-in-out;
 }
 
 .resume-link:hover {
+  text-decoration: none !important; /* Remove underline */
   background-color: #6298d173;
   color: #9ecdff !important;
 }

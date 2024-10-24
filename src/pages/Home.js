@@ -54,12 +54,12 @@ const Home = () => {
       >
         <Row className="FrontPageRow">
           <Col md={10} sm={12} className="FrontPageMainCol">
-            <p className='title'>Hey there, my name is</p>
+            <p className='title'>Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
-            <p className='what-i-do'>I'm a Full Stack Web Developer</p>
+            <p className='what-i-do'>Full Stack Web Developer</p>
             <p className='mini-bio bioDescColor'>
-              Currently working Full-Time as a Technical Expert at Apple while pursuing a Bachelor's Degree in Software Engineering at Western Governors University. Currently looking for work to further my Career in Software Engineering.
-            </p>
+              I’m currently working as a Technical Expert at Apple while pursuing a Bachelor's Degree in Software Engineering at Western Governors University. In my spare time, I’m developing Witter, a full-stack social media platform. I’m actively seeking new opportunities to advance my career in Software Engineering.
+            </p>         
             <ButtonComponent />
           </Col>
           <GreenScreenComponent />
@@ -121,14 +121,14 @@ const Home = () => {
         viewport={{ once: true, amount: 0.5 }}
         variants={projectVariants}
       >
-        <Row>
+        {/* <Row>
           <Col md={4}>
             <p>test</p>
           </Col>
           <Col md={4}>
             <p>test</p>
           </Col>
-        </Row>
+        </Row> */}
 
         </motion.div>
       </Row>
@@ -141,7 +141,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.8 }}
         variants={projectVariants}
       >
-        <Row className="contactRow" id="contactRow">
+        <Row className="contactRow text-center" id="contactRow">
           <Col md={12}>
             <p className="contactRowTitle">Get In Touch</p>
           </Col>
