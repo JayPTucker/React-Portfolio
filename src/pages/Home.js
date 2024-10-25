@@ -79,7 +79,7 @@ const Home = () => {
               </Col>
             </Row>
 
-            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com/witter">
+            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
               Live Link
             </a>
             <a className='witter-btn' target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
