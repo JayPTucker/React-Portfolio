@@ -259,17 +259,18 @@ html {
         max-width: 100%;
     }
 
-    .projectImg {
-      max-width: 100%;
+    .witterLogo {
+      width: 60px !important;
     }
 
-    .projectImg:hover {
-      max-width: 101%;
+    .projectTitle {
+      font-size: 70px;
     }
 
-    .project1Col {
-      text-align: center;
-      margin-left: 0px;
+    .witter-btn {
+      font-size: 18px;
+      padding: 15px;
+      margin: 8px;
     }
 }
   
