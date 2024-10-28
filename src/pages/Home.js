@@ -48,7 +48,7 @@ const Home = () => {
       {/* PROJECTS SECTION */}
       <Row className="projectsRow justify-content-center text-center" id="projects">
 
-        <Col md={10}>
+        <Col md={12}>
 
         <motion.div
           className="witter-row"
@@ -79,12 +79,23 @@ const Home = () => {
               </Col>
             </Row>
 
-            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
-              Live Link
-            </a>
-            <a className='witter-btn' target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
-              Github Link
-            </a>
+            <Row className='justify-content-center'>
+              <Col md={2}>
+               <button className='witter-btn'>
+                <a target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
+                Live Link
+                </a>
+              </button>
+              </Col>
+              <Col md={2}>
+                <button className='witter-btn'>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
+                    Github Link
+                  </a>
+                </button>
+              </Col>
+            </Row>
+
 
           </Col>
         </motion.div>

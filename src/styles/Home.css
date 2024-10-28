@@ -2,6 +2,12 @@
 /* LOADING ANIMATON: */
 /* ============================ */
 
+a {
+  text-decoration: none !important;
+  color: #ebebebcc !important;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -176,7 +182,7 @@ html {
 
   /* IMAGE */
 .witterDesktop {
-  max-width: 45%;
+  max-width: 35%;
 }
 
 /* ============================================ */
@@ -259,18 +265,29 @@ html {
         max-width: 100%;
     }
 
+    .witterDesktop {
+      max-width: 200px;
+      width: 200px;
+      height: auto;
+    }
+
     .witterLogo {
       width: 60px !important;
     }
 
     .projectTitle {
-      font-size: 70px;
+      font-size: 60px;
+    }
+
+    .witter-desc {
+      font-size: 15px !important;
     }
 
     .witter-btn {
       font-size: 18px;
-      padding: 15px;
-      margin: 8px;
+      width: 200px !important;
+      padding: 10px !important;
+      margin-bottom: 10px;
     }
 }
   
