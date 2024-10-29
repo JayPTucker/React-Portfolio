@@ -132,14 +132,17 @@ const Home = () => {
       >
         <Row className="contactRow text-center" id="contactRow">
           <Col md={12}>
-            <p className="contactRowTitle">Get In Touch</p>
+            <h1 className="contactRowTitle">Get In Touch</h1>
           </Col>
-          <Col md={6} className="contactCol">
-            <p className="contactRowText">Feel free to contact me below</p>
-            <a href="mailto:jaypaultucker@gmail.com">
-              <button className="contactMeBtn">Email me!</button>
-            </a>
-          </Col>
+            <Col md={6} className="contactCol">
+              <p className="contactRowText">Feel free to contact me below</p>
+              <a href="mailto:jaypaultucker@gmail.com">
+                <button className="contactMeBtn">Email me!</button>
+              </a>
+              <a href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">
+                <button className="contactMeBtn">View my Resume</button>
+              </a>
+            </Col>
         </Row>
       </motion.div>
 
@@ -150,7 +153,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.8 }}
         variants={projectVariants}
       >
-        <Row className="creditsRow">
+        <Row className="justify-content-center creditsRow">
           <Col md={12}>
             <a className="githubLink" target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/React-Portfolio">Designed and built by Jay Paul Tucker</a>
           </Col>
