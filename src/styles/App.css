@@ -5,8 +5,12 @@
 .mainContainer {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   text-shadow: 1px 1px 1px rgb(0, 0, 0) !important;
+}
+
+div.container-fluid {
+  padding: 0px !important;
 }
 
 /* Define the fade-in animation */
