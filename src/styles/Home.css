@@ -162,24 +162,24 @@ html {
 }
 
 .witterLogo {
-  width: 7%;  /* Adjust as needed */
+  width: 7vmax;  /* Adjust as needed */
   height: auto;
   vertical-align: middle;
 }
 
 .projectTitle {
-  font-size: 10vh;
+  font-size: 7vmax;
   margin: 0; /* Remove any default margin */
 }
 
 .witter-desc {
-  font-size: 20px;
+  font-size: 1.75vmax;
   margin-bottom: 50px;
 }
 
   /* IMAGE */
 .witterDesktop {
-  max-width: 35%;
+  max-width: 35vmax;
 }
 
 /* ============================================ */
@@ -198,7 +198,7 @@ html {
   text-align: center;
 }
 
-.contactMeBtn, .witter-btn {
+.contactMeBtn, .project-btn {
   color: #b0ecff !important; /* Set your desired link color */
   border: 1px solid #b0ecff; /* Set your desired border color */
   border-radius: 5px;
@@ -207,10 +207,10 @@ html {
   transition: all 0.2s ease-in-out;
   margin: 0px 20px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.75vmax;
 }
 
-.contactMeBtn:hover, .witter-btn:hover {
+.contactMeBtn:hover, .project-btn:hover {
   background-color: #6298d173;
   color: #9ecdff !important;
   transform: scale(1.02);

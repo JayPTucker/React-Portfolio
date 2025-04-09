@@ -48,7 +48,7 @@ const Home = () => {
       {/* PROJECTS SECTION */}
       <Row className="projectsRow justify-content-center text-center" id="projects">
 
-        <Col md={12}>
+        <Col lg={10}>
 
         <motion.div
           className="witter-row"
@@ -71,7 +71,7 @@ const Home = () => {
             </div>
 
             <Row className='justify-content-center'>
-              <Col md={4} sm={8}>
+              <Col md={8}>
                 <p className='witter-desc'>
                   A Platform where you can make your Wits and ideas come to life. 
                   You can follow your friends, like their posts, and much more coming in the future.
@@ -80,15 +80,15 @@ const Home = () => {
             </Row>
 
             <Row className='justify-content-center'>
-              <Col md={2}>
-               <button className='witter-btn'>
+              <Col md={3}>
+               <button className='project-btn'>
                 <a target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
                 Live Link
                 </a>
               </button>
               </Col>
-              <Col md={2}>
-                <button className='witter-btn'>
+              <Col md={3}>
+                <button className='project-btn'>
                   <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
                     Github Link
                   </a>
