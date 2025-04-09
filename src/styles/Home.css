@@ -140,7 +140,7 @@ html {
 /* PROJECTS */
 /* ============================================ */
 
-.witter-row {
+.project-row {
   margin-bottom: calc(3vmax + 20px) !important;
   background-color: rgba(53, 53, 53, 0.394);
   padding: 55px 0px;
@@ -149,7 +149,7 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-.witter-row:hover {
+.project-row:hover {
   background-color: rgba(104, 104, 104, 0.466);
   border: 1px solid rgb(202, 202, 202);
 }
@@ -172,7 +172,7 @@ html {
   margin: 0; /* Remove any default margin */
 }
 
-.witter-desc {
+.project-desc {
   font-size: 1.75vmax;
   margin-bottom: 50px;
 }

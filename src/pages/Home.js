@@ -51,7 +51,7 @@ const Home = () => {
         <Col lg={10}>
 
         <motion.div
-          className="witter-row"
+          className="project-row"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -72,9 +72,8 @@ const Home = () => {
 
             <Row className='justify-content-center'>
               <Col md={8}>
-                <p className='witter-desc'>
-                  A Platform where you can make your Wits and ideas come to life. 
-                  You can follow your friends, like their posts, and much more coming in the future.
+                <p className='project-desc'>
+                  Witter is a full-stack social media platform featuring two-factor email authentication, encrypted passwords, customizable user profiles, photo uploads via AWS S3, and a “Top Wits” leaderboard. Built with Node.js, Express, MySQL, and jQuery, it delivers a responsive, secure, and engaging user experience across devices.
                 </p>
               </Col>
             </Row>
@@ -83,7 +82,7 @@ const Home = () => {
               <Col md={3}>
                <button className='project-btn'>
                 <a target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
-                Live Link
+                  Live Link
                 </a>
               </button>
               </Col>
@@ -102,24 +101,57 @@ const Home = () => {
         </Col>
       </Row>
 
-      <Row className="projectSections justify-content-center text-center mt-4">
-        <motion.div
-        className="witter-row-2"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={projectVariants}
-      >
-        {/* <Row>
-          <Col md={4}>
-            <p>test</p>
+      <Row className="projectsRow justify-content-center text-center" id="projects">
+        <Col lg={10}>
+
+          <motion.div
+          className="project-row"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          variants={projectVariants}
+        >
+          <Row className='justify-content-center text-center'>
+            <Col md={12}>
+                {/* <img className='witterDesktop' src={witterDesktop} alt="Witter pic on Desktop and Mobile Device"></img> */}
+            </Col>
+          </Row>
+
+          {/* Header with Logo and Title */}
+          <Col md={12} className="text-center">
+            <div className="projectHeader d-flex justify-content-center align-items-center">
+              {/* <img className="witterLogo" src={witterImage} alt="Witter Logo" /> */}
+              <p className="projectTitle">Weather Center</p>
+            </div>
+
+            <Row className='justify-content-center'>
+              <Col md={8}>
+                <p className='project-desc'>
+                  Weather Center is a responsive web app that uses the OpenWeatherMap API to display current conditions and a 5-day forecast based on user input. Built with JavaScript, jQuery, and Bootstrap, it features localStorage to save and quickly access previous searches, making it easy to track weather data on any device.
+                </p>
+              </Col>
+            </Row>
+
+            <Row className='justify-content-center'>
+              <Col md={3}>
+               <button className='project-btn'>
+                <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/weather-center">
+                  Live Link
+                </a>
+              </button>
+              </Col>
+              <Col md={3}>
+                <button className='project-btn'>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
+                    Github Link
+                  </a>
+                </button>
+              </Col>
+            </Row>
           </Col>
-          <Col md={4}>
-            <p>test</p>
-          </Col>
-        </Row> */}
 
         </motion.div>
+        </Col>
       </Row>
 {/* ======================================= */}
 
