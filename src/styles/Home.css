@@ -182,6 +182,11 @@ html {
   max-width: 30vmax;
 }
 
+.weatherCenter {
+  max-width: 60vmax;
+  margin: -7vmax;
+}
+
 /* ============================================ */
 /* CONTACT ROW */
 /* ============================================ */

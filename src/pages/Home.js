@@ -8,6 +8,8 @@ import GreenScreenComponent from '../components/greenscreen.js';
 import witterImage from '../img/witterLogo.png';
 import witterDesktop from '../img/witter-desktop.png';
 
+import weatherCenter from '../img/weathercenter.png';
+
 import '../styles/Home.css';
 
 const projectVariants = {
@@ -113,14 +115,13 @@ const Home = () => {
         >
           <Row className='justify-content-center text-center'>
             <Col md={12}>
-                {/* <img className='witterDesktop' src={witterDesktop} alt="Witter pic on Desktop and Mobile Device"></img> */}
+                <img className='weatherCenter' src={weatherCenter} alt="WeatherCenter Photo"></img>
             </Col>
           </Row>
 
           {/* Header with Logo and Title */}
           <Col md={12} className="text-center">
             <div className="projectHeader d-flex justify-content-center align-items-center">
-              {/* <img className="witterLogo" src={witterImage} alt="Witter Logo" /> */}
               <p className="projectTitle">Weather Center</p>
             </div>
 
