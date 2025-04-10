@@ -162,24 +162,24 @@ html {
 }
 
 .witterLogo {
-  width: 7vmax;  /* Adjust as needed */
+  width: 5vmax;  /* Adjust as needed */
   height: auto;
   vertical-align: middle;
 }
 
 .projectTitle {
-  font-size: 7vmax;
+  font-size: 5vmax;
   margin: 0; /* Remove any default margin */
 }
 
 .project-desc {
-  font-size: 1.75vmax;
+  font-size: 1.25vmax;
   margin-bottom: 50px;
 }
 
   /* IMAGE */
 .witterDesktop {
-  max-width: 35vmax;
+  max-width: 30vmax;
 }
 
 /* ============================================ */
