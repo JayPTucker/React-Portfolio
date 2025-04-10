@@ -88,7 +88,7 @@ const Home = () => {
               </Col>
               <Col md={3}>
                 <button className='project-btn'>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/witter">
                     Github Link
                   </a>
                 </button>
@@ -135,14 +135,14 @@ const Home = () => {
             <Row className='justify-content-center'>
               <Col md={3}>
                <button className='project-btn'>
-                <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/weather-center">
+                <a target="_blank" rel="noreferrer" href="https://jayptucker.github.io/weather-center/">
                   Live Link
                 </a>
               </button>
               </Col>
               <Col md={3}>
                 <button className='project-btn'>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker">
+                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/weather-center">
                     Github Link
                   </a>
                 </button>
