@@ -115,7 +115,7 @@ const Home = () => {
         >
           <Row className='justify-content-center text-center'>
             <Col md={12}>
-                <img className='weatherCenter' src={weatherCenter} alt="WeatherCenter Photo"></img>
+                <img className='weatherCenter' src={weatherCenter} alt="Weather Center Application"></img>
             </Col>
           </Row>
 
