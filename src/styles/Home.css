@@ -291,6 +291,11 @@ html {
       padding: 10px !important;
       margin-bottom: 10px;
     }
+
+    .weatherCenter {
+      max-width: 40vmax;
+      margin: -5vmax;
+    }
 }
   
 
