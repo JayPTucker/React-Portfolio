@@ -36,9 +36,9 @@ const Home = () => {
           <Col md={10} sm={12} className="FrontPageMainCol">
             <p className='title'>Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
-            <p className='what-i-do'>Full Stack Web Developer</p>
+            <p className='what-i-do'>IT Support Engineer / Software Engineer</p>
             <p className='mini-bio bioDescColor'>
-              I’m a Certified Full-Stack Web Developer with 5+ years of experience and currently work as a Technical Expert at Apple while pursuing a B.S. in Software Engineering at WGU. My portfolio includes projects like Witter, a full-stack social platform, and WeatherCenter, a responsive API-powered weather app. I’m passionate about clean code, great UX, and building real-world solutions. I’m actively exploring new opportunities in software engineering.
+              IT Support Engineer and Software Engineering student with 5+ years of experience supporting enterprise systems in fast-paced, high-availability environments. I previously worked at Apple as a Technical Expert, where I specialized in structured troubleshooting, multi-OS support, and improving operational workflows. I’m currently pursuing a B.S. in Software Engineering at WGU and enjoy building and maintaining real-world technical solutions, from full-stack applications to Linux-based systems. I’m passionate about reliable systems, clear documentation, and using technology to help teams work better at scale.
             </p>         
             <ButtonComponent />
           </Col>
