@@ -172,7 +172,7 @@ const Home = () => {
               <a href="mailto:jaypaultucker@gmail.com">
                 <button className="contactMeBtn">Email me!</button>
               </a>
-              <a href="https://drive.google.com/file/d/1EJdzVG4qJjfpTwqXrnh_knmB5JlADeye/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1PCgKfygzAypD37As5d7wooXKPOiYMYeT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className="contactMeBtn">View my Resume</button>
               </a>
             </Col>
