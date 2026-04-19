@@ -36,7 +36,7 @@ function NavbarFunc() {
             <FontAwesomeIcon className="nav-icon" icon={faEnvelope} size="2x" />
           </a>
 
-          <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1PCgKfygzAypD37As5d7wooXKPOiYMYeT/view?usp=sharing" className="resume-link">Resume</a>
+          <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing" className="resume-link">Resume</a>
         </div>
 
         <script src="https://kit.fontawesome.com/80cf9508d8.js" crossorigin="anonymous"></script>

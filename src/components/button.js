@@ -8,7 +8,7 @@ class ButtonComponent extends Component {
         className="myResumeBtn flashingBackground"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://drive.google.com/file/d/1PCgKfygzAypD37As5d7wooXKPOiYMYeT/view?usp=sharing"
+        href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing"
       >
         Check out my Resume
       </a>

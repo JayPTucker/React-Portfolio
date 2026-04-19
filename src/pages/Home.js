@@ -38,8 +38,7 @@ const Home = () => {
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>IT Support Engineer / Software Engineer</p>
             <p className='mini-bio bioDescColor'>
-              IT Support Engineer and Software Engineering student with 5+ years of experience supporting enterprise systems in fast-paced, high-availability environments. I previously worked at Apple as a Technical Expert, where I specialized in structured troubleshooting, multi-OS support, and improving operational workflows. I’m currently pursuing a B.S. in Software Engineering at WGU and enjoy building and maintaining real-world technical solutions, from full-stack applications to Linux-based systems. I’m passionate about reliable systems, clear documentation, and using technology to help teams work better at scale.
-            </p>         
+              IT Support Engineer and Software Engineering student focused on building reliable systems and real-world solutions. 5+ years of experience supporting enterprise environments and improving technical workflows.            </p>         
             <ButtonComponent />
           </Col>
           <GreenScreenComponent />
@@ -172,7 +171,7 @@ const Home = () => {
               <a href="mailto:jaypaultucker@gmail.com">
                 <button className="contactMeBtn">Email me!</button>
               </a>
-              <a href="https://drive.google.com/file/d/1PCgKfygzAypD37As5d7wooXKPOiYMYeT/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <button className="contactMeBtn">View my Resume</button>
               </a>
             </Col>
