@@ -1,6 +1,9 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faReact, faNodeJs, faPython, faJs } from '@fortawesome/free-brands-svg-icons';
 
 import picOfMe from '../img/picofme.jpg';
 import ButtonComponent from '../components/button.js';
@@ -41,6 +44,34 @@ const Home = () => {
             <p className='mini-bio bioDescColor'>
               Software Engineering student and Full Stack Web Developer with 5+ years of experience supporting technology systems, solving complex technical problems, and building real-world software solutions.
             </p>
+
+            <div className='skill-bubble-group'>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faGraduationCap} />
+                <span>Top 2% at WGU</span>
+              </div>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faReact} />
+                <span>React</span>
+              </div>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faNodeJs} />
+                <span>Node.js</span>
+              </div>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faDatabase} />
+                <span>SQL</span>
+              </div>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                <span>JavaScript</span>
+              </div>
+              <div className='skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faPython} />
+                <span>Python</span>
+              </div>
+            </div>
+
             <ButtonComponent />
           </Col>
           <Col md={4} sm={12} className="text-center">

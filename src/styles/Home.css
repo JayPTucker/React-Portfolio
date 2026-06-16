@@ -53,7 +53,7 @@ html {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
   justify-content: center;
-  margin: 10vh 18vh calc(11vmax + 100px) calc(4vmax + 100px) !important;
+  margin: 6vh 18vh calc(11vmax + 100px) calc(4vmax + 100px) !important;
 }
 
 
@@ -101,6 +101,38 @@ html {
   margin: 0px 0px 35px 0px  !important;
   font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
   max-width: 80%;
+}
+
+.skill-bubble-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 56px;
+  justify-content: flex-start;
+}
+
+.skill-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(98, 152, 209, 0.16);
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 999px;
+  color: #ebebeb;
+  padding: 10px 16px;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.skill-bubble:hover {
+  transform: translateY(-2px);
+  background-color: rgba(98, 152, 209, 0.25);
+}
+
+.bubble-icon {
+  font-size: 1.15rem;
+  color: #b0ecff;
 }
 
 .picOfMe {
@@ -188,8 +220,8 @@ html {
 }
 
 .contactMeBtn, .project-btn {
-  color: #b0ecff !important; /* Set your desired link color */
-  border: 1px solid #b0ecff; /* Set your desired border color */
+  color: #b0ecff !important;
+  border: 1px solid #b0ecff; 
   border-radius: 5px;
   background-color: #6298d12c;
   padding: 10px 30px;
@@ -254,6 +286,10 @@ html {
 
     .mini-bio {
         max-width: 100%;
+    }
+
+    .skill-bubble-group {
+        justify-content: center;
     }
 
     .picOfMe {
