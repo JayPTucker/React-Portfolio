@@ -36,9 +36,11 @@ const Home = () => {
           <Col md={8} sm={12} className="FrontPageMainCol">
             <p className='title'>Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
-            <p className='what-i-do'>Software Engineer / IT Expert</p>
+            <p className='what-i-do'>Software Engineering Student<br></br>
+                  Full Stack Web Developer</p>
             <p className='mini-bio bioDescColor'>
-              IT Support Engineer and Software Engineering student focused on building reliable systems and real-world solutions. 5+ years of experience supporting enterprise environments and improving technical workflows.            </p>         
+              Software Engineering student and Full Stack Web Developer with 5+ years of experience supporting technology systems, solving complex technical problems, and building real-world software solutions.
+            </p>
             <ButtonComponent />
           </Col>
           <Col md={4} sm={12} className="text-center">
