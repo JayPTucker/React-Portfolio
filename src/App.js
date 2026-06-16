@@ -1,6 +1,6 @@
 // =========================================
 // IMPORTS:
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -24,6 +24,7 @@ const App = () => {
   // ================================
   // Function for the loading screen
   const [isLoading, setIsLoading] = useState(true);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     // Simulate data loading or other async tasks
@@ -55,8 +56,9 @@ const App = () => {
         timeout={4000} // Duration of the animation in milliseconds
         classNames="fade" // CSS class prefix for the animation
         unmountOnExit
+        nodeRef={containerRef}
       >
-        <Container className="mainContainer" fluid>
+        <Container className="mainContainer" fluid ref={containerRef}>
           <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Home />} />

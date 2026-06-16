@@ -76,11 +76,19 @@
   margin: 0px 20px;
   font-size: 20px;
   transition: all 0.2s ease-in-out;
+  position: relative;
+  padding-bottom: 5px;
 }
 
 .navbar-link:hover {
   text-decoration: none !important; /* Remove underline */
   color: #6298d1 !important; /* Set your desired link color on hover */
+}
+
+.navbar-link.active {
+  color: #6298d1 !important;
+  text-shadow: 0 0 10px rgba(98, 152, 209, 0.8), 0 0 20px rgba(98, 152, 209, 0.6);
+  border-bottom: 2px solid #6298d1;
 }
 
 .nav-icon {
