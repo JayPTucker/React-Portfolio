@@ -15,6 +15,7 @@ function NavbarFunc() {
 
       <Navbar.Brand>
         <img className="navbar-logo" alt="My logo" src="./favicon.ico"></img>
+        <span className="navbar-logo-text">Jay Paul Tucker</span>
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="navbar-collapse" />
@@ -22,10 +23,9 @@ function NavbarFunc() {
       <Navbar.Collapse id="navbar-collapse">
 
         <div className="navbar-links-col ms-auto">
-          <a href="/#projects" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>01. </span>Projects</a>
-          {/* <a href="/#about" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>02. </span>About</a> */}
-          {/* <a href="/#experience" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>02. </span>Experience</a> */}
-          <a href="/#contactRow" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>02. </span>Contact</a>
+          <a href="/#home" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>01. </span>Home</a>
+          <a href="/#projects" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>02. </span>Projects</a>
+          <a href="/#contactRow" className="navbar-link" rel="noopener noreferrer"><span className='navbar-link-number'>03. </span>Contact</a>
           <a className="info-panel-icons" href="https://github.com/JayPTucker" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon className="nav-icon" icon={faGithub} size="2x" />
           </a>

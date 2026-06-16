@@ -35,7 +35,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.8 }}
         variants={projectVariants}
       >
-        <Row className="FrontPageRow">
+        <Row className="FrontPageRow" id="home">
           <Col md={8} sm={12} className="FrontPageMainCol">
             <p className='title'>Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>

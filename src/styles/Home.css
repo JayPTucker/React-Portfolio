@@ -49,6 +49,8 @@ html {
   margin-top: 100px !important;
 }
 
+
+
 .FrontPageRow, .aboutMeRow, .contactRow {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
@@ -56,6 +58,9 @@ html {
   margin: 6vh 18vh calc(11vmax + 100px) calc(4vmax + 100px) !important;
 }
 
+.FrontPageRow {
+  margin-top: calc(4vmax + 100px) !important;
+}
 
 .rowHeaderTitle {
   font-size: calc(1.5vmax + 9px); /* Adjust the font size as needed */
@@ -269,15 +274,18 @@ html {
         display: none; /* hide info-panel-left below 768px */
     }
 
+    .navbar {
+      margin-bottom: 200px !important;
+    }
     .FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
-        margin: 70px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-        text-align: center;
-        justify-content: center;
+      margin: 70px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+      text-align: center;
+      justify-content: center;
     }
 
     .FrontPageRow {
-        display: flex;
-        flex-direction: column-reverse;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
     .name-title {
