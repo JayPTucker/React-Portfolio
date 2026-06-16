@@ -18,24 +18,5 @@ body {
   background-size: cover; /* Scale the image to cover the entire body element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-attachment: fixed;
-  animation: subtleColorShift 8s ease-in-out infinite;
   position: relative;
-}
-
-@keyframes subtleColorShift {
-  0% {
-    filter: brightness(1) hue-rotate(0deg);
-  }
-  25% {
-    filter: brightness(1.2) hue-rotate(20deg);
-  }
-  50% {
-    filter: brightness(0.85) hue-rotate(-25deg);
-  }
-  75% {
-    filter: brightness(1.15) hue-rotate(15deg);
-  }
-  100% {
-    filter: brightness(1) hue-rotate(0deg);
-  }
 }
