@@ -11,10 +11,15 @@
   box-sizing: border-box;
 }
 
-html, body {
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* ============================ */
@@ -147,23 +152,23 @@ html {
 }
 
 .projectTitle {
-  font-size: 5vmax;
+  font-size: 3.5vmax;
   margin: 0; /* Remove any default margin */
 }
 
 .project-desc {
-  font-size: 1.25vmax;
+  font-size: 1vmax;
   margin-bottom: 50px;
 }
 
   /* IMAGE */
 .witterDesktop {
-  max-width: 40vmax;
+  max-width: 30vmax;
 }
 
 .weatherCenter {
-  max-width: 77vmax;
-  margin: -7vmax;
+  max-width: 60vmax;
+  margin: -4vmax;
 }
 
 /* ============================================ */
@@ -257,7 +262,7 @@ html {
     }
 
     .projectTitle {
-      font-size: 60px;
+      font-size: 45px;
     }
 
     .witter-desc {
@@ -272,8 +277,8 @@ html {
     }
 
     .weatherCenter {
-      max-width: 40vmax;
-      margin: -5vmax;
+      max-width: 35vmax;
+      margin: -3vmax;
     }
 }
   

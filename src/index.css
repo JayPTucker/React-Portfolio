@@ -1,11 +1,41 @@
+html::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle 100px at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(180, 100, 220, 0.2) 0%, transparent 80%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
 body {
   margin: 0;
   padding: 0;
   color: #ebebeb;
-  background-image: url('./img/background.jpg'); /* Replace with the actual path to your image */
+  background-image: url('./img/background.png'); /* Replace with the actual path to image */
   background-size: cover; /* Scale the image to cover the entire body element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-attachment: fixed;
-  background-blend-mode:difference;
-  background-color: #172941cb;
+  animation: subtleColorShift 8s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes subtleColorShift {
+  0% {
+    filter: brightness(1) hue-rotate(0deg);
+  }
+  25% {
+    filter: brightness(1.2) hue-rotate(20deg);
+  }
+  50% {
+    filter: brightness(0.85) hue-rotate(-25deg);
+  }
+  75% {
+    filter: brightness(1.15) hue-rotate(15deg);
+  }
+  100% {
+    filter: brightness(1) hue-rotate(0deg);
+  }
 }
