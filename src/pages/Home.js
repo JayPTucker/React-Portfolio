@@ -2,8 +2,8 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
+import picOfMe from '../img/picofme.jpg';
 import ButtonComponent from '../components/button.js';
-import GreenScreenComponent from '../components/greenscreen.js';
 
 import witterImage from '../img/witterLogo.png';
 import witterDesktop from '../img/witter-desktop.png';
@@ -33,7 +33,7 @@ const Home = () => {
         variants={projectVariants}
       >
         <Row className="FrontPageRow">
-          <Col md={10} sm={12} className="FrontPageMainCol">
+          <Col md={8} sm={12} className="FrontPageMainCol">
             <p className='title'>Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>Software Engineer / IT Expert</p>
@@ -41,7 +41,9 @@ const Home = () => {
               IT Support Engineer and Software Engineering student focused on building reliable systems and real-world solutions. 5+ years of experience supporting enterprise environments and improving technical workflows.            </p>         
             <ButtonComponent />
           </Col>
-          <GreenScreenComponent />
+          <Col md={4} sm={12} className="text-center">
+            <img className="picOfMe" src={picOfMe} alt="Jay Paul Tucker" />
+          </Col>
         </Row>
       </motion.div>
 

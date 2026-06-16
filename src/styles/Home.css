@@ -51,20 +51,6 @@ html {
   margin: 10vh 18vh calc(11vmax + 100px) calc(4vmax + 100px) !important;
 }
 
-.GreenScreenVid {
-  /* This is only needed for MacOS for Safari */
-  mix-blend-mode: screen !important;
-  transform: scaleX(-1);
-  max-width: 75vmax;
-  object-fit: cover;
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-left: 20px;
-  margin-top: -5vmax;
-  z-index: -1;
-}
 
 .rowHeaderTitle {
   font-size: calc(1.5vmax + 9px); /* Adjust the font size as needed */
@@ -110,49 +96,20 @@ html {
   margin: 0px 0px 35px 0px  !important;
   font-size: calc(1vmax + 6px); /* Adjust the font size as needed */
   max-width: 80%;
-  }
-
-/* ============================================ */
-/* ABOUT ME ROW */
-/* ============================================ */
-
-.aboutmeBio {
-  font-size: calc(0.9vmax + 8px); /* Adjust the font size as needed */
 }
 
-.bioLink {
-  text-decoration: none;
-  color: #b0ecff;
-  transition: all 0.2s ease-in-out;
-}
-
-.bioLink:hover {
-  color: #9ecdff;
-}
-
-.horizontal-list {
-  padding: 0; /* remove default padding */
-  margin: 0; /* remove default margin */
-  font-size: calc(0.8vmax + 5px); /* Adjust the font size as needed */
-}
-
-.horizontal-list li {
-  display: inline-block; /* display list items horizontally */
-  margin-right: 10px; /* add some space between list items */
-}
-
-.aboutmePic {
-  margin-top: calc(4vmax + 10px) !important;
+.picOfMe {
+  margin-top: calc(1vmax) !important;
   position: relative;
-  border-radius: 2%;
-  max-width: 85%;
+  border-radius: 100%;
+  max-width: calc(24vmax);
   border: 2px solid #568b9c;
   box-shadow: 10px 10px 0 0 #b0ecff;
   filter: grayscale(10%);
   transition: all 0.3s ease-in-out;
 }
 
-.aboutmePic:hover {
+.picOfMe:hover {
   filter: grayscale(50%);
   border: 2px solid #3b6b7b;
   box-shadow: 20px 20px 0 0 #b0edffc7;
