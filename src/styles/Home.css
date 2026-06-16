@@ -243,6 +243,11 @@ html {
         justify-content: center;
     }
 
+    .FrontPageRow {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .name-title {
         padding-bottom: 20px;
     }
@@ -251,9 +256,13 @@ html {
         max-width: 100%;
     }
 
+    .picOfMe {
+        margin-bottom: 30px;
+    }
+
     .witterDesktop {
-      max-width: 200px;
-      width: 200px;
+      max-width: 280px;
+      width: 100%;
       height: auto;
     }
 
@@ -277,8 +286,33 @@ html {
     }
 
     .weatherCenter {
-      max-width: 35vmax;
-      margin: -3vmax;
+      max-width: 680px;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .project-desc {
+      font-size: 18px !important;
+    }
+
+    .project-btn {
+      font-size: 16px !important;
+      padding: 12px 20px !important;
+      margin: 10px 10px !important;
+      width: auto;
+    }
+
+    /* Make buttons display side by side on mobile */
+    .projectsRow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .projectsRow .project-btn {
+      display: inline-block;
     }
 }
   
