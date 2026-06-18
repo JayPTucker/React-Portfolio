@@ -277,7 +277,12 @@ const Projects = () => {
                 <p>
                   <b>{witterCommit?.commit.message.split('\n')[0]}</b>
                   <br></br>
-                  {witterCommit?.commit.message.split('\n')[2]}
+                  <p className="commit-body">
+                    {witterCommit?.commit.message.split('\n').slice(2, 6).join('\n')}
+                    {witterCommit?.commit.message.split('\n').length > 5 && (
+                      <span><br></br><i>...Use the link below to view all changes.</i></span>
+                    )}
+                  </p>
                 </p>
 
                 <a href="https://github.com/JayPTucker/Witter/commits/main/" className="project-link" target="_blank" rel="noopener noreferrer">

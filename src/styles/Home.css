@@ -424,6 +424,10 @@ html {
   color: #b0ecff;
 }
 
+.commit-body {
+  white-space: pre-wrap;
+}
+
 .github-bubble {
   background-color: rgba(12, 22, 69, 0.8);
   border: 1px solid rgb(155, 119, 255);
