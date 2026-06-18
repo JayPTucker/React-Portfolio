@@ -17,7 +17,6 @@
   }
   
   .loading-spinner {
-    margin-top: calc(25vmax + 200px);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -28,7 +27,7 @@
   }
   
   .loading-text {
-    margin-top: calc(26vmax + 200px);
+    margin-top: 10px;
     font-size: 20px;
     color: #b0ecff;
     white-space: nowrap;
