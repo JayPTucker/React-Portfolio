@@ -266,15 +266,28 @@ html {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.project-vertical-divider {
-  width: 1px;
-  height: 230px;
-  background-color: rgba(255, 255, 255, 0.25);
-  margin: 0 auto;
+/* CHANGELOG SECTION */
+.project-status {
+  position: relative;
+  padding-left: 30px;
 }
 
-.project-vertical-divider-div {
-  width: 100px !important;
+.project-status::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(155, 119, 255, 0.863),
+    transparent
+  );
 }
 
 .changelog-text {

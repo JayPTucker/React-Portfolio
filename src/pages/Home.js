@@ -227,11 +227,7 @@ const Home = () => {
             
           </Col>
 
-          <Col lg={1} md={12} className="project-vertical-divider-div text-center justify-content-center">
-            <div className="project-vertical-divider"></div>
-          </Col>
-
-          <Col lg={3} md={12}>
+          <Col lg={4} md={12}>
             
             {witterRepo && (
               <div className="project-status">
