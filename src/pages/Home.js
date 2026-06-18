@@ -2,16 +2,33 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faNodeJs, faPython, faJs } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGraduationCap,
+  faDatabase,
+  faServer,
+  faLock,
+  faShieldHalved,
+  faCloudArrowUp,
+  faUsers,
+  faArrowUpRightFromSquare,
+  faGlobe
+} from '@fortawesome/free-solid-svg-icons';
+
+import {
+  faReact,
+  faNodeJs,
+  faPython,
+  faJs,
+  faAws,
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
 
 import picOfMe from '../img/picofme.jpg';
 import ButtonComponent from '../components/button.js';
 
-import witterImage from '../img/witterLogo.png';
-import witterDesktop from '../img/witter-desktop.png';
+import witterImage from '../img/witter_project.png';
 
-import weatherCenter from '../img/weathercenter.png';
+// import weatherCenter from '../img/weathercenter.png';
 
 import '../styles/Home.css';
 
@@ -37,7 +54,7 @@ const Home = () => {
       >
         <Row className="FrontPageRow" id="home">
           <Col md={8} sm={12} className="FrontPageMainCol">
-            <p className='title'>Hey there, I'm</p>
+            <p className='title'>01.  Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>Software Engineering Student<br></br>
                   Full Stack Web Developer</p>
@@ -82,112 +99,114 @@ const Home = () => {
 
 {/* ======================================= */}
       {/* PROJECTS SECTION */}
-      <Row className="projectsRow justify-content-center text-center" id="projects">
-
-        <Col lg={10}>
-
-        <motion.div
-          className="project-row"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={projectVariants}
-        >
-          <Row className='justify-content-center text-center'>
-            <Col lg={12}>
-                <img className='witterDesktop' src={witterDesktop} alt="Witter pic on Desktop and Mobile Device"></img>
-            </Col>
-          </Row>
-
-          {/* Header with Logo and Title */}
-          <Col lg={12} className="text-center">
-            <div className="projectHeader d-flex justify-content-center align-items-center">
-              <img className="witterLogo" src={witterImage} alt="Witter Logo" />
-              <p className="projectTitle">Witter</p>
-            </div>
-
-            <Row className='justify-content-center'>
-              <Col lg={8}>
-                <p className='project-desc'>
-                  Witter is a full-stack social media platform featuring two-factor email authentication, encrypted passwords, customizable user profiles, photo uploads via AWS S3, and a “Top Wits” leaderboard. Built with Node.js, Express, MySQL, and jQuery, it delivers a responsive, secure, and engaging user experience across devices.
-                </p>
-              </Col>
-            </Row>
-
-            <Row className='justify-content-center'>
-              <Col lg={3}>
-               <button className='project-btn'>
-                <a target="_blank" rel="noreferrer" href="https://witter-d4c230a6736c.herokuapp.com">
-                  Live Link
-                </a>
-              </button>
-              </Col>
-              <Col lg={3}>
-                <button className='project-btn'>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/witter">
-                    Github Link
-                  </a>
-                </button>
-              </Col>
-            </Row>
-
-
-          </Col>
-        </motion.div>
-        </Col>
-      </Row>
-
-      <Row className="projectsRow justify-content-center text-center" id="projects">
-        <Col lg={10}>
-
-          <motion.div
-          className="project-row"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={projectVariants}
-        >
-          <Row className='justify-content-center text-center'>
-            <Col md={12}>
-                <img className='weatherCenter' src={weatherCenter} alt="Weather Center Application"></img>
-            </Col>
-          </Row>
-
-          {/* Header with Logo and Title */}
-          <Col md={12} className="text-center">
-            <div className="projectHeader d-flex justify-content-center align-items-center">
-              <p className="projectTitle">Weather Center</p>
-            </div>
-
-            <Row className='justify-content-center'>
-              <Col md={8}>
-                <p className='project-desc'>
-                  Weather Center is a responsive web app that uses the OpenWeatherMap API to display current conditions and a 5-day forecast based on user input. Built with JavaScript, jQuery, and Bootstrap, it features localStorage to save and quickly access previous searches, making it easy to track weather data on any device.
-                </p>
-              </Col>
-            </Row>
-
-            <Row className='justify-content-center'>
-              <Col md={3}>
-               <button className='project-btn'>
-                <a target="_blank" rel="noreferrer" href="https://jayptucker.github.io/weather-center/">
-                  Live Link
-                </a>
-              </button>
-              </Col>
-              <Col md={3}>
-                <button className='project-btn'>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/weather-center">
-                    Github Link
-                  </a>
-                </button>
-              </Col>
-            </Row>
+      <motion.div
+        className="project-row"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.8 }}
+        variants={projectVariants}
+      >
+        <Row className="align-items-center">
+          <Col lg={2} md={12} className="text-center">
+            <img
+              className="projectLogo"
+              src={witterImage}
+              alt="Witter Logo"
+            />
           </Col>
 
-        </motion.div>
-        </Col>
-      </Row>
+          <Col lg={5} md={12}>
+            <p className="projectTitle">
+              <span>Witter</span>
+              <span className="app-type-bubble">Full Stack</span>
+            </p>
+
+            <p className="project-desc">
+              A full-stack social media platform featuring two-factor
+              email authentication, encrypted passwords, customizable user
+              profiles, photo uploads via AWS S3, and a “Top Wits”
+              leaderboard.
+            </p>
+
+            <div className='project-skill-bubble-group'>
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faNodeJs} />
+                <span>Node.js</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                <span>JavaScript</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faServer} />
+                <span>Express.js</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faDatabase} />
+                <span>MySQL</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faAws} />
+                <span>AWS S3</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faLock} />
+                <span>Authentication</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
+                <span>Security</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faCloudArrowUp} />
+                <span>File Uploads</span>
+              </div>
+
+              <div className='project-skill-bubble'>
+                <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
+                <span>Social Platform</span>
+              </div>
+            </div>
+
+
+            {/* Hyperlinks for Github and Live Link */}
+            <div className="project-links">
+              <a href="https://github.com/JayPTucker/Witter" className="project-link">
+                <FontAwesomeIcon icon={faGithub} />
+                <span>  GitHub Repo  </span>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+
+              <div className="vertical-divider"></div>
+
+              <a href="https://witter-d4c230a6736c.herokuapp.com/" className="project-link">
+                <FontAwesomeIcon icon={faGlobe} />
+                <span>  Live Demo  </span>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+            </div>
+            {/* ============================================= */}
+            
+          </Col>
+
+          <Col lg={2} md={12} className="text-center">
+            <p>Test</p>
+          </Col>
+
+          <Col lg={3} md={12} className="text-center">
+            <p>Test</p>
+          </Col>
+
+        </Row>
+      </motion.div>
+
 {/* ======================================= */}
 
       {/* CONTACT ME SECTION */}
