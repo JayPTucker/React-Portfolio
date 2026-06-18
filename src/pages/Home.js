@@ -1,4 +1,8 @@
 import React from 'react';
+// For GitHub API
+import { useEffect, useState } from 'react';
+import { getRepo, getLatestCommit } from '../api/github';
+// ======================
 import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,9 +32,14 @@ import ButtonComponent from '../components/button.js';
 
 import witterImage from '../img/witter_project.png';
 
+
+
+
 // import weatherCenter from '../img/weathercenter.png';
 
 import '../styles/Home.css';
+
+
 
 const projectVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -42,6 +51,28 @@ const projectVariants = {
 };
 
 const Home = () => {
+
+  // For GitHub API Cont...
+  const [witterRepo, setWitterRepo] = useState(null);
+  const [witterCommit, setWitterCommit] = useState(null);
+  // ======================
+
+  useEffect(() => {
+    async function loadRepoData() {
+      try {
+        const repo = await getRepo("Witter");
+        const commit = await getLatestCommit("Witter");
+
+        setWitterRepo(repo);
+        setWitterCommit(commit);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    loadRepoData();
+  }, []);
+
   return (
     <Container fluid>
 
@@ -53,7 +84,7 @@ const Home = () => {
         variants={projectVariants}
       >
         <Row className="FrontPageRow" id="home">
-          <Col md={8} sm={12} className="FrontPageMainCol">
+          <Col md={7} sm={12} className="FrontPageMainCol">
             <p className='title'>01.  Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>Software Engineering Student<br></br>
@@ -115,7 +146,7 @@ const Home = () => {
             />
           </Col>
 
-          <Col lg={5} md={12}>
+          <Col lg={6} md={12}>
             <p className="projectTitle">
               <span>Witter</span>
               <span className="app-type-bubble">Full Stack</span>
@@ -178,7 +209,7 @@ const Home = () => {
 
             {/* Hyperlinks for Github and Live Link */}
             <div className="project-links">
-              <a href="https://github.com/JayPTucker/Witter" className="project-link">
+              <a href="https://github.com/JayPTucker/Witter" className="project-link" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} />
                 <span>  GitHub Repo  </span>
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -186,7 +217,7 @@ const Home = () => {
 
               <div className="vertical-divider"></div>
 
-              <a href="https://witter-d4c230a6736c.herokuapp.com/" className="project-link">
+              <a href="https://witter-d4c230a6736c.herokuapp.com/" className="project-link" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGlobe} />
                 <span>  Live Demo  </span>
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -196,12 +227,38 @@ const Home = () => {
             
           </Col>
 
-          <Col lg={2} md={12} className="text-center">
-            <p>Test</p>
+          <Col lg={1} md={12} className="project-vertical-divider-div text-center justify-content-center">
+            <div className="project-vertical-divider"></div>
           </Col>
 
-          <Col lg={3} md={12} className="text-center">
-            <p>Test</p>
+          <Col lg={3} md={12}>
+            
+            {witterRepo && (
+              <div className="project-status">
+                <p>
+                  
+
+                  <p>
+                    <b className="changelog-text">Changelog via</b>
+                    <span className="github-bubble">GitHub API</span>
+                  </p>
+
+                  <b className="changelog-text">Last Updated:{" "}</b>
+                  {new Date(witterRepo.updated_at).toLocaleDateString()}
+                </p>
+
+                <p>
+                  <b>{witterCommit?.commit.message.split('\n')[0]}</b>
+                  <br></br>
+                  {witterCommit?.commit.message.split('\n')[2]}
+                </p>
+
+                <a href="https://github.com/JayPTucker/Witter/commits/main/" className="project-link" target="_blank" rel="noopener noreferrer">
+                  <span>  View all changes </span>
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                </a>
+              </div>
+            )}
           </Col>
 
         </Row>

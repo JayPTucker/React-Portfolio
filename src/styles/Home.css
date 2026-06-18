@@ -163,7 +163,7 @@ html {
 /* ============================================ */
 
 .project-row {
-  width: 90%;
+  width: 85%;
   margin: 0 auto calc(3vmax + 20px) auto;
   background-color: rgba(98, 152, 209, 0.16);
   border: 1px solid rgba(176, 236, 255, 0.35);
@@ -179,7 +179,7 @@ html {
 }
 
 .projectLogo {
-  width: 13vmax;  /* Adjust as needed */
+  width: 11vmax;  /* Adjust as needed */
   height: auto;
   border-radius: 18px;
   border: 1px solid rgba(176, 236, 255, 0.35);
@@ -257,13 +257,46 @@ html {
 
 .project-link:hover {
   color: rgb(155, 119, 255) !important;
-  transform: translateY(-2px);
+  transform: translateY(-2px) !important;
 }
 
 .vertical-divider {
   width: 1px;
   height: 20px;
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+.project-vertical-divider {
+  width: 1px;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0 auto;
+}
+
+.project-vertical-divider-div {
+  width: 100px !important;
+}
+
+.changelog-text {
+  font-size: 1.2rem;
+  color: #b0ecff;
+}
+
+.github-bubble {
+  background-color: rgba(12, 22, 69, 0.8);
+  border: 1px solid rgb(155, 119, 255);
+  border-radius: 5px;
+  color: rgb(155, 119, 255);
+  padding: 6px 10px;
+  font-size: 1rem;
+  line-height: 1;
+  transition: transform 0.1s ease;
+  margin-left: 10px;
+}
+
+.github-bubble:hover {
+  transform: translateY(-4px);
+  background-color: rgba(98, 152, 209, 0.25);
 }
 
 .weatherCenter {
