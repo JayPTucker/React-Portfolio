@@ -353,7 +353,7 @@ const Projects = () => {
                       </p>
 
                       <a
-                        href="https://github.com/JayPTucker/React-Portfolio/commits/main/"
+                        href="https://github.com/JayPTucker/React-Portfolio/commits/master/"
                         className="project-link"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -697,7 +697,7 @@ const Projects = () => {
                       </p>
 
                       <a
-                        href="https://github.com/JayPTucker/weather-center/commits/main/"
+                        href="https://github.com/JayPTucker/weather-center/commits/master/"
                         className="project-link"
                         target="_blank"
                         rel="noopener noreferrer"
