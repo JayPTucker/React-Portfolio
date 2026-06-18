@@ -154,6 +154,10 @@
   --accent: #facc15;
 }
 
+.project-row.weather-center {
+  --accent: #69c8ff;
+}
+
 /* Project Title Accent */
 .project-row .projectTitle, .project-row .project-skill-bubble {
   color: var(--accent);
@@ -317,14 +321,15 @@
 
 .project-link,
 .view-on-github {
-  color: rgb(176, 237, 255) !important;
-  font-size: 1.1rem;
+  color: color-mix(
+    in srgb,
+    var(--accent) 50%,
+    white
+  ) !important;
+    font-size: 1.1rem;
   text-decoration: none;
 
-  transition:
-    color 0.2s ease,
-    text-shadow 0.2s ease,
-    transform 0.2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .project-link:hover,

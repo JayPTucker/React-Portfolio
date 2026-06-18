@@ -19,7 +19,11 @@ import {
   faCodeBranch,
   faWandMagicSparkles,
   faPalette,
-  faCode
+  faCode,
+  faCloudSun,
+  faLocationDot,
+  faMobileScreen,
+  faChartLine
 } from '@fortawesome/free-solid-svg-icons';
 
 // Brand Icons
@@ -39,8 +43,10 @@ import { getRepo, getLatestCommit } from '../api/github';
 import responsiveDesktop from '../img/desktop1.png';
 import responsiveTablet from '../img/ipad1.png';
 import responsivePhone from '../img/phone1.png';
-import witterImage from '../img/witter_project.png';
+// Project Logos
 import meLogoThing from '../img/meLogoThing.png';
+import witterImage from '../img/witter_project.png';
+import weatherCenterLogo from '../img/weather-center.png';
 
 // CSS
 import '../styles/Projects.css';
@@ -57,7 +63,8 @@ const projectVariants = {
 
   const projects = [
     "Witter",
-    "React-Portfolio"
+    "React-Portfolio",
+    "weather-center"
   ];
 
 const Projects = () => {
@@ -351,7 +358,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span>View all changes</span>
+                        <span>View all changes </span>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
 
@@ -363,7 +370,7 @@ const Projects = () => {
           </Col>
         </Row>
 
-        {/* Witter Project */}
+        {/* WITTER PROJECT */}
         <Row className="justify-content-center">
           <Col lg={10}>
             <div className="project-row witter">
@@ -530,7 +537,172 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span>View all changes</span>
+                        <span>View all changes </span>
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                      </a>
+
+                    </div>
+                  )}
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+
+        {/* WEATHER CENTER PROJECT */}
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div className="project-row weather-center">
+              <Row className="align-items-center">
+                {/* Project Image */}
+                <Col lg={3} md={12} className="text-center">
+                  <img
+                    className="projectLogo"
+                    src={weatherCenterLogo}
+                    alt="Weather Center Logo"
+                  />
+                </Col>
+
+                {/* Project Details */}
+                <Col lg={6} md={12}>
+                  <p className="projectTitle">
+                    <span>Weather Center</span>
+                    <span className="app-type-bubble">Full Stack</span>
+                  </p>
+
+                  <p className="project-desc">
+                    Weather Center is a full-stack weather application that delivers real-time 
+                    conditions and multi-day forecasts through third-party weather APIs. Built 
+                    with a responsive, mobile-friendly interface, it allows users to search locations, 
+                    view detailed weather data, and access live forecast updates with an optimized 
+                    user experience across desktop and mobile devices.
+                  </p>
+
+                  {/* Skills */}
+                  <div className='project-skill-bubble-group'>
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCloudSun} />
+                      <span>Weather API</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCode} />
+                      <span>REST APIs</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faLocationDot} />
+                      <span>Geolocation</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} />
+                      <span>Responsive Design</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faChartLine} />
+                      <span>Live Data</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
+                      <span>UI/UX Design</span>
+                    </div>
+                  </div>
+
+                  {/* Project Links */}
+                  <div className="project-links">
+                    <a 
+                      href="https://github.com/JayPTucker/weather-center" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                      <span>  GitHub Repo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+
+                    <div className="vertical-divider"></div>
+
+                    <a 
+                      href="https://jayptucker.github.io/weather-center/" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGlobe} />
+                      <span>  Live Demo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                  </div>
+                </Col>
+
+                {/* Project Status & Changelog */}
+                <Col lg={3} md={12}>
+                  {projectData["weather-center"] && (
+                    <div className="project-status">
+
+                      <p>
+                        <b className="changelog-text">Changelog via</b>
+                        <span className="github-bubble">GitHub API</span>
+                      </p>
+
+                      <p>
+                        <b className="changelog-text">Last Updated: </b>
+                        {new Date(
+                          projectData["weather-center"].repo.updated_at
+                        ).toLocaleDateString()}
+                      </p>
+
+                      <p>
+                        <b>
+                          {
+                            projectData["weather-center"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')[0]
+                          }
+                        </b>
+
+                        <div className="commit-body">
+                          {
+                            projectData["weather-center"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .slice(2, 6)
+                              .join('\n')
+                          }
+
+                          {
+                            projectData["weather-center"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .length > 5 && (
+                              <span>
+                                <br />
+                                <i>
+                                  ...Use the link below to view all changes.
+                                </i>
+                              </span>
+                            )
+                          }
+                        </div>
+                      </p>
+
+                      <a
+                        href="https://github.com/JayPTucker/weather-center/commits/main/"
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span>View all changes </span>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
 
