@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { getRepo, getLatestCommit } from '../api/github';
 // ======================
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -61,23 +61,41 @@ const Projects = () => {
   
   return (
       <motion.div
-        className="project-row"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
         variants={projectVariants}
         id="projects"
       >
-        <Row className="align-items-center">
-          <Col lg={3} md={12} className="text-center">
-            <img
-              className="projectLogo"
-              src={witterImage}
-              alt="Witter Logo"
-            />
+        <Container fluid>
+        <Row className="project-intro-row justify-content-center">
+          <Col lg={8}>
+            <p className="section-number">02.</p>
+            <p className="section-title">Projects</p>
+            <p className="section-description">A showcase of my recent work.  Each project is a blend of problem-solving, 
+              <br></br>clean code, and user-focused design.</p>
           </Col>
+          <Col lg={2}>
+            <a href="https://github.com/JayPTucker" className="btn view-on-github" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+              <span> View on GitHub</span>
+            </a>
+          </Col>
+        </Row>
 
-          <Col lg={6} md={12}>
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div className="project-row">
+              <Row className="align-items-center">
+                <Col lg={3} md={12} className="text-center">
+                  <img
+                    className="projectLogo"
+                    src={witterImage}
+                    alt="Witter Logo"
+                  />
+                </Col>
+
+                <Col lg={6} md={12}>
             <p className="projectTitle">
               <span>Witter</span>
               <span className="app-type-bubble">Full Stack</span>
@@ -186,6 +204,10 @@ const Projects = () => {
           </Col>
 
         </Row>
+            </div>
+          </Col>
+        </Row>
+        </Container>
       </motion.div>
   );
 };

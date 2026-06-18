@@ -161,10 +161,39 @@ html {
 /* ============================================ */
 /* PROJECTS */
 /* ============================================ */
+.section-number {
+  font-size: calc(0.8vmax + 7px);
+  color: #b0ecff !important;
+}
+.section-title {
+  font-size: calc(2vmax + 9px);
+  color: #ebebeb;
+  margin-top: -30px;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: calc(0.7vmax + 6px);
+  color: #ebebebe5;
+  margin-top: -30px;
+}
+
+.view-on-github {
+  border: 2px solid rgb(176, 237, 255) !important;
+  font-size: 1.3rem !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-top: 20px;
+}
+
+.view-on-github:hover {
+  border: 2px solid rgb(155, 119, 255) !important;
+  background-color: rgba(155, 119, 255, 0.25) !important;
+  transform: translateY(-4px);
+}
+
+/* ============================================ */
 
 .project-row {
-  width: 85%;
-  margin: 0 auto calc(3vmax + 20px) auto;
   background-color: rgba(98, 152, 209, 0.16);
   border: 1px solid rgba(176, 236, 255, 0.35);
   border-radius: 10px;
@@ -248,12 +277,14 @@ html {
   gap: 20px;
 }
 
-.project-link {
+.project-link, .view-on-github {
   color: rgb(176, 237, 255) !important;
   font-size: 1.1rem;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
+
+
 
 .project-link:hover {
   color: rgb(155, 119, 255) !important;
