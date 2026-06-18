@@ -42,6 +42,9 @@ import responsivePhone from '../img/phone1.png';
 import witterImage from '../img/witter_project.png';
 import meLogoThing from '../img/meLogoThing.png';
 
+// CSS
+import '../styles/Projects.css';
+
 // Animation Variants
 const projectVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -232,11 +235,6 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faCodeBranch} />
-                      <span>GitHub API</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faDisplay} />
                       <span>Responsive Design</span>
                     </div>
@@ -261,10 +259,6 @@ const Projects = () => {
                       <span>UI/UX Design</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faGithub} />
-                      <span>GitHub</span>
-                    </div>
                   </div>
                   {/* Project Links */}
                   <div className="project-links">

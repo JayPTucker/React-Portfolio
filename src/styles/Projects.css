@@ -1,0 +1,400 @@
+/* ============================================ */
+/* PROJECTS */
+/* ============================================ */
+.section-number {
+  font-size: calc(0.8vmax + 7px);
+  color: #b0ecff !important;
+}
+
+.section-title {
+  font-size: calc(2vmax + 9px);
+  color: #ebebeb;
+  margin-top: -20px;
+  font-weight: bold;
+}
+
+.section-description {
+  font-size: calc(0.7vmax + 6px);
+  color: #ebebebe5;
+  margin-top: -15px;
+}
+
+.view-on-github {
+  border: 2px solid rgb(176, 237, 255) !important;
+  font-size: 1.3rem !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-top: 20px;
+}
+
+.view-on-github:hover {
+  border: 2px solid rgb(155, 119, 255) !important;
+  background-color: rgba(155, 119, 255, 0.25) !important;
+  transform: translateY(-4px);
+}
+
+/* ============================================ */
+
+.responsive-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.computer-icon {
+  font-size: calc(3.5vmax + 10px);
+  color: #b0ecff;
+}
+
+.mobile-icon {
+  position: absolute;
+  right: -8px;
+  bottom: -4px;
+
+  font-size: calc(2vmax + 7px);
+  color: #b0ecff;
+}
+
+.resolution-item {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.res-text {
+  font-size: 0.75rem;
+  color: #979797;
+}
+
+.responsive-title {
+  font-size: calc(0.7vmax + 6px);
+  color: #ebebeb;
+}
+
+.responsive-text {
+  font-size: calc(0.6vmax + 6px);
+  color: #ebebebe5;
+}
+
+.circle-icon {
+  margin-top: 4px;
+  font-size: calc(0.5vmax + 6px);
+}
+
+.circle1 {
+  color: rgb(117, 67, 255)
+}
+
+.circle2 {
+  color: rgb(133, 251, 255)
+}
+
+.circle3 {
+  color: rgb(255, 119, 155)
+}
+
+.desktop-img {
+  max-width: 80%;
+  height: auto;
+}
+
+.tablet-img {
+  max-width: 52%;
+  height: auto;
+}
+
+.phone-img {
+  max-width: 37%;
+  height: auto;
+}
+
+.desktop-img, .tablet-img, .phone-img {
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.desktop-img:hover, .tablet-img:hover, .phone-img:hover {
+  transform: scale(1.25);
+  z-index: 100 !important;
+}
+
+/* ============================================ */
+
+.project-row {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 18, 38),
+    rgb(11, 24, 50),
+    rgb(16, 34, 68),
+    rgb(11, 24, 50),
+    rgb(8, 18, 38)
+  );
+
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Project Accent Colors */
+.project-row.witter {
+  --accent: #8b5cf6;
+}
+
+.project-row.portfolio {
+  --accent: #facc15;
+}
+
+/* Project Title Accent */
+.project-row .projectTitle, .project-row .project-skill-bubble {
+  color: var(--accent);
+}
+
+/* Project Bubble Accent */
+.project-row .project-skill-bubble {
+    border-color: var(--accent);
+    background-color: color-mix(
+      in srgb,
+      var(--accent) 8%,
+      transparent
+    );
+}
+
+.project-row .bubble-icon {
+  color: var(--accent);
+}
+
+/* Accent Bar */
+.project-row::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  bottom: 4px;
+  width: 10px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+
+  box-shadow: 0 0 42px var(--accent);
+}
+
+/* Hover State */
+.project-row:hover {
+  background: linear-gradient(
+    to bottom,
+    rgb(12, 26, 54),
+    rgb(16, 34, 68),
+    rgb(22, 46, 88),
+    rgb(16, 34, 68),
+    rgb(12, 26, 54)
+  );
+
+  border-color: var(--accent);
+
+  box-shadow:
+    0 8px 10px color-mix(in srgb, var(--accent) 35%, transparent),
+    0 0 10px color-mix(in srgb, var(--accent) 10%, transparent);
+
+  transform: translateY(-4px);
+}
+
+.projectLogo {
+  width: 14vmax;  /* Adjust as needed */
+  height: auto;
+  border-radius: 26px;
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+
+.projectTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: calc(1vmax + 6px);
+  font-weight: bold;
+  margin: 0 !important; /* Remove any default margin */
+}
+
+
+.project-desc {
+  font-size: calc(0.6vmax + 6px);
+}
+
+/* ============================== */
+
+/* ============================== */
+.app-type-bubble {
+  background-color: rgba(12, 22, 69, 0.8);
+  border: 1px solid rgb(155, 119, 255);
+  border-radius: 5px;
+  color: rgb(155, 119, 255);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  line-height: 1;
+  transition: transform 0.1s ease;
+}
+
+.app-type-bubble:hover {
+  transform: translateY(-4px);
+  background-color: rgba(98, 152, 209, 0.25);
+}
+/* ============================== */
+
+/* ==== PROJECT SKILL BUBBLES AND LINKS ===== */
+
+.project-skill-bubble-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.project-skill-bubble {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: rgba(98, 152, 209, 0.16);
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 8px;
+
+  padding: 5px 16px;
+  font-size: 0.9rem;
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-skill-bubble:hover {
+  transform: translateY(-2px);
+
+  background-color: color-mix(
+    in srgb,
+    var(--accent) 18%,
+    transparent
+  );
+
+  border-color: var(--accent);
+
+  color: var(--accent);
+
+  box-shadow:
+    0 0 12px color-mix(
+      in srgb,
+      var(--accent) 35%,
+      transparent
+    );
+}
+
+.project-links {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-link,
+.view-on-github {
+  color: rgb(176, 237, 255) !important;
+  font-size: 1.1rem;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-link:hover,
+.view-on-github:hover {
+  color: var(--accent) !important;
+
+  text-shadow:
+    0 0 10px color-mix(
+      in srgb,
+      var(--accent) 40%,
+      transparent
+    );
+
+  transform: translateY(-2px);
+}
+
+/* VERTICAL DIVIDER FOR LINKS */
+.vertical-divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ============================== */
+
+/* CHANGELOG SECTION */
+.project-status {
+  position: relative;
+  padding-left: 30px;
+}
+
+.project-status::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--accent),
+    transparent
+  );
+}
+
+.changelog-text {
+  font-size: 1.2rem;
+  color: #b0ecff;
+}
+
+.commit-body {
+  white-space: pre-wrap;
+}
+
+.github-bubble {
+  background-color: rgba(12, 22, 69, 0.8);
+  border: 1px solid rgb(155, 119, 255);
+  border-radius: 5px;
+  color: rgb(155, 119, 255);
+  padding: 6px 10px;
+  font-size: 1rem;
+  line-height: 1;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+.github-bubble:hover {
+  background-color: rgba(98, 152, 209, 0.25);
+}
