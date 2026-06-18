@@ -179,7 +179,7 @@ html {
 }
 
 .projectLogo {
-  width: 11vmax;  /* Adjust as needed */
+  width: 14vmax;  /* Adjust as needed */
   height: auto;
   border-radius: 18px;
   border: 1px solid rgba(176, 236, 255, 0.35);

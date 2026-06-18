@@ -136,9 +136,10 @@ const Home = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
         variants={projectVariants}
+        id="projects"
       >
         <Row className="align-items-center">
-          <Col lg={2} md={12} className="text-center">
+          <Col lg={3} md={12} className="text-center">
             <img
               className="projectLogo"
               src={witterImage}
@@ -153,10 +154,7 @@ const Home = () => {
             </p>
 
             <p className="project-desc">
-              A full-stack social media platform featuring two-factor
-              email authentication, encrypted passwords, customizable user
-              profiles, photo uploads via AWS S3, and a “Top Wits”
-              leaderboard.
+              Witter is a full-stack social media platform that enables users to create profiles, share content, upload photos, and engage with a community-driven leaderboard. Built with Node.js, Express, MySQL, and AWS S3, it features secure authentication, encrypted credentials, and responsive design.
             </p>
 
             <div className='project-skill-bubble-group'>
@@ -227,7 +225,7 @@ const Home = () => {
             
           </Col>
 
-          <Col lg={4} md={12}>
+          <Col lg={3} md={12}>
             
             {witterRepo && (
               <div className="project-status">
