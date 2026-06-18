@@ -169,14 +169,14 @@ html {
 .section-title {
   font-size: calc(2vmax + 9px);
   color: #ebebeb;
-  margin-top: -30px;
+  margin-top: -20px;
   font-weight: bold;
 }
 
 .section-description {
   font-size: calc(0.7vmax + 6px);
   color: #ebebebe5;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 .view-on-github {
@@ -201,7 +201,7 @@ html {
 }
 
 .computer-icon {
-  font-size: 4.5rem;
+  font-size: calc(3.5vmax + 10px);
   color: #b0ecff;
 }
 
@@ -210,7 +210,7 @@ html {
   right: -8px;
   bottom: -4px;
 
-  font-size: 3rem;
+  font-size: calc(2vmax + 7px);
   color: #b0ecff;
 }
 
@@ -225,9 +225,19 @@ html {
   color: #979797;
 }
 
+.responsive-title {
+  font-size: calc(0.7vmax + 6px);
+  color: #ebebeb;
+}
+
+.responsive-text {
+  font-size: calc(0.6vmax + 6px);
+  color: #ebebebe5;
+}
+
 .circle-icon {
   margin-top: 4px;
-  font-size: 0.9rem;
+  font-size: calc(0.5vmax + 6px);
 }
 
 .circle1 {
@@ -512,7 +522,7 @@ html {
 /* ============================================ */
 
 /* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .info-panel-left, .info-panel-right {
         display: none; /* hide info-panel-left below 768px */
     }
@@ -545,6 +555,22 @@ html {
 
     .picOfMe {
         margin-bottom: 30px;
+    }
+
+
+    .desktop-img {
+      max-width: 40%;
+      height: auto;
+    }
+
+    .tablet-img {
+      max-width: 40%;
+      height: auto;
+    }
+
+    .phone-img {
+      max-width: 15%;
+      height: auto;
     }
 
     .witterDesktop {

@@ -110,8 +110,8 @@ const Projects = () => {
 
                 {/* Mini Bio */}
                 <Col lg={2} md={12}>
-                  <b>Built for every screen</b>
-                  <p className="small-text">Fully responsive design across desktop, tablet, and mobile devices.</p>
+                  <b className="responsive-title">Built for every screen</b>
+                  <p className="responsive-text">Fully responsive design across desktop, tablet, and mobile devices.</p>
                 </Col>
 
                 {/* Desktop */}
@@ -121,7 +121,7 @@ const Projects = () => {
                       className="circle-icon circle1"
                       icon={faCircleChevronRight}
                     />
-                    <span>
+                    <span className="responsive-text">
                       Desktop
                       <br />
                       <span className="res-text">1920px+</span>
@@ -137,7 +137,7 @@ const Projects = () => {
                       className="circle-icon circle2"
                       icon={faCircleChevronRight}
                     />
-                    <span>
+                    <span className="responsive-text">
                       Tablet
                       <br />
                       <span className="res-text">768px - 1023px</span>
@@ -154,7 +154,7 @@ const Projects = () => {
                       className="circle-icon circle3"
                       icon={faCircleChevronRight}
                     />
-                    <span>
+                    <span className="responsive-text">
                       Mobile
                       <br />
                       <span className="res-text">320px - 767px</span>
