@@ -14,15 +14,21 @@ import {
   faCloudArrowUp,
   faUsers,
   faArrowUpRightFromSquare,
-  faGlobe
+  faGlobe,
+  faMobile,
+  faDisplay,
+  faCircleChevronRight
 } from '@fortawesome/free-solid-svg-icons';
-
 import {
   faNodeJs,
   faJs,
   faAws,
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
+
+import responsiveDesktop from '../img/desktop1.png';
+import responsiveTablet from '../img/ipad1.png';
+import responsivePhone from '../img/phone1.png';
 
 import witterImage from '../img/witter_project.png';
 
@@ -80,6 +86,85 @@ const Projects = () => {
               <FontAwesomeIcon icon={faGithub} />
               <span> View on GitHub</span>
             </a>
+          </Col>
+        </Row>
+
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div className="project-row">
+              <Row className="align-items-center">
+
+                <Col lg={1} md={12} className="text-center">
+                  <div className="responsive-icon">
+                    <FontAwesomeIcon
+                      className="computer-icon"
+                      icon={faDisplay}
+                    />
+
+                    <FontAwesomeIcon
+                      className="mobile-icon"
+                      icon={faMobile}
+                    />
+                  </div>
+                </Col>
+
+                {/* Mini Bio */}
+                <Col lg={2} md={12}>
+                  <b>Built for every screen</b>
+                  <p className="small-text">Fully responsive design across desktop, tablet, and mobile devices.</p>
+                </Col>
+
+                {/* Desktop */}
+                <Col lg={3} md={12}>
+                  <span className="resolution-item">
+                    <FontAwesomeIcon
+                      className="circle-icon circle1"
+                      icon={faCircleChevronRight}
+                    />
+                    <span>
+                      Desktop
+                      <br />
+                      <span className="res-text">1920px+</span>
+                    </span>
+                    <img src={responsiveDesktop} alt="Desktop" className="desktop-img" />
+                  </span>
+                </Col>
+
+                {/* Tablet */}
+                <Col lg={4} md={12}>
+                  <span className="resolution-item">
+                    <FontAwesomeIcon
+                      className="circle-icon circle2"
+                      icon={faCircleChevronRight}
+                    />
+                    <span>
+                      Tablet
+                      <br />
+                      <span className="res-text">768px - 1023px</span>
+                    </span>
+                    <img src={responsiveTablet} alt="Tablet" className="tablet-img" />
+                  </span>
+                </Col>
+
+
+                {/* Mobile */}
+                <Col lg={2} md={12}>
+                  <span className="resolution-item">
+                    <FontAwesomeIcon
+                      className="circle-icon circle3"
+                      icon={faCircleChevronRight}
+                    />
+                    <span>
+                      Mobile
+                      <br />
+                      <span className="res-text">320px - 767px</span>
+                    </span>
+                    <img src={responsivePhone} alt="Mobile" className="phone-img" />
+                  </span>
+                </Col>
+
+              </Row>
+            </div>
           </Col>
         </Row>
 

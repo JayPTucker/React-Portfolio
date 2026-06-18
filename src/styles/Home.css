@@ -165,6 +165,7 @@ html {
   font-size: calc(0.8vmax + 7px);
   color: #b0ecff !important;
 }
+
 .section-title {
   font-size: calc(2vmax + 9px);
   color: #ebebeb;
@@ -193,18 +194,115 @@ html {
 
 /* ============================================ */
 
+.responsive-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.computer-icon {
+  font-size: 4.5rem;
+  color: #b0ecff;
+}
+
+.mobile-icon {
+  position: absolute;
+  right: -8px;
+  bottom: -4px;
+
+  font-size: 3rem;
+  color: #b0ecff;
+}
+
+.resolution-item {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.res-text {
+  font-size: 0.75rem;
+  color: #979797;
+}
+
+.circle-icon {
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.circle1 {
+  color: rgb(117, 67, 255)
+}
+
+.circle2 {
+  color: rgb(133, 251, 255)
+}
+
+.circle3 {
+  color: rgb(255, 119, 155)
+}
+
+.desktop-img {
+  max-width: 80%;
+  height: auto;
+}
+
+.tablet-img {
+  max-width: 52%;
+  height: auto;
+}
+
+.phone-img {
+  max-width: 37%;
+  height: auto;
+}
+
+.desktop-img, .tablet-img, .phone-img {
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.desktop-img:hover, .tablet-img:hover, .phone-img:hover {
+  transform: scale(1.25);
+  z-index: 100 !important;
+}
+
+/* ============================================ */
+
 .project-row {
-  background-color: rgba(98, 152, 209, 0.16);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 18, 38),
+    rgb(11, 24, 50),
+    rgb(16, 34, 68),
+    rgb(11, 24, 50),
+    rgb(8, 18, 38)
+  );
   border: 1px solid rgba(176, 236, 255, 0.35);
   border-radius: 10px;
   padding: 20px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
+  margin-bottom: 20px;
 }
 
 .project-row:hover {
-  background-color: rgba(98, 152, 209, 0.25);
+  background: linear-gradient(
+    to bottom,
+    rgb(12, 26, 54),
+    rgb(16, 34, 68),
+    rgb(22, 46, 88),
+    rgb(16, 34, 68),
+    rgb(12, 26, 54)
+  );
+
   border: 1px solid rgba(176, 236, 255, 0.5);
-  transform: translateY(-4px) !important;
+  box-shadow:
+    0 8px 30px rgba(176, 236, 255, 0.08),
+    0 0 20px rgba(176, 236, 255, 0.04);
+
+  transform: translateY(-4px);
+
 }
 
 .projectLogo {
