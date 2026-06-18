@@ -123,7 +123,7 @@ const Projects = () => {
 
         {/* Responsive Design Showcase */}
         <Row className="justify-content-center">
-          <Col lg={10}>
+          <Col lg={10} md={12} sm={12}>
             <div className="project-row">
               <Row className="align-items-center">
                 <Col lg={1} md={12} className="text-center">
@@ -141,7 +141,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Desktop View */}
-                <Col lg={3} md={12}>
+                <Col lg={3} md={4} sm={4}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
                       className="circle-icon circle1"
@@ -157,7 +157,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Tablet View */}
-                <Col lg={4} md={12}>
+                <Col lg={4} md={4} sm={4}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
                       className="circle-icon circle2"
@@ -173,7 +173,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Mobile View */}
-                <Col lg={2} md={12}>
+                <Col lg={2} md={4} sm={4}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
                       className="circle-icon circle3"

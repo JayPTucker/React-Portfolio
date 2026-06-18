@@ -221,7 +221,7 @@ html {
 /* ============================================ */
 
 /* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
-@media (max-width: 992px) {
+@media (max-width: 993px) {
     .info-panel-left, .info-panel-right {
         display: none; /* hide info-panel-left below 768px */
     }
@@ -229,47 +229,56 @@ html {
     .navbar {
       margin-bottom: 200px !important;
     }
-    .FrontPageRow, .aboutMeRow, .projectsRow, .contactRow {
+    .FrontPageRow, #projects, .contactRow {
       margin: 70px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-      text-align: center;
-      justify-content: center;
+      text-align: center !important;
+      justify-content: center !important;
     }
 
     .FrontPageRow {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     .name-title {
-        padding-bottom: 20px;
+      padding-bottom: 20px;
     }
 
     .mini-bio {
-        max-width: 100%;
+      max-width: 100%;
     }
 
     .skill-bubble-group {
-        justify-content: center;
+      justify-content: center;
     }
 
     .picOfMe {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
 
 
+    .view-on-github {
+      margin: 0 auto !important;
+      font-size: 1rem !important;
+      width: 100%;
+    }
     .desktop-img {
       max-width: 40%;
       height: auto;
+      margin: 0 auto !important;
     }
 
     .tablet-img {
       max-width: 40%;
       height: auto;
+      margin: 0 auto !important;
     }
 
     .phone-img {
       max-width: 15%;
       height: auto;
+      margin: 0 auto !important;
     }
 
     .witterDesktop {
