@@ -59,6 +59,7 @@
   justify-content: flex-end; /* Align items to the right */
   align-items: center; /* Center items vertically within the column */
 }
+
 .navbar-link a {
   display: inline !important; /* Set to "inline" to keep the link and span side by side */
   text-decoration: none; /* To remove underline if needed */
@@ -96,6 +97,7 @@
   color: #b0ecff !important; /* Set your desired link color */
   margin: 0px 10px;
   transition: all 0.2s ease-in-out;
+  width: 30px !important;
 }
 
 .nav-icon:hover {
@@ -139,13 +141,15 @@
 /* MEDIA QUERIES */
 /* ============================================== */
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .FrontPageRow {
-    margin: 30px 20px !important;
+    margin-top: calc(8vmax + 20px) !important;
   }
-  .navbar-links-col, .navbar-collapse {
+
+  .navbar-links-col.ms-auto, .navbar-collapse {
     justify-content: center !important; /* Align items to the right */
     align-items: center !important;
+    margin: 0px !important;
   }
 
   .navbar-link {
@@ -157,4 +161,39 @@
     padding: 5px;
     font-size: 14px;
   }
+
+  .nav-icon {
+    width: 20px !important;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-links-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* optional */
+    gap: 10px;           /* optional spacing */
+  }
+
+  .navbar-link {
+    font-size: 20px;
+  }
+
+  .nav-icon {
+    width: 30px !important;
+    height: auto;
+  }
+
+  .resume-link {
+    margin: 0px !important;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  /* Added this to see better on mobile */
+  .navbar {
+    backdrop-filter: blur(30px) saturate(180%);
+  }
+
 }

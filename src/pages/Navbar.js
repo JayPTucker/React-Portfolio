@@ -41,7 +41,7 @@ function NavbarFunc() {
   }, []);
 
   return (
-    <Navbar expand="md" className="navbar">
+    <Navbar expand="lg" className="navbar">
     <Container>
 
       <Navbar.Brand>
