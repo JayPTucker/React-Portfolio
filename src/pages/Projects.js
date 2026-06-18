@@ -1,11 +1,9 @@
-import React from 'react';
-// For GitHub API
-import { useEffect, useState } from 'react';
-import { getRepo, getLatestCommit } from '../api/github';
-// ======================
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+// Solid Icons
 import {
   faDatabase,
   faServer,
@@ -17,21 +15,34 @@ import {
   faGlobe,
   faMobile,
   faDisplay,
-  faCircleChevronRight
+  faCircleChevronRight,
+  faCodeBranch,
+  faWandMagicSparkles,
+  faPalette,
+  faCode
 } from '@fortawesome/free-solid-svg-icons';
+
+// Brand Icons
 import {
   faNodeJs,
   faJs,
   faAws,
-  faGithub
+  faGithub,
+  faBootstrap,
+  faReact
 } from '@fortawesome/free-brands-svg-icons';
 
+// API
+import { getRepo, getLatestCommit } from '../api/github';
+
+// Images
 import responsiveDesktop from '../img/desktop1.png';
 import responsiveTablet from '../img/ipad1.png';
 import responsivePhone from '../img/phone1.png';
-
 import witterImage from '../img/witter_project.png';
+import meLogoThing from '../img/meLogoThing.png';
 
+// Animation Variants
 const projectVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { 
@@ -41,80 +52,92 @@ const projectVariants = {
   },
 };
 
+  const projects = [
+    "Witter",
+    "React-Portfolio"
+  ];
+
 const Projects = () => {
+  // State
+  const [projectData, setProjectData] = useState({});
 
+  useEffect(() => {
+    async function loadProjects() {
+      try {
+        const data = {};
 
-    // For GitHub API Cont...
-    const [witterRepo, setWitterRepo] = useState(null);
-    const [witterCommit, setWitterCommit] = useState(null);
-    // ======================
-  
-    useEffect(() => {
-      async function loadRepoData() {
-        try {
-          const repo = await getRepo("Witter");
-          const commit = await getLatestCommit("Witter");
-  
-          setWitterRepo(repo);
-          setWitterCommit(commit);
-        } catch (error) {
-          console.error(error);
+        for (const repoName of projects) {
+          const repo = await getRepo(repoName);
+          const commit = await getLatestCommit(repoName);
+
+          data[repoName] = {
+            repo,
+            commit
+          };
         }
+
+        setProjectData(data);
+      } catch (error) {
+        console.error(error);
       }
-  
-      loadRepoData();
-    }, []);
+    }
+
+    loadProjects();
+  }, []);
   
   return (
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
-        variants={projectVariants}
-        id="projects"
-      >
-        <Container fluid>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={projectVariants}
+      id="projects"
+    >
+      <Container fluid>
+        {/* Section Header */}
         <Row className="project-intro-row justify-content-center">
           <Col lg={8}>
             <p className="section-number">02.</p>
             <p className="section-title">Projects</p>
-            <p className="section-description">A showcase of my recent work.  Each project is a blend of problem-solving, 
-              <br></br>clean code, and user-focused design.</p>
+            <p className="section-description">
+              A showcase of my recent work. Each project is a blend of problem-solving, 
+              <br></br>
+              clean code, and user-focused design.
+            </p>
           </Col>
           <Col lg={2}>
-            <a href="https://github.com/JayPTucker" className="btn view-on-github" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://github.com/JayPTucker" 
+              className="btn view-on-github" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
               <span> View on GitHub</span>
             </a>
           </Col>
         </Row>
 
+        {/* Responsive Design Showcase */}
         <Row className="justify-content-center">
           <Col lg={10}>
             <div className="project-row">
               <Row className="align-items-center">
-
                 <Col lg={1} md={12} className="text-center">
                   <div className="responsive-icon">
-                    <FontAwesomeIcon
-                      className="computer-icon"
-                      icon={faDisplay}
-                    />
-
-                    <FontAwesomeIcon
-                      className="mobile-icon"
-                      icon={faMobile}
-                    />
+                    <FontAwesomeIcon className="computer-icon" icon={faDisplay} />
+                    <FontAwesomeIcon className="mobile-icon" icon={faMobile} />
                   </div>
                 </Col>
 
-                {/* Mini Bio */}
                 <Col lg={2} md={12}>
                   <b className="responsive-title">Built for every screen</b>
-                  <p className="responsive-text">Fully responsive design across desktop, tablet, and mobile devices.</p>
+                  <p className="responsive-text">
+                    Fully responsive design across desktop, tablet, and mobile devices.
+                  </p>
                 </Col>
 
-                {/* Desktop */}
+                {/* Desktop View */}
                 <Col lg={3} md={12}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
@@ -130,7 +153,7 @@ const Projects = () => {
                   </span>
                 </Col>
 
-                {/* Tablet */}
+                {/* Tablet View */}
                 <Col lg={4} md={12}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
@@ -146,8 +169,7 @@ const Projects = () => {
                   </span>
                 </Col>
 
-
-                {/* Mobile */}
+                {/* Mobile View */}
                 <Col lg={2} md={12}>
                   <span className="resolution-item">
                     <FontAwesomeIcon
@@ -162,16 +184,197 @@ const Projects = () => {
                     <img src={responsivePhone} alt="Mobile" className="phone-img" />
                   </span>
                 </Col>
-
               </Row>
             </div>
           </Col>
         </Row>
 
+        {/* PORTFOLIO PROJECT */}
         <Row className="justify-content-center">
           <Col lg={10}>
-            <div className="project-row">
+            <div className="project-row portfolio">
               <Row className="align-items-center">
+                {/* Project Image */}
+                <Col lg={3} md={12} className="text-center">
+                  <img
+                    className="projectLogo"
+                    src={meLogoThing}
+                    alt="React Portfolio Logo"
+                  />
+                </Col>
+
+                {/* Project Details */}
+                <Col lg={6} md={12}>
+                  <p className="projectTitle">
+                    <span>React Portfolio</span>
+                    <span className="app-type-bubble">Full Stack</span>
+                  </p>
+
+                  <p className="project-desc">
+                    A modern portfolio website built with React, Bootstrap, and Framer Motion to showcase projects, technical skills, and professional experience. Features responsive layouts, GitHub API integration, animated UI components, and optimized performance across desktop, tablet, and mobile devices.
+                  </p>
+
+                  {/* Skills */}
+                  <div className='project-skill-bubble-group'>
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faReact} />
+                      <span>React</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                      <span>JavaScript</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faBootstrap} />
+                      <span>Bootstrap</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCodeBranch} />
+                      <span>GitHub API</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faDisplay} />
+                      <span>Responsive Design</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCodeBranch} />
+                      <span>GitHub API</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCode} />
+                      <span>REST APIs</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faWandMagicSparkles} />
+                      <span>Framer Motion</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
+                      <span>UI/UX Design</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faGithub} />
+                      <span>GitHub</span>
+                    </div>
+                  </div>
+                  {/* Project Links */}
+                  <div className="project-links">
+                    <a 
+                      href="https://github.com/JayPTucker/React-Portfolio" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                      <span>  GitHub Repo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+
+                    <div className="vertical-divider"></div>
+
+                    <a 
+                      href="https://jaypaultucker.org" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGlobe} />
+                      <span>  Live Demo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                  </div>
+                </Col>
+
+                {/* Project Status & Changelog */}
+                <Col lg={3} md={12}>
+                  {projectData["React-Portfolio"] && (
+                    <div className="project-status">
+
+                      <p>
+                        <b className="changelog-text">Changelog via</b>
+                        <span className="github-bubble">GitHub API</span>
+                      </p>
+
+                      <p>
+                        <b className="changelog-text">Last Updated: </b>
+                        {new Date(
+                          projectData["React-Portfolio"].repo.updated_at
+                        ).toLocaleDateString()}
+                      </p>
+
+                      <p>
+                        <b>
+                          {
+                            projectData["React-Portfolio"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')[0]
+                          }
+                        </b>
+
+                        <div className="commit-body">
+                          {
+                            projectData["React-Portfolio"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .slice(2, 6)
+                              .join('\n')
+                          }
+
+                          {
+                            projectData["React-Portfolio"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .length > 5 && (
+                              <span>
+                                <br />
+                                <i>
+                                  ...Use the link below to view all changes.
+                                </i>
+                              </span>
+                            )
+                          }
+                        </div>
+                      </p>
+
+                      <a
+                        href="https://github.com/JayPTucker/React-Portfolio/commits/main/"
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span>View all changes</span>
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                      </a>
+
+                    </div>
+                  )}
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+
+        {/* Witter Project */}
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div className="project-row witter">
+              <Row className="align-items-center">
+                {/* Project Image */}
                 <Col lg={3} md={12} className="text-center">
                   <img
                     className="projectLogo"
@@ -180,125 +383,175 @@ const Projects = () => {
                   />
                 </Col>
 
+                {/* Project Details */}
                 <Col lg={6} md={12}>
-            <p className="projectTitle">
-              <span>Witter</span>
-              <span className="app-type-bubble">Full Stack</span>
-            </p>
-
-            <p className="project-desc">
-              Witter is a full-stack social media platform that enables users to create profiles, share content, upload photos, and engage with a community-driven leaderboard. Built with Node.js, Express, MySQL, and AWS S3, it features secure authentication, encrypted credentials, and responsive design.
-            </p>
-
-            <div className='project-skill-bubble-group'>
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faNodeJs} />
-                <span>Node.js</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faJs} />
-                <span>JavaScript</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faServer} />
-                <span>Express.js</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faDatabase} />
-                <span>MySQL</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faAws} />
-                <span>AWS S3</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faLock} />
-                <span>Authentication</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
-                <span>Security</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faCloudArrowUp} />
-                <span>File Uploads</span>
-              </div>
-
-              <div className='project-skill-bubble'>
-                <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
-                <span>Social Platform</span>
-              </div>
-            </div>
-
-
-            {/* Hyperlinks for Github and Live Link */}
-            <div className="project-links">
-              <a href="https://github.com/JayPTucker/Witter" className="project-link" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} />
-                <span>  GitHub Repo  </span>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </a>
-
-              <div className="vertical-divider"></div>
-
-              <a href="https://witter-d4c230a6736c.herokuapp.com/" className="project-link" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGlobe} />
-                <span>  Live Demo  </span>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-              </a>
-            </div>
-            {/* ============================================= */}
-            
-          </Col>
-
-          <Col lg={3} md={12}>
-            
-            {witterRepo && (
-              <div className="project-status">
-                <p>
-                  
-
-                  <p>
-                    <b className="changelog-text">Changelog via</b>
-                    <span className="github-bubble">GitHub API</span>
+                  <p className="projectTitle">
+                    <span>Witter</span>
+                    <span className="app-type-bubble">Full Stack</span>
                   </p>
 
-                  <b className="changelog-text">Last Updated:{" "}</b>
-                  {new Date(witterRepo.updated_at).toLocaleDateString()}
-                </p>
-
-                <p>
-                  <b>{witterCommit?.commit.message.split('\n')[0]}</b>
-                  <br></br>
-                  <p className="commit-body">
-                    {witterCommit?.commit.message.split('\n').slice(2, 6).join('\n')}
-                    {witterCommit?.commit.message.split('\n').length > 5 && (
-                      <span><br></br><i>...Use the link below to view all changes.</i></span>
-                    )}
+                  <p className="project-desc">
+                    Witter is a full-stack social media platform that enables users to create 
+                    profiles, share content, upload photos, and engage with a community-driven 
+                    leaderboard. Built with Node.js, Express, MySQL, and AWS S3, it features 
+                    secure authentication, encrypted credentials, and responsive design.
                   </p>
-                </p>
 
-                <a href="https://github.com/JayPTucker/Witter/commits/main/" className="project-link" target="_blank" rel="noopener noreferrer">
-                  <span>  View all changes </span>
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                </a>
-              </div>
-            )}
-          </Col>
+                  {/* Skills */}
+                  <div className='project-skill-bubble-group'>
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faNodeJs} />
+                      <span>Node.js</span>
+                    </div>
 
-        </Row>
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                      <span>JavaScript</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faServer} />
+                      <span>Express.js</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faDatabase} />
+                      <span>MySQL</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faAws} />
+                      <span>AWS S3</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faLock} />
+                      <span>Authentication</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
+                      <span>Security</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faCloudArrowUp} />
+                      <span>File Uploads</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
+                      <span>Social Platform</span>
+                    </div>
+                  </div>
+
+                  {/* Project Links */}
+                  <div className="project-links">
+                    <a 
+                      href="https://github.com/JayPTucker/Witter" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGithub} />
+                      <span>  GitHub Repo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+
+                    <div className="vertical-divider"></div>
+
+                    <a 
+                      href="https://witter-d4c230a6736c.herokuapp.com/" 
+                      className="project-link" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon icon={faGlobe} />
+                      <span>  Live Demo  </span>
+                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                    </a>
+                  </div>
+                </Col>
+
+                {/* Project Status & Changelog */}
+                <Col lg={3} md={12}>
+                  {projectData["Witter"] && (
+                    <div className="project-status">
+
+                      <p>
+                        <b className="changelog-text">Changelog via</b>
+                        <span className="github-bubble">GitHub API</span>
+                      </p>
+
+                      <p>
+                        <b className="changelog-text">Last Updated: </b>
+                        {new Date(
+                          projectData["Witter"].repo.updated_at
+                        ).toLocaleDateString()}
+                      </p>
+
+                      <p>
+                        <b>
+                          {
+                            projectData["Witter"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')[0]
+                          }
+                        </b>
+
+                        <div className="commit-body">
+                          {
+                            projectData["Witter"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .slice(2, 6)
+                              .join('\n')
+                          }
+
+                          {
+                            projectData["Witter"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .length > 5 && (
+                              <span>
+                                <br />
+                                <i>
+                                  ...Use the link below to view all changes.
+                                </i>
+                              </span>
+                            )
+                          }
+                        </div>
+                      </p>
+
+                      <a
+                        href="https://github.com/JayPTucker/Witter/commits/main/"
+                        className="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span>View all changes</span>
+                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                      </a>
+
+                    </div>
+                  )}
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>
-        </Container>
-      </motion.div>
+
+
+
+      </Container>
+    </motion.div>
   );
 };
 
