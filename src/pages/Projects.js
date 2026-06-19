@@ -99,7 +99,7 @@ const Projects = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={projectVariants}
       id="projects"
     >

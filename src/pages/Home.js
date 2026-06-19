@@ -18,6 +18,7 @@ import picOfMe from '../img/picofme.jpg';
 
 import ButtonComponent from '../components/button.js';
 import Projectsection from '../pages/Projects.js';
+import Contactsection from '../pages/Contact.js';
 
 import '../styles/Home.css';
 
@@ -100,23 +101,10 @@ const Home = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.4 }}
         variants={projectVariants}
       >
-        <Row className="contactRow text-center" id="contactRow">
-          <Col md={12}>
-            <h1 className="contactRowTitle">Get In Touch</h1>
-          </Col>
-            <Col md={6} className="contactCol">
-              <p className="contactRowText">Feel free to contact me below</p>
-              <a href="mailto:jaypaultucker@gmail.com">
-                <button className="contactMeBtn">Email me!</button>
-              </a>
-              <a href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <button className="contactMeBtn">View my Resume</button>
-              </a>
-            </Col>
-        </Row>
+        <Contactsection />
       </motion.div>
 
       {/* CREDITS SECTION */}

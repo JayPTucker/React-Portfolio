@@ -1,0 +1,408 @@
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section {
+  padding: 120px 0;
+}
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.contact-section-number {
+  color: #b0ecff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.contact-heading {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: white;
+  margin: 20px 0;
+}
+
+.contact-heading span {
+  color: #b0ecff;
+}
+
+.contact-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+/* ==========================================
+   CONTACT INFO CARDS
+========================================== */
+
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: rgba(6, 18, 48, 0.45);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(176, 236, 255, 0.12);
+
+  border-radius: 25px;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  transition: all 0.25s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(176, 236, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(176, 236, 255, 0.08);
+}
+
+.contact-icon-box {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(88, 183, 255, 0.15),
+    rgba(141, 99, 255, 0.15)
+  );
+
+  color: #b0ecff;
+  font-size: 1.6rem;
+
+  flex-shrink: 0;
+}
+
+.contact-info small {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin: 0;
+
+  color: white;
+  font-size: 1rem;
+}
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.contact-form-card {
+  position: relative;
+
+  overflow: hidden;
+
+  background: rgba(6, 18, 48, 0.45);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(176, 236, 255, 0.15);
+
+  border-radius: 35px;
+
+  padding: 40px;
+}
+
+.contact-form-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: -20px;
+  top: 0;
+
+  width: 150px;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(124, 58, 237, 0.342),
+    transparent 30%
+  );
+
+  pointer-events: none;
+}
+
+.contact-form-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  color: #d7ecff;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 30px;
+}
+
+.contact-form-title svg {
+  color: #b0ecff;
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.input-group-custom {
+  margin-bottom: 20px;
+}
+
+.input-group-custom label {
+  display: block;
+
+  color: rgba(255,255,255,0.75);
+
+  margin-bottom: 10px;
+
+  font-weight: 500;
+}
+
+.input-group-custom input,
+.input-group-custom textarea {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  background: rgba(6, 18, 48, 0.55);
+
+  border: 1px solid rgba(176, 236, 255, 0.12);
+
+  border-radius: 15px;
+
+  color: white;
+
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.input-group-custom input::placeholder,
+.input-group-custom textarea::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+.input-group-custom input:focus,
+.input-group-custom textarea:focus {
+  border-color: #b0ecff;
+
+  box-shadow:
+    0 0 0 1px rgba(176,236,255,0.3),
+    0 0 15px rgba(176,236,255,0.15);
+}
+
+.input-group-custom textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.contact-submit-btn {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 10px;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(176,236,255,0.15);
+
+  background: linear-gradient(
+    135deg,
+    rgb(11, 24, 50),
+    rgb(23, 44, 90)
+  );
+
+  color: white;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+
+  border-color: #b0ecff;
+
+  box-shadow:
+    0 0 20px rgba(176,236,255,0.15);
+}
+
+.contact-submit-btn svg {
+  color: #b0ecff;
+}
+
+/* ==========================================
+   PRIVACY NOTE
+========================================== */
+
+.privacy-note {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  color: rgba(255,255,255,0.45);
+
+  text-align: center;
+}
+
+.privacy-note svg {
+  color: #b0ecff;
+}
+
+/* ==========================================
+   BOTTOM CARD
+========================================== */
+
+.contact-bottom-card {
+  margin-top: 40px;
+
+  background: rgba(6, 18, 48, 0.45);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(176,236,255,0.12);
+
+  border-radius: 35px;
+
+  padding: 30px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-bottom-card h4 {
+  color: #76ffc3;
+  margin-bottom: 10px;
+}
+
+.contact-bottom-card p {
+  color: rgba(255,255,255,0.7);
+  margin: 0;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+
+  margin-right: 10px;
+
+  background: #4eff8f;
+
+  box-shadow:
+    0 0 10px #4eff8f,
+    0 0 20px #4eff8f;
+}
+
+/* ==========================================
+   SOCIAL LINKS
+========================================== */
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+
+  color: white;
+
+  padding: 14px 24px;
+
+  border-radius: 15px;
+
+  background: rgba(6, 18, 48, 0.35);
+
+  border: 1px solid rgba(176,236,255,0.12);
+
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  border-color: #b0ecff;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 15px rgba(176,236,255,0.1);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 992px) {
+
+  .contact-heading {
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-form-card {
+    margin-top: 40px;
+  }
+
+  .contact-bottom-card {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
