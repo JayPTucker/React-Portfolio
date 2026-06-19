@@ -101,11 +101,10 @@ const Projects = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}
       variants={projectVariants}
-      id="projects"
     >
       <Container fluid>
         {/* Section Header */}
-        <Row className="project-intro-row justify-content-center">
+        <Row className="project-intro-row justify-content-center" id="projects">
           <Col lg={8}>
             <p className="section-number"><b>02.</b> </p>
             <p className="section-title">Projects</p>

@@ -16,7 +16,6 @@ import {
 
 import picOfMe from '../img/picofme.jpg';
 
-import ButtonComponent from '../components/button.js';
 import Projectsection from '../pages/Projects.js';
 import Contactsection from '../pages/Contact.js';
 
@@ -82,7 +81,17 @@ const Home = () => {
               </div>
             </div>
 
-            <ButtonComponent />
+            <a
+              className="bioNavBtn flashingBackground"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing"
+            >
+              Check out my Resume
+            </a>
+            <a href="#projects" className="bioNavBtn">
+              View my Projects
+            </a>
           </Col>
           <Col md={4} sm={12} className="text-center">
             <img className="picOfMe" src={picOfMe} alt="Jay Paul Tucker" />
