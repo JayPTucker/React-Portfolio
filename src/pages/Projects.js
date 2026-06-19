@@ -107,7 +107,7 @@ const Projects = () => {
         {/* Section Header */}
         <Row className="project-intro-row justify-content-center">
           <Col lg={8}>
-            <p className="section-number">02.</p>
+            <p className="section-number"><b>02.</b> </p>
             <p className="section-title">Projects</p>
             <p className="section-description">
               A showcase of my recent work. Each project is a blend of problem-solving, 

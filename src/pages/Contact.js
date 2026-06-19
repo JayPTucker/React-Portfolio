@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,7 +19,30 @@ import {
 
 import '../styles/Contact.css';
 
+import emailjs from '@emailjs/browser';
+
 function Contact() {
+
+const [success, setSuccess] = useState(false);
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    process.env.REACT_APP_EMAILJS_SERVICE_ID,
+    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+    e.target,
+    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+  )
+  .then(() => {
+    setSuccess(true);
+    e.target.reset();
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+};
+
   return (
     <section className="contact-section" id="contactRow">
     <Container>
@@ -92,36 +116,42 @@ function Contact() {
                 <span>Send a Message</span>
             </h3>
 
-            <form>
+            <form onSubmit={sendEmail}>
 
                 <Row>
                 <Col md={6}>
                     <div className="input-group-custom">
                     <label>Name</label>
-                    <input
+                        <input
                         type="text"
+                        name="user_name"
                         placeholder="Your Name"
-                    />
+                        required
+                        />
                     </div>
                 </Col>
 
                 <Col md={6}>
                     <div className="input-group-custom">
                     <label>Email</label>
-                    <input
+                        <input
                         type="email"
+                        name="user_email"
                         placeholder="your@email.com"
-                    />
+                        required
+                        />
                     </div>
                 </Col>
                 </Row>
 
                 <div className="input-group-custom">
                 <label>Subject</label>
-                <input
+                    <input
                     type="text"
+                    name="subject"
                     placeholder="Let's Work Together"
-                />
+                    required
+                    />
                 </div>
 
                 <div className="input-group-custom">
@@ -130,6 +160,8 @@ function Contact() {
                 <textarea
                     rows="7"
                     placeholder="Tell me about your project or opportunity..."
+                    name="message"
+                    required
                 ></textarea>
                 </div>
 
@@ -137,9 +169,15 @@ function Contact() {
                 type="submit"
                 className="contact-submit-btn"
                 >
-                WIP...
+                Send Message
                 <FontAwesomeIcon icon={faPaperPlane} />
                 </button>
+
+                {success && (
+                    <div className="success-message">
+                        Message sent successfully!
+                    </div>
+                )}
 
                 <p className="privacy-note">
                 <FontAwesomeIcon icon={faLock} />

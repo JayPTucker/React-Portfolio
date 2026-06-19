@@ -266,6 +266,16 @@
   color: #b0ecff;
 }
 
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(126, 255, 147, 0.2);
+  border: 1px solid rgba(126, 255, 147, 0.3);
+  border-radius: 15px;
+  color: #7eff93;
+  text-align: center;
+}
+
 /* ==========================================
    PRIVACY NOTE
 ========================================== */

@@ -47,7 +47,7 @@ const Home = () => {
       >
         <Row className="FrontPageRow" id="home">
           <Col md={7} sm={12} className="FrontPageMainCol">
-            <p className='title'>01.  Hey there, I'm</p>
+            <p className='title'><b>01.</b>   Hey there, I'm</p>
             <p className='name-title'>Jay Paul Tucker.</p>
             <p className='what-i-do'>Software Engineering Student<br></br>
                   Full Stack Web Developer</p>
