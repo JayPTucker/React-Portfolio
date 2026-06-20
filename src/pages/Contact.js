@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -20,6 +20,16 @@ import {
 import '../styles/Contact.css';
 
 import emailjs from '@emailjs/browser';
+
+// Animation Variants
+const projectVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 1 },
+  },
+};
 
 function Contact() {
 
@@ -44,6 +54,12 @@ const sendEmail = (e) => {
 };
 
   return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={projectVariants}
+    >
     <section className="contact-section" id="contactRow">
     <Container>
         <Row className="align-items-start">
@@ -241,6 +257,7 @@ const sendEmail = (e) => {
 
     </Container>
     </section>
+    </motion.div>
   );
 }
 

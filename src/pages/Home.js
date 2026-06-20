@@ -41,7 +41,7 @@ const Home = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.6 }}
         variants={projectVariants}
       >
         <Row className="FrontPageRow" id="home">
@@ -87,10 +87,10 @@ const Home = () => {
               rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1G0FqwVXcEtQ6gp5xPqWjyeNZ5pLx0ksw/view?usp=sharing"
             >
-              Check out my Resume
+              View Resume
             </a>
             <a href="#projects" className="bioNavBtn">
-              View my Projects
+              View Projects
             </a>
           </Col>
           <Col md={4} sm={12} className="text-center">
@@ -107,23 +107,17 @@ const Home = () => {
 {/* ======================================= */}
 
       {/* CONTACT ME SECTION */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
-        variants={projectVariants}
-      >
-        <Contactsection />
-      </motion.div>
+
+      <Contactsection />
 
       {/* CREDITS SECTION */}
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={projectVariants}
       >
-        <Row className="justify-content-center creditsRow">
+        <Row className="justify-content-center text-center creditsRow">
           <Col md={12}>
             <a className="githubLink" target="_blank" rel="noreferrer" href="https://github.com/JayPTucker/React-Portfolio">Designed and built by Jay Paul Tucker</a>
           </Col>

@@ -50,7 +50,6 @@ html {
 }
 
 
-
 .FrontPageRow, .aboutMeRow, .contactRow {
   transition: all 0.2s ease-in-out !important;
   max-width: 100%;
@@ -145,7 +144,7 @@ html {
   font-size: calc(1vmax + 6px);
   color: #b0ecff;
   border: 1px solid #b0ecff;
-  padding: 20px;
+  padding: calc(0.5vmax + 4px) calc(1vmax + 8px);
   border-radius: 5px;
   margin: 0px 10px;
   transition: all 0.2s ease-in-out;
@@ -194,7 +193,7 @@ html {
       margin-bottom: 200px !important;
     }
     .FrontPageRow, #projects, .contactRow {
-      margin: 70px 20px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
+      margin: 70px 5px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
       text-align: center !important;
       justify-content: center !important;
     }
