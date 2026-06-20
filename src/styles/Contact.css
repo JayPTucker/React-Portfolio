@@ -328,14 +328,17 @@ input:hover, textarea:hover {
 .contact-bottom-card {
   margin-top: 40px;
 
-  background: rgba(6, 18, 48, 0.45);
+   background: linear-gradient(
+    to bottom,
+    rgb(8, 18, 38),
+    rgb(11, 24, 50),
+    rgb(16, 34, 68),
+    rgb(11, 24, 50),
+    rgb(8, 18, 38)
+  );
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-
-  border: 1px solid rgba(176,236,255,0.12);
-
-  border-radius: 35px;
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 20px;
 
   padding: 30px 40px;
 
@@ -387,15 +390,19 @@ input:hover, textarea:hover {
 
   text-decoration: none;
 
-  color: white;
-
   padding: 14px 24px;
 
   border-radius: 15px;
 
-  background: rgba(6, 18, 48, 0.35);
+  border: 1px solid rgba(176, 237, 255, 0.577);
 
-  border: 1px solid rgba(176,236,255,0.12);
+  background: linear-gradient(
+    135deg,
+    rgb(11, 24, 50),
+    rgb(23, 44, 90)
+  );
+
+  color: white;
 
   transition: all 0.25s ease;
 }
