@@ -132,76 +132,86 @@ const sendEmail = (e) => {
                 <span>Send a Message</span>
             </h3>
 
-            <form onSubmit={sendEmail}>
+                <form onSubmit={sendEmail}>
 
                 <Row>
-                <Col md={6}>
+                    <Col md={6}>
                     <div className="input-group-custom">
-                    <label>Name</label>
+                        <label>Name</label>
                         <input
                         type="text"
                         name="user_name"
                         placeholder="Your Name"
+                        minLength={2}
+                        maxLength={50}
                         required
                         />
                     </div>
-                </Col>
+                    </Col>
 
-                <Col md={6}>
+                    <Col md={6}>
                     <div className="input-group-custom">
-                    <label>Email</label>
+                        <label>Email</label>
                         <input
                         type="email"
                         name="user_email"
                         placeholder="your@email.com"
+                        maxLength={100}
                         required
                         />
                     </div>
-                </Col>
+                    </Col>
                 </Row>
 
                 <div className="input-group-custom">
-                <label>Subject</label>
+                    <label>Subject</label>
                     <input
                     type="text"
                     name="subject"
                     placeholder="Let's Work Together"
+                    minLength={3}
+                    maxLength={100}
                     required
                     />
                 </div>
 
                 <div className="input-group-custom">
-                <label>Message</label>
+                    <label>Message</label>
 
-                <textarea
+                    <textarea
                     rows="7"
-                    placeholder="Tell me about your project or opportunity..."
                     name="message"
+                    placeholder="Tell me about your project or opportunity..."
+                    minLength={10}
+                    maxLength={2000}
                     required
-                ></textarea>
+                    ></textarea>
+
+                    <small className="input-limit">
+                    Maximum 2,000 characters
+                    </small>
                 </div>
 
                 <button
-                type="submit"
-                className="contact-submit-btn"
+                    type="submit"
+                    className="contact-submit-btn"
                 >
-                Send Message
-                <FontAwesomeIcon icon={faPaperPlane} />
+                    Send Message
+                    <FontAwesomeIcon icon={faPaperPlane} />
                 </button>
 
                 {success && (
                     <div className="success-message">
-                        Message sent successfully!
+                    Message sent successfully!
                     </div>
                 )}
 
                 <p className="privacy-note">
-                <FontAwesomeIcon icon={faLock} />
-                Your information is safe and will never be shared.
+                    <FontAwesomeIcon icon={faLock} />
+                    Your information is safe and will never be shared.
                 </p>
 
-            </form>
-
+                </form>
             </div>
         </Col>
 

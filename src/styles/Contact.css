@@ -10,6 +10,22 @@
    LEFT SIDE
 ========================================== */
 
+input, textarea {
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: rgba(6, 18, 48, 0.55);
+  border: 1px solid rgba(176, 236, 255, 0.35) !important;
+  border-radius: 15px;
+  color: white;
+}
+
+input:hover, textarea:hover {
+  border-color: #b0ecff !important;
+  box-shadow:
+    0 0 0 1px rgba(176,236,255,0.3),
+    0 0 15px rgba(176,236,255,0.15);
+}
+
 .contact-section-number {
   color: #b0ecff;
   font-size: 1.2rem;
@@ -45,14 +61,17 @@
   align-items: center;
   gap: 20px;
 
-  background: rgba(6, 18, 48, 0.45);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 18, 38),
+    rgb(11, 24, 50),
+    rgb(16, 34, 68),
+    rgb(11, 24, 50),
+    rgb(8, 18, 38)
+  );
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-
-  border: 1px solid rgba(176, 236, 255, 0.12);
-
-  border-radius: 25px;
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 20px;
 
   padding: 20px;
   margin-bottom: 20px;
@@ -63,7 +82,7 @@
 .contact-info-card:hover {
   transform: translateY(-4px);
 
-  border-color: rgba(176, 236, 255, 0.35);
+  border-color: #b0ecff;
 
   box-shadow:
     0 0 20px rgba(176, 236, 255, 0.08);
@@ -73,7 +92,7 @@
   width: 65px;
   height: 65px;
 
-  border-radius: 18px;
+  border-radius: 15px;
 
   display: flex;
   justify-content: center;
@@ -115,14 +134,19 @@
 
   overflow: hidden;
 
-  background: rgba(6, 18, 48, 0.45);
+  background: linear-gradient(
+    to bottom,
+    rgb(8, 18, 38),
+    rgb(11, 24, 50),
+    rgb(16, 34, 68),
+    rgb(11, 24, 50),
+    rgb(8, 18, 38)
+  );
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(176, 236, 255, 0.35);
+  border-radius: 10px;
 
-  border: 1px solid rgba(176, 236, 255, 0.15);
-
-  border-radius: 35px;
+  border-radius: 20px;
 
   padding: 40px;
 }
