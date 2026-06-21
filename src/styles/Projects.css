@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 /* ============================================ */
 /* PROJECTS */
 /* ============================================ */
@@ -313,21 +317,19 @@
 }
 
 
-.project-link,
-.view-on-github {
+.project-link {
   color: color-mix(
     in srgb,
     var(--accent) 50%,
     white
   ) !important;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   text-decoration: none;
 
   transition: all 0.2s ease-in-out;
 }
 
-.project-link:hover,
-.view-on-github:hover {
+.project-link:hover {
   color: var(--accent) !important;
 
   text-shadow:
@@ -367,7 +369,7 @@
 }
 
 .changelog-text {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: #b0ecff;
 }
 
@@ -380,8 +382,8 @@
   border: 1px solid rgb(155, 119, 255);
   border-radius: 5px;
   color: rgb(155, 119, 255);
-  padding: 6px 10px;
-  font-size: 1rem;
+  padding: 2px 8px;
+  font-size: 0.9rem;
   line-height: 1;
   transition: all 0.2s ease-in-out;
   margin-left: 10px;
@@ -389,6 +391,11 @@
 
 .github-bubble:hover {
   background-color: rgba(98, 152, 209, 0.25);
+}
+
+.latest-commit-text {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.745)
 }
 
 /* ============================================ */

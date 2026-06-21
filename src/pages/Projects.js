@@ -14,7 +14,13 @@ import {
   faCircleChevronRight,
   faCode,
   faCloudSun,
-  faLocationDot
+  faLocationDot,
+  faWandMagicSparkles,
+  faMobileScreen,
+  faShieldHalved,
+  faLock,
+  faUsers,
+  faCalendarDays
 } from '@fortawesome/free-solid-svg-icons';
 
 // Brand Icons
@@ -24,7 +30,8 @@ import {
   faAws,
   faGithub,
   faBootstrap,
-  faReact
+  faReact,
+  faGitAlt
 } from '@fortawesome/free-brands-svg-icons';
 
 // API
@@ -42,6 +49,7 @@ import weatherCenterLogo from '../img/weather-center.png';
 // CSS
 import '../styles/Projects.css';
 
+
 // Animation Variants
 const projectVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -58,9 +66,15 @@ const projectVariants = {
     "weather-center"
   ];
 
+
 const Projects = () => {
   // State
   const [projectData, setProjectData] = useState({});
+
+  // More SKills Toggle State
+  const [showPortfolioSkills, setShowPortfolioSkills] = useState(false);
+  const [showWitterSkills, setShowWitterSkills] = useState(false);
+  const [showWeatherSkills, setShowWeatherSkills] = useState(false);
 
   useEffect(() => {
     async function loadProjects() {
@@ -194,8 +208,9 @@ const Projects = () => {
           <Col lg={10}>
             <div className="project-row portfolio">
               <Row className="align-items-center">
+
                 {/* Project Image */}
-                <Col lg={3} md={12} className="text-center">
+                <Col lg={2} md={12} className="text-center">
                   <img
                     className="projectLogo"
                     src={meLogoThing}
@@ -204,7 +219,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Project Details */}
-                <Col lg={6} md={12}>
+                <Col lg={7} md={12}>
                   <p className="projectTitle">
                     <span>React Portfolio</span>
                     <span className="app-type-bubble">Full Stack</span>
@@ -227,14 +242,69 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faGithub} />
+                      <span>GitHub API</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faBootstrap} />
                       <span>Bootstrap</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
-                      <span>+5 more</span>
-                    </div>
+                    {showPortfolioSkills && (
+                      <>
+                        
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faWandMagicSparkles} />
+                          <span>Framer Motion</span>
+                        </motion.div>
 
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} />
+                          <span>Responsive Design</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faCode} />
+                          <span>Rest APIs</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faGitAlt} />
+                          <span>Git</span>
+                          
+                        </motion.div>
+                      </>
+                    )}
+
+                    {!showPortfolioSkills && (
+                      <div
+                        className='project-skill-bubble more-skills'
+                        onClick={() => setShowPortfolioSkills(true)}
+                      >
+                        <span>+4 More</span>
+                      </div>
+                    )}
                   </div>
                 </Col>
 
@@ -244,18 +314,17 @@ const Projects = () => {
                     <div className="project-status">
 
                       <p>
-                        <b className="changelog-text">Changelog via</b>
+                        <b className="changelog-text">Changelog</b>
                         <span className="github-bubble">GitHub API</span>
                       </p>
 
-                      <p>
+
                         <b className="changelog-text">Last Updated: </b>
                         {new Date(
                           projectData["React-Portfolio"].repo.updated_at
                         ).toLocaleDateString()}
-                      </p>
 
-                      <p>
+                      <p className="latest-commit-text">
                         <b>
                           {
                             projectData["React-Portfolio"]
@@ -294,16 +363,6 @@ const Projects = () => {
                           }
                         </div>
                       </p>
-
-                      <a
-                        href="https://github.com/JayPTucker/React-Portfolio/commits/master/"
-                        className="project-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>View all changes </span>
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      </a>
 
                       {/* Project Links */}
                       <div className="project-links">
@@ -346,8 +405,9 @@ const Projects = () => {
           <Col lg={10}>
             <div className="project-row witter">
               <Row className="align-items-center">
+
                 {/* Project Image */}
-                <Col lg={3} md={12} className="text-center">
+                <Col lg={2} md={12} className="text-center">
                   <img
                     className="projectLogo"
                     src={witterImage}
@@ -356,7 +416,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Project Details */}
-                <Col lg={6} md={12}>
+                <Col lg={7} md={12}>
                   <p className="projectTitle">
                     <span>Witter</span>
                     <span className="app-type-bubble">Full Stack</span>
@@ -377,11 +437,6 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faJs} />
-                      <span>JavaScript</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faServer} />
                       <span>Express.js</span>
                     </div>
@@ -397,9 +452,65 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      {/* <FontAwesomeIcon className='bubble-icon' icon={faLock} /> */}
-                      <span>+4 more</span>
+                      <FontAwesomeIcon className='bubble-icon' icon={faLock} />
+                      <span>Authentication</span>
                     </div>
+
+                    {showWitterSkills && (
+                      <>
+                        
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                          <span>JavaScript</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
+                          <span>Encryption</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faCode} />
+                          <span>Rest APIs</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
+                          <span>Social Platform</span>
+                          
+                        </motion.div>
+                      </>
+                    )}
+
+                    {!showWitterSkills && (
+                      <div
+                        className='project-skill-bubble more-skills'
+                        onClick={() => setShowWitterSkills(true)}
+                      >
+                        <span>+4 More</span>
+                      </div>
+                    )}
+
                   </div> 
 
                   {/* Project Links */}
@@ -411,18 +522,18 @@ const Projects = () => {
                     <div className="project-status">
 
                       <p>
-                        <b className="changelog-text">Changelog via</b>
+                        <b className="changelog-text">Changelog</b>
                         <span className="github-bubble">GitHub API</span>
                       </p>
 
-                      <p>
+
                         <b className="changelog-text">Last Updated: </b>
                         {new Date(
                           projectData["Witter"].repo.updated_at
                         ).toLocaleDateString()}
-                      </p>
 
-                      <p>
+
+                      <p className="latest-commit-text">
                         <b>
                           {
                             projectData["Witter"]
@@ -461,16 +572,6 @@ const Projects = () => {
                           }
                         </div>
                       </p>
-
-                      <a
-                        href="https://github.com/JayPTucker/Witter/commits/main/"
-                        className="project-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>View all changes </span>
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      </a>
 
                       <div className="project-links">
                         <a 
@@ -513,7 +614,7 @@ const Projects = () => {
             <div className="project-row weather-center">
               <Row className="align-items-center">
                 {/* Project Image */}
-                <Col lg={3} md={12} className="text-center">
+                <Col lg={2} md={12} className="text-center">
                   <img
                     className="projectLogo"
                     src={weatherCenterLogo}
@@ -522,7 +623,7 @@ const Projects = () => {
                 </Col>
 
                 {/* Project Details */}
-                <Col lg={6} md={12}>
+                <Col lg={7} md={12}>
                   <p className="projectTitle">
                     <span>Weather Center</span>
                     <span className="app-type-bubble">Full Stack</span>
@@ -538,6 +639,7 @@ const Projects = () => {
 
                   {/* Skills */}
                   <div className='project-skill-bubble-group'>
+
                     <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faCloudSun} />
                       <span>Weather API</span>
@@ -554,9 +656,55 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      {/* <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} /> */}
-                      <span>+3 more</span>
+                      <FontAwesomeIcon className='bubble-icon' icon={faJs} />
+                      <span>JavaScript</span>
                     </div>
+
+                    {showWeatherSkills && (
+                      <>
+                        
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} />
+                          <span>Responsive Design</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faCalendarDays} />
+                          <span>5-Day Forecast</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faLocationDot} />
+                          <span>Geolocation</span>
+                        </motion.div>
+
+                      </>
+                    )}
+
+                    {!showWeatherSkills && (
+                      <div
+                        className='project-skill-bubble more-skills'
+                        onClick={() => setShowWeatherSkills(true)}
+                      >
+                        <span>+3 More</span>
+                      </div>
+                    )}
+
 
                   </div>
 
@@ -569,18 +717,17 @@ const Projects = () => {
                     <div className="project-status">
 
                       <p>
-                        <b className="changelog-text">Changelog via</b>
+                        <b className="changelog-text">Changelog</b>
                         <span className="github-bubble">GitHub API</span>
                       </p>
 
-                      <p>
+
                         <b className="changelog-text">Last Updated: </b>
                         {new Date(
                           projectData["weather-center"].repo.updated_at
                         ).toLocaleDateString()}
-                      </p>
 
-                      <p>
+                      <p className="latest-commit-text">
                         <b>
                           {
                             projectData["weather-center"]
@@ -619,16 +766,6 @@ const Projects = () => {
                           }
                         </div>
                       </p>
-
-                      <a
-                        href="https://github.com/JayPTucker/weather-center/commits/master/"
-                        className="project-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span>View all changes </span>
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      </a>
 
                       <div className="project-links">
                         <a 
