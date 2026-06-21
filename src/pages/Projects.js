@@ -241,11 +241,10 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faDisplay} />
-                      <span>Responsive Design</span>
+                      <span>+ 5 More</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
+                    {/* <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faCodeBranch} />
                       <span>GitHub API</span>
                     </div>
@@ -263,7 +262,7 @@ const Projects = () => {
                     <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
                       <span>UI/UX Design</span>
-                    </div>
+                    </div> */}
 
                   </div>
                   {/* Project Links */}
@@ -425,11 +424,11 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faLock} />
-                      <span>Authentication</span>
+                      {/* <FontAwesomeIcon className='bubble-icon' icon={faLock} /> */}
+                      <span>+4 more</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
+                    {/* <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
                       <span>Security</span>
                     </div>
@@ -442,8 +441,8 @@ const Projects = () => {
                     <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
                       <span>Social Platform</span>
-                    </div>
-                  </div>
+                    </div> */}
+                  </div> 
 
                   {/* Project Links */}
                   <div className="project-links">
@@ -595,11 +594,11 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} />
-                      <span>Responsive Design</span>
+                      {/* <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} /> */}
+                      <span>+3 more</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
+                    {/* <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faChartLine} />
                       <span>Live Data</span>
                     </div>
@@ -607,7 +606,7 @@ const Projects = () => {
                     <div className='project-skill-bubble'>
                       <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
                       <span>UI/UX Design</span>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Project Links */}
