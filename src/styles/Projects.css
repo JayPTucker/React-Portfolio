@@ -218,7 +218,7 @@
 }
 
 .projectLogo {
-  width: 14vmax;  /* Adjust as needed */
+  width: 11vmax;  /* Adjust as needed */
   height: auto;
   border-radius: 26px;
   border: 1px solid rgba(176, 236, 255, 0.35);
@@ -312,12 +312,6 @@
     );
 }
 
-.project-links {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
 
 .project-link,
 .view-on-github {
@@ -344,13 +338,6 @@
     );
 
   transform: translateY(-2px);
-}
-
-/* VERTICAL DIVIDER FOR LINKS */
-.vertical-divider {
-  width: 1px;
-  height: 20px;
-  background-color: rgba(255, 255, 255, 0.25);
 }
 
 /* ============================== */
@@ -402,4 +389,181 @@
 
 .github-bubble:hover {
   background-color: rgba(98, 152, 209, 0.25);
+}
+
+/* ============================================ */
+/* RESPONSIVE */
+/* ============================================ */
+
+@media (max-width: 1200px) {
+
+  .projectLogo {
+    width: 9rem;
+  }
+
+  .project-link {
+    font-size: 1rem;
+  }
+
+  .project-skill-bubble {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+
+  .changelog-text {
+    font-size: 1rem;
+  }
+
+}
+
+/* ============================================ */
+
+@media (max-width: 992px) {
+
+  .project-row {
+    padding: 25px;
+  }
+
+  .projectLogo {
+    width: 8rem;
+    margin-bottom: 20px;
+  }
+
+  .projectTitle {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .project-desc {
+    text-align: center;
+  }
+
+  .project-skill-bubble-group {
+    justify-content: center;
+  }
+
+  .project-status {
+    margin-top: 25px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .project-status::before {
+    display: none;
+  }
+
+  .project-status-links {
+    align-items: center;
+  }
+
+  .view-on-github {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}
+
+/* ============================================ */
+
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .responsive-icon {
+    margin-bottom: 15px;
+  }
+
+  .resolution-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .desktop-img,
+  .tablet-img,
+  .phone-img {
+    max-width: 70%;
+    margin-top: 10px;
+  }
+
+  .projectTitle {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-link {
+    font-size: 0.95rem;
+  }
+
+  .github-bubble {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .project-skill-bubble {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+}
+
+/* ============================================ */
+
+@media (max-width: 576px) {
+
+  .project-row {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .projectLogo {
+    width: 120px;
+  }
+
+  .projectTitle {
+    font-size: 1.4rem;
+  }
+
+  .project-desc {
+    font-size: 0.95rem;
+  }
+
+  .project-skill-bubble-group {
+    gap: 6px;
+  }
+
+  .project-skill-bubble {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .desktop-img,
+  .tablet-img,
+  .phone-img {
+    height: 220px;
+    max-width: none;
+  }
+
+  .responsive-title,
+  .responsive-text {
+    text-align: center;
+  }
+
+  .view-on-github {
+    font-size: 1rem !important;
+  }
+
 }

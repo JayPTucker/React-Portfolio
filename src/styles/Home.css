@@ -177,129 +177,52 @@ html {
   transform: translateY(-4px);
 }
 
-
-
 /* ============================================ */
 /* MEDIA QUERIES */
 /* ============================================ */
 
-/* Below we are resizing the info panels and FrontPageRow to fit the screen size when it's below 768px */
 @media (max-width: 993px) {
-    .info-panel-left, .info-panel-right {
-        display: none; /* hide info-panel-left below 768px */
-    }
 
-    .navbar {
-      margin-bottom: 200px !important;
-    }
-    .FrontPageRow, #projects, .contactRow {
-      margin: 70px 5px !important; /* Gives our shortcuts room to breathe at the bottom left and right */
-      text-align: center !important;
-      justify-content: center !important;
-    }
+  .info-panel-left,
+  .info-panel-right {
+    display: none;
+  }
 
-    .FrontPageRow {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+  .navbar {
+    margin-bottom: 200px !important;
+  }
 
-    .name-title {
-      padding-bottom: 20px;
-    }
+  .FrontPageRow,
+  #projects,
+  .contactRow {
+    margin: 70px 5px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
 
-    .mini-bio {
-      max-width: 100%;
-    }
+  .FrontPageRow {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .skill-bubble-group {
-      justify-content: center;
-    }
+  .name-title {
+    padding-bottom: 20px;
+  }
 
-    .picOfMe {
-      margin-bottom: 30px;
-    }
+  .mini-bio {
+    max-width: 100%;
+  }
 
+  .skill-bubble-group {
+    justify-content: center;
+  }
 
-    .view-on-github {
-      margin: 0 auto !important;
-      font-size: 1rem !important;
-      width: 100%;
-    }
-    .desktop-img {
-      max-width: 40%;
-      height: auto;
-      margin: 0 auto !important;
-    }
+  .picOfMe {
+    margin-bottom: 30px;
+  }
 
-    .tablet-img {
-      max-width: 40%;
-      height: auto;
-      margin: 0 auto !important;
-    }
-
-    .phone-img {
-      max-width: 15%;
-      height: auto;
-      margin: 0 auto !important;
-    }
-
-    .witterDesktop {
-      max-width: 280px;
-      width: 100%;
-      height: auto;
-    }
-
-    .witterLogo {
-      width: 60px !important;
-    }
-
-    .projectTitle {
-      font-size: 45px;
-    }
-
-    .witter-desc {
-      font-size: 15px !important;
-    }
-
-    .witter-btn {
-      font-size: 18px;
-      width: 200px !important;
-      padding: 10px !important;
-      margin-bottom: 10px;
-    }
-
-    .weatherCenter {
-      max-width: 680px;
-      width: 100%;
-      height: auto;
-      margin: 0;
-    }
-
-    .project-desc {
-      font-size: 18px !important;
-    }
-
-    .project-btn {
-      font-size: 16px !important;
-      padding: 12px 20px !important;
-      margin: 10px 10px !important;
-      width: auto;
-    }
-
-    /* Make buttons display side by side on mobile */
-    .projectsRow {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .projectsRow .project-btn {
-      display: inline-block;
-    }
 }
-  
 
   
   

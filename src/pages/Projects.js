@@ -7,23 +7,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faDatabase,
   faServer,
-  faLock,
-  faShieldHalved,
-  faCloudArrowUp,
-  faUsers,
   faArrowUpRightFromSquare,
   faGlobe,
   faMobile,
   faDisplay,
   faCircleChevronRight,
-  faCodeBranch,
-  faWandMagicSparkles,
-  faPalette,
   faCode,
   faCloudSun,
-  faLocationDot,
-  faMobileScreen,
-  faChartLine
+  faLocationDot
 } from '@fortawesome/free-solid-svg-icons';
 
 // Brand Icons
@@ -241,55 +232,9 @@ const Projects = () => {
                     </div>
 
                     <div className='project-skill-bubble'>
-                      <span>+ 5 More</span>
+                      <span>+5 more</span>
                     </div>
 
-                    {/* <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faCodeBranch} />
-                      <span>GitHub API</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faCode} />
-                      <span>REST APIs</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faWandMagicSparkles} />
-                      <span>Framer Motion</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
-                      <span>UI/UX Design</span>
-                    </div> */}
-
-                  </div>
-                  {/* Project Links */}
-                  <div className="project-links">
-                    <a 
-                      href="https://github.com/JayPTucker/React-Portfolio" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGithub} />
-                      <span>  GitHub Repo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-
-                    <div className="vertical-divider"></div>
-
-                    <a 
-                      href="https://jaypaultucker.org" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGlobe} />
-                      <span>  Live Demo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
                   </div>
                 </Col>
 
@@ -360,6 +305,34 @@ const Projects = () => {
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
 
+                      {/* Project Links */}
+                      <div className="project-links">
+                        <a 
+                          href="https://github.com/JayPTucker/React-Portfolio" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGithub} />
+                          <span>  GitHub Repo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+
+                        <div className="vertical-divider"></div>
+
+                        <a 
+                          href="https://jaypaultucker.org" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGlobe} />
+                          <span>  Live Demo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                      </div>
+
+
                     </div>
                   )}
                 </Col>
@@ -427,49 +400,9 @@ const Projects = () => {
                       {/* <FontAwesomeIcon className='bubble-icon' icon={faLock} /> */}
                       <span>+4 more</span>
                     </div>
-
-                    {/* <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faShieldHalved} />
-                      <span>Security</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faCloudArrowUp} />
-                      <span>File Uploads</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faUsers} />
-                      <span>Social Platform</span>
-                    </div> */}
                   </div> 
 
                   {/* Project Links */}
-                  <div className="project-links">
-                    <a 
-                      href="https://github.com/JayPTucker/Witter" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGithub} />
-                      <span>  GitHub Repo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-
-                    <div className="vertical-divider"></div>
-
-                    <a 
-                      href="https://witter-d4c230a6736c.herokuapp.com/" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGlobe} />
-                      <span>  Live Demo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-                  </div>
                 </Col>
 
                 {/* Project Status & Changelog */}
@@ -539,6 +472,33 @@ const Projects = () => {
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
 
+                      <div className="project-links">
+                        <a 
+                          href="https://github.com/JayPTucker/Witter" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGithub} />
+                          <span>  GitHub Repo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                          
+                        <br></br>
+
+                        <a 
+                          href="https://witter-d4c230a6736c.herokuapp.com/" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGlobe} />
+                          <span>  Live Demo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                      </div>
+
+
                     </div>
                   )}
                 </Col>
@@ -598,43 +558,9 @@ const Projects = () => {
                       <span>+3 more</span>
                     </div>
 
-                    {/* <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faChartLine} />
-                      <span>Live Data</span>
-                    </div>
-
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faPalette} />
-                      <span>UI/UX Design</span>
-                    </div> */}
                   </div>
 
                   {/* Project Links */}
-                  <div className="project-links">
-                    <a 
-                      href="https://github.com/JayPTucker/weather-center" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGithub} />
-                      <span>  GitHub Repo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-
-                    <div className="vertical-divider"></div>
-
-                    <a 
-                      href="https://jayptucker.github.io/weather-center/" 
-                      className="project-link" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon icon={faGlobe} />
-                      <span>  Live Demo  </span>
-                      <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                    </a>
-                  </div>
                 </Col>
 
                 {/* Project Status & Changelog */}
@@ -703,6 +629,32 @@ const Projects = () => {
                         <span>View all changes </span>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
+
+                      <div className="project-links">
+                        <a 
+                          href="https://github.com/JayPTucker/weather-center" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGithub} />
+                          <span>  GitHub Repo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                        
+                        <br></br>
+
+                        <a 
+                          href="https://jayptucker.github.io/weather-center/" 
+                          className="project-link" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGlobe} />
+                          <span>  Live Demo  </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+                      </div>
 
                     </div>
                   )}
