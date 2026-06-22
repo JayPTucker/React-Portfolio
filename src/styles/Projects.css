@@ -557,16 +557,101 @@ p {
     margin-bottom: 10px;
   }
 
+  .resolution-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
   .desktop-img,
   .tablet-img,
   .phone-img {
-    height: 220px;
-    max-width: none;
+    height: auto;
+    max-width: 180px;
+    margin-top: 10px;
   }
+
+  .res-text {
+   display: none;
+  }
+
+  .phone-img {
+    max-width: 90px;
+  }
+
+  .circle-icon {
+    margin: 0;
+  }
+
+  .device-showcase {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .device-showcase:not(:last-child)::after {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 80%;
+    height: 1px;
+
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(176, 236, 255, 0.3),
+      transparent
+    );
+  }
+
+  .desktop-divider {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(117, 67, 255),
+    transparent
+  );
+}
+
+.tablet-divider {
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(133, 251, 255),
+    transparent
+  );
+}
 
   .responsive-title,
   .responsive-text {
+    text-align: center !important;
+  }
+
+
+  .projectTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    font-size: 1.4rem;
     text-align: center;
+  }
+
+  .project-link {
+    font-size: 1.3rem !important;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .view-on-github {

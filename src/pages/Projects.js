@@ -137,14 +137,14 @@ const Projects = () => {
           <Col lg={10} md={12} sm={12}>
             <div className="project-row">
               <Row className="align-items-center">
-                <Col lg={1} md={12} className="text-center">
+                <Col lg={1} md={12} xs={12} className="text-center">
                   <div className="responsive-icon">
                     <FontAwesomeIcon className="computer-icon" icon={faDisplay} />
                     <FontAwesomeIcon className="mobile-icon" icon={faMobile} />
                   </div>
                 </Col>
 
-                <Col lg={2} md={12}>
+                <Col lg={2} md={12} xs={12}>
                   <b className="responsive-title">Built for every screen</b>
                   <p className="responsive-text">
                     Fully responsive design across desktop, tablet, and mobile devices.
@@ -152,51 +152,58 @@ const Projects = () => {
                 </Col>
 
                 {/* Desktop View */}
-                <Col lg={3} md={4} sm={4}>
-                  <span className="resolution-item">
-                    <FontAwesomeIcon
-                      className="circle-icon circle1"
-                      icon={faCircleChevronRight}
-                    />
-                    <span className="responsive-text">
-                      Desktop
-                      <br />
-                      <span className="res-text">1920px+</span>
+                <Col lg={3} md={4} xs={12}>
+                  <div className="device-showcase">
+                    <span className="resolution-item">
+                      <FontAwesomeIcon
+                        className="circle-icon circle1"
+                        icon={faCircleChevronRight}
+                      />
+                      <span className="responsive-text">
+                        Desktop
+                        <br />
+                        <span className="res-text">1920px+</span>
+                      </span>
+                      <img src={responsiveDesktop} alt="Desktop" className="desktop-img" />
                     </span>
-                    <img src={responsiveDesktop} alt="Desktop" className="desktop-img" />
-                  </span>
+                  </div>
                 </Col>
 
                 {/* Tablet View */}
-                <Col lg={4} md={4} sm={4}>
-                  <span className="resolution-item">
-                    <FontAwesomeIcon
-                      className="circle-icon circle2"
-                      icon={faCircleChevronRight}
-                    />
-                    <span className="responsive-text">
-                      Tablet
-                      <br />
-                      <span className="res-text">768px - 1023px</span>
+                <Col lg={4} md={4} xs={12}>
+                  <div className="device-showcase">
+                    <span className="resolution-item">
+                      <FontAwesomeIcon
+                        className="circle-icon circle2"
+                        icon={faCircleChevronRight}
+                      />
+                      <span className="responsive-text">
+                        Tablet
+                        <br />
+                        <span className="res-text">768px - 1023px</span>
+                      </span>
+                      <img src={responsiveTablet} alt="Tablet" className="tablet-img" />
                     </span>
-                    <img src={responsiveTablet} alt="Tablet" className="tablet-img" />
-                  </span>
+                  </div>
                 </Col>
 
                 {/* Mobile View */}
-                <Col lg={2} md={4} sm={4}>
-                  <span className="resolution-item">
-                    <FontAwesomeIcon
-                      className="circle-icon circle3"
-                      icon={faCircleChevronRight}
-                    />
-                    <span className="responsive-text">
-                      Mobile
-                      <br />
-                      <span className="res-text">320px - 767px</span>
+                <Col lg={2} md={4} xs={12}>
+                  <div className="device-showcase">
+
+                    <span className="resolution-item">
+                      <FontAwesomeIcon
+                        className="circle-icon circle3"
+                        icon={faCircleChevronRight}
+                      />
+                      <span className="responsive-text">
+                        Mobile
+                        <br />
+                        <span className="res-text">320px - 767px</span>
+                      </span>
+                      <img src={responsivePhone} alt="Mobile" className="phone-img" />
                     </span>
-                    <img src={responsivePhone} alt="Mobile" className="phone-img" />
-                  </span>
+                  </div>
                 </Col>
               </Row>
             </div>
@@ -376,9 +383,9 @@ const Projects = () => {
                           <span>  GitHub Repo  </span>
                           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
-
-                        <div className="vertical-divider"></div>
-
+                        
+                        <br></br>
+                        
                         <a 
                           href="https://jaypaultucker.org" 
                           className="project-link" 
@@ -451,14 +458,17 @@ const Projects = () => {
                       <span>AWS S3</span>
                     </div>
 
-                    <div className='project-skill-bubble'>
-                      <FontAwesomeIcon className='bubble-icon' icon={faLock} />
-                      <span>Authentication</span>
-                    </div>
-
                     {showWitterSkills && (
                       <>
-                        
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faLock} />
+                          <span>Authentication</span>
+                        </motion.div>
                         <motion.div
                           className='project-skill-bubble'
                           initial={{ opacity: 0, scale: 0 }}
@@ -512,8 +522,6 @@ const Projects = () => {
                     )}
 
                   </div> 
-
-                  {/* Project Links */}
                 </Col>
 
                 {/* Project Status & Changelog */}
@@ -584,9 +592,9 @@ const Projects = () => {
                           <span>  GitHub Repo  </span>
                           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                         </a>
-                          
-                        <br></br>
 
+                        <br></br>
+                          
                         <a 
                           href="https://witter-d4c230a6736c.herokuapp.com/" 
                           className="project-link" 
