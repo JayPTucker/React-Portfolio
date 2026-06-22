@@ -355,7 +355,7 @@ p {
   color: rgb(155, 119, 255);
   padding: 2px 8px;
 
-  font-size: clamp(0.9rem, 0.4vw + 0.7rem, 1.15rem);
+  font-size: clamp(0.7rem, 0.4vw + 0.4rem, 1rem);
 
   line-height: 1;
   transition: all 0.2s ease-in-out;

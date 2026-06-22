@@ -9,7 +9,8 @@ import {
   faPaperPlane,
   faCommentDots,
   faLock,
-  faClock
+  faClock,
+  faBriefcase
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -84,7 +85,20 @@ const sendEmail = (e) => {
                 collaborations, or interesting projects.
                 Feel free to reach out!
             </p>
+            
+            {/* Available for Work Card */}
+            <div className="contact-info-card available-card">
+                <div className="contact-icon-box available-icon">
+                    <FontAwesomeIcon icon={faBriefcase} />
+                </div>
 
+                <div className="contact-info">
+                    <small>Available for Work</small>
+                    <p>
+                        Open to new opportunities, freelance projects, and collaborations
+                    </p>
+                </div>
+            </div>
             {/* Email Card */}
             <div className="contact-info-card">
                 <div className="contact-icon-box">
@@ -105,7 +119,7 @@ const sendEmail = (e) => {
 
                 <div className="contact-info">
                 <small>Location</small>
-                <p>Nashville, Tennessee</p>
+                <p>Nashville, TN - Open to Relocation</p>
                 </div>
             </div>
 
@@ -230,8 +244,7 @@ const sendEmail = (e) => {
                 </h4>
 
                 <p>
-                Open to full-time roles, freelance projects,
-                and collaborations.
+                Open to new roles, freelance projects, and collaborations. Let's connect.
                 </p>
             </div>
 
