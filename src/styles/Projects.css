@@ -566,10 +566,15 @@ p {
   }
 
   .desktop-img,
-  .tablet-img,
-  .phone-img {
+  .tablet-img {
     height: auto;
     max-width: 180px;
+    margin-top: 10px;
+  }
+
+  .phone-img {
+    height: auto;
+    max-width: 80px;
     margin-top: 10px;
   }
 
@@ -577,18 +582,19 @@ p {
    display: none;
   }
 
-  .phone-img {
-    max-width: 90px;
+  .circle-icon,
+  .responsive-icon {
+    display: none;
   }
 
-  .circle-icon {
-    margin: 0;
+  .resolution-item > .responsive-text {
+    display: none;
   }
 
   .device-showcase {
     position: relative;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .device-showcase:not(:last-child)::after {
@@ -629,9 +635,18 @@ p {
   );
 }
 
-  .responsive-title,
+  .responsive-title {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
   .responsive-text {
+    display: block;
     text-align: center !important;
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 
 
