@@ -18,6 +18,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import '../styles/Contact.css';
+import '../styles/Home.css';
 
 import emailjs from '@emailjs/browser';
 
@@ -68,7 +69,7 @@ const sendEmail = (e) => {
         <Col lg={4}>
             <div className="contact-left">
 
-            <p className="contact-section-number">
+            <p className="section-number">
                 03. <FontAwesomeIcon icon={faPaperPlane} />
             </p>
 

@@ -26,12 +26,6 @@ input:hover, textarea:hover {
     0 0 15px rgba(176,236,255,0.15);
 }
 
-.contact-section-number {
-  color: #b0ecff;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
 .contact-heading {
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;

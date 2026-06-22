@@ -79,6 +79,12 @@ html {
   color: #ebebebcc !important;
 }
 
+.section-number {
+  color: #b0ecff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 /* ============================================ */
 /* MAIN PAGE */
 /* ============================================ */

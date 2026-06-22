@@ -48,6 +48,7 @@ import weatherCenterLogo from '../img/weather-center.png';
 
 // CSS
 import '../styles/Projects.css';
+import '../styles/Home.css';
 
 
 // Animation Variants
@@ -111,7 +112,9 @@ const Projects = () => {
         {/* Section Header */}
         <Row className="project-intro-row justify-content-center" id="projects">
           <Col lg={8}>
-            <p className="section-number"><b>02.</b> </p>
+            <p className="section-number">
+                02. 
+            </p>
             <p className="section-title">Projects</p>
             <p className="section-description">
               A showcase of my recent work. Each project is a blend of problem-solving, 
