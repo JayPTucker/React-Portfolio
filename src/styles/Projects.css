@@ -283,7 +283,8 @@ p {
   border-radius: 8px;
 
   padding: 5px 16px;
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, 0.5vw + 0.5rem, 1.3rem);
+
 
   white-space: nowrap;
 
@@ -316,32 +317,6 @@ p {
     );
 }
 
-
-.project-link {
-  color: color-mix(
-    in srgb,
-    var(--accent) 50%,
-    white
-  ) !important;
-    font-size: 0.9rem;
-  text-decoration: none;
-
-  transition: all 0.2s ease-in-out;
-}
-
-.project-link:hover {
-  color: var(--accent) !important;
-
-  text-shadow:
-    0 0 10px color-mix(
-      in srgb,
-      var(--accent) 40%,
-      transparent
-    );
-
-  transform: translateY(-2px);
-}
-
 /* ============================== */
 
 /* CHANGELOG SECTION */
@@ -369,12 +344,8 @@ p {
 }
 
 .changelog-text {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 0.5vw + 0.6rem, 1.3rem);
   color: #b0ecff;
-}
-
-.commit-body {
-  white-space: pre-wrap;
 }
 
 .github-bubble {
@@ -383,20 +354,58 @@ p {
   border-radius: 5px;
   color: rgb(155, 119, 255);
   padding: 2px 8px;
-  font-size: 0.9rem;
+
+  font-size: clamp(0.9rem, 0.4vw + 0.7rem, 1.15rem);
+
   line-height: 1;
   transition: all 0.2s ease-in-out;
   margin-left: 10px;
 }
 
-.github-bubble:hover {
-  background-color: rgba(98, 152, 209, 0.25);
+.latest-commit-text {
+  font-size: clamp(0.7rem, 0.4vw + 0.5rem, 1.1rem);
+  color: rgba(255, 255, 255, 0.745);
 }
 
-.latest-commit-text {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.745)
+.project-link {
+  color: color-mix(
+    in srgb,
+    var(--accent) 50%,
+    white
+  ) !important;
+
+  font-size: clamp(0.95rem, 0.4vw + 0.75rem, 1.15rem);
+  text-decoration: none;
+
+  transition: all 0.2s ease-in-out;
 }
+
+.project-link:hover {
+  color: var(--accent) !important;
+
+  text-shadow:
+    0 0 10px color-mix(
+      in srgb,
+      var(--accent) 40%,
+      transparent
+    );
+
+  transform: translateY(-2px);
+}
+
+.commit-title {
+  font-size: clamp(1rem, 0.5vw + 0.6rem, 1.35rem);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.commit-body {
+  white-space: pre-wrap;
+  font-size: clamp(0.9rem, 0.4vw + 0.5rem, 1.05rem);
+  line-height: 1.6;
+  color: rgba(255,255,255,0.75);
+}
+
 
 /* ============================================ */
 /* RESPONSIVE */
