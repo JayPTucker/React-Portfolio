@@ -1,0 +1,52 @@
+.back-to-top {
+  position: fixed;
+
+  bottom: 30px;
+  right: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 30%;
+
+  border: 1px solid rgba(176, 236, 255, 0.35);
+
+  background: rgba(12, 22, 69, 0.85);
+
+  backdrop-filter: blur(12px);
+
+  color: #b0ecff;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  z-index: 9999;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+
+  color: rgb(155, 119, 255);
+
+  border-color: rgb(155, 119, 255);
+
+  box-shadow:
+    0 0 20px rgba(155, 119, 255, 0.4);
+}
+
+@media (max-width: 576px) {
+
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 1rem;
+  }
+
+}

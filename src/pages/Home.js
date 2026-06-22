@@ -18,6 +18,7 @@ import picOfMe from '../img/picofme.jpg';
 
 import Projectsection from '../pages/Projects.js';
 import Contactsection from '../pages/Contact.js';
+import BackToTop from '../pages/BackToTop.js';
 
 import '../styles/Home.css';
 
@@ -123,6 +124,8 @@ const Home = () => {
           </Col>
         </Row>
       </motion.div>
+
+      <BackToTop />
     </Container>
   );
 };
