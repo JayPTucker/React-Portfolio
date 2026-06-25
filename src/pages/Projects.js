@@ -20,7 +20,9 @@ import {
   faShieldHalved,
   faLock,
   faUsers,
-  faCalendarDays
+  faCalendarDays,
+  faDumbbell,
+  faChartLine
 } from '@fortawesome/free-solid-svg-icons';
 
 // Brand Icons
@@ -31,7 +33,8 @@ import {
   faGithub,
   faBootstrap,
   faReact,
-  faGitAlt
+  faGitAlt,
+  faGoogle
 } from '@fortawesome/free-brands-svg-icons';
 
 // API
@@ -45,6 +48,7 @@ import responsivePhone from '../img/phone1.png';
 import meLogoThing from '../img/meLogoThing.png';
 import witterImage from '../img/witter_project.png';
 import weatherCenterLogo from '../img/weather-center.png';
+import comingSoon from '../img/comingSoon.png';
 
 // CSS
 import '../styles/Projects.css';
@@ -64,7 +68,8 @@ const projectVariants = {
   const projects = [
     "Witter",
     "React-Portfolio",
-    "weather-center"
+    "weather-center",
+    "fitness-tracker"
   ];
 
 
@@ -76,6 +81,7 @@ const Projects = () => {
   const [showPortfolioSkills, setShowPortfolioSkills] = useState(false);
   const [showWitterSkills, setShowWitterSkills] = useState(false);
   const [showWeatherSkills, setShowWeatherSkills] = useState(false);
+  const [showFitnessSkills, setShowFitnessSkills] = useState(false);
 
   useEffect(() => {
     async function loadProjects() {
@@ -405,6 +411,214 @@ const Projects = () => {
                     </div>
                   )}
                 </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+
+        {/* FITNESS TRACKER PROJECT */}
+        <Row className="justify-content-center">
+          <Col lg={10}>
+            <div className="project-row fitness-tracker">
+              <Row className="align-items-center">
+
+                {/* Project Image */}
+                <Col lg={2} md={12} className="text-center">
+                  <img 
+                    className="projectLogo"
+                    src={comingSoon}
+                    alt="Fitness Tracker Logo"
+                  />
+                </Col>
+
+                {/* Project Details */}
+                <Col lg={7} md={12}>
+                  <p className="projectTitle">
+                    <span>Fitness App (Name Pending)</span>
+                    <span className="app-type-bubble">Full Stack</span>
+                  </p>
+
+                  <p className="project-desc">
+                    A full-stack fitness tracking platform designed to help
+                    users build workout routines, track training sessions, monitor
+                    progress, and achieve their fitness goals. Built with React,
+                    Node.js, Express, MySQL, JWT authentication, and Google OAuth,
+                    it provides a secure and responsive experience across desktop,
+                    tablet, and mobile devices.
+                  </p>
+
+                  {/* Skills */}
+                  <div className='project-skill-bubble-group'>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faReact} />
+                      <span>React</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faNodeJs} />
+                      <span>Node.js</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faServer} />
+                      <span>Express.js</span>
+                    </div>
+
+                    <div className='project-skill-bubble'>
+                      <FontAwesomeIcon className='bubble-icon' icon={faDatabase} />
+                      <span>MySQL</span>
+                    </div>
+
+                    {showFitnessSkills && (
+                      <>
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faLock} />
+                          <span>JWT Authentication</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.4 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faGoogle} />
+                          <span>Google OAuth</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.5 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faDumbbell} />
+                          <span>Workout Tracking</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.6 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faChartLine} />
+                          <span>Progress Analytics</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.7 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faCode} />
+                          <span>REST APIs</span>
+                        </motion.div>
+
+                        <motion.div
+                          className='project-skill-bubble'
+                          initial={{ opacity: 0, scale: 0 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ duration: 0.8 }}
+                        >
+                          <FontAwesomeIcon className='bubble-icon' icon={faMobileScreen} />
+                          <span>Responsive Design</span>
+                        </motion.div>
+                      </>
+                    )}
+
+                    {!showFitnessSkills && (
+                      <div
+                        className='project-skill-bubble more-skills'
+                        onClick={() => setShowFitnessSkills(true)}
+                      >
+                        <span>+6 More</span>
+                      </div>
+                    )}
+
+                  </div>
+                </Col>
+
+                {/* Project Status & Changelog */}
+                <Col lg={3} md={12}>
+                  {projectData["fitness-tracker"] && (
+                    <div className="project-status">
+
+                      <p>
+                        <b className="changelog-text">In Active Development</b>
+                        <span className="github-bubble">GitHub API</span>
+                      </p>
+
+                      <b className="changelog-text">Last Updated: </b>
+                      {new Date(
+                        projectData["fitness-tracker"].repo.updated_at
+                      ).toLocaleDateString()}
+
+                      <p className="latest-commit-text">
+                        <b>
+                          {
+                            projectData["fitness-tracker"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')[0]
+                          }
+                        </b>
+
+                        <div className="commit-body">
+                          {
+                            projectData["fitness-tracker"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .slice(2, 6)
+                              .join('\n')
+                          }
+
+                          {
+                            projectData["fitness-tracker"]
+                              .commit
+                              .commit
+                              .message
+                              .split('\n')
+                              .length > 5 && (
+                              <span>
+                                <br />
+                                <i>
+                                  ...Use the link below to view all changes.
+                                </i>
+                              </span>
+                            )
+                          }
+                        </div>
+                      </p>
+
+                      <div className="project-links">
+                        <a
+                          href="https://github.com/JayPTucker/fitness-tracker"
+                          className="project-link"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon icon={faGithub} />
+                          <span> GitHub Repo </span>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                        </a>
+
+                      </div>
+
+                    </div>
+                  )}
+                </Col>
+
               </Row>
             </div>
           </Col>

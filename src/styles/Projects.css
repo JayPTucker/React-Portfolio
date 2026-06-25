@@ -162,6 +162,10 @@ p {
   --accent: #69c8ff;
 }
 
+.project-row.fitness-tracker {
+  --accent: #ff6b6b;
+}
+
 /* Project Title Accent */
 .project-row .projectTitle, .project-row .project-skill-bubble {
   color: var(--accent);
