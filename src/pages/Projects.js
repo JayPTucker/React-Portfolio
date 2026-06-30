@@ -48,7 +48,7 @@ import responsivePhone from '../img/phone1.png';
 import meLogoThing from '../img/meLogoThing.png';
 import witterImage from '../img/witter_project.png';
 import weatherCenterLogo from '../img/weather-center.png';
-import comingSoon from '../img/comingSoon.png';
+import fitnessLogo from '../img/fitness-tracker.png';
 
 // CSS
 import '../styles/Projects.css';
@@ -426,7 +426,7 @@ const Projects = () => {
                 <Col lg={2} md={12} className="text-center">
                   <img 
                     className="projectLogo"
-                    src={comingSoon}
+                    src={fitnessLogo}
                     alt="Fitness Tracker Logo"
                   />
                 </Col>
@@ -434,7 +434,7 @@ const Projects = () => {
                 {/* Project Details */}
                 <Col lg={7} md={12}>
                   <p className="projectTitle">
-                    <span>Fitness App (Name Pending)</span>
+                    <span>Fitness Tracker</span>
                     <span className="app-type-bubble">Full Stack</span>
                   </p>
 
